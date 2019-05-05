@@ -1,1 +1,9 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
+#profilePicture {
+  border-radius: 5%;
+  float: right;
+  margin-right: 100px;
+}

@@ -1,8 +1,8 @@
-# wdd-coursework
+# Web Design & Development Coursework
 The official private repository for our Web Design &amp; Development coursework.
 
 
-##Tasks
+## Tasks
 ![tasks](assets/tasks.png)
 
 ## Coursework Specifications

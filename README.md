@@ -7,8 +7,8 @@ The official private repository for our Web Design &amp; Development coursework.
 | ----------------------------------------------------------- | -------------------------- |
 | [Akassharjun Shanmugarajah](https://github.com/akassharjun) | Group Leader & Student One |
 | [Dinuka Piyadiyagama](https://github.com/DinDev3)           | Student Two                |
-| [Visal Rajapakse](https://github.com/v15a1)                 | Student Three              |
-| [Yuwarajalingam Dinesh](http://github.com)                  | Student One                |
+| [Yuwarajalingam Dinesh](https://github.com/dineshyuwa)      | Student Three              |
+| [Visal Rajapakse](https://github.com/v15a1)                 | Student Four               |
 
 ## Tasks
 ![tasks](assets/tasks.png)
@@ -17,3 +17,13 @@ The official private repository for our Web Design &amp; Development coursework.
 [Coursework Specifications](https://github.com/akassharjun/wdd-coursework/blob/master/assets/coursework-specifications.pdf)
 
 [Snook Colour Contrast Check](https://snook.ca/technical/colour_contrast/colour.html#fg=33FF33,bg=333333)
+
+[CSS Gradient](https://cssgradient.io/)
+
+[Understanding typography](https://material.io/design/typography/understanding-typography.html)
+
+[Google Fonts](https://fonts.google.com/)
+
+[Tips to use VSCode more efficiently](https://dev.to/selrond/tips-to-use-vscode-more-efficiently-3h6p)
+
+[Mastering Markdown](https://guides.github.com/features/mastering-markdown/)

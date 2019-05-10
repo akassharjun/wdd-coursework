@@ -1,6 +1,8 @@
 # Web Design & Development Coursework
 The official private repository for our Web Design &amp; Development coursework.
 
+[![CodeFactor](https://www.codefactor.io/repository/github/akassharjun/wdd-coursework/badge)](https://www.codefactor.io/repository/github/akassharjun/wdd-coursework)
+
 ## Members
 
 | Member                                                      | Role                       |

@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>View Images</title>
+
+        <style>
+            body{
+                margin: 70px;
+            }
+            img{
+                margin: 10px 10px 0 0;
+                height: 10%;
+                transition: 0.1s;
+                overflow: hidden;
+                float: left;
+                filter: grayscale(100);
+                z-index: 1;
+
+            }
+            img:hover{
+                transform: scale(1.2);
+                box-shadow: 10px 10px 10px;
+                filter: grayscale(0);
+                position:relative;
+            }
+
+        </style>  
+    </head>
+    <body>
+        <div id="bodyDivision">
+            <div>
+                <fieldset>
+                    <legend>form</legend>
+                    <form>
+                        <!--Drop down menu for background colour selection-->
+                        <select id="backgroundColour">
+                            <option id="select a background colour" selected>Select colour</option>
+                            <option id="">1</option>
+                            <option id="">2</option>
+                            <option id="">3</option>
+                            <option id="">4</option>
+                            <option id="">5</option>
+                        </select>
+                        <!--Drop down menu for font colour selection-->
+                        <select id="fontColour">
+                            <option id="select a font colour" selected>Select colour</option>
+                            <option id="">1</option>
+                            <option id="">2</option>
+                            <option id="">3</option>
+                            <option id="">4</option>
+                            <option id="">5</option>
+                        </select>
+                        <input type="button" value="OK!">
+                        <input type="reset" value="Reset form">
+                        <div id="gallery">
+                            <div class="images">
+                                <img src="Images\Dummy photo\dummy 2.jpg" style="z-index:">
+                            </div>
+                            <div class="images">
+                                <img src="Images\Dummy photo\dummy 2.jpg">
+                            </div>
+                            <div class="images">
+                                <img src="Images\Dummy photo\dummy 2.jpg">
+                            </div>
+                            <div class="images">
+                                <img src="Images\Dummy photo\dummy 2.jpg">
+                            </div>
+                            <div class="images">
+                                <img src="Images\Dummy photo\dummy 2.jpg">
+                            </div>
+                        </div>
+                    </form>
+                </fieldset>
+            </div>
+
+            <div id="imageDisplayDiv">
+                <!--for big image and details of the image-->
+            </div>
+        </div>
+    </body>
+</html>

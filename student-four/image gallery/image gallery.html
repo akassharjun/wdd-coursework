@@ -1,95 +1,186 @@
 <html>
     <head>
-        <title>View Images</title>
+        <title>Image Gallery</title>
 
         <style>
             @import url('https://fonts.googleapis.com/css?family=Passion+One|Russo+One&display=swap');
-            body{
-                margin: 70px;
-                background-color: #D9D9D9;
-            }
-            img{
-                margin: 10px 10px 0 0;
-                height: 10%;
-                transition: 0.1s;
-                overflow: hidden;
-                float: left;
-                filter: grayscale(100);
-                z-index: 1;
-
-            }
-            img:hover{
-                transform: scale(1.2);
-                box-shadow: 10px 10px 10px;
-                filter: grayscale(0);
-                position:relative;
+            *{
+                margin: auto;
             }
             .colourSelection{
-                background: rgb(131, 131, 131);
                 padding: 10px;
                 width: 250px;
+                background:#5a5a5a;
+                color: #fff;
                 border: none;
-                font-family: Passion One;
+                border-radius: 20px;
+                margin-top: 20px;
+            }
+            .colourSelectionButtons{
+                padding: 10px;
+                width: 100px;
+                background: #000;
+                color: #fff;
+                border: none;
+                border-radius: 20px;
+                transition: all 0.1s ease-in-out;
+                opacity: 1;
+            }
+            .colourSelectionButtons#resetButton:hover{
+                background:#E71C1C;
+                transition: all 0.1s ease-in-out;
+                color: #000;
+                opacity: 1;
+            }
+            .colourSelectionButtons#submitButton:hover{
+                background:#00FF7C;
+                transition: all 0.4s ease-in-out;
+                color: #000;
+                opacity: 1;
+            }
+            .gallery{
+                display: grid;
+                grid-template-columns: repeat(8, 1fr);
+                grid-template-rows: repeat(8, 5vw)
+            }
+            .galleryImages{
+                filter: grayscale(100%);
+                transition: 0.5s;  
+                scale: 1;  
+                border-radius: 50px;            
+            }
+            .galleryImages:hover{
+                filter: grayscale(0%);
+                transform: scale(1.2);
+                z-index: 1;
+                
+            }
+            .images{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
             }
 
+            #logo #marvelLogo{
+                margin-top: 15px;
+                margin-left: 10px;
+                height: 5%;
+                width: 10%;
+            }
+            #logo{
+                background: #000;
+                padding-bottom: 15px;
+            }
+            #formDivision{
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-top: 15px;
+                margin-bottom: 15px;
+                text-align: center;
+                border: none;
+                background: #DFDFDF;
+                border-radius: 50px;
+            }
+            #gallery{
+                margin-top: 20px;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                border-radius: 50px;
+                z-index: -1;
+            }
+
+            #form{
+                z-index: 1;
+            }
+            #image0{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 3;
+                border-radius: 50px;
+
+            }
+            #image1{
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start: 1;
+                grid-row-end: 3;
+            }
+            #image2{
+                grid-column-start: 3;
+                grid-column-end: 5;
+                grid-row-start: 4;
+                grid-row-end: 9;
+            }
+            #image3{
+                grid-column-start: 5;
+                grid-column-end: 9;
+                grid-row-start: 1;
+                grid-row-end: 9;
+            }
+            #image4{
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 4;
+                grid-row-end: 9;
+            }
+
+
+            
         </style>  
     </head>
     <body>
-        <header id="imageGallerHeader">
-            <nav>
-                    <img src="D:\IIT\Assesments\L4\WDD\wdd-coursework\student-four\EXTRA PAGES\Images\Logos\marvelSVG.webp">
-
-            </nav>
-        </header>
-        <div id="bodyDivision">
-            <div>
-                <fieldset>
-                    <legend>form</legend>
-                    <form>
-                        <!--Drop down menu for background colour selection-->
-                        <select id="backgroundColour" class="colourSelection">
-                            <option id="selectBGColour" selected>Select colour</option>
-                            <option id="">1</option>
-                            <option id="">2</option>
-                            <option id="">3</option>
-                            <option id="">4</option>
-                            <option id="">5</option>
-                        </select>
-                        <!--Drop down menu for font colour selection-->
-                        <select id="fontColour" class="colourSelection">
-                            <option id="selectFontColour" selected>Select colour</option>
-                            <option id="">1</option>
-                            <option id="">2</option>
-                            <option id="">3</option>
-                            <option id="">4</option>
-                            <option id="">5</option>
-                        </select>
-                        <input type="button" value="OK!">
-                        <input type="reset" value="Reset form">
-                        <div id="gallery">
-                            <div class="images">
-                                <img src="Images\Dummy photo\dummy 2.jpg" style="z-index:">
-                            </div>
-                            <div class="images">
-                                <img src="Images\Dummy photo\dummy 2.jpg">
-                            </div>
-                            <div class="images">
-                                <img src="Images\Dummy photo\dummy 2.jpg">
-                            </div>
-                            <div class="images">
-                                <img src="Images\Dummy photo\dummy 2.jpg">
-                            </div>
-                            <div class="images">
-                                <img src="Images\Dummy photo\dummy 2.jpg">
-                            </div>
-                        </div>
-                    </form>
-                </fieldset>
-            </div>
-
-            <div id="imageDisplayDiv">
-                <!--for big image and details of the image-->
-            </div>
+        <div id="logo">
+            <img src="Images\marvelSVG.webp" alt="Marvel" id="marvelLogo" class="marvelLogo">
         </div>
+        <div id="formDivision">
+            <form id="form">
+                <select id="BGColourSelection" class="colourSelection">
+                    <option id="SelectBGColour">Select a Background colour</option>
+                    <option id="BGColour1">1</option>
+                    <option id="BGColour2">2</option>
+                    <option id="BGColour3">3</option>
+                    <option id="BGColour4">4</option>
+                    <option id="BGColour5">5</option>
+                    <option id="BGColour6">6</option>
+                </select>
+
+                <select id="fontColourSelection" class="colourSelection">
+                    <option id="SelectFontColour">Select a Font colour</option>
+                    <option id="fontColour1">1</option>
+                    <option id="fontColour2">2</option>
+                    <option id="fontColour3">3</option>
+                    <option id="fontColour4">4</option>
+                    <option id="fontColour5">5</option>
+                    <option id="fontColour6">6</option>
+                </select>
+                <input type="button" value="Click me!" id="submitButton" class="colourSelectionButtons">
+                <input type="reset" value="Reset" id="resetButton" class="colourSelectionButtons">
+            </form>
+            <div id="gallery" class="gallery">
+                    <figure id="image0" class="galleryImages">
+                        <img src="Images\Dummy photo\download.jpg" alt="" class="images">
+                    </figure>
+                    <figure id="image1" class="galleryImages">
+                        <img src="Images\Dummy photo\download (1).jpg" alt="" class="images">
+                    </figure>
+                    <figure id="image2" class="galleryImages">
+                        <img src="Images\Dummy photo\download (2).jpg" alt="" class="images">
+                    </figure>
+                    <figure id="image3" class="galleryImages">
+                        <img src="Images\Dummy photo\download (3).jpg" alt="" class="images">
+                    </figure>
+                    <figure id="image4" class="galleryImages">
+                        <img src="Images\Dummy photo\download (4).jpg" alt="" class="images">
+                    </figure>
+        
+                </div>
+        </div>
+        
+        <div id="imageDescription">
+
+    </div>
+
     </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Feedback
+        </title>
+        <link rel="stylesheet" type="text/css" href="External CSS-2.css">
+    </head>
+    <body>
+        <header></header>
+
+        <form name="commentsForm" onsubmit="return formValidation()" method="POST">
+            <label for="customerName">Name:</label>
+            <input type="text" name="customerName" autofocus/><br/><br/>
+
+            <label for="email">E-mail:</label>
+            <input type="email" name="email"/><br/><br/>
+
+            <label for="rating">Rating:</label>
+            <input type="radio" name="rating" value="veryBad"/>
+            <input type="radio" name="rating" value="bad"/>
+            <input type="radio" name="rating" value="ok"/>
+            <input type="radio" name="rating" value="good"/>
+            <input type="radio" name="rating" value="very good"/>
+            <br/><br/>
+
+            <label for="comments">Comments</label><br/>
+            <textarea placeholder="" name="comments" cols="60" rows="3"></textarea><br/><br/>
+            
+            <input type="reset" value="Reset Form"/>
+            <input type="submit" value="Submit Form"/>
+        
+        </form>
+
+        <footer></footer>
+
+        <script>
+            function formValidation(){
+                var nameCheck = document.forms["commentsForm"]["customerName"].value;
+                var radioCheck = document.forms["commentsForm"]["rating"].value;
+                var commentsOut = document.forms["commentsForm"]["comments"].value;
+                
+                if((nameCheck=="") || (radioCheck=="")){
+                    alert("Please fill-in the compulsory fields- \n \u2022Name \n \u2022Rating");
+                    return false;
+                } else{
+                    alert("Dear "+nameCheck+", Thank you very much for your feedback. You have rated our site as "+radioCheck+" and your comment was, "+commentsOut)
+                }
+            }
+        </script>
+    </body>
+</html>

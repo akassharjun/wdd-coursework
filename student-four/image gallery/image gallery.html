@@ -3,8 +3,10 @@
         <title>View Images</title>
 
         <style>
+            @import url('https://fonts.googleapis.com/css?family=Passion+One|Russo+One&display=swap');
             body{
                 margin: 70px;
+                background-color: #D9D9D9;
             }
             img{
                 margin: 10px 10px 0 0;
@@ -22,18 +24,31 @@
                 filter: grayscale(0);
                 position:relative;
             }
+            .colourSelection{
+                background: rgb(131, 131, 131);
+                padding: 10px;
+                width: 250px;
+                border: none;
+                font-family: Passion One;
+            }
 
         </style>  
     </head>
     <body>
+        <header id="imageGallerHeader">
+            <nav>
+                    <img src="D:\IIT\Assesments\L4\WDD\wdd-coursework\student-four\EXTRA PAGES\Images\Logos\marvelSVG.webp">
+
+            </nav>
+        </header>
         <div id="bodyDivision">
             <div>
                 <fieldset>
                     <legend>form</legend>
                     <form>
                         <!--Drop down menu for background colour selection-->
-                        <select id="backgroundColour">
-                            <option id="select a background colour" selected>Select colour</option>
+                        <select id="backgroundColour" class="colourSelection">
+                            <option id="selectBGColour" selected>Select colour</option>
                             <option id="">1</option>
                             <option id="">2</option>
                             <option id="">3</option>
@@ -41,8 +56,8 @@
                             <option id="">5</option>
                         </select>
                         <!--Drop down menu for font colour selection-->
-                        <select id="fontColour">
-                            <option id="select a font colour" selected>Select colour</option>
+                        <select id="fontColour" class="colourSelection">
+                            <option id="selectFontColour" selected>Select colour</option>
                             <option id="">1</option>
                             <option id="">2</option>
                             <option id="">3</option>

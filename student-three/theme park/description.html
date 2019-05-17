@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #ass{
+                border-radius:60%;
+                width:200px;
+                margin-left:50px;
+                margin-right:20px;
+                margin-top:30px;
+            }
+         #dinu{
+                border-radius:60%;
+                width:200px;
+                margin-left:100px;
+                margin-right:20px;
+                margin-top:30px;
+            }
+            #vis{
+                border-radius:60%;
+                width:200px;
+                margin-left:100px;
+                margin-right:20px;
+                margin-top:30px;
+            }
+            #dini{
+                border-radius:60%;
+                width:200px;
+                float:right;
+                margin-top:30px;
+                margin-left:20px;
+                margin-right:100px; 
+            }
+            #info{
+                margin-top:40px;
+                margin-left:390px;
+                color:white;
+                width:470px;
+                height:250px;
+                text-align: center;
+                font-size: 70px;
+                
+            }
+            body,html{
+                background-color:black;
+            }
+            #marvelheading{
+                text-align: center;
+                font-size: 80px;
+                color:red;
+                font-family: cursive;
+            }
+            h1{
+                text-align: center;
+                font-size: 30px;
+                color:red;
+                font-family: cursive;
+                margin-left:-80px;
+                margin-top:20px; 
+            }
+        </style>
+        <title>description</title>
+    </head>
+    <body>
+            <img src="images.png" alt="marvel" style="float:center;width:250px;margin-top:10px;margin-left:500px;">
+            <h1>Proudly presents</h1>
+        <h1 id="marvelheading">Marvel Theme Park</h1>
+            <img src="ass.jpg" alt="Aagash" onmouseover="ass()" onmouseout="assout()" id="ass" >
+            <img src="dinuka.jpg" alt="Dinuka" onmouseover="dinu()" onmouseout="dinuout()" id="dinu" >
+            <img src="visal.jpg" alt="Visal" onmouseover="vis()" onmouseout="visout()" id="vis">
+            <img src="dini.jpg" alt="Dinesh" onmouseover="dini()" onmouseout="diniout()" id="dini">
+            <div id="info"></div>
+            
+            
+            <script>
+                function ass(){
+                      document.getElementById("info").innerHTML="Aagash<br/>Student1";
+                }
+                function assout(){
+                    document.getElementById("info").innerHTML=" ";
+                }
+                function dinu(){
+                    document.getElementById("info").innerHTML="Dinuka Piyadiyagama<br/>Student2";
+                }
+                function dinuout(){
+                    document.getElementById("info").innerHTML="";
+                }
+                function dini(){
+                    document.getElementById("info").innerHTML="Yuwarajalingam Dinesh<br/>Student3";
+                }
+                function diniout(){
+                    document.getElementById("info").innerHTML=" ";
+                }
+                function vis(){
+                    document.getElementById("info").innerHTML="Visal Rajapakse<br/>Student4";
+                }
+                function visout(){
+                    document.getElementById("info").innerHTML="";
+                }
+            </script>
+    </body>
+</html>

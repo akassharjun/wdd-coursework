@@ -1,3 +1,71 @@
 input:focus{
     background-color: aliceblue;
 }
+
+body{
+    background-color: rgb(44, 62, 80);
+    margin:0;
+}
+
+form{
+    position: absolute;
+    text-align:center;
+    width: 350px;
+    background-color: rgb(236, 240, 241);
+    padding: 30px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.formInput{
+    border:0;
+    text-align: center;
+    border-radius: 6px;
+    transition: 0.25s;
+}
+
+.formInput:focus{
+    border: 2px solid rgb(124, 180, 252);
+}
+
+#comments{
+    padding:15px 5px;
+}
+
+#customerName, #email{
+    line-height: 16px;
+    width: 220px;
+    padding:10px;
+}
+
+.buttons{
+    border-radius: 8px;
+    padding:6px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color:white;
+    transition: 0.75s;
+}
+
+form input[type=reset]:hover{
+    background-color: rgb(231, 76, 60);
+    cursor: pointer;
+}
+
+form input[type=submit]:hover{
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+
+#logo{
+    max-width: 5%;
+    height:auto;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+/*need to try to change radios to stars*/

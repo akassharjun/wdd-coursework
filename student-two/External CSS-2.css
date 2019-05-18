@@ -40,7 +40,8 @@ form{
 }
 
 .buttons{
-    border-radius: 8px;
+    border:2px solid;
+    border-radius: 10px;
     padding:6px;
     margin-top: 20px;
     margin-left: 10px;
@@ -49,9 +50,17 @@ form{
     transition: 0.75s;
 }
 
+form input[type=reset]{
+    border-color: rgb(231, 76, 60);
+}
+
 form input[type=reset]:hover{
     background-color: rgb(231, 76, 60);
     cursor: pointer;
+}
+
+form input[type=submit]{
+    border-color: lightseagreen;
 }
 
 form input[type=submit]:hover{

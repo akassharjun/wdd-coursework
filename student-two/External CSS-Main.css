@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    /*scroll-behavior: smooth;*/
+}
+
+#coverImage{
+    width:100vw;
+    height:auto;
+}
+
+.content{
+    height:500px;
+    background-color: lightblue;
+}
+
+#imageBehind{
+    position:fixed;
+    width:100vw;
+    height:auto;
+    background-repeat: no-repeat
+}

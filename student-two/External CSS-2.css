@@ -1,7 +1,3 @@
-input:focus{
-    background-color: aliceblue;
-}
-
 body{
     background-color: rgb(44, 62, 80);
     margin:0;
@@ -27,6 +23,8 @@ form{
 
 .formInput:focus{
     border: 2px solid rgb(124, 180, 252);
+    background-color: aliceblue;
+    outline:0;
 }
 
 #comments{
@@ -48,6 +46,10 @@ form{
     margin-right: 10px;
     background-color:white;
     transition: 0.75s;
+}
+
+.buttons:focus{
+    outline:0;
 }
 
 form input[type=reset]{

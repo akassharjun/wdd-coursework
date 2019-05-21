@@ -10,8 +10,8 @@
             .colourSelection{
                 padding: 10px;
                 width: 250px;
-                background:#5a5a5a;
-                color: #fff;
+                background:#cccccc;
+                color: #000000;
                 border: none;
                 border-radius: 20px;
                 margin-top: 20px;
@@ -33,7 +33,7 @@
                 opacity: 1;
             }
             .colourSelectionButtons#resetButton:hover{
-                background:#E71C1C;
+                background:#c10000;
                 transition: all 0.1s ease-in-out;
                 color: #000;
                 opacity: 1;
@@ -66,12 +66,12 @@
                 z-index: 2;
             }            
             .logoHeader{
-                background-image:linear-gradient(to bottom right,#c31432,#240b36);
+                background:#c10000;
                 height: 100px;
                 transition: all 1s ease-in-out;
             }
             .logoHeader:hover{
-                background-image:linear-gradient(to bottom right,#11998e,#38ef7d);   
+                background:#ff4949;   
      
             }
             .imagesAndDescriptions{
@@ -158,7 +158,12 @@
             }
             #allDescriptions{
                 visibility: hidden;
-            }         
+            }   
+
+            .noTransitions{
+                transition: none;
+                transform: scale(1);
+            }      
         </style>  
 
         <script>
@@ -169,10 +174,13 @@
             function image1Description(){
                 console.log('inside function')
                 document.getElementById("imageDiv").innerHTML = document.getElementById("image1").innerHTML;
+                
             }
             function image2Description(){
                 console.log('inside function')
+                document.getElementById("image2").style.transition = "all 0s"
                 document.getElementById("imageDiv").innerHTML = document.getElementById("image2").innerHTML;
+                
             }
             function image3Description(){
                 console.log('inside function')

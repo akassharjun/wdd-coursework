@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Presentation Page</title>
+    <style>
+      /* #background {
+        position: absolute;
+        width: 1366px;
+        height: 768px;
+
+        background: linear-gradient(
+          0deg,
+          rgba(167, 142, 142, 0) 100%,
+          #990000 0%
+        );
+      } */
+
+      body {
+        background: #232526;
+        background: -webkit-linear-gradient(to left, #414345, #232526);
+        background: linear-gradient(to left, #414345, #232526);
+        /* background: #eb3349;
+        background: -webkit-linear-gradient(
+          to left,
+          #f45c43,
+          #eb3349
+        );
+        background: linear-gradient(
+          to left,
+          #f45c43,
+          #eb3349
+        );  */
+      }
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Float four columns side by side */
+      .column {
+        float: left;
+        width: 20%;
+        text-align: center;
+
+        transform: translateX(50%);
+        /* padding: 0 0px; */
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Style the counter cards */
+      .card {
+        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+        padding: 20px;
+        text-align: center;
+        color: #ff000000;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+      }
+
+      /* Responsive columns - one column layout (vertical) on small screens */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+
+      p {
+        color: white;
+        font-size: 25px;
+      }
+
+      h1 {
+        padding: 50px;
+        color: white;
+        text-align: center;
+        font-size: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello There!</h1>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="./CV/profile_picture.png" />
+          <p>Akassharjun<br />Shanmugarajah</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="../student-two/CV/images/Dinuka CV.jpg" />
+          <p>Dinuka<br />Piyadigama</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="../student-three/theme park/dini.jpg" />
+          <p>Yuwarajalingam<br />Dinesh</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <img src="../student-four/CV/images/dummy.jpg" />
+          <p>Visal<br />Rajapakse</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

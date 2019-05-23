@@ -6,6 +6,7 @@
         </title>
         
         <link rel="stylesheet" type="text/css" href="External CSS-Main.css">
+        <link rel="stylesheet" type="text/css" href="../common-resources/style2.css">
     </head>
     <body>
         <header>
@@ -17,10 +18,31 @@
         <div class="content">
             <!--content related to pages of site-->
         </div>
+        <div class="content">
+            <!--content related to pages of site-->
+        </div>
         
+        
+        <!--
         <img id="imageBehind" src="images/background2.jpg" alt="image behind">
-        
+        -->
        
+        <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
+
+        <script>
+            window.onscroll = function() {toTopDisplay()};
+            function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
+                if(document.documentElement.scrollTop > 10){
+                    document.getElementById("toTopButton").style.display = "block";
+                }else{
+                    document.getElementById("toTopButton").style.display = "none";
+                }
+            }
+
+            function scrollToTop(){         //scroll top top of web page
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
 
         <footer>
             <!--details-->

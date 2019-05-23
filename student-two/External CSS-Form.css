@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(44, 62, 80);
+    background-color: #c10000;      /*Change into darker read/ use background image*/
     margin:0;
 }
 
@@ -7,7 +7,7 @@ form{
     position: absolute;
     text-align:center;
     width: 350px;
-    background-color: rgb(236, 240, 241);
+    background-color: #eeeeee;
     padding: 30px;
     top:50%;
     left:50%;
@@ -71,11 +71,12 @@ form input[type=submit]:hover{
 }
 
 #logo{
-    max-width: 5%;
+    max-width: 15%;
     height:auto;
     display:block;
     margin-left:auto;
     margin-right:auto;
+    margin-top: 60px;
 }
 
 

@@ -1,9 +1,5 @@
-input:focus{
-    background-color: aliceblue;
-}
-
 body{
-    background-color: rgb(44, 62, 80);
+    background-color: #c10000;      /*Change into darker read/ use background image*/
     margin:0;
 }
 
@@ -11,7 +7,7 @@ form{
     position: absolute;
     text-align:center;
     width: 350px;
-    background-color: rgb(236, 240, 241);
+    background-color: #eeeeee;
     padding: 30px;
     top:50%;
     left:50%;
@@ -27,6 +23,8 @@ form{
 
 .formInput:focus{
     border: 2px solid rgb(124, 180, 252);
+    background-color: aliceblue;
+    outline:0;
 }
 
 #comments{
@@ -40,7 +38,8 @@ form{
 }
 
 .buttons{
-    border-radius: 8px;
+    border:2px solid;
+    border-radius: 10px;
     padding:6px;
     margin-top: 20px;
     margin-left: 10px;
@@ -49,9 +48,21 @@ form{
     transition: 0.75s;
 }
 
+.buttons:focus{
+    outline:0;
+}
+
+form input[type=reset]{
+    border-color: rgb(231, 76, 60);
+}
+
 form input[type=reset]:hover{
     background-color: rgb(231, 76, 60);
     cursor: pointer;
+}
+
+form input[type=submit]{
+    border-color: lightseagreen;
 }
 
 form input[type=submit]:hover{
@@ -60,11 +71,12 @@ form input[type=submit]:hover{
 }
 
 #logo{
-    max-width: 5%;
+    max-width: 15%;
     height:auto;
     display:block;
     margin-left:auto;
     margin-right:auto;
+    margin-top: 60px;
 }
 
 

@@ -1,0 +1,53 @@
+/**{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#toTopButton{
+    display:none;
+    position: fixed;
+    bottom: 20px;
+    right: 18px;
+    z-index: 1000;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color:#260000;
+    color: #c10000;
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+}*/
+
+html, body{
+    height:100%             /*to match the prallax background*/
+}
+
+#coverImage, #image2{
+    width:100%;
+    height:auto;
+}
+
+.content{
+    height:500px;
+    background-color: lightblue;
+}
+
+.parallaxBackground{
+    background-image: url('images/disneyland-wallpaper.jpg');
+    height:70%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#logo{
+    max-width: 15%;
+    height:auto;
+    margin-top: 60px;
+    float:left;
+}

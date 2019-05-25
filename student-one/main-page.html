@@ -1,0 +1,192 @@
+<html>
+  <head>
+    <title>Test</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../common-resources/style.css"
+    />
+    <style>
+      /* * {
+        font-family: Roboto;
+      } */
+      body {
+        background: radial-gradient(
+          425.91px at 50% 54.74%,
+          #758ad3 0%,
+          #3f4e85 100%
+        );
+        width: 100%;
+      }
+      p {
+        margin: 0;
+      }
+      .title {
+        /* New in Store! */
+        font-style: normal;
+        font-weight: bold;
+        font-size: 48px;
+        margin-left: 90px;
+        margin-top: 20px;
+        color: #ffffff;
+
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      button {
+        background: linear-gradient(180deg, #5eff9e 0%, #45d16c 100%);
+        border-radius: 10px;
+        /* TEXT */
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        text-align: center;
+        color: #ffffff;
+        padding: 10px;
+        margin-left: 32px;
+        margin-top: 30px;
+      }
+
+      .productCard {
+        background: #222222;
+        border-radius: 20px;
+        /* padding: 16px; */
+        text-align: center;
+      }
+
+      .image {
+        background: #333333;
+        border-radius: 20px 20px 5px 5px;
+      }
+
+      #productsRow {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Float four columns side by side */
+      .column {
+        width: 25%;
+        padding: 0 30px;
+        display: inline-block;
+      }
+
+      /* Remove extra left and right margins, due to padding */
+      .row {
+        margin: 0 -5px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+          display: block;
+          margin-bottom: 20px;
+        }
+      }
+
+      /* Style the counter cards */
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        /* padding: 16px; */
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+
+      img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 100%;
+      }
+
+      .productTitle {
+        text-align: left;
+        margin-left: 20px;
+        margin-top: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+
+        color: #ffffff;
+      }
+
+      .productDescription {
+        text-align: left;
+        margin-top: 10px;
+        margin-left: 20px;
+        padding-bottom: 15px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+
+        color: #ffffff;
+      }
+
+      .productPrice {
+        text-align: right;
+        color: #ffffff;
+        margin-right: 20px;
+        margin-top: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        float: right;
+        color: #ffffff;
+      }
+
+      #personalInfoCard {
+        background: #222222;
+        border-radius: 20px;
+        margin: 0px 100px 0px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">New In Store!</h1>
+    <div class="row">
+      <div class="column">
+        <div class="productCard">
+          <img src="download.jpeg" />
+          <p class="productPrice">$15.99</p>
+          <p class="productTitle">Blue Rose</p>
+          <p class="productDescription">Perfect for Thanksgiving</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="productCard">
+          <img src="download.jpeg" />
+          <p class="productPrice">$12.99</p>
+          <p class="productTitle">Product Name</p>
+          <p class="productDescription">Description</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="productCard">
+          <img src="download.jpeg" />
+          <p class="productPrice">$12.99</p>
+          <p class="productTitle">Product Name</p>
+          <p class="productDescription">Description</p>
+        </div>
+      </div>
+    </div>
+    <div id="personalInfoCard">
+      <h1 class="title">Personal Info</h1>
+    </div>
+  </body>
+</html>

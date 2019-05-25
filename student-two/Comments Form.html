@@ -4,17 +4,17 @@
         <title>
             Feedback
         </title>
-        <link rel="stylesheet" type="text/css" href="External CSS-2.css">
+        <link rel="stylesheet" type="text/css" href="External CSS-Form.css">
     </head>
     <body>
         
         <header>
-            <!--nav bar comes here-->
+            <object type="image/svg+xml" id="logo" data="../common-resources/HeroesUnited.svg">
+                Logo image
+            </object>
+
+            <!--logo + nav bar comes here-->
         </header>
-
-        <h1></h1>
-
-        <img id="logo" src="random_logo.png"/>
 
         <form name="commentsForm" onsubmit="return formValidation()" method="POST">
             <label for="customerName">Name:</label><br/>
@@ -31,7 +31,7 @@
             <input type="radio" name="rating" value="very good"/>
             <br/><br/>
 
-            <label for="comments">Comments</label><br/>
+            <label for="comments">Comments:</label><br/>
             <textarea placeholder="Let us know how well you enjoyed!" name="comments" id="comments" class="formInput" cols="40" rows="3"></textarea><br/><br/>
             
             <input type="reset" value="Reset Form" class="buttons" />
@@ -40,7 +40,7 @@
         </form>
 
 
-        <footer></footer>
+        <footer><!--details--></footer>
 
 
         <script>
@@ -49,8 +49,14 @@
                 var radioCheck = document.forms["commentsForm"]["rating"].value;
                 var commentsOut = document.forms["commentsForm"]["comments"].value;
                 
-                if((nameCheck=="") || (radioCheck=="")){
+                if((nameCheck=="") && (radioCheck=="")){
                     alert("Please fill-in the compulsory fields- \n \u2022Name \n \u2022Rating");
+                    return false;
+                } else if(nameCheck==""){
+                    alert("Please fill-in the compulsory field- \n \u2022Name");
+                    return false;
+                } else if(radioCheck==""){
+                    alert("Please fill-in the compulsory field- \n \u2022Rating");
                     return false;
                 } else{
                     alert("Dear "+nameCheck+", Thank you very much for your feedback. You have rated our site as "+radioCheck+" and your comment was, \""+commentsOut+'\"');

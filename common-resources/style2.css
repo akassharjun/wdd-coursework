@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#toTopButton{
+    display:none;
+    position: fixed;
+    bottom: 20px;
+    right: 18px;
+    z-index: 1000;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color:#260000;
+    color: #c10000;
+    cursor: pointer;
+    padding: 10px 15px 10px 15px;
+    border-radius: 4px;
+}
+
+footer{
+    display:block;
+    height:200px;
+    background-color: rgb(34, 34, 34);
+}

@@ -23,8 +23,12 @@ html{
     border-radius: 4px;
 }*/
 
-#coverImage{
-    width:100vw;
+html, body{
+    height:100%             /*to match the prallax background*/
+}
+
+#coverImage, #image2{
+    width:100%;
     height:auto;
 }
 
@@ -33,9 +37,17 @@ html{
     background-color: lightblue;
 }
 
-#imageBehind{
-    position:fixed;
-    width:100vw;
+.parallaxBackground{
+    background-image: url('images/disneyland-wallpaper.jpg');
+    height:70%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#logo{
+    max-width: 15%;
     height:auto;
-    background-repeat: no-repeat
+    margin-top: 60px;
+    float:left;
 }

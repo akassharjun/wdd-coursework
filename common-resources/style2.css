@@ -22,3 +22,9 @@ html{
     padding: 10px 15px 10px 15px;
     border-radius: 4px;
 }
+
+footer{
+    display:block;
+    height:200px;
+    background-color: rgb(34, 34, 34);
+}

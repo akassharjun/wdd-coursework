@@ -4,64 +4,85 @@
         <title>Funko POP!</title>
         <style>
             *{
-                background-color: black;
-                box-sizing: border-box;
-                color: blue;
-                font-family: intro;
+                margin: 0px;
+                padding: 0px;
             }
-            header{
-                background-color: black;
-                overflow: auto;
+            #header{
+                background: black;
             }
-            .mainBody{
-                background-color: #ffffff;
-                z-index: 1;
+            #header img{
+                margin: 20px;
             }
-            .bobHeads{
-                margin: auto;
+            .products{
+                text-align: center;
             }
-            .hi{
-                height: 25%;
-                width: 25%;
+            .allProducts{
+                margin-top: 20px;
+                margin-right: 20px;
+                margin-left: 20px;
+                background: #ccc;
+                width: 300px;
+                height: 300px;
                 float: left;
-                margin: 10px
+                padding: 25px;
+                padding-right: 0px;
+                padding-bottom: 100px;
             }
-            #marvelLogo{
-                height: 10%;
-                width: 10%;
-                margin: auto;
+            .allProducts img{
+                float: left;
+                height: 90%;
             }
-            #funkoLogo{
-                height: 10%;
-                width: 10%;
-                position: relative;                
+            .productButtons{
+                padding: 10px;
+                background: #656565;
+                border: none;
+                margin-right: 10%;
+                margin-top: 20px;
             }
+            .addToCart{
+                text-align: center;
 
+            }
         </style>
+
     </head>
     <body>
-        <section id="LogoHeader">
-            <img src="Images\Logos\marvelSVG.webp" alt="Marvel Comics" class="Logos" id="marvelLogo">
-            <img src="Images\Logos\funko-seeklogo.com.svg" alt="Funko" class="Logos" id="funkoLogo">
-        </section>
-        <div< id="product 1" class="allProducts">
-        <img src="Images\funkoGallery\blackwidow.png" height="20%" width="20%">
-        </div>
-        <div< id="product 2" class="allProducts">
-            <img src="Images\funkoGallery\captainamerica.png" height="20%" width="20%">
-
-        </div>
-        <div< id="product 3" class="allProducts">
-            <img src="Images\funkoGallery\groot.png" height="20%" width="20%">
-
-        </div>
-        <div< id="product 4" class="allProducts">
-            <img src="Images\funkoGallery\ironman.png" height="20%" width="20%">
-
-        </div>
-        <div< id="product 5" class="allProducts">
-            <img src="Images\funkoGallery\ironspiderman.png" height="20%" width="20%">
-
+        <header id="header" >
+            <div>
+                <img src="Images\Logos\funko-seeklogo.com.svg" alt="Funko" height="100px">
+            </div>
+        </header>
+        <div id="products">
+            <div id="product 1" class="allProducts">
+                <img src="Images\funkoGallery\blackwidow.png"> 
+                <div class="addToCart">
+                    <input type="button" value="Add to Cart" class="productButtons">
+                </div>
+            </div>
+            <div id="product 2" class="allProducts">
+                <img src="Images\funkoGallery\captainamerica.png">
+                <div class="addToCart">
+                    <input type="button" value="Add to Cart" class="productButtons">
+                </div>
+            </div>
+            <div id="product 3" class="allProducts">
+                <img src="Images\funkoGallery\groot.png">
+                <div class="addToCart">
+                    <input type="button" value="Add to Cart" class="productButtons">
+                </div>
+            </div>
+            <div id="product 4" class="allProducts">
+                <img src="Images\funkoGallery\ironman.png">
+                <div class="addToCart">
+                    <input type="button" value="Add to Cart" class="productButtons">
+                </div>
+            </div>
+            <div id="product 5" class="allProducts">
+                <img src="Images\funkoGallery\ironspiderman.png">
+                <div class="addToCart">
+                    <input type="button" value="Add to Cart" class="productButtons">
+                </div>
+            </div>
         </div>
 
 

@@ -13,6 +13,21 @@
             #header img{
                 margin: 20px;
             }
+            li{
+                padding: 20px;
+                float: left;
+                list-style-type: none;
+                background: #c10000;
+            }
+            #navigationBar:before, #navigationBar:after{
+                background: #c10000;
+                display: table;
+                content: "";
+            }
+            #navigationBar:after{
+                clear: both;
+
+            }
             .products{
                 text-align: center;
             }
@@ -20,13 +35,14 @@
                 margin-top: 20px;
                 margin-right: 20px;
                 margin-left: 20px;
-                background: #ccc;
                 width: 300px;
                 height: 300px;
                 float: left;
                 padding: 25px;
                 padding-right: 0px;
                 padding-bottom: 100px;
+                box-shadow: 1px 1px 10px #ccc;
+
             }
             .allProducts img{
                 float: left;
@@ -38,6 +54,13 @@
                 border: none;
                 margin-right: 10%;
                 margin-top: 20px;
+                background: rgb(138, 138, 138);
+                border-radius: 40px;
+                transition: 0.2s;
+            }
+            .productButtons:hover{
+                background: #006eff;
+                color: aliceblue;
             }
             .addToCart{
                 text-align: center;
@@ -52,6 +75,16 @@
                 <img src="Images\Logos\funko-seeklogo.com.svg" alt="Funko" height="100px">
             </div>
         </header>
+        <div id="navigationBar">
+            <ul>
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
+                <li><a href="#">link 3</a></li>
+                <li><a href="#">link 4</a></li>
+                <li><a href="#">link 5</a></li>
+                <li><a href="#">link 6</a></li>
+            </ul>
+        </div>
         <div id="products">
             <div id="product 1" class="allProducts">
                 <img src="Images\funkoGallery\blackwidow.png"> 

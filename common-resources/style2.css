@@ -28,3 +28,19 @@ footer{
     height:200px;
     background-color: rgb(34, 34, 34);
 }
+
+/*header styling*/
+
+header{
+    background:#c10000;
+    height: 100px;
+    transition: all 1s ease-in-out;
+}
+header:hover{
+    background:#ff4949;        
+}
+header img{
+    height: 100%;
+    margin-top: 10px;
+    margin-left: 15px;
+}

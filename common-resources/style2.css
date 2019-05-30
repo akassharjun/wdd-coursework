@@ -44,3 +44,10 @@ header img{
     margin-top: 10px;
     margin-left: 15px;
 }
+
+#logo{                          /*logo placement above the navbar(in the)*/
+    max-width: 15%;
+    height:auto;
+    margin-top: 30px;
+    float:left;
+}

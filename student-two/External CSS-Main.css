@@ -32,22 +32,32 @@ html, body{
     height:auto;
 }
 
-.content{
-    height:500px;
+.contentShort{
+    height:350px;
+
+}
+
+.contentLong{
+    height:430px;
     background-color: lightblue;
 }
 
 .parallaxBackground{
     background-image: url('images/disneyland-wallpaper.jpg');
-    height:70%;
+    height:40%;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
 }
 
-#logo{
+hr{
+    border-width:2px;
+    border-color: chartreuse        /*temporary colour for identification*/
+}
+
+/*#logo{
     max-width: 15%;
     height:auto;
-    margin-top: 60px;
+    margin-top: 30px;
     float:left;
-}
+}*/

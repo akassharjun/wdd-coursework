@@ -38,8 +38,9 @@ html, body{
 }
 
 .contentLong{
+    position: relative;
     height:430px;
-    background-color: lightblue;
+    background-color: aliceblue;            /*temporary colour for identification*/
 }
 
 .parallaxBackground{
@@ -60,14 +61,16 @@ html, body{
 }
 
 span.contentOverImg{
+    padding:15px;
     font-size: 30px;
+    font-weight: 500;
     color: midnightblue;
     background-color: lightgoldenrodyellow;
 }
 
 hr{
     border-width:2px;
-    border-color: chartreuse        /*temporary colour for identification*/
+    border-color: chartreuse;        /*temporary colour for identification*/
 }
 
 /*#logo{
@@ -76,3 +79,21 @@ hr{
     margin-top: 30px;
     float:left;
 }*/
+
+.imgRight{
+    position: relative;
+    float:right;
+    background-color: rebeccapurple;
+    width:28%;
+    height:85%;
+    margin: 30px 100px;
+}
+
+.imgLeft{
+    position: relative;
+    float:left;
+    background-color: rebeccapurple;
+    width:28%;
+    height:85%;
+    margin: 30px 100px;
+}

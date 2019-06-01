@@ -245,15 +245,21 @@
                 document.getElementById("description").innerHTML = document.getElementById("description5").innerHTML;
 
             }
+            //function to call when colours change is requested
             function changeBGColour(){
                 console.log("within changeBGColour function");
+                //variables assigned to the values of the chosen options
                 var chosenBGColour;
-                var colourValue = document.getElementById("BGColourSelection").value;
-                console.log("bg colour is" + colourValue);
+                var chosenFontColour;
+                chosenBGColour = document.getElementById("BGColourSelection").value;
+                chosenFontColour = document.getElementById("fontColourSelection").value;
+
+                console.log("bg colour is" + chosenBGColour);
+                console.log("font colour is" + chosenFontColour);
                 //document.body.style.backgroundColor = "#000000";
 
-
-                switch (colourValue){
+                //using switch case to change background and font colour
+                switch (chosenBGColour){
                     case "SelectBGColour":
                         console.log("inside switchcase")
                         document.body.style.backgroundColor = "#ffffff";
@@ -309,6 +315,34 @@
                         break;
                     
                 }
+
+                switch (chosenFontColour){
+                    case "fontColour1":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#f4d742";
+                        break;
+                        break;
+                    case "fontColour2":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#ce1212";
+                        break;
+                    case "fontColour3":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#4f4f4f";
+                        break;
+                    case "fontColour4":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#1db758";
+                        break;
+                    case "fontColour5":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#2e3bb2";
+                        break;
+                    case "fontColour6":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#ffffff";
+                        break;
+                }
             }
             
 
@@ -339,23 +373,23 @@
         <div id="formDivision">
             <form id="form">
                 <select id="BGColourSelection" class="colourSelection" onchange="changeBGColour()">
-                    <option id="SelectBGColour">Select a Background colour</option>
-                    <option value="BGColour1">black</option>
-                    <option value="BGColour2">yellow ochre</option>
-                    <option value="BGColour3">crimson</option>
-                    <option value="BGColour4">sea blue</option>
-                    <option value="BGColour5">grey</option>
-                    <option value="BGColour6">pink</option>
+                    <option value="SelectBGColour">Select a Background colour</option>
+                    <option value = "BGColour1">black</option>
+                    <option value = "BGColour2">yellow ochre</option>
+                    <option value = "BGColour3">crimson</option>
+                    <option value = "BGColour4">sea blue</option>
+                    <option value = "BGColour5">grey</option>
+                    <option value = "BGColour6">pink</option>
                 </select>
 
-                <select id="fontColourSelection" class="colourSelection">
-                    <option id="SelectFontColour">Select a Font colour</option>
-                    <option id="fontColour1" onchange="">1</option>
-                    <option id="fontColour2" onchange="">2</option>
-                    <option id="fontColour3" onchange="">3</option>
-                    <option id="fontColour4" onchange="">4</option>
-                    <option id="fontColour5" onchange="">5</option>
-                    <option id="fontColour6" onchange="">6</option>
+                <select id="fontColourSelection" class="colourSelection" onchange="changeBGColour()">
+                    <option value = "SelectFontColour">Select a Font colour</option>
+                    <option value = "fontColour1">1</option>
+                    <option value = "fontColour2">2</option>
+                    <option value = "fontColour3">3</option>
+                    <option value = "fontColour4">4</option>
+                    <option value = "fontColour5">5</option>
+                    <option value = "fontColour6">6</option>
                 </select>
                 <input type="button" value="Click me!" id="submitButton" class="colourSelectionButtons">
                 <input type="reset" value="Reset" id="resetButton" class="colourSelectionButtons">

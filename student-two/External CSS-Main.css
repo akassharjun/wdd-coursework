@@ -86,7 +86,7 @@ hr{
     background-color: rebeccapurple;
     width:28%;
     height:85%;
-    margin: 30px 100px;
+    margin: 30px 100px 30px 0;
 }
 
 .imgLeft{
@@ -95,5 +95,31 @@ hr{
     background-color: rebeccapurple;
     width:28%;
     height:85%;
-    margin: 30px 100px;
+    margin: 30px 0 30px 100px;
+}
+
+.imgDescriptionRight{
+    text-align: center;
+    position: relative;
+    float:left;
+    background-color: blue;    /*not requ.     only for identification*/
+    width:40%;                  /*not requ.     only for identification*/
+    height:85%;                  /*not requ.     only for identification*/
+    margin: 30px 0 0 100px;
+}
+
+.imgDescriptionLeft{
+    text-align: center;
+    position: relative;
+    float:right;
+    background-color: blue;     /*not requ.     only for identification*/
+    width:40%;                  /*not requ.     only for identification*/
+    height:85%;                  /*not requ.     only for identification*/
+    margin: 30px 100px 0 0;
+}
+.imgDescriptionCommon{
+    position: relative;
+    color:white;
+    top: 50%;
+    font-size: 20px;
 }

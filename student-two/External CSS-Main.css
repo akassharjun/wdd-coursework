@@ -48,6 +48,21 @@ html, body{
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    position: relative;
+    opacity:0.8;
+}
+
+.caption{
+    position: relative;
+    width:100%;
+    text-align:center;
+    top:50%;
+}
+
+span.contentOverImg{
+    font-size: 30px;
+    color: midnightblue;
+    background-color: lightgoldenrodyellow;
 }
 
 hr{

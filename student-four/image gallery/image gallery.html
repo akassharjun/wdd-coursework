@@ -22,6 +22,10 @@
                 margin-left: 15px;
             }   
             /*Navigation bar*/
+            #navigationLists{
+                width: 100%;
+                background: #000;
+            }
             #navigationLists:before,#navigationLists:after{
                 background: #c10000;
                 display: table;
@@ -32,9 +36,12 @@
             }
             li{
                 list-style: none;
+                text-align: center;
+                margin: 0px;
+                width:12.5%;
                 float:left;
                 padding: 20px;
-                background: rgb(255, 255, 255);
+                background: #000;
                 z-index: -1;
             } 
             li:hover{
@@ -95,6 +102,11 @@
                 transition: all 0.1s ease-in-out;
                 color: #000;
                 opacity: 1;
+            }
+            option{
+                background: #000;
+                color: #ffffff;
+                border-radius: 50px;
             }
             /* gallery division components*/
             .galleryDivision{
@@ -379,22 +391,22 @@
             <form id="form">
                 <select id="BGColourSelection" class="colourSelection" onchange="changeBGColour()">
                     <option value="SelectBGColour">Select a Background colour</option>
-                    <option value = "BGColour1">black</option>
-                    <option value = "BGColour2">yellow ochre</option>
-                    <option value = "BGColour3">crimson</option>
-                    <option value = "BGColour4">sea blue</option>
-                    <option value = "BGColour5">grey</option>
-                    <option value = "BGColour6">pink</option>
+                    <option value = "BGColour1">Black</option>
+                    <option value = "BGColour2">Yellow ochre</option>
+                    <option value = "BGColour3">Crimson</option>
+                    <option value = "BGColour4">Sea blue</option>
+                    <option value = "BGColour5">Grey</option>
+                    <option value = "BGColour6">Pink</option>
                 </select>
 
                 <select id="fontColourSelection" class="colourSelection" onchange="changeBGColour()">
                     <option value = "SelectFontColour">Select a Font colour</option>
-                    <option value = "fontColour1">1</option>
-                    <option value = "fontColour2">2</option>
-                    <option value = "fontColour3">3</option>
-                    <option value = "fontColour4">4</option>
-                    <option value = "fontColour5">5</option>
-                    <option value = "fontColour6">6</option>
+                    <option value = "fontColour1">Yellow</option>
+                    <option value = "fontColour2">Red</option>
+                    <option value = "fontColour3">Ash</option>
+                    <option value = "fontColour4">Green</option>
+                    <option value = "fontColour5">Blue</option>
+                    <option value = "fontColour6">White</option>
                 </select>
                 <input type="reset" value="Reset" id="resetButton" class="colourSelectionButtons" onclick="resetPage();">
             </form>
@@ -421,7 +433,7 @@
             <div id="imageDiv"></div>
             <div id="description"></div>
         </div>
-        <div id="allDescriptions"><!--HAVENT SET STYLING except visibility-->
+        <div id="allDescriptions">
             <div id="description1">Universal Studios Hollywood is a film studio and theme park in the San Fernando Valley area of Los Angeles County, California. About 70% of the studio lies within the unincorporated county island known as Universal City while the rest lies within the city limits of Los Angeles, California. It is one of the oldest and most famous Hollywood film studios still in use. Its official marketing headline is "The Entertainment Capital of LA".[1] It was initially created to offer tours of the real Universal Studios sets and is the first of many full-fledged Universal Studios Theme Parks located across the world.
 
             Outside the theme park, a new, all-digital facility near the Universal Pictures backlot was built in an effort to merge all of NBCUniversal's West Coast operations into one area. As a result, the current home for KNBC, KVEA and NBC News with Telemundo Los Angeles Bureaus with new digital facility is on the Universal lot formerly occupied by Technicolor SA. Universal City includes hotels Universal Hilton & Towers, the Sheraton Universal Hotel, and Universal CityWalk, which offers a collection of shops, restaurants, an 18-screen Universal Cinema and a seven-story IMAX theater. In 2017, the park hosted 9,056,000 guests, ranking it 15th in the world and 9th among North American parks.[3]</div>

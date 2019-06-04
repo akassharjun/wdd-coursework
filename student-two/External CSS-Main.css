@@ -1,4 +1,4 @@
-/**{
+/**{                                This is in the common external css - style2
     margin:0;
     padding:0;
 }
@@ -32,11 +32,23 @@ html, body{
     height:auto;
 }
 
-.contentStrip{
-    height:350px;
-
+.contentStripTop{
+    height:130px;
+    margin-top:30px;
+    text-align:center;
 }
 
+.contentStripBottom{
+    position: relative;
+    height:350px;
+    margin-top:30px;
+    text-align:center;
+}
+
+.contentStripBottom .imgDescriptionCommon{
+    position: relative;
+    top:50%;
+}
 
 .contentLarge{
     position: relative;
@@ -94,11 +106,12 @@ html, body{
     opacity:0.8;
 }
 
-.caption{
+.caption{                   /*text over parallax area*/
     position: relative;
     width:100%;
     text-align:center;
     top:50%;
+    font-style: italic;
 }
 
 span.contentOverImg{

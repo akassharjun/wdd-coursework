@@ -1,6 +1,5 @@
 *{
     margin: auto;
-    display: grid;
 }
 /*Logo/header*/
 header{
@@ -18,29 +17,25 @@ header img{
 }   
 /*Navigation bar*/
 #navigationLists{
-    width: 100%;
-    background: #000;
+    background-color:#000;
+    height: 50px;
 }
-#navigationLists:before,#navigationLists:after{
-    background: #c10000;
-    display: table;
-    content: "";
-} 
-#navigationLists:after {
-    clear: both;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
-li{
-    list-style: none;
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
     text-align: center;
-    margin: 0px;
-    width:12.5%;
-    float:left;
-    padding: 20px;
-    background: #000;
-    z-index: -1;
-} 
-li:hover{
-    background: #00FF7C;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 /*Heading*/
 #headingDiv{
@@ -206,4 +201,4 @@ option{
 /*Hidden images*/            
 #hiddenImage{
     visibility: hidden;
-  
+}

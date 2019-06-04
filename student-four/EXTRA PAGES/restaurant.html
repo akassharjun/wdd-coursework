@@ -14,67 +14,73 @@
             header{
                 background:#004682;
                 height: 100%;
-                transition: all 1s ease-in-out;
+                transition: all 0.5s ease-in-out;
                 grid-gap:0px;
                 grid-column: 1/21;
                 grid-row: 1/7;
             }
             header:hover{
-                background:#0295ce;        
+                background:#0370b7;        
             }
             header img{
-                height: 100%;
+                height: 100px;
                 margin-top: 1%;
                 margin-left: 1%;
                 grid-column: 1/3;
-                grid-row: 2/8;
+                grid-row: 1/2;
             }  
             /*Navigation bar*/
-            /*#navigationLists:before,#navigationLists:after{
-                background: #c10000;
-                display: table;
-                content: "";
-            } 
-            #navigationLists:after {
-                clear: both;
-            }*/
             #navigationLists{
                 grid-column: 1/21;
-                grid-row: 7/12;
+                grid-row: 7/11;
             }
-            li{
-                list-style: none;
-                float:left;
-                padding: 20px;
-                background: #333;
-            } 
-            li:hover{
-                background: #ccc;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background: #07d1bf;
             }
-            /*restaurant containers*/
-            .restaurantImagesAndDetails{
-                height: 400px;
-                width: 420px;
-                margin: 10px;
-                background: #c10000;
+
+
+            li {
                 float: left;
+            }
+            li a {
+                display: block;
+                color: white;
                 text-align: center;
+                padding: 15px 20px;
+                text-decoration: none;
+                background: #07d1bf;
+                transition: 0.3s;
+
             }
-            .restaurantImages img{
-                height: 200px;
-                width: 400px;
-                margin: 10px;
-            }
-            .allcontainers{
-                padding: 20px;
+            li a:hover{
+                background: #60f4a0;
             }
             /*Body container*/
             .bodyContainer {
                 display: grid;
                 grid-template-columns: repeat(20,1fr);
-                grid-template-rows: repeat(50,1vw);
+                grid-template-rows: 3.7em auto auto;
                 grid-gap: 0px 10px;
             }
+            /*Restaurant selection menu*/
+            #restaurant-form{
+                display: block;
+                grid-row: 13/18;
+                grid-column: 6/15;
+                float: left;
+                margin-top: 20px;
+                background: #0370b7;
+                border-radius: 20px;
+
+            }
+            form{
+                margin:auto;
+            }
+            
             
         </style>
     </head>
@@ -95,6 +101,28 @@
                         <li><a href="#">Link 5</a></li>                
                     </ul>
                 </nav>
+            </div>
+            <div id="restaurant-form">
+                <form action="post">
+                    <select class="select-option" id="select-location">
+                        <option selected>Select location</option>
+                        <option>Loc 1</option>
+                        <option>Loc 2</option>
+                        <option>Loc 3</option>
+                        <option>Loc 4</option>
+                        <option>Loc 5</option>
+                    </select>
+                    <select class="select-option" id="select-type">
+                        <option selected>Select Restaurant option</option>
+                        <option>Restaurant</option>
+                        <option>Buffet</option>
+                        <option>Vegetarian choices</option>
+                        <option>Fast-food outlets</option>
+                        <option>Ice cream and Sweets</option>
+                    </select>
+                    <input type="button" id="restaurant-page-update" value="Update">
+                </form>
+
             </div>
         </div>
     </body>

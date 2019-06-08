@@ -97,7 +97,7 @@ html, body{
 
 
 .parallaxBackground{
-    background-image: url('images/disneyland-wallpaper.jpg');
+    background-image: url('images/MainPG-images/disneyland-wallpaper.jpg');
     height:40%;
     background-attachment: fixed;
     background-position: center;

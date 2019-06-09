@@ -24,7 +24,8 @@
             }   
             .bodyContainer{
                 display: grid;  /*using grid layout for fluid website*/
-                grid-template-columns: repeat(12, 8.33333%);
+                grid-template-columns: repeat(12, 7.42%);
+                grid-gap: 1%;
             }
             /*navigation bar*/
             #navigationLists{
@@ -90,40 +91,76 @@
             }
             /*restaurant div containers*/
             .all-restaurants{
-                margin: 1%;
+                margin: 0%;
                 background: #fff;
                 grid-column: 1/13;
                 height: 100%;
                 border-radius: 20px;
                 float: left;
             }
-            img{
-                height: 200px;
-                width: 350px;
-                max-height: 200px;
-                max-width: 350px;
-                border-radius: 20px;
-                margin: auto;
-                
+            img{                
+                width: 100%;
             }
             .restaurants{
-                width: 450px;
-                height: 45%;
+                margin: 3%;
+                height: 100%;
+                text-align: center;
                 transition: 0.2s;
                 background: #969696;
                 grid-column: 2/6;
-                margin: 10px;
-                padding: 10px; 
                 float: left;
             }
             .restaurants:hover{
                 transform: scale(1.01);
             }
-            
-            
-            
+            /*Aligning all divisions containing restaurants to the grid*/
+            #restaurant-1{
+                grid-column: 1/5;                
+            }
+            #restaurant-2{
+                grid-column: 5/9;                
+            }
+            #restaurant-3{
+                grid-column: 9/13;                
+            }
+            #restaurant-4{
+                grid-column: 1/5;                
+            }
+            #restaurant-5{
+                grid-column: 5/9;                
+            }
+            #restaurant-6{
+                grid-column: 9/13;                
+            }
+            #restaurant-7{
+                grid-column: 1/5;                
+            }
+            /*restaurant heading and description*/
+            .restaurant-heading{
+                margin: 5px;
+                font-family: sans-serif;
+                font-size: 30px;
+                text-align: left;
+            }
+            .restaurant-description{
+                margin: 5px;
+                font-family: sans-serif;
+                font-size: 15px;
+                text-align: justify;
+            }            
 
         </style>
+        <script>
+            function changeDiningOption(){
+                var diningOption;
+                var diningLocation;
+                diningOption = document.getElementById("select-type").value;
+                diningLocation = document.getElementById("select-location").value;
+                console.log("the dining option is " + diningOption);
+                console.log("the dining location is " + diningLocation);
+            }
+            
+        </script>
     </head>
     <body>
         <!--logo-->
@@ -161,39 +198,46 @@
                         <option>Fast-food outlets</option>
                         <option>Ice cream and Sweets</option>
                     </select>
-                    <input type="button" id="restaurant-page-update" value="Update">
+                    <input type="button" id="restaurant-page-update" value="Update" onclick="changeDiningOption();">
                 </form>
             </div>
-            <div class="all-restaurants">
                 <div class="restaurants" id="restaurant-1">
                     <img src="Images\Restaurant\Fastfood.jpg">
-                    dfsdfsdf
+                    <div class="restaurant-heading">
+                        Fast food fiesta
+                    </div>    
+                    <div class="restaurant-descripton">
+                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
+                        fsdkl skd fk f  s  ss
+                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
+                         asoig asoig asi
+                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                    </div>
                 </div>
                 <div class="restaurants" id="restaurant-2">
                     <img src="Images\Restaurant\Fastfood.jpg">
-                    sdfsdfs
+                
                 </div>
                 <div class="restaurants" id="restaurant-3">
                     <img src="Images\Restaurant\Fastfood1.jpg">
-                    sdfsdfs
+                
                 </div>
                 <div class="restaurants" id="restaurant-4">
                     <img src="Images\Restaurant\restaraunt.jpg">
-                    sdfsdfs
+                
                 </div>
                 <div class="restaurants" id="restaurant-5">
                     <img src="Images\Restaurant\vegetarian.jpg">
-                    sdfsdfs
+                
                 </div>
                 <div class="restaurants" id="restaurant-6">
                     <img src="Images\Restaurant\candy.jpg">
-                    sdfsdfs
+                
                 </div>
                 <div class="restaurants" id="restaurant-7">
                     <img src="Images\Restaurant\icecream.jpg">
-                    sdfsdfs
+                
                 </div>                
-            </div>
         </div>
     </body>
 </html>

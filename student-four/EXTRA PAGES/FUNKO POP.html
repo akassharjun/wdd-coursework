@@ -4,46 +4,119 @@
         <title>Funko POP!</title>
         <style>
             *{
-                background-color: black;
-                box-sizing: border-box;
-                color: blue;
-                font-family: intro;
+                margin: 0px;
+                padding: 0px;
             }
-            header{
-                background-color: black;
-                overflow: auto;
+            #header{
+                background: black;
             }
-            .mainBody{
-                background-color: #ffffff;
-                z-index: 1;
+            #header img{
+                margin: 20px;
             }
-            .bobHeads{
-                margin: auto;
-            }
-            .hi{
-                height: 25%;
-                width: 25%;
+            li{
+                padding: 20px;
                 float: left;
-                margin: 10px
+                list-style-type: none;
+                background: #c10000;
             }
-            #marvelLogo{
-                height: 10%;
-                width: 10%;
-                margin: auto;
+            #navigationBar:before, #navigationBar:after{
+                background: #c10000;
+                display: table;
+                content: "";
             }
-            #funkoLogo{
-                height: 10%;
-                width: 10%;
-                position: relative;                
-            }
+            #navigationBar:after{
+                clear: both;
 
+            }
+            .products{
+                text-align: center;
+            }
+            .allProducts{
+                margin-top: 20px;
+                margin-right: 20px;
+                margin-left: 20px;
+                width: 300px;
+                height: 300px;
+                float: left;
+                padding: 25px;
+                padding-right: 0px;
+                padding-bottom: 100px;
+                box-shadow: 1px 1px 10px #ccc;
+
+            }
+            .allProducts img{
+                float: left;
+                height: 90%;
+            }
+            .productButtons{
+                padding: 10px;
+                background: #656565;
+                border: none;
+                margin-right: 10%;
+                margin-top: 20px;
+                background: rgb(138, 138, 138);
+                border-radius: 40px;
+                transition: 0.2s;
+            }
+            .productButtons:hover{
+                background: #006eff;
+                color: aliceblue;
+            }
+            .addToCart{
+                text-align: center;
+
+            }
         </style>
+
     </head>
     <body>
-        <section id="LogoHeader">
-            <img src="Images\Logos\marvelSVG.webp" alt="Marvel Comics" class="Logos" id="marvelLogo">
-            <img src="Images\Logos\funko-seeklogo.com.svg" alt="Funko" class="Logos" id="funkoLogo">
-        </section>
+        <header id="header" >
+            <div>
+                <img src="Images\Logos\funko-seeklogo.com.svg" alt="Funko" height="100px">
+            </div>
+        </header>
+        <div id="navigationBar">
+            <ul>
+                <li><a href="#">link 1</a></li>
+                <li><a href="#">link 2</a></li>
+                <li><a href="#">link 3</a></li>
+                <li><a href="#">link 4</a></li>
+                <li><a href="#">link 5</a></li>
+                <li><a href="#">link 6</a></li>
+            </ul>
+        </div>
+        <div id="products">
+            <div id="product 1" class="allProducts">
+                <img src="Images\funkoGallery\blackwidow.png"> 
+                <div class="addToCart">
+                    <input type="button" value="Add to Cart" class="productButtons">
+                </div>
+            </div>
+            <div id="product 2" class="allProducts">
+                <img src="Images\funkoGallery\captainamerica.png">
+                <div class="addToCart">
+                    <input type="button" value="Add to Cart" class="productButtons">
+                </div>
+            </div>
+            <div id="product 3" class="allProducts">
+                <img src="Images\funkoGallery\groot.png">
+                <div class="addToCart">
+                    <input type="button" value="Add to Cart" class="productButtons">
+                </div>
+            </div>
+            <div id="product 4" class="allProducts">
+                <img src="Images\funkoGallery\ironman.png">
+                <div class="addToCart">
+                    <input type="button" value="Add to Cart" class="productButtons">
+                </div>
+            </div>
+            <div id="product 5" class="allProducts">
+                <img src="Images\funkoGallery\ironspiderman.png">
+                <div class="addToCart">
+                    <input type="button" value="Add to Cart" class="productButtons">
+                </div>
+            </div>
+        </div>
 
 
     </body>

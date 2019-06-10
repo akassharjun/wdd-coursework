@@ -1,4 +1,4 @@
-/**{
+/**{                                This is in the common external css - style2
     margin:0;
     padding:0;
 }
@@ -32,22 +32,102 @@ html, body{
     height:auto;
 }
 
-.content{
-    height:500px;
-    background-color: lightblue;
+.contentStripTop{
+    height:130px;
+    margin-top:30px;
+    text-align:center;
 }
 
+.contentStripBottom{
+    position: relative;
+    height:350px;
+    margin-top:30px;
+    text-align:center;
+}
+
+.contentStripBottom .imgDescriptionCommon{
+    position: relative;
+    top:50%;
+}
+
+.contentLarge{
+    position: relative;
+    height:780px;
+    background-color: aliceblue;            /*temporary colour for identification*/
+}
+
+.imgLarge, .imgSmall{
+    margin: auto;
+    width:75%;
+}
+
+.imgLarge{
+    position: relative;
+    top: 20px;
+    background-color:red;               /*temperary colour for identification*/
+    height:450px;
+}
+
+.imgSmall{
+    background-color: white;            /*temperary colour for identification*/
+    height:310px;
+}
+
+.imgSmallLeft{
+    position: relative;
+    float:left;
+    background-color: rebeccapurple;    /*temperary colour for identification*/
+    width:50%;
+    height:310px;
+}
+
+.imgSmallRight{
+    position: relative;
+    float:right;
+    background-color: black;
+    width:50%;
+    height:310px;
+}
+
+.imgDescriptionCommon{
+    color:white;
+    top: 50%;
+    font-size: 20px;
+}
+
+
 .parallaxBackground{
-    background-image: url('images/disneyland-wallpaper.jpg');
-    height:70%;
+    background-image: url('images/MainPG-images/disneyland-wallpaper.jpg');
+    height:40%;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    position: relative;
+    opacity:0.8;
 }
 
-#logo{
+.caption{                   /*text over parallax area*/
+    position: relative;
+    width:100%;
+    text-align:center;
+    top:50%;
+    font-style: italic;
+}
+
+span.contentOverImg{
+    padding:15px;
+    font-size: 30px;
+    font-weight: 500;
+    color: midnightblue;
+    background-color: lightgoldenrodyellow;
+}
+
+
+
+/*#logo{
     max-width: 15%;
     height:auto;
-    margin-top: 60px;
+    margin-top: 30px;
     float:left;
-}
+}*/
+

@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Themed restaurants</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            /*Logo/header*/
+            header{
+                background:#004682;
+                height: 100px;
+                transition: all 1s ease-in-out;
+                grid-column: 1/13;
+            }
+            header:hover{
+                background:#0295ce;        
+            }
+            header img{
+                height: 100%;
+                margin-top: 10px;
+                margin-left: 15px;
+            }   
+            .bodyContainer{
+                display: grid;  /*using grid layout for fluid website*/
+                grid-template-columns: repeat(12, 7.42%);
+                grid-gap: 1%;
+            }
+            /*navigation bar*/
+            #navigationLists{
+                background-color:#000;
+                height: 50px;
+                grid-column: 1/13;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            /*Form*/
+            #restaurant-form{
+                padding: 0px 0px 0px 20px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                grid-column: 1/13;
+                border: none;
+                background: #e2e2e2;
+                border-radius: 10px;
+            }
+            .select-option{
+                padding: 10px;
+                margin: 20px 5px 20px 5px;
+                width: 250px;
+                background:#cccccc;
+                color: #000000;
+                border: none;
+                border-radius: 20px;
+                transition: 0.5s;
+            }
+            .select-option:hover{
+                background: #000000;
+                color: #fff;
+            }
+            #restaurant-page-update{
+                padding: 10px;
+                margin: 20px 20px 20px 5px;
+                width: 100px;
+                background: #000;
+                color: #fff;
+                border: none;
+                border-radius: 20px;
+                transition: all 0.1s ease-in-out;
+            }
+            #restaurant-page-update:hover{
+                background:#60f4a0;
+                color: #000;
+            }
+            /*restaurant div containers*/
+            .all-restaurants{
+                margin: 0%;
+                background: #fff;
+                grid-column: 1/13;
+                height: 100%;
+                border-radius: 20px;
+                float: left;
+            }
+            img{                
+                width: 100%;
+            }
+            .restaurants{
+                margin: 3%;
+                height: 100%;
+                text-align: center;
+                transition: 0.2s;
+                background: #969696;
+                grid-column: 2/6;
+                float: left;
+            }
+            .restaurants:hover{
+                transform: scale(1.01);
+            }
+            /*Aligning all divisions containing restaurants to the grid*/
+            #restaurant-1{
+                grid-column: 1/5;                
+            }
+            #restaurant-2{
+                grid-column: 5/9;                
+            }
+            #restaurant-3{
+                grid-column: 9/13;                
+            }
+            #restaurant-4{
+                grid-column: 1/5;                
+            }
+            #restaurant-5{
+                grid-column: 5/9;                
+            }
+            #restaurant-6{
+                grid-column: 9/13;                
+            }
+            #restaurant-7{
+                grid-column: 1/5;                
+            }
+            /*restaurant heading and description*/
+            .restaurant-heading{
+                margin: 5px;
+                font-family: sans-serif;
+                font-size: 30px;
+                text-align: left;
+            }
+            .restaurant-description{
+                margin: 5px;
+                font-family: sans-serif;
+                font-size: 15px;
+                text-align: justify;
+            }            
+
+        </style>
+        <script>
+            function changeDiningOption(){
+                var diningOption;
+                var diningLocation;
+                diningOption = document.getElementById("select-type").value;
+               //diningLocation = document.getElementById("select-location").value;
+                console.log("the dining option is " + diningOption);
+                //console.log("the dining location is " + diningLocation);
+                switch(diningOption){
+                    case "Restaurant":
+                        document.getElementById
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <!--logo-->
+        <div class="bodyContainer">
+            <header>
+                <img src="..\..\common-resources\3.svg" alt="Logo">    
+            </header>
+            <div id="navigationLists">
+                <nav>
+                    <ul >
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>                
+                    </ul>
+                </nav>
+            </div>
+            <div id="restaurant-form">
+                <form action="post">
+                    <!--<select class="select-option" id="select-location">
+                        <option selected>Select location</option>
+                        <option>Loc 1</option>
+                        <option>Loc 2</option>
+                        <option>Loc 3</option>
+                        <option>Loc 4</option>
+                        <option>Loc 5</option>
+                    </select>
+                -->
+                    <select class="select-option" id="select-type">
+                        <option selected>Select Restaurant option</option>
+                        <option>Restaurant</option>
+                        <option>Buffet</option>
+                        <option>Vegetarian choices</option>
+                        <option>Fast-food outlets</option>
+                        <option>Ice cream and Sweets</option>
+                    </select>
+                    <input type="button" id="restaurant-page-update" value="Update" onclick="changeDiningOption();">
+                </form>
+            </div>
+                <div class="restaurants" id="restaurant-1">
+                    <img src="Images\Restaurant\Fastfood.jpg">
+                    <div class="restaurant-heading">
+                        Fast food fiesta
+                    </div>    
+                    <div class="restaurant-descripton">
+                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
+                        fsdkl skd fk f  s  ss
+                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
+                         asoig asoig asi
+                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                    </div>
+                </div>
+                <div class="restaurants" id="restaurant-2">
+                    <img src="Images\Restaurant\Fastfood.jpg">
+                
+                </div>
+                <div class="restaurants" id="restaurant-3">
+                    <img src="Images\Restaurant\Fastfood1.jpg">
+                
+                </div>
+                <div class="restaurants" id="restaurant-4">
+                    <img src="Images\Restaurant\restaraunt.jpg">
+                
+                </div>
+                <div class="restaurants" id="restaurant-5">
+                    <img src="Images\Restaurant\vegetarian.jpg">
+                
+                </div>
+                <div class="restaurants" id="restaurant-6">
+                    <img src="Images\Restaurant\candy.jpg">
+                
+                </div>
+                <div class="restaurants" id="restaurant-7">
+                    <img src="Images\Restaurant\icecream.jpg">
+                
+                </div>                
+        </div>
+    </body>
+</html>

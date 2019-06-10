@@ -2,7 +2,7 @@
 
 1. Sitemap
 2. Image Gallery
-3. FUNKO! Page
+3. FUNKO! Page ??
 
 # Tasks
 

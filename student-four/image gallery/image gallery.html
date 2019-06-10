@@ -1,7 +1,11 @@
 <html>
     <head>
         <title>Image Gallery</title>
+        <!--external css-->
+        <link rel="stylesheet" type="text/css" href="image-gallery-styling.css">
+        <link rel="stylesheet" type="text/css" href="../../common-resources/style.css">
 
+<<<<<<< HEAD
         <style>
             @import url('https://fonts.googleapis.com/css?family=Passion+One|Russo+One&display=swap');
             *{
@@ -197,6 +201,8 @@
             }
 
         </style>  
+=======
+>>>>>>> b0cb816f8da33db8551a39cbacd14204e270503b
         <script>
             function clearImagesAndDescription(){
                 document.getElementById("imageDiv").innerHTML = "";
@@ -233,6 +239,116 @@
                 document.getElementById("description").innerHTML = document.getElementById("description5").innerHTML;
 
             }
+            //function to call when colours change is requested
+            function changeBGColour(){
+                console.log("within changeBGColour function");
+                //variables assigned to the values of the chosen options
+                var chosenBGColour;
+                var chosenFontColour;
+                chosenBGColour = document.getElementById("BGColourSelection").value;
+                chosenFontColour = document.getElementById("fontColourSelection").value;
+
+                console.log("bg colour is" + chosenBGColour);
+                console.log("font colour is" + chosenFontColour);
+                //document.body.style.backgroundColor = "#000000";
+
+                //using switch case to change background and font colour
+                switch (chosenBGColour){
+                    case "SelectBGColour":
+                        console.log("inside switchcase")
+                        document.body.style.backgroundColor = "#ffffff";
+                        document.getElementById("imageDescription").style.backgroundColor = "#e2e2e2";
+                        document.getElementById("formDivision").style.backgroundColor = "#e2e2e2";
+                        document.getElementById("description").style.color = "#000000";
+                        console.log("bg colour is white");
+                        break;
+                    case "BGColour1":
+                        console.log("inside switchcase")
+                        document.body.style.backgroundColor = "#000000";
+                        document.getElementById("imageDescription").style.backgroundColor = "#3a3a3a";
+                        document.getElementById("formDivision").style.backgroundColor = "#3a3a3a";
+                        document.getElementById("description").style.color = "#ffffff";
+                        console.log("bg colour is blacK");
+                        break;
+                    case "BGColour2":
+                        console.log("inside switchcase")
+                        document.body.style.backgroundColor = "#f4a341";
+                        document.getElementById("imageDescription").style.backgroundColor = "#f4d341";
+                        document.getElementById("formDivision").style.backgroundColor = "#f4d341";
+                        document.getElementById("description").style.color = "#000000";
+                        console.log("bg colour is yellow ochre");
+                        break;
+                    case "BGColour3":
+                        console.log("inside switchcase")
+                        document.body.style.backgroundColor = "#ce2525";
+                        document.getElementById("imageDescription").style.backgroundColor = "#ed5353";
+                        document.getElementById("formDivision").style.backgroundColor = "#ed5353";
+                        document.getElementById("description").style.color = "#000000";
+                        console.log("bg colour is crimson");
+                        break;
+                    case "BGColour4":
+                        console.log("inside switchcase")
+                        document.body.style.backgroundColor = "#6bbeff";
+                        document.getElementById("imageDescription").style.backgroundColor = "#0072cc";
+                        document.getElementById("formDivision").style.backgroundColor = "#0072cc";
+                        document.getElementById("description").style.color = "#ffffff";
+                        console.log("bg colour is seablue");
+                        break;
+                    case "BGColour5":
+                        console.log("inside switchcase")
+                        document.body.style.backgroundColor = "#999999";
+                        document.getElementById("imageDescription").style.backgroundColor = "#5e5e5e";
+                        document.getElementById("formDivision").style.backgroundColor = "#5e5e5e";
+                        document.getElementById("description").style.color = "#ffffff";
+                        console.log("bg colour is grey");
+                        break;
+                    case "BGColour6":
+                        console.log("inside switchcase")
+                        document.body.style.backgroundColor = "#ffa3f4";
+                        document.getElementById("imageDescription").style.backgroundColor = "#9b2d8e";
+                        document.getElementById("formDivision").style.backgroundColor = "#9b2d8e";
+                        document.getElementById("description").style.color = "#ffffff";
+                        console.log("bg colour is pink");
+                        break;
+                    
+                }
+
+                switch (chosenFontColour){
+                    case "fontColour1":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#f4d742";
+                        break;
+                        break;
+                    case "fontColour2":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#ce1212";
+                        break;
+                    case "fontColour3":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#4f4f4f";
+                        break;
+                    case "fontColour4":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#1db758";
+                        break;
+                    case "fontColour5":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#2e3bb2";
+                        break;
+                    case "fontColour6":
+                        console.log("inside font change");
+                        document.getElementById("description").style.color = "#ffffff";
+                        break;
+                }
+            }
+            function resetPage(){
+                console.log("inside resetPage function")
+                document.body.style.backgroundColor = "#ffffff";
+                document.getElementById("imageDescription").style.backgroundColor = "#e2e2e2";
+                document.getElementById("formDivision").style.backgroundColor = "#e2e2e2";
+                document.getElementById("description").style.color = "#000000";
+                console.log("page has been reset");
+            }
             
 
         </script>
@@ -240,9 +356,9 @@
     <body>
         
 
-        <div id="logoDiv" class="logoHeader">
-            <img src="Images\3.svg" alt="Marvel" id="marvelLogo" class="marvelLogo">
-        </div>
+        <header id="header">
+            <img src="Images\3.svg" alt="Marvel">
+        </header>
         <div id="navigationLists">
             <nav>
                 <ul >
@@ -261,29 +377,28 @@
         </div>
         <div id="formDivision">
             <form id="form">
-                <select id="BGColourSelection" class="colourSelection">
-                    <option id="SelectBGColour" onchange="">Select a Background colour</option>
-                    <option id="BGColour1" onchange="">1</option>
-                    <option id="BGColour2" onchange="">2</option>
-                    <option id="BGColour3" onchange="">3</option>
-                    <option id="BGColour4" onchange="">4</option>
-                    <option id="BGColour5" onchange="">5</option>
-                    <option id="BGColour6" onchange="">6</option>
+                <select id="BGColourSelection" class="colourSelection" onchange="changeBGColour()">
+                    <option value="SelectBGColour">Select a Background colour</option>
+                    <option value = "BGColour1">Black</option>
+                    <option value = "BGColour2">Yellow ochre</option>
+                    <option value = "BGColour3">Crimson</option>
+                    <option value = "BGColour4">Sea blue</option>
+                    <option value = "BGColour5">Grey</option>
+                    <option value = "BGColour6">Pink</option>
                 </select>
 
-                <select id="fontColourSelection" class="colourSelection">
-                    <option id="SelectFontColour">Select a Font colour</option>
-                    <option id="fontColour1" onchange="">1</option>
-                    <option id="fontColour2" onchange="">2</option>
-                    <option id="fontColour3" onchange="">3</option>
-                    <option id="fontColour4" onchange="">4</option>
-                    <option id="fontColour5" onchange="">5</option>
-                    <option id="fontColour6" onchange="">6</option>
+                <select id="fontColourSelection" class="colourSelection" onchange="changeBGColour()">
+                    <option value = "SelectFontColour">Select a Font colour</option>
+                    <option value = "fontColour1">Yellow</option>
+                    <option value = "fontColour2">Red</option>
+                    <option value = "fontColour3">Ash</option>
+                    <option value = "fontColour4">Green</option>
+                    <option value = "fontColour5">Blue</option>
+                    <option value = "fontColour6">White</option>
                 </select>
-                <input type="button" value="Click me!" id="submitButton" class="colourSelectionButtons">
-                <input type="reset" value="Reset" id="resetButton" class="colourSelectionButtons">
+                <input type="reset" value="Reset" id="resetButton" class="colourSelectionButtons" onclick="resetPage();">
             </form>
-            <div id="gallery" class="gallery">
+            <div id="gallery" class="galleryDivision">
                     <div id="image1" class="galleryImages">
                         <img src="Images\galleryImages\universalStudios.jpg" alt="Universal Studios Gate" class="images" id="galleryImage1" onmouseenter="image1Description();">
                     </div>
@@ -306,7 +421,7 @@
             <div id="imageDiv"></div>
             <div id="description"></div>
         </div>
-        <div id="allDescriptions"><!--HAVENT SET STYLING except visibility-->
+        <div id="allDescriptions">
             <div id="description1">Universal Studios Hollywood is a film studio and theme park in the San Fernando Valley area of Los Angeles County, California. About 70% of the studio lies within the unincorporated county island known as Universal City while the rest lies within the city limits of Los Angeles, California. It is one of the oldest and most famous Hollywood film studios still in use. Its official marketing headline is "The Entertainment Capital of LA".[1] It was initially created to offer tours of the real Universal Studios sets and is the first of many full-fledged Universal Studios Theme Parks located across the world.
 
             Outside the theme park, a new, all-digital facility near the Universal Pictures backlot was built in an effort to merge all of NBCUniversal's West Coast operations into one area. As a result, the current home for KNBC, KVEA and NBC News with Telemundo Los Angeles Bureaus with new digital facility is on the Universal lot formerly occupied by Technicolor SA. Universal City includes hotels Universal Hilton & Towers, the Sheraton Universal Hotel, and Universal CityWalk, which offers a collection of shops, restaurants, an 18-screen Universal Cinema and a seven-story IMAX theater. In 2017, the park hosted 9,056,000 guests, ranking it 15th in the world and 9th among North American parks.[3]</div>

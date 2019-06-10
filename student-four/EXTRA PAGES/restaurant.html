@@ -11,26 +11,27 @@
             header{
                 background:#004682;
                 height: 100px;
-                transition: all 1s ease-in-out;
                 grid-column: 1/13;
+                transition: all 1s ease-in-out;
             }
             header:hover{
                 background:#0295ce;        
             }
             header img{
-                height: 100%;
                 margin-top: 10px;
                 margin-left: 15px;
+                height: 100%;
+                width: 263px;
+
             }   
             .bodyContainer{
-                display: grid;  /*using grid layout for fluid website*/
-                grid-template-columns: repeat(12, 7.42%);
-                grid-gap: 1%;
+                display: grid;  /*using grid layou for fluid website*/
+                grid-template-columns: repeat(12, 8.33333%);
+                grid-row-gap: 1%;
             }
             /*navigation bar*/
             #navigationLists{
-                background-color:#000;
-                height: 50px;
+                height: 40px; 
                 grid-column: 1/13;
             }
             ul {
@@ -38,7 +39,7 @@
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                background-color: #333;
+                background-color: #0370b7;
             }
             li {
                 float: left;
@@ -49,6 +50,10 @@
                 text-align: center;
                 padding: 14px 16px;
                 text-decoration: none;
+                transition: 0.2s;
+            }
+            a:hover{
+                background: #07d1bf;
             }
             /*Form*/
             #restaurant-form{
@@ -90,19 +95,12 @@
                 color: #000;
             }
             /*restaurant div containers*/
-            .all-restaurants{
-                margin: 0%;
-                background: #fff;
-                grid-column: 1/13;
-                height: 100%;
-                border-radius: 20px;
-                float: left;
-            }
+
             img{                
                 width: 100%;
             }
             .restaurants{
-                margin: 3%;
+                margin: 2%;
                 height: 100%;
                 text-align: center;
                 transition: 0.2s;
@@ -115,13 +113,15 @@
             }
             /*Aligning all divisions containing restaurants to the grid*/
             #restaurant-1{
-                grid-column: 1/5;                
+                grid-column: 1/5; 
             }
             #restaurant-2{
-                grid-column: 5/9;                
+                grid-column: 5/9;     
+           
             }
             #restaurant-3{
-                grid-column: 9/13;                
+                grid-column: 9/13;  
+              
             }
             #restaurant-4{
                 grid-column: 1/5;                
@@ -168,7 +168,6 @@
     </head>
     <body>
         <!--logo-->
-        <div class="bodyContainer">
             <header>
                 <img src="..\..\common-resources\3.svg" alt="Logo">    
             </header>
@@ -184,6 +183,7 @@
                     </ul>
                 </nav>
             </div>
+            <div class="bodyContainer">
             <div id="restaurant-form">
                 <form action="post">
                     <!--<select class="select-option" id="select-location">
@@ -221,27 +221,81 @@
                 </div>
                 <div class="restaurants" id="restaurant-2">
                     <img src="Images\Restaurant\Fastfood.jpg">
-                
+                    <div class="restaurant-heading">
+                        Fast food fiesta
+                    </div>    
+                    <div class="restaurant-descripton">
+                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
+                        fsdkl skd fk f  s  ss
+                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
+                         asoig asoig asi
+                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                    </div>
                 </div>
                 <div class="restaurants" id="restaurant-3">
                     <img src="Images\Restaurant\Fastfood1.jpg">
-                
+                    <div class="restaurant-heading">
+                        Fast food fiesta
+                    </div>    
+                    <div class="restaurant-descripton">
+                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
+                        fsdkl skd fk f  s  ss
+                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
+                         asoig asoig asi
+                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                    </div>
                 </div>
                 <div class="restaurants" id="restaurant-4">
                     <img src="Images\Restaurant\restaraunt.jpg">
-                
+                    <div class="restaurant-heading">
+                        Fast food fiesta
+                    </div>    
+                    <div class="restaurant-descripton">
+                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
+                        fsdkl skd fk f  s  ss
+                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
+                         asoig asoig asi
+                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                    </div>
                 </div>
                 <div class="restaurants" id="restaurant-5">
                     <img src="Images\Restaurant\vegetarian.jpg">
-                
+                    <div class="restaurant-heading">
+                        Fast food fiesta
+                    </div>    
+                    <div class="restaurant-descripton">
+                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
+                        fsdkl skd fk f  s  ss
+                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
+                         asoig asoig asi
+                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                    </div>
                 </div>
                 <div class="restaurants" id="restaurant-6">
                     <img src="Images\Restaurant\candy.jpg">
-                
+                    <div class="restaurant-heading">
+                        Fast food fiesta
+                    </div>    
+                    <div class="restaurant-descripton">
+                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
+                        fsdkl skd fk f  s  ss
+                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
+                         asoig asoig asi
+                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                    </div>
                 </div>
                 <div class="restaurants" id="restaurant-7">
                     <img src="Images\Restaurant\icecream.jpg">
-                
+                    <div class="restaurant-heading">
+                        Fast food fiesta
+                    </div>    
+                    <div class="restaurant-descripton">
+                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
+                        fsdkl skd fk f  s  ss
+                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
+                         asoig asoig asi
+                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                    </div>
                 </div>                
         </div>
     </body>

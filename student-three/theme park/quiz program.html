@@ -24,11 +24,12 @@
               }
               #marvel:hover,#dc:hover {
                 -ms-transform: scale(2.0); 
-                -webkit-transform: scale(2.0);
+                -webkit-transform: scale(1.5);
                 transform: scale(1.5); 
                 }
                 #rules{
                     display: none;
+                    font-size:20px;
                 }
                 #game{
                     display: none;
@@ -49,6 +50,7 @@
                     cursor: pointer;
                     margin: 5px;
                     margin-left:80%;
+                    margin-top:-20px;
                 }
                 .ru span:after {
                     content: '\00bb';
@@ -88,11 +90,12 @@
 
                 }
                 #questiones{
-                    display: none;
+                    background-color: #f4511e;
+                    display:none;
                 }
                 #q1{
                     margin-left:250px;
-                    margin-top:50px;
+                    margin-top:0px;
                     background-color:black;
                     width:900px;
                 }
@@ -118,18 +121,81 @@
                  font-size:20px;
              }
              #time{
-                 margin-left:10px;
                  font-size:70px;
-                 width:30%;
+                 margin-top:50px;
+                 margin-left:600px;
              }
+            #main{
+                margin-top:-40px;
+                width:101%;
+                margin-left:-6px;
+            }
+            #header{
+                background-color:rgb(145, 53, 99);
+                height:80px;
+                margin-left:-6px;
+                margin-top:-5px;
+                width:101%;
+            }
+            #logo{
+                width:300px;
+                height:300px;
+                margin-top:-100px;
+                margin-left:10px;  
+            }
+            #nav{
+                background-color:brown;
+                margin-left:-6px;
+                width:101%;
+                height:50px;
+            }
+            #link{
+                font-size:30px;
+                padding:10px;
+                margin-left:30px;
+            }
+            a:link {
+				color: black;
+				text-decoration: none;
+			}
+
+			a:visited {
+				text-decoration: none;
+				color: black;
+			}
+
+			a:hover {
+				text-decoration: none;
+				color: red;
+			}
+
+			a:active {
+				text-decoration: none;
+			}
           </style>
    </head>
    <body>
-       <div id="main"></div>
+        <div id="header">
+                <img src="..\..\common-resources\3.svg" alt="Logo"  id="logo">
+        </div>
+        <div id="nav">
+            <div id="link">
+                    <a href="" >Link1</a>
+                    <a href="" style="margin-left:30px;">Link2</a>
+                    <a href="" style="margin-left:30px;">Link3</a>
+                    <a href="" style="margin-left:30px;">Link4</a>
+                    <a href="" style="margin-left:30px;">Link5</a>
+            </div>
+        </div>
+        <div id="score"> 
+            <p>Your score is : <script>score</script></p> 
+        </div>
+       <div id="main">
+       </div>
     <div id="hello">   
        <h1>Choose your category by clicking the logo</h1>
        <div id="marvel">
-            <button onclick="rules()"><img src="images/ma.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
+            <button onclick="rules()" style="margin-top:-80px;"><img src="images/ma.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
        </div>
        <div id="dc">
             <button onclick="rules()"><img src="images/dc.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
@@ -156,7 +222,7 @@
             </form>
        </div>
        <div id="questiones">
-            <div id="time"></div>
+                <div id="time"></div>
            <div id="q1">
                <img src="images/tony.jpg" alt="tony" style="height:300px;width:300px;border-radius:30px;margin-left:300px;">
                <p style="font-size:50px;text-align:center;">What is the name of this character?</p>
@@ -256,9 +322,9 @@
                     <input type="radio" name="q2" value="vormir" id="incorrect">Iron man<br/>
                     <button onclick="displayScore()" style="margin-left:400px;">Score board>></button>
                 </div>   
-          </div>
+          </div> 
        </div> 
-       <script>
+       <script type="text/javascript">
            document.getElementById("main").innerHTML=document.getElementById("hello").innerHTML;
 
            function checking(){
@@ -343,8 +409,8 @@
                 checking();
                document.write("<span style='font-size:100px;margin-left:400px;'>"+"Your score is  " + score+"</span>"+"<br>");                                   
                if(score>12){
-                   document.body.style.backgroundColor="green";
-                   document.write("Congratulationes you have passed");
+                   document.body.backgroundColor="green";
+                   document.write=("Congratulationes you have passed");
                    }
                    else{
                        document.body.style.backgroundColor="red";

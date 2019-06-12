@@ -1,5 +1,5 @@
 body{
-    background-color: #c10000;      /*Change into darker read/ use background image*/
+    background-color: #880e4f;      /*Change into darker red/ use background image*/
     margin:0;
 }
 
@@ -12,6 +12,7 @@ form{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+    border-radius: 4px;
 }
 
 .formInput{

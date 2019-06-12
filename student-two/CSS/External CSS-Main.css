@@ -27,7 +27,7 @@ html, body{
     height:100%             /*to match the prallax background*/
 }
 
-#coverImage, #image2{
+#coverImage{
     width:100%;
     height:auto;
 }
@@ -97,13 +97,13 @@ html, body{
 
 
 .parallaxBackground{
-    background-image: url('images/MainPG-images/disneyland-wallpaper.jpg');
+    background-image: url('../images/MainPG-images/northern-lights.jpg');
     height:40%;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
     position: relative;
-    opacity:0.8;
+    opacity:0.9;
 }
 
 .caption{                   /*text over parallax area*/

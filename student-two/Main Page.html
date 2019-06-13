@@ -5,7 +5,7 @@
             SuperHeroes United
         </title>
         
-        <link rel="stylesheet" type="text/css" href="External CSS-Main.css">
+        <link rel="stylesheet" type="text/css" href="CSS/External CSS-Main.css">
         <link rel="stylesheet" type="text/css" href="../common-resources/style2.css">
     </head>
     <body>
@@ -16,7 +16,7 @@
             <!--logo + navbar comes here-->
         </header>
 
-        <img id="coverImage" src="images/MainPG-images/home-scene.jpg" alt="cover image" >
+        <img id="coverImage" src="images/MainPG-images/CoverPhoto.jpg" alt="cover image" >
 
 
         <div class="contentStripTop">
@@ -28,7 +28,7 @@
 
         <div class="parallaxBackground">
             <div class="caption">
-                <span class="contentOverImg">A Magical Experience, Like No Other</span>
+                <span class="contentOverImg">Truely Amusing Amusement!</span>
             </div>
         </div>
 
@@ -53,7 +53,7 @@
         
         <div class="parallaxBackground">
             <div class="caption">
-                <span class="contentOverImg">Content</span>
+                <span class="contentOverImg">A Magical Experience, Like No Other</span>
             </div>
         </div>
         
@@ -88,12 +88,10 @@
         <div class="contentStripBottom">
             <div class="imgSmall">
                 <div class="imgSmallLeft">
-                    <img src="" alt=""/>
-                    <span class="imgDescriptionCommon">Quiz<!--content related to pages of site--></span>
+                    <img src="images/MainPG-images/Quiz.jpg" alt="Quiz"/>
                 </div>
                 <div class="imgSmallRight">
-                    <img src="" alt=""/>
-                    <span class="imgDescriptionCommon">Comments Form<!--content related to pages of site--></span>
+                    <!--<img src="images/MainPG-images/CommentsLink.jpg" alt="Comments Form"/>          Img size should be change using photoshop-->
                 </div>
             </div>
             <!--content related to pages of site-->
@@ -121,6 +119,15 @@
             function scrollToTop(){         //scroll top top of web page
                 document.documentElement.scrollTop = 0;
             }
+
+          /*  window.onscroll = function() {loadContentBlock1()};     //calling loadContentBlock1 function when scrolling the window
+            function loadContentBlock1(){   //to display div when scrolling down
+                if(document.documentElement.scrollTop >1000){
+                    document.getElementsById("contentBlock1").style.display = "block";
+                } else{
+                    document.getElementsById("contentBlock1").style.display = "none";
+                }
+            }*/
         </script>
 
     </body>

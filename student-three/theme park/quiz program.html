@@ -188,7 +188,6 @@
             </div>
         </div>
         <div id="score"> 
-            <p>Your score is : <script>score</script></p> 
         </div>
        <div id="main">
        </div>
@@ -407,18 +406,25 @@
 
            function displayScore(){    
                 checking();
-               document.write("<span style='font-size:100px;margin-left:400px;'>"+"Your score is  " + score+"</span>"+"<br>");                                   
+                var size=check.length;
+                if(size<10){
+                    for(var l=size; l<10;l++){
+                        check.push("Not attempt");
+                    }
+                }                                  
                if(score>12){
-                   document.body.backgroundColor="green";
-                   document.write=("Congratulationes you have passed");
+                   document.getElementById("main").innerHTML=("<span style='font-size:100px;margin-left:400px;'>"+"Your score is  " + score+"</span>"+"<br>"); 
+                   document.body.style.backgroundColor="green";
+                   document.getElementById("main").innerHTML+=("Congratulationes you have passed");
                    }
                    else{
+                    document.getElementById("main").innerHTML=("<span style='font-size:100px;margin-left:400px;'>"+"Your score is  " + score+"</span>"+"<br>"); 
                        document.body.style.backgroundColor="red";
-                       document.write("Your performance is low"+"<br>"+"Better luck try next time"+"<br>");
+                       document.getElementById("main").innerHTML+=("Your performance is low"+"<br>"+"Better luck try next time"+"<br>");
                    }
              
                    for (i=0;i<check.length; i++){
-                        document.write("<span style='font-size:30px;margin-left:400px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;"+check[i]+"</span>"+"<br>"); 
+                    document.getElementById("main").innerHTML+=("<span style='font-size:30px;margin-left:400px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;"+check[i]+"</span>"+"<br>"); 
                    }
                    
                }

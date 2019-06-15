@@ -176,7 +176,7 @@
    </head>
    <body>
         <div id="header">
-                <img src="..\..\common-resources\3.svg" alt="Logo"  id="logo">
+                <img src="..\..\common-resources\logo.svg" alt="Logo"  id="logo">
         </div>
         <div id="nav">
             <div id="link">
@@ -319,7 +319,7 @@
                     <input type="radio" name="q2" value="correct" id="incorrect" >Spiderman<br/>
                     <input type="radio" name="q2" value="titan" id="correct">Captain America<br/>
                     <input type="radio" name="q2" value="vormir" id="incorrect">Iron man<br/>
-                    <button onclick="displayScore()" style="margin-left:400px;">Score board>></button>
+                    <button onclick="q10()" style="margin-left:400px;">Score board>></button>
                 </div>   
           </div> 
        </div> 
@@ -346,15 +346,17 @@
            function hello(){
                 document.getElementById("main").innerHTML=document.getElementById("game").innerHTML;
            }
+           var startGame;
            function play(){
                if(document.getElementById("name").value!=""){
                 document.getElementById("main").innerHTML=document.getElementById("questiones").innerHTML;
+                var myVar = setTimeout(displayScore, 120000);
+                timer();
+                startGame=new Date().getSeconds();
                }
                else{
                 document.getElementById("main").innerHTML=document.getElementById("game").innerHTML;
                }
-               var myVar = setTimeout(displayScore, 120000);
-               timer();
            }
            score=0;
            var check=[];
@@ -403,24 +405,29 @@
               checking();
            document.getElementById("q1").innerHTML=document.getElementById("q10").innerHTML;
            }
-
-           function displayScore(){    
-                checking();
+           var endGame;
+           function q10(){
+              checking();
+              endGame=new Date().getSeconds();
+            displayScore();
+           }
+           function displayScore(){ 
+            var timeDuration=endGame-startGame;
                 var size=check.length;
                 if(size<10){
-                    for(var l=size; l<10;l++){
+                    for(var l=size+1; l<=10;l++){
                         check.push("Not attempt");
                     }
                 }                                  
                if(score>12){
                    document.getElementById("main").innerHTML=("<span style='font-size:100px;margin-left:400px;'>"+"Your score is  " + score+"</span>"+"<br>"); 
                    document.body.style.backgroundColor="green";
-                   document.getElementById("main").innerHTML+=("Congratulationes you have passed");
+                   document.getElementById("main").innerHTML+=("Congratulationes you have passed ");
                    }
                    else{
                     document.getElementById("main").innerHTML=("<span style='font-size:100px;margin-left:400px;'>"+"Your score is  " + score+"</span>"+"<br>"); 
                        document.body.style.backgroundColor="red";
-                       document.getElementById("main").innerHTML+=("Your performance is low"+"<br>"+"Better luck try next time"+"<br>");
+                       document.getElementById("main").innerHTML+=("Your performance is low"+"<br>"+"Better luck try next time"+"<br>"+timeDuration);
                    }
              
                    for (i=0;i<check.length; i++){

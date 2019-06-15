@@ -27,6 +27,8 @@ html, body{
     height:100%             /*to match the prallax background*/
 }
 
+
+
 #coverImage{
     width:100%;
     height:auto;
@@ -40,7 +42,7 @@ html, body{
 
 .contentStripBottom{
     position: relative;
-    height:350px;
+    height:400px;
     margin-top:30px;
     text-align:center;
 }
@@ -52,41 +54,43 @@ html, body{
 
 .contentLarge{
     position: relative;
-    height:780px;
+    height:1000px;
     background-color: aliceblue;            /*temporary colour for identification*/
 }
 
+
 .imgLarge, .imgSmall{
     margin: auto;
-    width:75%;
+    width:85%;
 }
 
 .imgLarge{
     position: relative;
     top: 20px;
     background-color:red;               /*temperary colour for identification*/
-    height:450px;
+    height:600px;
 }
 
 .imgSmall{
     background-color: white;            /*temperary colour for identification*/
-    height:310px;
+    height:350px;
+}
+
+.imgSmallLeft, .imgSmallRight{
+    position: relative;
+    width:50%;
+    height:350px;
+    overflow: hidden;
 }
 
 .imgSmallLeft{
-    position: relative;
     float:left;
     background-color: rebeccapurple;    /*temperary colour for identification*/
-    width:50%;
-    height:310px;
 }
 
 .imgSmallRight{
-    position: relative;
     float:right;
     background-color: black;
-    width:50%;
-    height:310px;
 }
 
 .imgDescriptionCommon{
@@ -122,11 +126,17 @@ span.contentOverImg{
     background-color: lightgoldenrodyellow;
 }
 
-img{
-    max-width: 100%;
-    max-height: 100%;
+
+
+.contentStripBottom img{
+    width: 100%;
+    min-height: 100%;
+    transition: transform 2000ms;
 }
 
+.contentStripBottom img:hover{
+    transform: scale(1.1);
+}
 
 /*#logo{
     max-width: 15%;

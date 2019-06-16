@@ -29,7 +29,7 @@
                 }
                 #rules{
                     display: none;
-                    font-size:20px;
+                    font-size:10px;
                 }
                 #game{
                     display: none;
@@ -70,7 +70,7 @@
                 }
                 #f{
                     margin-left:350px;
-                    margin-top:100px;
+                    margin-top:50px;
                     font-size:40px;
                     background-color:black;
                     height:250px;
@@ -95,13 +95,14 @@
                 }
                 #q1{
                     margin-left:250px;
-                    margin-top:0px;
+                    margin-top:20px;
                     background-color:black;
                     width:900px;
                 }
             body{
                 background-color:#2a293e;
                 color:white;
+                margin-top:5px;
             }
              #hello{
                  color:white;
@@ -122,18 +123,18 @@
              }
              #time{
                  font-size:70px;
-                 margin-top:50px;
+                 margin-top:20px;
                  margin-left:600px;
              }
             #main{
-                margin-top:-40px;
+                margin-top:0px;
                 width:101%;
                 margin-left:-6px;
             }
             #header{
                 background-color:rgb(145, 53, 99);
                 height:80px;
-                margin-left:-6px;
+                margin-left:-7px;
                 margin-top:-5px;
                 width:101%;
             }
@@ -145,7 +146,7 @@
             }
             #nav{
                 background-color:brown;
-                margin-left:-6px;
+                margin-left:-7px;
                 width:101%;
                 height:50px;
             }
@@ -192,16 +193,16 @@
        <div id="main">
        </div>
     <div id="hello">   
-       <h1>Choose your category by clicking the logo</h1>
+       <h1 style="margin-top:-10px;">Choose your category by clicking the logo</h1>
        <div id="marvel">
-            <button onclick="rules()" style="margin-top:-80px;"><img src="images/ma.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
+            <button onclick="rules()" style="margin-top:-70px;"><img src="images/ma.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
        </div>
        <div id="dc">
             <button onclick="rules()"><img src="images/dc.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
        </div>
     </div>
     <div id="rules">
-            <h1>Rules</h1>
+            <h1 style="margin-top:-10px;">Rules</h1>
             <ul>
                 <li>You have ten questiones to answer</li>
                 <li>For each correct question you will get 2 marks</li>
@@ -215,7 +216,7 @@
                 <img src="images/marvel.jpg" style="width:116%;height:100%;margin-top:-40px;margin-left:-8%;border-radius: 40px;">
                 <div id="n">
                     <label >Enter your name:</label>
-                    <input type="text" name="name" placeholder="Your name" id="name" style="width:200px;height:30px;" required>
+                    <input type="text" name="name" placeholder="Your name" id="fname" style="width:200px;height:30px;" required>
                     <button style="width:100px;height:40px;margin-left:400px;border-radius:30px;" onclick="play()">Play</button>
                </div>
             </form>
@@ -347,8 +348,10 @@
                 document.getElementById("main").innerHTML=document.getElementById("game").innerHTML;
            }
            var startGame;
+           var player;
            function play(){
-               if(document.getElementById("name").value!=""){
+               if(document.getElementById("fname").value!=""){
+                player=document.getElementById("fname").value;   
                 document.getElementById("main").innerHTML=document.getElementById("questiones").innerHTML;
                 var myVar = setTimeout(displayScore, 120000);
                 timer();
@@ -413,25 +416,32 @@
            }
            function displayScore(){ 
             var timeDuration=endGame-startGame;
+            if(timeDuration<0){
+                timeDuration=timeDuration*-1;
+                timeDuration=60-timeDuration;
+            }
                 var size=check.length;
                 if(size<10){
                     for(var l=size+1; l<=10;l++){
                         check.push("Not attempt");
                     }
-                }                                  
+                }
+               document.getElementById("main").innerHTML="<span style='font-size:30px;margin-left:500px;'>Player : "+player+"</span>"+"<br/>";                                 
                if(score>12){
-                   document.getElementById("main").innerHTML=("<span style='font-size:100px;margin-left:400px;'>"+"Your score is  " + score+"</span>"+"<br>"); 
+                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Score : " + score+"</span>"+"<br>";
+                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+timeDuration+" s</span><br>"; 
                    document.body.style.backgroundColor="green";
-                   document.getElementById("main").innerHTML+=("Congratulationes you have passed ");
+                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Pass"+"<br>";
                    }
                    else{
-                    document.getElementById("main").innerHTML=("<span style='font-size:100px;margin-left:400px;'>"+"Your score is  " + score+"</span>"+"<br>"); 
+                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Score : " + score+"</span>"+"<br>";
+                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+timeDuration+" s</span><br>"; 
                        document.body.style.backgroundColor="red";
-                       document.getElementById("main").innerHTML+=("Your performance is low"+"<br>"+"Better luck try next time"+"<br>"+timeDuration);
+                       document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Fail"+"<br>";
                    }
-             
+                     document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Questiones&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Result "
                    for (i=0;i<check.length; i++){
-                    document.getElementById("main").innerHTML+=("<span style='font-size:30px;margin-left:400px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;"+check[i]+"</span>"+"<br>"); 
+                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+check[i]+"</span>"+"<br>"; 
                    }
                    
                }

@@ -1,176 +1,55 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Site Map</title>
-        <!--<link rel="stylesheet" type="text/css" href="../../common-resources/style.css">-->
-
+        <title>Site map</title>
         <style>
-            @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
             *{
-                margin: 0px;
-                padding: 0px;
-                font-family: 'Bree Serif', serif;
+                margin: 0;
+                padding: 0;
             }
-            /*using grids to layout the page*/
-            .bodyContainer{
+            #body-wrapper{
                 display: grid;
-                grid-template-columns: repeat(20,1fr);
-                grid-template-rows:repeat(50,1vw);
-                grid-gap: 0px 10px;
+                grid-template-columns: repeat(12,8.33333%)
             }
-            /*header section*/
-            header{
-                background:#004682;
-                height: 100%;
-                transition: all 1s ease-in-out;
-                grid-gap:0px;
-                grid-column: f1/21;
-                grid-row: 1/7;
+            #svg-1{
+                grid-column: 6/8;
             }
-            header:hover{
-                background:#0295ce;        
-            }
-            header img{
-                height: 100%;
-                margin-top: 1%;
-                margin-left: 1%;
-                grid-column: 1/3;
-                grid-row: 2/8;
-            }   
-            /*Navigation bar*/
-            
-            /*
-            nav{
-                grid-column: 1/21;
-                grid-row: 7/11;
-            }
-            #navigationLists{
-                width: 100%;
-                background: #07d1bf;
-                grid-column: 1/21;
-                grid-row: 7/11;
-
-            }
-            #navigationLists:before,#navigationLists:after{
-                background: #c10000;
-                display: table;
-                content: "";
-                grid-column: 1/21;
-                grid-row: 7/11;
-            } 
-            #navigationLists:after {
-                clear: both;
-                grid-column: 1/21;
-                grid-row: 7/11;
-            }
-            li{
-                list-style: none;
-                text-align: center;
-                margin: 0px;
-                width:12.5%;
-                float:left;
-                padding: 20px;
-                background: #07d1bf;
-                z-index: 0;
-                transition: 0.1s;
-                grid-column: 1/21;
-                grid-row: 7/11;
-            } 
-            li:hover{
-                background: #60f4a0;
-            }
-            /*heading*/
-            .heading{
-                grid-column: 1/21;
-                grid-row: 12/15;
-                margin: 20px;                
-            }
-            h1{
-                grid-column: 1/21;
-                grid-row: 12/15;
-            }
-            
-            /*for site map*/
-            
-            
-            #Sitemap-home{
-                grid-column: 9/13;
-                grid-row: 18/28;
-                margin: auto;
-                text-align: center;
-                
-            }
-/*
-            svg{
-                align-content: center;
-                padding: 20px;                
-            }
-            table{
-                width: 100%;
-            }
-            table th{
-                text-align: center;
-            }
-            table td{
-                text-align: center;
-            }
-            table tr{
-                    height: 70px;
-            }
-            /*Logo/header
-            
-            /*map styling
-            #mapHeading{
-                fill: #3b3b3b;
-                transition: 0.5s;
-            }
-            #mapHeading:hover{
-                fill: #ff4949;
-            }
-            .secondMapLevel{
-                fill: rgb(133, 0, 0);
-                transition: 0.5s;
-            }
-            .secondMapLevel:hover{
-                fill: #ff4949;
-            }
-            .lowerMapLevels{
-                fill: #c12d00;
-                transition: 0.5s;
-            }
-            .lowerMapLevels:hover{
-                fill: #ff4949;
-            }*/
-                
         </style>
     </head>
     <body>
-        <div class="bodyContainer">
-            <header id="header">
-                    <img src="..\..\common-resources\3.svg" alt="Logo">
-            </header>
-               <!-- <div id="navigationLists">
-                    <nav>
-                        <ul >
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Link 1</a></li>
-                            <li><a href="#">Link 2</a></li>
-                            <li><a href="#">Link 3</a></li>
-                            <li><a href="#">Link 4</a></li>
-                            <li><a href="#">Link 5</a></li>                
-                        </ul>
-                    </nav>
-                </div>  -->
-                <div class="heading">
-                    <h1>Site Map</h1>
-                </div>
-                <div id="Sitemap-home">
-                    <svg height="100px" width="200px">
-                        <rect height="100px" width="200px" rx="10px"></rect>
-                        <text height="50px" width="100px" fill="white"x="60px" y="55px">Home Page</text>
-                    </svg>
-                </div>                      
+        <header></header>
+        <div id="body-wrapper">
+            <div id="svg-1">
+                <svg height="100px" width="200px">
+                    <rect height="100px" width="200px" rx="10px"></rect>
+                    <text height="50px" width="100px" fill="white" x="60px" y="55px">Home Page</text>
+                </svg>
+            </div>
+            <div id="svg-1">
+                <svg height="100px" width="200px">
+                    <rect height="100px" width="200px" rx="10px"></rect>
+                    <text height="50px" width="100px" fill="white" x="60px" y="55px">Home Page</text>
+                </svg>
+            </div>
+            <div id="svg-1">
+                <svg height="100px" width="200px">
+                    <rect height="100px" width="200px" rx="10px"></rect>
+                    <text height="50px" width="100px" fill="white" x="60px" y="55px">Home Page</text>
+                </svg>
+            </div>
+            <div id="svg-1">
+                <svg height="100px" width="200px">
+                    <rect height="100px" width="200px" rx="10px"></rect>
+                    <text height="50px" width="100px" fill="white" x="60px" y="55px">Home Page</text>
+                </svg>
+            </div>
+            <div id="svg-1">
+                <svg height="100px" width="200px">
+                    <rect height="100px" width="200px" rx="10px"></rect>
+                    <text height="50px" width="100px" fill="white" x="60px" y="55px">Home Page</text>
+                </svg>
+            </div>
+        
         </div>
-
     </body>
 </html>

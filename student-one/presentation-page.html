@@ -1,124 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Presentation Page</title>
-    <style>
-      /* #background {
-        position: absolute;
-        width: 1366px;
-        height: 768px;
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body,
+			html {
+				height: 100%;
+				margin: 0;
+				font-family: Arial, Helvetica, sans-serif;
+			}
 
-        background: linear-gradient(
-          0deg,
-          rgba(167, 142, 142, 0) 100%,
-          #990000 0%
-        );
-      } */
+			* {
+				box-sizing: border-box;
+			}
 
-      body {
-        background: #232526;
-        background: -webkit-linear-gradient(to left, #414345, #232526);
-        background: linear-gradient(to left, #414345, #232526);
-        /* background: #eb3349;
-        background: -webkit-linear-gradient(
-          to left,
-          #f45c43,
-          #eb3349
-        );
-        background: linear-gradient(
-          to left,
-          #f45c43,
-          #eb3349
-        );  */
-      }
-      * {
-        box-sizing: border-box;
-      }
+			.bg-image {
+				/* The image used */
+				background-image: url("assets/wallpaper.jpg");
 
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
+				/* Add the blur effect */
+				filter: blur(8px);
+				-webkit-filter: blur(8px);
 
-      /* Float four columns side by side */
-      .column {
-        float: left;
-        width: 20%;
-        text-align: center;
+				/* Full height */
+				height: 100%;
 
-        transform: translateX(50%);
-        /* padding: 0 0px; */
-      }
+				/* Center and scale the image nicely */
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
 
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
+			/* Position text in the middle of the page/image */
+			.bg-text {
+				background-color: rgb(0, 0, 0);
+				/* Fallback color */
+				background-color: rgba(0, 0, 0, 0.7);
+				/* Black w/opacity/see-through */
+				color: white;
+				font-weight: bold;
+				border: 3px solid #f1f1f1;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 2;
+				width: 80%;
+				padding: 20px;
+				text-align: center;
+			}
 
-      /* Style the counter cards */
-      .card {
-        /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
-        padding: 20px;
-        text-align: center;
-        color: #ff000000;
-      }
+			/* Float four columns side by side */
+			.column {
+				float: left;
+				width: 20%;
+				text-align: center;
 
-      img {
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-      }
+				transform: translateX(50%);
+				/* padding: 0 0px; */
+			}
 
-      /* Responsive columns - one column layout (vertical) on small screens */
-      @media screen and (max-width: 600px) {
-        .column {
-          width: 100%;
-          display: block;
-          margin-bottom: 20px;
-        }
-      }
+			/* Clear floats after the columns */
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
 
-      p {
-        color: white;
-        font-size: 25px;
-      }
+			/* Style the counter cards */
+			.card {
+				/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+				padding: 20;
+				text-align: center;
+				color: #ff000000;
+			}
 
-      h1 {
-        padding: 50px;
-        color: white;
-        text-align: center;
-        font-size: 70px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Hello There!</h1>
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <img src="./CV/profile_picture.png" />
-          <p>Akassharjun<br />Shanmugarajah</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <img src="../student-two/CV/images/Dinuka CV-sq.jpg" />
-          <p>Dinuka<br />Piyadigama</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <img src="../student-three/theme park/dini.jpg" />
-          <p>Yuwarajalingam<br />Dinesh</p>
-        </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <img src="../student-four/CV/images/dummy.jpg" />
-          <p>Visal<br />Rajapakse</p>
-        </div>
-      </div>
-    </div>
-  </body>
+			img {
+				border-radius: 50%;
+				width: 200px;
+				height: 200px;
+			}
+
+			/* Responsive columns - one column layout (vertical) on small screens */
+			@media screen and (max-width: 600px) {
+				.column {
+					width: 100%;
+					display: block;
+					margin-bottom: 20px;
+				}
+			}
+
+			p {
+				color: white;
+				font-size: 25px;
+			}
+
+			h1 {
+				padding: 50px;
+				color: white;
+				text-align: center;
+				font-size: 70px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="bg-image"></div>
+
+		<div class="bg-text">
+			<div class="row">
+				<div class="column">
+					<div class="card">
+						<img src="./CV/profile_picture.png" />
+						<p>Akassharjun<br />Shanmugarajah</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<img src="../student-two/CV/images/Dinuka CV-sq.jpg" />
+						<p>Dinuka<br />Piyadigama</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<img src="../student-three/theme park/dini.jpg" />
+						<p>Yuwarajalingam<br />Dinesh</p>
+					</div>
+				</div>
+				<div class="column">
+					<div class="card">
+						<img src="../student-four/CV/images/dummy.jpg" />
+						<p>Visal<br />Rajapakse</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

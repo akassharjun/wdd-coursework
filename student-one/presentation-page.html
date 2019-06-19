@@ -39,13 +39,14 @@
 				/* Black w/opacity/see-through */
 				color: white;
 				font-weight: bold;
-				border: 3px solid #f1f1f1;
+				border: 2px solid #f1f1f1;
+
 				position: absolute;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
 				z-index: 2;
-				width: 80%;
+				width: 90%;
 				padding: 20px;
 				text-align: center;
 			}
@@ -76,9 +77,10 @@
 			}
 
 			img {
+				padding-top: 10px;
 				border-radius: 50%;
-				width: 200px;
-				height: 200px;
+				width: 80%;
+				height: 80%;
 			}
 
 			/* Responsive columns - one column layout (vertical) on small screens */
@@ -92,7 +94,6 @@
 
 			p {
 				color: white;
-				font-size: 25px;
 			}
 
 			h1 {
@@ -101,6 +102,18 @@
 				text-align: center;
 				font-size: 70px;
 			}
+
+			.memberName {
+				color: white;
+				font-size: 1.5vw;
+				padding-bottom: 10px;
+			}
+
+			#title {
+				padding-top: 10;
+				padding-bottom: 20;
+				font-size: 2.5vw;
+			}
 		</style>
 	</head>
 
@@ -108,29 +121,30 @@
 		<div class="bg-image"></div>
 
 		<div class="bg-text">
+			<p id="title">Welcome to Superheroes United!</p>
 			<div class="row">
 				<div class="column">
 					<div class="card">
 						<img src="./CV/profile_picture.png" />
-						<p>Akassharjun<br />Shanmugarajah</p>
+						<p class="memberName">Akassharjun<br />Shanmugarajah</p>
 					</div>
 				</div>
 				<div class="column">
 					<div class="card">
 						<img src="../student-two/CV/images/Dinuka CV-sq.jpg" />
-						<p>Dinuka<br />Piyadigama</p>
+						<p class="memberName">Dinuka<br />Piyadigama</p>
 					</div>
 				</div>
 				<div class="column">
 					<div class="card">
-						<img src="../student-three/theme park/dini.jpg" />
-						<p>Yuwarajalingam<br />Dinesh</p>
+						<img src="../student-three/theme park/images/dini.jpg" />
+						<p class="memberName">Yuwarajalingam<br />Dinesh</p>
 					</div>
 				</div>
 				<div class="column">
 					<div class="card">
-						<img src="../student-four/CV/images/dummy.jpg" />
-						<p>Visal<br />Rajapakse</p>
+						<img src="../student-four/CV/images/CV-visal.jpg" />
+						<p class="memberName">Visal<br />Rajapakse</p>
 					</div>
 				</div>
 			</div>

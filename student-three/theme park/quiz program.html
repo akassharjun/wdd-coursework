@@ -98,6 +98,7 @@
                     margin-top:20px;
                     background-color:black;
                     width:900px;
+                    height:500px;
                 }
             body{
                 background-color:#2a293e;
@@ -173,6 +174,22 @@
 			a:active {
 				text-decoration: none;
 			}
+            #marvelimages{
+                height:300px;
+                width:300px;
+                border-radius:30px;
+                margin-left:300px;
+                margin-top:15px; 
+            }
+            #marvelquestions{
+                font-size:50px;
+                text-align:center;
+                margin-top:-12px;
+            }
+            #marvelbutton{
+                margin-left:400px;
+                margin-top:-10px;
+            }
           </style>
    </head>
    <body>
@@ -224,103 +241,103 @@
        <div id="questiones">
                 <div id="time"></div>
            <div id="q1">
-               <img src="images/tony.jpg" alt="tony" style="height:300px;width:300px;border-radius:30px;margin-left:300px;">
-               <p style="font-size:50px;text-align:center;">What is the name of this character?</p>
+               <img src="images/tony.jpg" alt="tony" id="marvelimages">
+               <p id="marvelquestions">What is the name of this character?</p>
                <div id="selection">
-                    <input type="radio" name="q1" value="correct" id="incorrect">Captain America<br/>
-                    <input type="radio" name="q1" value="Spider Man" id="incorrect">Spider Man<br/>
-                    <input type="radio" name="q1" value="Tony stark" id="correct" >Tony Stark<br/>
-                    <button onclick="q1()" style="margin-left:400px;">Question 2>></button>
+                    <input type="radio" name="q1"  id="incorrect1">Captain America<br/>
+                    <input type="radio" name="q1"  id="incorrect2">Spider Man<br/>
+                    <input type="radio" name="q1"  id="correct">Tony Stark<br/>
+                    <button onclick="q1()" id="marvelbutton">Question 2>></button>
                </div>
            </div>
            <div id="q2">
-                <img src="images/cap.jpg" alt="tony" style="height:300px;width:300px;border-radius:30px;margin-left:300px;">
-                <p style="font-size:50px;text-align:center;">Whose weapon is this?</p>
+                <img src="images/cap.jpg" alt="tony" id="marvelimages">
+                <p id="marvelquestions">Whose weapon is this?</p>
                 <div id="selection">
-                    <input type="radio" name="q2" value="correct" id="correct">Captain America<br/>
-                    <input type="radio" name="q2" value="Captain marvel" id="incorrect" >Captain Marvel<br/>
-                    <input type="radio" name="q2" value="Tony stark"  id="incorrect">Tony Stark<br/>
-                    <button onclick="q2()" style="margin-left:400px;">Question 3>></button>
+                    <input type="radio" name="q2"  id="correct">Captain America<br/>
+                    <input type="radio" name="q2"  id="incorrect1">Captain Marvel<br/>
+                    <input type="radio" name="q2"  id="incorrect2">Tony Stark<br/>
+                    <button onclick="q2()" id="marvelbutton">Question 3>></button>
                 </div>   
            </div>
            <div id="q3">
-                <img src="images/thor.jpg" alt="tony" style="height:300px;width:300px;border-radius:30px;margin-left:300px;">
-                <p style="font-size:50px;text-align:center;">Whose weapon is this?</p>
+                <img src="images/thor.jpg" alt="tony" id="marvelimages">
+                <p id="marvelquestions">Whose weapon is this?</p>
                 <div id="selection">
-                    <input type="radio" name="q2" value="correct" id="incorrect">Captain America<br/>
-                    <input type="radio" name="q2" value="Spider Man" id="correct">Thor<br/>
-                    <input type="radio" name="q2" value="Tony stark" id="incorrect" >Black panther<br/>
-                    <button onclick="q3()" style="margin-left:400px;">Question 4>></button>
+                    <input type="radio" name="q3"  id="incorrect2">Captain America<br/>
+                    <input type="radio" name="q3"  id="correct">Thor<br/>
+                    <input type="radio" name="q3"  id="incorrect1">Black panther<br/>
+                    <button onclick="q3()" id="marvelbutton">Question 4>></button>
                 </div>   
            </div>
            <div id="q4">
-                <img src="images/starlord.jpg" alt="tony" style="height:300px;width:300px;border-radius:30px;margin-left:300px;">
-                <p style="font-size:50px;text-align:center;">What is the name of this character?</p>
+                <img src="images/starlord.jpg" alt="tony" id="marvelimages">
+                <p id="marvelquestions">What is the name of this character?</p>
                 <div id="selection">
-                    <input type="radio" name="q2" value="correct" id="incorrect">Drax<br/>
-                    <input type="radio" name="q2" value="Spider Man" id="correct">Star lord<br/>
-                    <input type="radio" name="q2" value="Tony stark" id="incorrect" >Nebula<br/>
-                    <button onclick="q4()" style="margin-left:400px;">Question 5>></button>
+                    <input type="radio" name="q4" id="incorrect1">Drax<br/>
+                    <input type="radio" name="q4" id="correct">Star lord<br/>
+                    <input type="radio" name="q4" id="incorrect2">Nebula<br/>
+                    <button onclick="q4()" id="marvelbutton">Question 5>></button>
                 </div>   
            </div>
            <div id="q5">
-                <img src="images/avemovie.jpg" alt="tony" style="height:300px;width:300px;border-radius:30px;margin-left:300px;">
-                <p style="font-size:50px;text-align:center;">What is the name of this movie?</p>
+                <img src="images/avemovie.jpg" alt="tony" id="marvelimages">
+                <p id="marvelquestions">What is the name of this movie?</p>
                 <div id="selection">
-                    <input type="radio" name="q2" value="correct" id="incorrect">Avengers end game<br/>
-                    <input type="radio" name="q2" value="Spider Man" id="incorrect">The Avengers<br/>
-                    <input type="radio" name="q2" value="Tony stark"   id="correct">Avengers Age Of Ultron<br/>
-                    <button onclick="q5()" style="margin-left:400px;">Question 6>></button>
+                    <input type="radio" name="q5"  id="incorrect1">Avengers end game<br/>
+                    <input type="radio" name="q5"  id="incorrect2">The Avengers<br/>
+                    <input type="radio" name="q5"  id="correct">Avengers Age Of Ultron<br/>
+                    <button onclick="q5()" id="marvelbutton">Question 6>></button>
                 </div>   
           </div>
           <div id="q6">
-                <img src="images/soul.jpg" alt="tony" style="height:300px;width:300px;border-radius:30px;margin-left:300px;">
-                <p style="font-size:50px;text-align:center;">From where thanos got the soul stone?</p>
+                <img src="images/soul.jpg" alt="tony" id="marvelimages">
+                <p id="marvelquestions">From where thanos got the soul stone?</p>
                 <div id="selection">
-                    <input type="radio" name="q2" value="correct" id="incorrect">Asgard<br/>
-                    <input type="radio" name="q2" value="titan" id="incorrect">Titan<br/>
-                    <input type="radio" name="q2" value="vormir"   id="correct">Vormir<br/>
-                    <button onclick="q6()" style="margin-left:400px;">Question 7>></button>
+                    <input type="radio" name="q6"  id="incorrect1">Asgard<br/>
+                    <input type="radio" name="q6"  id="incorrect2">Titan<br/>
+                    <input type="radio" name="q6"  id="correct">Vormir<br/>
+                    <button onclick="q6()" id="marvelbutton">Question 7>></button>
                 </div>   
           </div>
           <div id="q7">
-                <img src="images/mind.jpg" alt="tony" style="height:300px;width:300px;border-radius:30px;margin-left:300px;">
-                <p style="font-size:50px;text-align:center;">What is the name of the stone vision had?</p>
+                <img src="images/mind.jpg" alt="tony" id="marvelimages">
+                <p id="marvelquestions">What is the name of the stone vision had?</p>
                 <div id="selection">
-                    <input type="radio" name="q2" value="correct" id="incorrect">Soul stone<br/>
-                    <input type="radio" name="q2" value="titan" id="correct">Mind stone<br/>
-                    <input type="radio" name="q2" value="vormir" id="incorrect" >Time stone<br/>
-                    <button onclick="q7()" style="margin-left:400px;">Question 8>></button>
+                    <input type="radio" name="q7"  id="incorrect1">Soul stone<br/>
+                    <input type="radio" name="q7"  id="correct">Mind stone<br/>
+                    <input type="radio" name="q7"  id="incorrect2">Time stone<br/>
+                    <button onclick="q7()" id="marvelbutton">Question 8>></button>
                 </div>   
           </div>
           <div id="q8">
-                <img src="images/asgard.jpg" alt="tony" style="height:300px;width:300px;border-radius:30px;margin-left:300px;">
-                <p style="font-size:50px;text-align:center;">What is this place called?</p>
+                <img src="images/asgard.jpg" alt="tony" id="marvelimages">
+                <p id="marvelquestions">What is this place called?</p>
                 <div id="selection">
-                    <input type="radio" name="q2" value="correct" id="correct" >Asgard<br/>
-                    <input type="radio" name="q2" value="titan" id="incorrect">Titan<br/>
-                    <input type="radio" name="q2" value="vormir" id="incorrect">Vormir<br/>
-                    <button onclick="q8()" style="margin-left:400px;">Question 9>></button>
+                    <input type="radio" name="q8"  id="correct">Asgard<br/>
+                    <input type="radio" name="q8"  id="incorrect1">Titan<br/>
+                    <input type="radio" name="q8"  id="incorrect2">Vormir<br/>
+                    <button onclick="q8()" id="marvelbutton">Question 9>></button>
                 </div>   
           </div>
           <div id="q9">
-                <img src="images/thorsis.jpg" alt="tony" style="height:300px;width:300px;border-radius:30px;margin-left:300px;">
-                <p style="font-size:50px;text-align:center;">What is the relation of this character to thor?</p>
+                <img src="images/thorsis.jpg" alt="tony"id="marvelimages">
+                <p id="marvelquestions">What is the relation of this character to thor?</p>
                 <div id="selection">
-                    <input type="radio" name="q2" value="correct" id="correct" >Sister<br/>
-                    <input type="radio" name="q2" value="titan" id="incorrect">Mother<br/>
-                    <input type="radio" name="q2" value="vormir" id="incorrect">Girl friend<br/>
-                    <button onclick="q9()" style="margin-left:400px;">Question 10>></button>
+                    <input type="radio" name="q9"  id="correct">Sister<br/>
+                    <input type="radio" name="q9"  id="incorrect1">Mother<br/>
+                    <input type="radio" name="q9"  id="incorrect2">Girl friend<br/>
+                    <button onclick="q9()" id="marvelbutton">Question 10>></button>
                 </div>   
           </div>
           <div id="q10">
-                <img src="images/ave.jpg" alt="tony" style="height:300px;width:300px;border-radius:30px;margin-left:300px;">
-                <p style="font-size:50px;text-align:center;">Who is the first avenger ?</p>
+                <img src="images/ave.jpg" alt="tony" id="marvelimages">
+                <p id="marvelquestions">Who is the first avenger ?</p>
                 <div id="selection">
-                    <input type="radio" name="q2" value="correct" id="incorrect" >Spiderman<br/>
-                    <input type="radio" name="q2" value="titan" id="correct">Captain America<br/>
-                    <input type="radio" name="q2" value="vormir" id="incorrect">Iron man<br/>
-                    <button onclick="q10()" style="margin-left:400px;">Score board>></button>
+                    <input type="radio" name="q10"  id="incorrect1">Spiderman<br/>
+                    <input type="radio" name="q10"  id="correct">Captain America<br/>
+                    <input type="radio" name="q10"  id="incorrect2">Iron man<br/>
+                    <button onclick="q10()" id="marvelbutton">Score board>></button>
                 </div>   
           </div> 
        </div> 
@@ -330,14 +347,22 @@
            function checking(){
             if (document.getElementById('correct').checked) {
                 score +=2;
-                check.push("correct");   
+                check.push("correct");
+                scores.push(2);   
            }
-           else if(document.getElementById('incorrect').checked){
+           else if(document.getElementById('incorrect1').checked){
                score-=1;
-               check.push("incorrect");   
+               check.push("incorrect");  
+               scores.push(-1); 
+           }
+           else if(document.getElementById('incorrect2').checked){
+               score-=1;
+               check.push("incorrect");
+               scores.push(-1);
            }
            else{
-               check.push("Not attempt");
+               check.push('Not attempt');
+               scores.push(0);
            }
            }
 
@@ -361,9 +386,12 @@
                 document.getElementById("main").innerHTML=document.getElementById("game").innerHTML;
                }
            }
+           var scores=[];
            score=0;
            var check=[];
            function q1(){
+           scores=[];
+           check=[];    
            checking();
                document.getElementById("q1").innerHTML=document.getElementById("q2").innerHTML;
 
@@ -411,39 +439,44 @@
            var endGame;
            function q10(){
               checking();
-              endGame=new Date().getSeconds();
             displayScore();
            }
-           function displayScore(){ 
-            var timeDuration=endGame-startGame;
+           function displayScore(){
+            endGame=new Date().getSeconds();    
+            var timeDuration=(endGame-startGame);
             if(timeDuration<0){
-                timeDuration=timeDuration*-1;
-                timeDuration=60-timeDuration;
+                timeDuration=(timeDuration*-1);
+                timeDuration=(60-timeDuration);
             }
                 var size=check.length;
                 if(size<10){
                     for(var l=size+1; l<=10;l++){
                         check.push("Not attempt");
+                        scores.push(0);
                     }
                 }
                document.getElementById("main").innerHTML="<span style='font-size:30px;margin-left:500px;'>Player : "+player+"</span>"+"<br/>";                                 
                if(score>12){
                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Score : " + score+"</span>"+"<br>";
-                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+timeDuration+" s</span><br>"; 
+                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" s</span><br>"; 
                    document.body.style.backgroundColor="green";
-                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Pass"+"<br>";
+                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Pass"+"<br><br>";
                    }
                    else{
                     document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Score : " + score+"</span>"+"<br>";
-                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+timeDuration+" s</span><br>"; 
+                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" s</span><br>"; 
                        document.body.style.backgroundColor="red";
-                       document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Fail"+"<br>";
+                       document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Fail"+"<br><br>";
                    }
-                     document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Questiones&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Result "
+                     document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Questiones&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Result&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marks awarded "
                    for (i=0;i<check.length; i++){
-                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+check[i]+"</span>"+"<br>"; 
-                   }
-                   
+                       if(i<=8){
+                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+check[i]+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+scores[i]+"</span>"+"<br>"; 
+                       }
+                       else{
+                        document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;&nbsp;"+check[i]+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+scores[i]+"</span>"+"<br>";  
+                       }
+                   } 
                }
                function startTimer(duration, display) {
                         var timer = duration, minutes, seconds;

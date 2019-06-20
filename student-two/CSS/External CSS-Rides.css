@@ -1,3 +1,15 @@
 h1{
     text-align: center;
 }
+
+.rideBlock{
+    background-color: blueviolet;
+    height:500px;
+    width:400px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12,20px);
+    grid-auto-rows: 10px;
+}

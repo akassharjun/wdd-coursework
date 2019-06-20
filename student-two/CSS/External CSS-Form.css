@@ -61,6 +61,7 @@ form input[type=reset]{
 form input[type=reset]:hover{
     background-color: rgb(231, 76, 60);
     cursor: pointer;
+    color: white;
 }
 
 form input[type=submit]{
@@ -70,6 +71,7 @@ form input[type=submit]{
 form input[type=submit]:hover{
     background-color: lightseagreen;
     cursor: pointer;
+    color: white;
 }
 
 #logo{

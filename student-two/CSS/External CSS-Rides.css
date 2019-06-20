@@ -1,5 +1,7 @@
 h1{
     text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 12;
 }
 
 .rideBlock{
@@ -10,6 +12,15 @@ h1{
 
 .grid-container{
     display: grid;
-    grid-template-columns: repeat(12,20px);
-    grid-auto-rows: 10px;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(20,50px);
+}
+
+.flex-container{
+    grid-column-start: 2;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: ;
+    display:flex;
+    flex-wrap:wrap;
 }

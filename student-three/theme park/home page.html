@@ -4,63 +4,36 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Home page</title>
 		<style>
-			#navigationbar {
-				width: 1000px;
-				height: 30px;
-				padding: 20px;
-				margin-left: 300px;
-				margin-top: -75px;
-				font-size: 40px;
-				color: black;
-			}
-			a:link {
-				color: black;
-				text-decoration: none;
-			}
-
-			a:visited {
-				text-decoration: none;
-				color: black;
-			}
-
-			a:hover {
-				text-decoration: none;
-				color: red;
-			}
-
-			a:active {
-				text-decoration: none;
-			}
 			#ass {
 				border-radius: 60%;
-				width: 200px;
-				margin-left: 50px;
+				width: 15%;
+				margin-left: 5%;
 				float: left;
-				margin-top: 300px;
+				margin-top: 4%;
 				transition: transform 0.2s;
 			}
 			#dinu {
 				border-radius: 60%;
-				width: 200px;
-				margin-left: 140px;
+				width: 15%;
+				margin-left: 10%;
 				float: left;
-				margin-top: 60px;
+				margin-top: 4%;
 				transition: transform 0.2s;
 			}
 			#vis {
 				border-radius: 60%;
-				width: 200px;
-				margin-left: 100px;
-				margin-top: 60px;
+				width: 15%;
+				margin-left: 10%;
+				margin-top: 4%;
 				float: left;
 				transition: transform 0.2s;
 			}
 			#dini {
 				border-radius: 60%;
-				width: 200px;
+				width: 15%;
 				float: right;
-				margin-top: 300px;
-				margin-right: 100px;
+				margin-top: 4%;
+				margin-right: 5%;
 				transition: transform 0.2s;
 			}
 			#dinu:hover,
@@ -72,43 +45,37 @@
 				transform: scale(1.5);
 			}
 			#info {
-				margin-top: 300px;
-				margin-left: 390px;
+				margin-top: 23%;
+				margin-left: 30%;
 				color: black;
-				width: 470px;
-				height: 250px;
+				width: 35%;
+				height: 150%;
 				text-align: center;
-				font-size: 70px;
+				font-size: 300%;
 			}
-			h1 {
-				font-family: cursive;
-				text-align: center;
-				margin-top: 100px;
-				font-size: 80px;
-			}
-			#header{
+			#logo{
+                width:15%;
+                height:15%;
+                margin-top:0.5%;
+                margin-left:1%; 
+            }
+            #header{
                 background-color:rgb(145, 53, 99);
-                height:80px;
-                margin-left:-7px;
-                margin-top:-5px;
+                height:20%;
+                margin-left:-0.5%;
+                margin-top:-0.5%;
                 width:101%;
             }
-            #logo{
-                width:300px;
-                height:300px;
-                margin-top:-100px;
-                margin-left:10px;  
-            }
-            #nav{
+			#nav{
                 background-color:brown;
-                margin-left:-7px;
+                margin-left:-0.5%;
                 width:101%;
-                height:50px;
+                height:20%;
             }
             #link{
-                font-size:30px;
-                padding:10px;
-                margin-left:30px;
+                font-size:170%;
+                padding:1%;
+                margin-left:5%;
             }
             a:link {
 				color: black;
@@ -146,20 +113,20 @@
 	<body>
 		<div id="header">
 			<img src="..\..\common-resources\logo.svg" alt="Logo"  id="logo">
-	    </div>
+	</div>
 	<div id="nav">
 		<div id="link">
 				<a href="" >Link1</a>
-				<a href="" style="margin-left:30px;">Link2</a>
-				<a href="" style="margin-left:30px;">Link3</a>
-				<a href="" style="margin-left:30px;">Link4</a>
-				<a href="" style="margin-left:30px;">Link5</a>
+				<a href="" style="margin-left:2%;">Link2</a>
+				<a href="" style="margin-left:2%;">Link3</a>
+				<a href="" style="margin-left:2%;">Link4</a>
+				<a href="" style="margin-left:2%;">Link5</a>
 		</div>
 	</div>
 		<img src="images/ass.jpg "  alt="Akassh" onmouseover="ass()" onmouseout="assout()" id="ass" >
 		<img src="images/dinuka.jpg" alt="Dinuka" onmouseover="dinu()" onmouseout="dinuout()" id="dinu" />
-		<img src="images/visal.jpg" alt="Visal" onmouseover="vis()" onmouseout="visout()" id="vis" />
 		<img src="images/dini.jpg" alt="Dinesh" onmouseover="dini()" onmouseout="diniout()" id="dini" />
+		<img src="images/visal.jpg" alt="Visal" onmouseover="vis()" onmouseout="visout()" id="vis" />
 		<div id="info"></div>
         <script>
                function ass(){

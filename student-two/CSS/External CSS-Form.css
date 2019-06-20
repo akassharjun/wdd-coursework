@@ -1,5 +1,6 @@
 body{
-    background-color: #880e4f;      /*Change into darker red/ use background image*/
+    background: rgb(56,0,54);
+    background: linear-gradient(90deg, rgba(56,0,54,1) 0%, rgba(12,186,186,1) 100%);
     margin:0;
 }
 

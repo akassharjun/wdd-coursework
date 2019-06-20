@@ -1,6 +1,7 @@
 *{
-    margin: auto;
+    margin: 0;
 }
+
 /*Logo/header*/
 header{
     background:#c10000;
@@ -148,7 +149,7 @@ option{
     background: #e2e2e2;
 }
 .images:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     filter: grayscale(0);
     z-index: 2;
 }            
@@ -167,12 +168,10 @@ option{
     margin-bottom: 15px;
     border-radius: 10px; 
     padding: 20px; 
-    height: 440px;   
+    height: 400px;   
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(7, 3vw);
-    grid-gap: 20px;
-                           
+    grid-template-columns: repeat(12, 8.33%);
+    grid-template-rows: repeat(7, 3vw);                           
 }   
 #description{
     grid-column: 2/18;
@@ -203,4 +202,5 @@ option{
 /*Hidden images*/            
 #hiddenImage{
     visibility: hidden;
+    display: none;
 }

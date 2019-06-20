@@ -200,7 +200,7 @@ option{
     visibility: hidden;
     display: none;    
 }
+/*image fit*/
 .imagesAndDescriptions #imageDiv img{
     object-fit: cover;
-
 }

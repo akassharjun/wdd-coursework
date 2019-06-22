@@ -10,7 +10,7 @@ h1{
     width:400px;
 }
 
-.grid-container{
+.grid-container{            /*remove grid and use percentages with flexbox*/
     display: grid;
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(20,50px);

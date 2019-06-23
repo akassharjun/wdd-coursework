@@ -44,5 +44,5 @@ h1{
 
 .rideName{
     position: relative;
-    top:15px;                   /*centering text vertically within div*/
+    top:10px;                   /*centering text vertically within div*/
 }

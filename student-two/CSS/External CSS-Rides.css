@@ -1,26 +1,54 @@
 h1{
     text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 12;
-}
-
-.rideBlock{
-    background-color: blueviolet;
-    height:500px;
-    width:400px;
-}
-
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(20,50px);
 }
 
 .flex-container{
-    grid-column-start: 2;
-    grid-column-end: 12;
-    grid-row-start: 4;
-    grid-row-end: ;
+    border:4px solid red;                       /*temporary colour for identification*/
+    width:90%;
+    margin: auto;
     display:flex;
     flex-wrap:wrap;
+    justify-content: space-evenly;              /*items are distributed so that the spacing between any two items (and the space to the edges) is equal.*/
+}
+
+.rideBlock{
+    border: 1px solid white;            /*match border colour with background colour, so that images won't move around when hovered*/
+    height:500px;
+    width:400px;
+    margin:10px 0 20px 0;
+}
+
+.rideImgBlock{
+    border: 1px solid lightgray;
+    height:400px;
+    width:380px;
+    margin: auto;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.rideBlock:hover{
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0px 1px 6px 1px gray;
+}
+
+.rideImgBlock img{
+    max-width:100%;
+    min-height: 400px;
+}
+
+.rideImgTag{
+    border: 1px solid lightgray;
+    height:50px;
+    width:380px;
+    margin:auto;
+    margin-top: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.rideName{
+    position: relative;
+    top:10px;                   /*centering text vertically within div*/
 }

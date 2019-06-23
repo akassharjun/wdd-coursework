@@ -3,106 +3,272 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            #ass{
-                border-radius:60%;
-                width:200px;
-                margin-left:50px;
-                margin-right:20px;
-                margin-top:30px;
+            h1 {
+				font-family: cursive;
+				text-align: center;
+				margin-top: 100px;
+				font-size: 80px;
+			}
+			#avengersceleb {
+				height: 650px;
+				position: relative;
+				font-family: cursive;
+				font-size: 50px;
+                width:110%;
+                margin-left:-7px;
+			}
+			.text-block {
+				position: absolute;
+				bottom: 20px;
+				right: 200px;
+				color: black;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			#header{
+                background-color:rgb(145, 53, 99);
+                height:80px;
+                margin-left:-7px;
+                margin-top:-5px;
+                width:102%;
             }
-         #dinu{
-                border-radius:60%;
-                width:200px;
-                margin-left:100px;
-                margin-right:20px;
-                margin-top:30px;
+            #logo{
+                width:300px;
+                height:300px;
+                margin-top:-100px;
+                margin-left:10px;  
             }
-            #vis{
-                border-radius:60%;
-                width:200px;
-                margin-left:100px;
-                margin-right:20px;
-                margin-top:30px;
+            #nav{
+                background-color:brown;
+                margin-left:-7px;
+                width:102%;
+                height:50px;
             }
-            #dini{
-                border-radius:60%;
-                width:200px;
-                float:right;
-                margin-top:30px;
-                margin-left:20px;
-                margin-right:100px; 
+            #link{
+                font-size:30px;
+                padding:10px;
+                margin-left:30px;
             }
-            #info{
-                margin-top:40px;
-                margin-left:390px;
-                color:white;
-                width:470px;
-                height:250px;
-                text-align: center;
-                font-size: 70px;
-                
-            }
-            #marvelheading{
-                text-align: center;
-                font-size: 80px;
-                color:red;
-                font-family: cursive;
-            }
-            h1{
-                text-align: center;
-                font-size: 30px;
-                color:red;
-                font-family: cursive;
-                margin-left:-80px;
-                margin-top:20px; 
-            }
+            a:link {
+				color: black;
+				text-decoration: none;
+			}
+
+			a:visited {
+				text-decoration: none;
+				color: black;
+			}
+
+			a:hover {
+				text-decoration: none;
+				color: red;
+			}
+
+			a:active {
+				text-decoration: none;
+			}
+
+			.wrapper {
+				padding: 50px 50px;
+				max-width: 1200px;
+				text-align: center;
+				margin-left: -75px;
+				margin-right: auto;
+				margin-top: 80px;
+			}
+
+			.right {
+				float: right !important;
+			}
+			/* Image zoom on hover + Overlay colour */
+			.parent {
+				width: 70%;
+				margin: 20px;
+				height: 600px;
+				overflow: hidden;
+				position: relative;
+				float: left;
+				display: inline-block;
+				cursor: pointer;
+			}
+
+			.child {
+				height: 100%;
+				width: 100%;
+				background-size: cover;
+				background-repeat: no-repeat;
+				-webkit-transition: all 0.5s;
+				-moz-transition: all 0.5s;
+				-o-transition: all 0.5s;
+				transition: all 0.5s;
+			}
+
+			/* Several different images */
+			.bg-one {
+				background-image: url(images/n1.jpg);
+			}
+			.bg-two {
+				background-image: url(images/d2.jpg);
+			}
+			.bg-three {
+				background-image: url(images/t1.jpeg);
+			}
+			.bg-four {
+				background-image: url(images/family.jpg);
+			}
+			.bg-five {
+				background-image: url(images/r1.jpeg);
+			}
+			.bg-six {
+				background-image: url(images/m1.jpg);
+			}
+			.bg-seven {
+				background-image: url(images/h2.jpg);
+			}
+			.bg-eight {
+				background-image: url(images/n2.jpg);
+			}
+			.bg-nine {
+				background-image: url(images/f1.jpg);
+			}
+
+			.parent:hover .child,
+			.parent:focus .child {
+				-ms-transform: scale(1.2);
+				-moz-transform: scale(1.2);
+				-webkit-transform: scale(1.2);
+				-o-transform: scale(1.2);
+				transform: scale(1.2);
+			}
+
+			.parent:hover .child:before,
+			.parent:focus .child:before {
+				display: block;
+			}
+
+			.parent:hover a,
+			.parent:focus a {
+				display: block;
+			}
+
+			.child:before {
+				content: "";
+				display: none;
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+
+			/* Media Queries */
+			@media screen and (max-width: 960px) {
+				.parent {
+					width: 100%;
+					margin: 20px 0px;
+				}
+				.wrapper {
+					padding: 20px 20px;
+				}
+			}
         </style>
-        <title>description</title>
+        <title>Special Events</title>
     </head>
     <body>
-            <img src="images.png" alt="marvel" style="float:center;width:250px;margin-top:40px;margin-left:500px;">
-            <h1>Proudly presents</h1>
-        <h1 id="marvelheading">Marvel Theme Park</h1>
-        <div id="ass">
-            <img src="ass.jpg" alt="Aagash" onmouseover="ass()" onmouseout="assout()">
+            <div id="header">
+                    <img src="..\..\common-resources\logo.svg" alt="Logo"  id="logo">
+            </div>
+            <div id="nav">
+                <div id="link">
+                        <a href="" >Link1</a>
+                        <a href="" style="margin-left:30px;">Link2</a>
+                        <a href="" style="margin-left:30px;">Link3</a>
+                        <a href="" style="margin-left:30px;">Link4</a>
+                        <a href="" style="margin-left:30px;">Link5</a>
+                </div>
+            </div>
+        <div id="avengersceleb">
+			<img
+				src="images/a1.jpg"
+				alt="avengers"
+				width="92%;"
+				height="100%;"
+				style="opacity: 0.8;filter: opacity(80%);"
+			/>
+			<div class="text-block">
+				<h4>The Avengers Festival Celebration</h4>
+				<p style="text-align: center;">From 10 June to 20th July</p>
+			</div>
+		</div>
+    <h1 style="margin-top:0px;">Marvel and DC Land</h1>
+    <div class="wrapper" style="margin-top:-150px;">
+        <div class="parent">
+            <div class="child bg-one">
+                <h4 style="color:white;margin-left:-430px;font-size:50px;">Discover Fun</h4>
+            </div>
         </div>
-        <div id="dinu">   
-            <img src="dinuka.jpg" alt="Dinuka" onmouseover="dinu()" onmouseout="dinuout()" >
+        <div class="parent" style="width:40%;height:300px;float:right;margin-right:-150px;margin-top:-620px;">
+            <div class="child bg-two">
+                <h4 style="font-size:50px;color:white;">Music meets Magic</h4>
+            </div>
         </div>
-        <div id="vis"> 
-            <img src="visal.jpg" alt="Visal" onmouseover="vis()" onmouseout="visout()" >
+        <div
+            class="parent"
+            style="width:40%;height:350px;float:right;margin-right:-150px;margin-top:-370px;"
+        >
+            <div class="child bg-three">
+                <h4 style="font-size:50px;color:white;">Celebrate Magical Pride</h4>
+            </div>
         </div>
-        <div id="dini">
-            <img src="dini.jpg" alt="Dinesh" onmouseover="dini()" onmouseout="diniout()">
-        </div>    
-            <div id="info"></div>
-            
-            
-            <script>
-                function ass(){
-                      document.getElementById("info").innerHTML="Aagash<br/>Student1";
-                }
-                function assout(){
-                    document.getElementById("info").innerHTML=" ";
-                }
-                function dinu(){
-                    document.getElementById("info").innerHTML="Dinuka Piyadiyagama<br/>Student2";
-                }
-                function dinuout(){
-                    document.getElementById("info").innerHTML="";
-                }
-                function dini(){
-                    document.getElementById("info").innerHTML="Yuwarajalingam Dinesh<br/>Student3";
-                }
-                function diniout(){
-                    document.getElementById("info").innerHTML=" ";
-                }
-                function vis(){
-                    document.getElementById("info").innerHTML="Visal Rajapakse<br/>Student4";
-                }
-                function visout(){
-                    document.getElementById("info").innerHTML="";
-                }
-            </script>
+    </div>
+    <h1 style="margin-top: 600px;color:black;">Marvel and DC World</h1>
+    <div class="wrapper" style="margin-top:-150px;">
+        <div class="parent">
+            <div class="child bg-four">
+                <h4 style="color:white;margin-left:-400px;font-size:50px;">Family Union</h4>
+            </div>
+        </div>
+        <div
+            class="parent"
+            style="width:40%;height:300px;float:right;margin-right:-150px;margin-top:-620px;"
+        >
+            <div class="child bg-five">
+                <h4 style="font-size:50px;color:white;">Adventures</h4>
+            </div>
+        </div>
+        <div
+            class="parent"
+            style="width:40%;height:350px;float:right;margin-right:-150px;margin-top:-370px;"
+        >
+            <div class="child bg-six">
+                <h4 style="font-size:50px;color:white;">Meet Heroes</h4>
+            </div>
+        </div>
+    </div>
+    <h1 style="margin-top: 600px;color:black;">Celebrationes</h1>
+    <div class="wrapper" style="margin-top:-150px;">
+        <div class="parent">
+            <div class="child bg-seven">
+                <h4 style="color:white;margin-left:-400px;font-size:50px;">Halloween</h4>
+            </div>
+        </div>
+        <div
+            class="parent"
+            style="width:40%;height:300px;float:right;margin-right:-150px;margin-top:-620px;"
+        >
+            <div class="child bg-eight">
+                <h4 style="font-size:50px;color:white;">New Year</h4>
+            </div>
+        </div>
+        <div
+            class="parent"
+            style="width:40%;height:350px;float:right;margin-right:-150px;margin-top:-370px;"
+        >
+            <div class="child bg-nine">
+                <h4 style="font-size:50px;color:white;">Special Occassiones</h4>
+            </div>
+        </div>
+    </div>
+    <h1 style="margin-top: 600px;color:black;">Movie Nights</h1>
     </body>
 </html>

@@ -69,12 +69,10 @@ html, body{
 .imgLarge{
     position: relative;
     top: 20px;
-    background-color:red;               /*temperary colour for identification*/
     height:600px;
 }
 
 .imgSmall{
-    background-color: white;            /*temperary colour for identification*/
     height:350px;
 }
 
@@ -87,7 +85,6 @@ html, body{
 
 .imgSmallLeft{
     float:left;
-    background-color: rebeccapurple;    /*temperary colour for identification*/
 }
 
 .imgSmallRight{
@@ -107,17 +104,12 @@ html, body{
 
 
 
-.parallaxBackground{
-    background-image: url('../images/MainPG-images/northern-lights.jpg');
+.captionBackground{
     height:40%;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
     position: relative;
-    opacity:0.9;
 }
 
-.caption{                   /*text over parallax area*/
+.caption{                   /*text over area*/
     position: relative;
     width:100%;
     text-align:center;

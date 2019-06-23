@@ -1,26 +1,35 @@
 h1{
     text-align: center;
-    grid-column-start: 2;
-    grid-column-end: 12;
 }
 
 .rideBlock{
-    background-color: blueviolet;
+    border: 2px solid gray;
     height:500px;
     width:400px;
+    margin:10px 0 10px 0;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-template-rows: repeat(20,50px);
+.rideImgBlock{
+    border: 1px solid lightgray;
+    height:400px;
+    width:380px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.rideImgTag{
+    border: 1px solid lightgray;
+    height:50px;
+    width:380px;
+    margin:auto;
+    margin-top: 15px;
 }
 
 .flex-container{
-    grid-column-start: 2;
-    grid-column-end: 12;
-    grid-row-start: 4;
-    grid-row-end: ;
+    border:4px solid red;
+    width:90%;
+    margin: auto;
     display:flex;
     flex-wrap:wrap;
+    justify-content: space-evenly;              /*items are distributed so that the spacing between any two items (and the space to the edges) is equal.*/
 }

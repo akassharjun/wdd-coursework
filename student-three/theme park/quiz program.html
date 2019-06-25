@@ -371,13 +371,14 @@
            }
            var startGame;
            var player;
+           var myVar ;
            function play(){
                if(document.getElementById("fname").value!=""){
                 player=document.getElementById("fname").value;   
                 document.getElementById("main").innerHTML=document.getElementById("questiones").innerHTML;
-                var myVar = setTimeout(displayScore, 120000);
+                startGame=new Date().getTime();
+                myVar = setTimeout(displayScore,120000);
                 timer();
-                startGame=new Date().getSeconds();
                }
                else{
                 document.getElementById("main").innerHTML=document.getElementById("game").innerHTML;
@@ -387,12 +388,9 @@
            score=0;
            var check=[];
 
-           function q1(){
-           scores=[];
-           check=[];    
+           function q1(){ 
            checking();
                document.getElementById("q1").innerHTML=document.getElementById("q2").innerHTML;
-
            }
 
            function q2(){
@@ -434,18 +432,21 @@
               checking();
            document.getElementById("q1").innerHTML=document.getElementById("q10").innerHTML;
            }
-           var endGame;
            function q10(){
               checking();
             displayScore();
            }
+
+           var timeDuration;
+
+           function timeDifference(){
+            endGame=new Date().getTime();    
+            timeDuration=((endGame-startGame)-000020);
+           }
+
            function displayScore(){
-            endGame=new Date().getSeconds();    
-            var timeDuration=(endGame-startGame);
-            if(timeDuration<0){
-                timeDuration=(timeDuration*-1);
-                timeDuration=(60-timeDuration);
-            }
+                timeDifference();
+                clearTimeout(myVar);
                 var size=check.length;
                 if(size<10){
                     for(var l=size+1; l<=10;l++){
@@ -456,13 +457,13 @@
                document.getElementById("main").innerHTML="<span style='font-size:30px;margin-left:500px;'>Player : "+player+"</span>"+"<br/>";                                 
                if(score>12){
                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Score : " + score+"</span>"+"<br>";
-                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" s</span><br>"; 
+                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" m</span><br>"; 
                    document.body.style.backgroundColor="green";
                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Pass"+"<br><br>";
                    }
                    else{
                     document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Score : " + score+"</span>"+"<br>";
-                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" s</span><br>"; 
+                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" m</span><br>"; 
                        document.body.style.backgroundColor="red";
                        document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Fail"+"<br><br>";
                    }
@@ -493,7 +494,7 @@
                        }
                    } 
                }
-        
+               
                function startTimer(duration, display) {
                         var timer = duration, minutes, seconds;
                         setInterval(function () {

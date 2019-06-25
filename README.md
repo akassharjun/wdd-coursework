@@ -29,3 +29,5 @@ The official private repository for our Web Design &amp; Development coursework.
 [Tips to use VSCode more efficiently](https://dev.to/selrond/tips-to-use-vscode-more-efficiently-3h6p)
 
 [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+
+[Web content accessibility Checklist](https://www.w3.org/TR/WCAG10/full-checklist.html)

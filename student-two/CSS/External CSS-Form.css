@@ -5,6 +5,7 @@ body{
 }
 
 form{
+    box-shadow: 0px 1px 14px 2px gray;
     position: absolute;
     text-align:center;
     width: 350px;

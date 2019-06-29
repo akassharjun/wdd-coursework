@@ -6,7 +6,7 @@ h1{
 
 .flex-container{
     background-color: white;
-    width:90%;
+    width:95%;
     margin: auto;
     display:flex;
     flex-wrap:wrap;
@@ -20,6 +20,7 @@ h1{
     width:430px;
     margin:20px 5px 20px 5px;
     box-shadow: 0px 1px 14px 1px grey;
+    transition-duration: 0.8s;
 }
 
 .rideBlock:hover{

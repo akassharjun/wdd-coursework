@@ -1,21 +1,16 @@
-body{
-    background-color: #21D4FD ;
-}
-
 h1{
     text-align: center;
     padding:80px;
+    background-color: white;
 }
 
 .flex-container{
     background-color: white;
-    border:5px solid #B721FF;                       /*temporary colour for identification*/
     width:90%;
     margin: auto;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-evenly;              /*items are distributed so that the spacing between any two items (and the space to the edges) is equal.*/
-    box-shadow: 0px 1px 20px 14px #B721FF;
     margin-bottom: 50px
 }
 
@@ -24,13 +19,13 @@ h1{
     height:490px;
     width:430px;
     margin:20px 5px 20px 5px;
-    box-shadow: 0px 1px 14px 1px gray;
+    box-shadow: 0px 1px 14px 1px grey;
 }
 
 .rideBlock:hover{
-    border: 1px solid gray;
+    border: 1px solid #21D4FD ;
     border-radius: 10px;
-    box-shadow: 0px 1px 6px 1px gray;
+    box-shadow: 0px 1px 6px 1px #B721FF;
 }
 
 .rideImgBlock{

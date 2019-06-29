@@ -32,6 +32,7 @@ h1{
     margin: auto;
     margin-top: 10px;
     overflow: hidden;
+    position: relative;             /*for overlay text*/
 }
 
 .rideImgBlock img{
@@ -52,4 +53,30 @@ h1{
 .rideName{
     position: relative;
     top:10px;                   /*centering text vertically within div*/
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.rideImgBlock:hover .overlay{
+    height: 100%;
+}
+
+.textOverlay{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }

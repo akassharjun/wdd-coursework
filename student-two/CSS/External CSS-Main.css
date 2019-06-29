@@ -27,16 +27,53 @@ html, body{
     height:100%             /*to match the prallax background*/
 }
 
+/*css for parallax cover photo*/
+html{
+    overflow: hidden;
+}
 
+body{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
 
-#coverImage{
-    width:100%;
-    height:auto;
+header{
+    box-sizing: border-box;                 /*?????????*/
+    position: relative;
+    min-height: 100vh;
+    width: 100vw;
+    transform-style: inherit;               /*?????????*/
+}
+
+header, header::before{
+    background: 50% 50% cover;              /*needed?????*/
+}
+
+header::before{
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+    content: "";                            /*Add into text regarding cite*/
+    position: absolute;
+    /*display: block;*/
+    background-image: url(../images/MainPG-images/CoverPhoto.jpg);
+    background-size:cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index:-1;
+    min-height: 100vh;
     filter: brightness(80%);
 }
 
+
+
+
+
 .contentStripTop{
-    height:130px;
+    height:300px;
     margin-top:30px;
     text-align:center;
 }
@@ -63,7 +100,7 @@ html, body{
 }
 
 .imgLarge img, .imgSmall img{
-    transition: transform 2000ms;
+    transition: transform 1500ms;
 }
 
 
@@ -107,7 +144,6 @@ html, body{
 
 .captionBackground{
     height:40%;
-    position: relative;
 }
 
 .caption{                   /*text over area*/
@@ -141,7 +177,7 @@ span.contentOverImg{
 
 .contentStripBottom img{                    /*get this into a common class and apply to all images later*/
     width: 100%;
-    transition: transform 2000ms;
+    transition: transform 1500ms;
 }
 
 

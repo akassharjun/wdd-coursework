@@ -32,7 +32,7 @@ html, body{
 #coverImage{
     width:100%;
     height:auto;
-    filter: brightness(80%);
+    filter: brightness(70%);
 }
 
 .contentStripTop{
@@ -50,7 +50,7 @@ html, body{
 
 .contentLarge{
     position: relative;
-    height:1000px;
+    height:950px;
     background-color: aliceblue;            /*temporary colour for identification*/
 }
 
@@ -70,10 +70,11 @@ html, body{
 .imgLarge{
     position: relative;
     top: 20px;
-    height:600px;
+    height:550px;
 }
 
 .imgSmall{
+    top:20px;
     height:350px;
 }
 
@@ -106,7 +107,7 @@ html, body{
 
 
 .captionBackground{
-    height:40%;
+    height:300px;
     position: relative;
 }
 
@@ -123,7 +124,6 @@ span.contentOverImg{
     font-size: 30px;
     font-weight: 500;
     color: midnightblue;
-    background-color: lightgoldenrodyellow;
 }
 
 

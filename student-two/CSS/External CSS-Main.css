@@ -27,53 +27,16 @@ html, body{
     height:100%             /*to match the prallax background*/
 }
 
-/*css for parallax cover photo*/
-html{
-    overflow: hidden;
-}
 
-body{
-    perspective: 1px;
-    transform-style: preserve-3d;
-    overflow-x: hidden;
-    overflow-y: scroll;
-}
 
-header{
-    box-sizing: border-box;                 /*?????????*/
-    position: relative;
-    min-height: 100vh;
-    width: 100vw;
-    transform-style: inherit;               /*?????????*/
-}
-
-header, header::before{
-    background: 50% 50% cover;              /*needed?????*/
-}
-
-header::before{
-    bottom:0;
-    left:0;
-    right:0;
-    top:0;
-    content: "";                            /*Add into text regarding cite*/
-    position: absolute;
-    /*display: block;*/
-    background-image: url(../images/MainPG-images/CoverPhoto.jpg);
-    background-size:cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(2);
-    z-index:-1;
-    min-height: 100vh;
+#coverImage{
+    width:100%;
+    height:auto;
     filter: brightness(80%);
 }
 
-
-
-
-
 .contentStripTop{
-    height:300px;
+    height:130px;
     margin-top:30px;
     text-align:center;
 }
@@ -144,6 +107,7 @@ header::before{
 
 .captionBackground{
     height:40%;
+    position: relative;
 }
 
 .caption{                   /*text over area*/

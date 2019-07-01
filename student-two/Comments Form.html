@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
             Feedback
@@ -41,8 +41,9 @@
         </form>
 
 
-        <!--<footer>details</footer> -->
+        <footer>details</footer>
 
+        <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
 
         <script>
             function formValidation(){
@@ -63,6 +64,22 @@
                     alert("Dear "+nameCheck+", Thank you very much for your feedback. You have rated our site as "+radioCheck+" and your comment was, \""+commentsOut+'\"');
                 }
             }
+
+
+
+            window.onscroll = function() {toTopDisplay()};
+            function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
+                if(document.documentElement.scrollTop > 100){
+                    document.getElementById("toTopButton").style.display = "block";
+                }else{
+                    document.getElementById("toTopButton").style.display = "none";
+                }
+            }
+
+            function scrollToTop(){         //scroll top top of web page
+                document.documentElement.scrollTop = 0;
+            }
+
         </script>
     </body>
 </html>

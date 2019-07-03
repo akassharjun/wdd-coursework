@@ -1,3 +1,4 @@
+
 h1{
     text-align: center;
     padding:80px;
@@ -5,7 +6,7 @@ h1{
 }
 
 .flex-container{
-    background-color: white;
+    background-color: #f8f8fb;
     width:95%;
     margin: auto;
     display:flex;
@@ -16,16 +17,18 @@ h1{
 
 .rideBlock{
     border: 1px solid white;            /*match border colour with background colour, so that images won't move around when hovered*/
+    border-radius: 12px;
     height:490px;
     width:430px;
     margin:20px 5px 20px 5px;
-    box-shadow: 0px 1px 14px 1px grey;
     transition-duration: 0.8s;
+    background-color: white;
+    box-shadow: 0px 3px 10px 1px grey;
 }
 
 .rideBlock:hover{
     border: 1px solid #21D4FD ;
-    border-radius: 10px;
+    border-radius: 12px;
     box-shadow: 0px 1px 6px 1px #B721FF;
 }
 

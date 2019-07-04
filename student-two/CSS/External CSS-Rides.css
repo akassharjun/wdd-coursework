@@ -1,5 +1,6 @@
 
 h1{
+    font-weight:200;
     text-align: center;
     padding:80px;
     background-color: white;
@@ -19,7 +20,7 @@ h1{
     /*border: 1px solid white;            /*match border colour with background colour, so that images won't move around when hovered*/
     border-radius: 12px;
     height:470px;
-    width:470px;
+    width:450px;
     margin:20px 5px 20px 5px;
     transition-duration: 0.8s;
     background-color: white;

@@ -88,10 +88,10 @@
                     border-radius: 10%;
 
                 }
-                #questiones{
+                #questiones,#questionesDc{
                     display:none;
                 }
-                #q1{
+                #q1,#q11{
                     margin-left:17%;
                     margin-top:0%;
                     background-color:black;
@@ -107,7 +107,7 @@
                  color:white;
                  display:none;
              }
-             #q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10{
+             #q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10,#q12,#q13,#q14,#q15,#q16,#q17,#q18,#q19,#q20{
                 margin-left:17%;
                 margin-top:0%;
                 background-color:black;
@@ -173,19 +173,19 @@
 			a:active {
 				text-decoration: none;
 			}
-            #marvelimages{
+            #marvelimages,#Dcimages{
                 height:300px;
                 width:40%;
                 border-radius:4%;
                 margin-left:32%;
                 margin-top:2%; 
             }
-            #marvelquestions{
+            #marvelquestions,#Dcquestions{
                 font-size:250%;
                 text-align:center;
                 margin-top:0%;
             }
-            #marvelbutton{
+            #marvelbutton,#Dcbutton{
                 margin-left:40%;
                 margin-top:-1%;
             }
@@ -209,10 +209,10 @@
     <div id="hello">   
        <h1 style="margin-top:-1%;">Choose your category by clicking the logo</h1>
        <div id="marvel">
-            <button onclick="rules()" style="margin-top:-20%"><img src="images/ma.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
+            <button onclick="rulesmarvel()" style="margin-top:-20%" id="MarvelQuestiones" value="false"><img src="images/ma.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
        </div>
        <div id="dc">
-            <button onclick="rules()"><img src="images/dc.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
+            <button onclick="rules()" id="DcQuestiones" value="true"><img src="images/dc.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
        </div>
     </div>
     <div id="rules">
@@ -338,6 +338,109 @@
                 </div>   
           </div> 
        </div> 
+       <div id="questionesDc">
+            <div id="time"></div>
+            <div id="q11">
+                    <img src="images/WonderWoman.jpg" alt="WonderWoman" id="Dcimages">
+                    <p id="Dcquestions">Name this superhero!</p>
+                    <div id="selection">
+                        <input type="radio" name="q11"  id="incorrect1">Batgirl<br/>
+                        <input type="radio" name="q11"  id="correct">WonderWoman<br/>
+                        <input type="radio" name="q11"  id="incorrect2">Power girl<br/>
+                        <button onclick="q11()" id="Dcbutton">question2>></button>
+                    </div>   
+              </div>
+              <div id="q12">
+                    <img src="images/SuperDad.jpg" alt="Supermandad" id="Dcimages">
+                    <p id="Dcquestions">What is the name of super man dad ?</p>
+                    <div id="selection">
+                        <input type="radio" name="q12"  id="incorrect1">Jack-kent<br/>
+                        <input type="radio" name="q12"  id="correct">Jor-El<br/>
+                        <input type="radio" name="q12"  id="incorrect2">Orlando<br/>
+                        <button onclick="q12()" id="Dcbutton">question3>></button>
+                    </div>   
+              </div> 
+              <div id="q13">
+                    <img src="images/Batmanlogo.png" alt="Batman" id="Dcimages">
+                    <p id="Dcquestions">What is Batman's true identity?</p>
+                    <div id="selection">
+                        <input type="radio" name="q13"  id="incorrect1">Barry Allen<br/>
+                        <input type="radio" name="q13"  id="incorrect2">Clerk Kent<br/>
+                        <input type="radio" name="q13"  id="correct">Bruce wayne<br/>
+                        <button onclick="q13()" id="Dcbutton">question4>></button>
+                    </div>   
+              </div> 
+              <div id="q14">
+                    <img src="images/flashlogo.jpg" alt="Flash" id="Dcimages">
+                    <p id="Dcquestions">What is The Flash's true identity?</p>
+                    <div id="selection">
+                        <input type="radio" name="q14"  id="correct">Barry Allen<br/>
+                        <input type="radio" name="q14"  id="incorrect1">Alan Walker<br/>
+                        <input type="radio" name="q14"  id="incorrect2">Hal Jordan<br/>
+                        <button onclick="q14()" id="Dcbutton">question5>></button>
+                    </div>   
+              </div> 
+              <div id="q15">
+                    <img src="images/superman.jpg" alt="Superman" id="Dcimages">
+                    <p id="Dcquestions">Where is Superman's home?</p>
+                    <div id="selection">
+                        <input type="radio" name="q15"  id="incorrect1">Gotham<br/>
+                        <input type="radio" name="q15"  id="correct">Krypton<br/>
+                        <input type="radio" name="q15"  id="incorrect2">Metropolis<br/>
+                        <button onclick="q15()" id="Dcbutton">question6>></button>
+                    </div>   
+              </div> 
+              <div id="q16">
+                    <img src="images/supermanlogo.jpg" alt="supermanlogo" id="Dcimages">
+                    <p id="Dcquestions">What is the Superman logo a Kryptonian symbol for?</p>
+                    <div id="selection">
+                        <input type="radio" name="q16"  id="correct">Hope<br/>
+                        <input type="radio" name="q16"  id="incorrect1">Power<br/>
+                        <input type="radio" name="q16"  id="incorrect2">Beauty<br/>
+                        <button onclick="q16()" id="Dcbutton">question7>></button>
+                    </div>   
+              </div> 
+              <div id="q17">
+                    <img src="images/joker.jpg" alt="Joker" id="Dcimages">
+                    <p id="Dcquestions">Who played Christopher Nolan's Joker?</p>
+                    <div id="selection">
+                        <input type="radio" name="q17"  id="incorrect1">Jack Nicholson<br/>
+                        <input type="radio" name="q17"  id="correct">Heath Ledger<br/>
+                        <input type="radio" name="q17"  id="incorrect2">Jared Leto<br/>
+                        <button onclick="q17()" id="Dcbutton">question8>></button>
+                    </div>   
+              </div> 
+              <div id="q18">
+                    <img src="images/greenlantern.jpg" alt="Green lantern" id="Dcimages">
+                    <p id="Dcquestions">What is the true identity of the Green Lantern?</p>
+                    <div id="selection">
+                        <input type="radio" name="q18"  id="incorrect1">Barry Allen<br/>
+                        <input type="radio" name="q18"  id="incorrect2">Kal-El<br/>
+                        <input type="radio" name="q18"  id="correct">Hal Jordan<br/>
+                        <button onclick="q18()" id="Dcbutton">question 9>></button>
+                    </div>   
+              </div> 
+              <div id="q19">
+                    <img src="images/batmane.jpg" alt="batman" id="Dcimages">
+                    <p id="Dcquestions">What is Batman's super power ?</p>
+                    <div id="selection">
+                        <input type="radio" name="q19"  id="incorrect1">Super Strength<br/>
+                        <input type="radio" name="q19"  id="correct">Super Wealthy<br/>
+                        <input type="radio" name="q19"  id="incorrect2">Super Intelligence<br/>
+                        <button onclick="q19()" id="Dcbutton">question 10>></button>
+                    </div>   
+              </div> 
+              <div id="q20">
+                    <img src="images/WonderWoman.jpg" alt="WonderWoman" id="Dcimages">
+                    <p id="Dcquestions">What Nationality is Wonder Woman?</p>
+                    <div id="selection">
+                        <input type="radio" name="q20"  id="incorrect1">Libanese<br/>
+                        <input type="radio" name="q20"  id="correct">Amazonian<br/>
+                        <input type="radio" name="q20"  id="incorrect2">Kryptonian<br/>
+                        <button onclick="q20()" id="Dcbutton">Score board>></button>
+                    </div>   
+              </div>  
+       </div>
        <script type="text/javascript">
            document.getElementById("main").innerHTML=document.getElementById("hello").innerHTML;
 
@@ -362,8 +465,15 @@
                scores.push(0);
            }
            }
+           var change;
+           var changed;
 
+           function rulesmarvel(){
+                 change=document.getElementById("MarvelQuestiones").value;
+                 document.getElementById("main").innerHTML=document.getElementById("rules").innerHTML;
+           }
            function rules(){
+                 changed=document.getElementById("DcQuestiones").value;
                  document.getElementById("main").innerHTML=document.getElementById("rules").innerHTML;
            }
            function hello(){
@@ -371,28 +481,37 @@
            }
            var startGame;
            var player;
+           var myVar ;
            function play(){
                if(document.getElementById("fname").value!=""){
-                player=document.getElementById("fname").value;   
-                document.getElementById("main").innerHTML=document.getElementById("questiones").innerHTML;
-                var myVar = setTimeout(displayScore, 120000);
+                player=document.getElementById("fname").value;
+                if (change=="false") {
+                    document.getElementById("main").innerHTML=document.getElementById("questiones").innerHTML;
+                }
+                else if(changed=="true"){
+                    document.getElementById("main").innerHTML=document.getElementById("questionesDc").innerHTML;  
+                }
+                startGame=new Date().getTime();
+                myVar = setTimeout(displayScore,120000);
                 timer();
-                startGame=new Date().getSeconds();
                }
                else{
                 document.getElementById("main").innerHTML=document.getElementById("game").innerHTML;
                }
            }
+           function  MarvelQ(){
+            document.getElementById("main").innerHTML=document.getElementById("questiones").innerHTML;
+           }
+           function DcQ(){
+            document.getElementById("main").innerHTML=document.getElementById("questionesDc").innerHTML; 
+           }
            var scores=[];
            score=0;
            var check=[];
 
-           function q1(){
-           scores=[];
-           check=[];    
+           function q1(){ 
            checking();
                document.getElementById("q1").innerHTML=document.getElementById("q2").innerHTML;
-
            }
 
            function q2(){
@@ -434,18 +553,71 @@
               checking();
            document.getElementById("q1").innerHTML=document.getElementById("q10").innerHTML;
            }
-           var endGame;
            function q10(){
               checking();
             displayScore();
            }
+
+           function q11(){ 
+           checking();
+               document.getElementById("q11").innerHTML=document.getElementById("q12").innerHTML;
+           }
+
+           function q12(){
+               checking();
+           document.getElementById("q11").innerHTML=document.getElementById("q13").innerHTML;
+           }
+
+           function q13(){
+             checking();
+           document.getElementById("q11").innerHTML=document.getElementById("q14").innerHTML;
+           }
+
+           function q14(){
+            checking();
+           document.getElementById("q11").innerHTML=document.getElementById("q15").innerHTML;
+           }
+
+           function q15(){
+            checking();
+           document.getElementById("q11").innerHTML=document.getElementById("q16").innerHTML;
+           }
+
+           function q16(){
+            checking();
+           document.getElementById("q11").innerHTML=document.getElementById("q17").innerHTML;
+           }
+
+           function q17(){
+             checking();
+           document.getElementById("q11").innerHTML=document.getElementById("q18").innerHTML;
+           }
+
+           function q18(){
+              checking();
+           document.getElementById("q11").innerHTML=document.getElementById("q19").innerHTML;
+           }
+
+           function q19(){
+              checking();
+           document.getElementById("q11").innerHTML=document.getElementById("q20").innerHTML;
+           }
+           function q20(){
+              checking();
+            displayScore();
+           }
+
+
+           var timeDuration;
+
+           function timeDifference(){
+            endGame=new Date().getTime();    
+            timeDuration=((endGame-startGame)-000020);
+           }
+
            function displayScore(){
-            endGame=new Date().getSeconds();    
-            var timeDuration=(endGame-startGame);
-            if(timeDuration<0){
-                timeDuration=(timeDuration*-1);
-                timeDuration=(60-timeDuration);
-            }
+                timeDifference();
+                clearTimeout(myVar);
                 var size=check.length;
                 if(size<10){
                     for(var l=size+1; l<=10;l++){
@@ -456,13 +628,13 @@
                document.getElementById("main").innerHTML="<span style='font-size:30px;margin-left:500px;'>Player : "+player+"</span>"+"<br/>";                                 
                if(score>12){
                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Score : " + score+"</span>"+"<br>";
-                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" s</span><br>"; 
+                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" m</span><br>"; 
                    document.body.style.backgroundColor="green";
                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Pass"+"<br><br>";
                    }
                    else{
                     document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Score : " + score+"</span>"+"<br>";
-                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" s</span><br>"; 
+                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" m</span><br>"; 
                        document.body.style.backgroundColor="red";
                        document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Fail"+"<br><br>";
                    }
@@ -493,7 +665,7 @@
                        }
                    } 
                }
-        
+               
                function startTimer(duration, display) {
                         var timer = duration, minutes, seconds;
                         setInterval(function () {

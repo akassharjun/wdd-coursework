@@ -11,7 +11,10 @@ function changeDiningOption(){
             document.getElementById("fastFoodrestaurant2").style.display="none";
             document.getElementById("fastFoodrestaurant3").style.display="none";
             document.getElementById("candyShop").style.display="none";
+            document.getElementById("restaurant1").style.display="block";
+            document.getElementById("vegetarianRestaurant").style.display="block";
             document.getElementById("iceCreamShop").style.display="none";
+
             return;
         case "Buffet":
             console.log("inside Buffet case");
@@ -19,6 +22,7 @@ function changeDiningOption(){
             document.getElementById("fastFoodrestaurant2").style.display="none";
             document.getElementById("fastFoodrestaurant3").style.display="none";
             document.getElementById("iceCreamShop").style.display="none";
+            document.getElementById("candyShop").style.display="block";
             return
         case "Vegetarian choices":
             console.log("inside Vegetarian case");

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>
             Rides
@@ -26,7 +26,12 @@
             <div class="rideBlock">
                 <div class="rideImgBlock">
                     <img src="../student-two/images/RidesPG-images/roller-coaster-2.jpg" alt=""/>
-                    <!--overlapping text(description) on hover-->
+                    <div class="overlay">
+                        <div class ="textOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Hello World
+                        </div>
+                    </div>
                 </div>
                 <div class="rideImgTag">
                     <span class="rideName"></span>
@@ -36,7 +41,12 @@
             <div class="rideBlock">
                 <div class="rideImgBlock">
                     <img src="../student-two/images/RidesPG-images/guardians-ride.jpg" alt=""/>
-                    <!--overlapping text(description) on hover-->
+                    <div class="overlay">
+                        <div class ="textOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Hello World
+                        </div>
+                    </div>
                 </div>
                 <div class="rideImgTag">
                     <span class="rideName">Guardians of the Galaxy<br/>Mission Breakout</span>
@@ -45,38 +55,58 @@
 
             <div class="rideBlock">
                 <div class="rideImgBlock">
-                    <img src="../student-two/images/RidesPG-images/flying-coaster.jpg" alt=""/>
-                    <!--overlapping text(description) on hover-->
+                    <img src="../student-two/images/RidesPG-images/flying-coaster.jpg" alt="Aqua-Coaster"/>
+                    <div class="overlay">
+                        <div class ="textOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Hello World
+                        </div>
+                    </div>
                 </div>
                 <div class="rideImgTag">
-                    <span class="rideName"></span>
+                    <span class="rideName">Aqua - Coaster</span>
                 </div>
             </div>
 
             <div class="rideBlock">
                 <div class="rideImgBlock">
                     <img src="../student-two/images/RidesPG-images/roller-coaster-1.jpg" alt=""/>
-                    <!--overlapping text(description) on hover-->
+                    <div class="overlay">
+                        <div class ="textOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Hello World
+                        </div>
+                    </div>
                 </div>
                 <div class="rideImgTag">
-                    <span class="rideName"></span>
+                    <span class="rideName">The Web</span>
                 </div>
             </div>
 
             <div class="rideBlock">
                 <div class="rideImgBlock">
                     <img src="../student-two/images/RidesPG-images/scary-ride.jpg" alt=""/>
-                    <!--overlapping text(description) on hover-->
+                    <div class="overlay">
+                        <div class ="textOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Hello World
+                        </div>
+                    </div>
                 </div>
                 <div class="rideImgTag">
-                    <span class="rideName"></span>
+                    <span class="rideName">Avengers Assemble!</span>
                 </div>
             </div>
 
             <div class="rideBlock">
                 <div class="rideImgBlock">
                     <img src="../student-two/images/RidesPG-images/big-wheel.jpg" alt=""/>
-                    <!--overlapping text(description) on hover-->
+                    <div class="overlay">
+                        <div class ="textOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Hello World
+                        </div>
+                    </div>
                 </div>
                 <div class="rideImgTag">
                     <span class="rideName">Captain America's Shield - Wheel</span>
@@ -91,5 +121,27 @@
             <!--details-->
         </footer>
 
+        <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
+
+        <script>
+
+        window.onscroll = function() {toTopDisplay()};
+            function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
+                if(document.documentElement.scrollTop > 100){
+                    document.getElementById("toTopButton").style.display = "block";
+                }else{
+                    document.getElementById("toTopButton").style.display = "none";
+                }
+            }
+
+            function scrollToTop(){         //scroll top top of web page
+                document.documentElement.scrollTop = 0;
+            }
+
+
+
+            //add click and show discription till re-clicked JS!!!!
+
+        </script>
     </body>
 </html>

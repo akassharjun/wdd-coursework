@@ -1,0 +1,8 @@
+white
+21D4FD - light blue
+B721FF - light purple
+0548b5- blue
+
+background-color: #21D4FD;
+background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+

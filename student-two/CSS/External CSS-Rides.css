@@ -11,7 +11,7 @@ h1{
     margin: auto;
     display:flex;
     flex-wrap:wrap;
-    justify-content: space-around;              /*items are distributed so that the spacing between any two items (and the space to the edges) is equal.*/
+    justify-content: space-evenly;              /*items are distributed so that the spacing between any two items (and the space to the edges) is equal.*/
     margin-bottom: 50px
 }
 

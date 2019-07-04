@@ -141,6 +141,7 @@ span.contentOverImg{
 
 .contentStripBottom img{                    /*get this into a common class and apply to all images later*/
     width: 100%;
+    min-height:100%;
     transition: transform 1500ms;
 }
 

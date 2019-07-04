@@ -25,9 +25,29 @@ html{
 }
 
 footer{
+    position: relative;
     display:block;
     height:200px;
     background-color: rgb(34, 34, 34);
+}
+
+#footLink{
+    position: absolute;
+    width:250px;
+    transform: translate(-50%, -50%);           /*centering to top left corner*/
+    top:50%;
+    left:50%;
+}
+
+#footLink a img{
+    height: 60px;
+    border-radius:50%;
+}
+
+#footLink a span{
+    float: right;
+    color:white;
+    margin: 25px 30px 0 15px;
 }
 
 /*header styling*/

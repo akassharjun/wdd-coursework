@@ -23,7 +23,7 @@ h1{
     width:450px;
     margin:20px 5px 20px 5px;
     transition-duration: 0.8s;
-    background-color: white;
+    background-color: #122335;
     box-shadow: 0px 3px 10px 1px grey;
     overflow: hidden;
 }
@@ -58,6 +58,7 @@ h1{
 }
 
 .rideName{
+    color:white;
     position: relative;
     top:10px;                   /*centering text vertically within div*/
 }

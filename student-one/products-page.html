@@ -1,10 +1,124 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <title>Products</title>
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-  <body>
-    
-  </body>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+            text-align: center;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Style the counter cards */
+        .card {
+            /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
+            margin: 14px;
+            border-radius: 8%;
+            text-align: center;
+            background-color: #1a1e1c;
+        }
+
+        .productImage {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8% 8% 0 0;
+            height: auto;
+        }
+
+        .productInfo {
+            padding-bottom: 5%;
+        }
+
+        .productTitle {
+            width: 50%;
+            float: left;
+            padding: 0 10px;
+            color: #ffffff;
+        }
+
+        .productPrice {
+            width: 50%;
+            float: right;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Responsive Column Cards</h2>
+<p>Resize the browser window to see the effect.</p>
+
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <img class="productImage" src="assets/download.jpeg" alt="productOne">
+            <div class="row">
+                <h3 class="productTitle">Tailored Jeans</h3>
+                <p class="productPrice">$19.99</p>
+            </div>
+        </div>
+    </div>
+    <div class="column">
+        <div class="card">
+            <img class="productImage" src="assets/download.jpeg" alt="productOne">
+            <div class="row">
+                <h3 class="productTitle">Blue Rose</h3>
+                <p class="productPrice">$14.59</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img class="productImage" src="assets/download.jpeg" alt="productOne">
+            <div class="row">
+                <h3 class="productTitle">Blue Rose</h3>
+                <p class="productPrice">$14.59</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="card">
+            <img class="productImage" src="assets/download.jpeg" alt="productOne">
+            <div class="row">
+                <h3 class="productTitle">Blue Rose</h3>
+                <p class="productPrice">$14.59</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>

@@ -1,192 +1,209 @@
-<html>
-  <head>
+<html lang="en">
+<head>
     <title>Test</title>
     <link
-      rel="stylesheet"
-      type="text/css"
-      href="../common-resources/style.css"
+            rel="stylesheet"
+            type="text/css"
+            href="../common-resources/Common-style.css"
     />
     <style>
-      /* * {
-        font-family: Roboto;
-      } */
-      body {
-        background: radial-gradient(
-          425.91px at 50% 54.74%,
-          #758ad3 0%,
-          #3f4e85 100%
-        );
-        width: 100%;
-      }
-      p {
-        margin: 0;
-      }
-      .title {
-        /* New in Store! */
-        font-style: normal;
-        font-weight: bold;
-        font-size: 48px;
-        margin-left: 90px;
-        margin-top: 20px;
-        color: #ffffff;
-
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      }
-      button {
-        background: linear-gradient(180deg, #5eff9e 0%, #45d16c 100%);
-        border-radius: 10px;
-        /* TEXT */
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        text-align: center;
-        color: #ffffff;
-        padding: 10px;
-        margin-left: 32px;
-        margin-top: 30px;
-      }
-
-      .productCard {
-        background: #222222;
-        border-radius: 20px;
-        /* padding: 16px; */
-        text-align: center;
-      }
-
-      .image {
-        background: #333333;
-        border-radius: 20px 20px 5px 5px;
-      }
-
-      #productsRow {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      /* Float four columns side by side */
-      .column {
-        width: 25%;
-        padding: 0 30px;
-        display: inline-block;
-      }
-
-      /* Remove extra left and right margins, due to padding */
-      .row {
-        margin: 0 -5px;
-        width: 100%;
-        text-align: center;
-      }
-
-      /* Clear floats after the columns */
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      /* Responsive columns */
-      @media screen and (max-width: 600px) {
-        .column {
-          width: 100%;
-          display: block;
-          margin-bottom: 20px;
+        * {
+            font-family: Avenir, serif;
         }
-      }
 
-      /* Style the counter cards */
-      .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        /* padding: 16px; */
-        text-align: center;
-        background-color: #f1f1f1;
-      }
+        body {
+            background: radial-gradient(
+                    425.91px at 50% 54.74%,
+                    #758ad3 0%,
+                    #3f4e85 100%
+            );
+            width: 100%;
+        }
 
-      img {
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        width: 100%;
-      }
+        p {
+            margin: 0;
+        }
 
-      .productTitle {
-        text-align: left;
-        margin-left: 20px;
-        margin-top: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 15px;
+        .title {
+            /* New in Store! */
+            font-weight: bold;
+            font-size: 48px;
+            margin-left: 120px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #ffffff;
 
-        color: #ffffff;
-      }
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        }
 
-      .productDescription {
-        text-align: left;
-        margin-top: 10px;
-        margin-left: 20px;
-        padding-bottom: 15px;
+        button {
+            background: linear-gradient(180deg, #5eff9e 0%, #45d16c 100%);
+            border-radius: 10px;
+            /* TEXT */
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            color: #ffffff;
+            padding: 10px;
+            margin-left: 32px;
+            margin-top: 30px;
+        }
 
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 12px;
+        .productCard {
+            background: #222222;
+            border-radius: 20px;
+            /* padding: 16px; */
+            text-align: center;
+        }
 
-        color: #ffffff;
-      }
+        #productsRow {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-      .productPrice {
-        text-align: right;
-        color: #ffffff;
-        margin-right: 20px;
-        margin-top: 10px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 14px;
-        float: right;
-        color: #ffffff;
-      }
+        .column {
+            width: 25%;
+            padding: 0 30px;
+            display: inline-block;
+        }
 
-      #personalInfoCard {
-        background: #222222;
-        border-radius: 20px;
-        margin: 0px 100px 0px 100px;
-      }
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Style the counter cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            /* padding: 16px; */
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+
+        img {
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 100%;
+        }
+
+        .productTitle {
+            text-align: left;
+            margin-left: 20px;
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.5vw;
+            color: #ffffff;
+        }
+
+        .productDescription {
+            text-align: left;
+            margin-top: 10px;
+            margin-left: 20px;
+            padding-bottom: 15px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1vw;
+            color: #ffffff;
+        }
+
+        .productPrice {
+            text-align: right;
+            color: #ffffff;
+            margin-right: 20px;
+            margin-top: 10px;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 1.5vw;
+            margin-bottom: 10px;
+            float: right;
+        }
+
+        #personalInfoCard {
+            background: #222222;
+            border-radius: 20px;
+            margin: 0 100px 0 100px;
+        }
     </style>
-  </head>
-  <body>
-    <h1 class="title">New In Store!</h1>
-    <div class="row">
-      <div class="column">
+</head>
+<body>
+<h1 class="title">New In Store!</h1>
+<div class="row">
+    <div class="column">
         <div class="productCard">
-          <img src="download.jpeg" />
-          <p class="productPrice">$15.99</p>
-          <p class="productTitle">Blue Rose</p>
-          <p class="productDescription">Perfect for Thanksgiving</p>
+            <img class="image" src="assets/products_iron_man.jpg" alt="productOne"/>
+            <p class="productPrice">$15.99</p>
+            <h3 class="productTitle">Iron Man</h3>
+            <p class="productDescription">Action Figure</p>
         </div>
-      </div>
-
-      <div class="column">
-        <div class="productCard">
-          <img src="download.jpeg" />
-          <p class="productPrice">$12.99</p>
-          <p class="productTitle">Product Name</p>
-          <p class="productDescription">Description</p>
-        </div>
-      </div>
-
-      <div class="column">
-        <div class="productCard">
-          <img src="download.jpeg" />
-          <p class="productPrice">$12.99</p>
-          <p class="productTitle">Product Name</p>
-          <p class="productDescription">Description</p>
-        </div>
-      </div>
     </div>
-    <div id="personalInfoCard">
-      <h1 class="title">Personal Info</h1>
+
+    <div class="column">
+        <div class="productCard">
+            <img src="assets/products_captain_america.jpg" alt="productTwo"/>
+            <p class="productPrice">$15.99</p>
+            <h3 class="productTitle">Captain America</h3>
+            <p class="productDescription">Action Figure</p>
+        </div>
     </div>
-  </body>
+
+    <div class="column">
+        <div class="productCard">
+            <img src="assets/products_thor.jpg" alt="productThree"/>
+            <p class="productPrice">$15.99</p>
+            <p class="productTitle">War Machine</p>
+            <p class="productDescription">Action Figure</p>
+        </div>
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="column">
+        <div class="productCard">
+            <img src="assets/products_drax.jpg" alt="productOne"/>
+            <p class="productPrice">$15.99</p>
+            <h3 class="productTitle">Drax</h3>
+            <p class="productDescription">Action Figure</p>
+        </div>
+    </div>
+
+    <div class="column">
+        <div class="productCard">
+            <img class='image' src="assets/products_iron_spider.jpg" alt="productTwo"/>
+            <p class="productPrice">$15.99</p>
+            <h3 class="productTitle">Iron Spider</h3>
+            <p class="productDescription">Action Figure</p>
+        </div>
+    </div>
+    <div class="column">
+        <div class="productCard">
+            <img src="assets/products_hulk.jpg" alt="productThree"/>
+            <p class="productPrice">$15.99</p>
+            <p class="productTitle">Hulk</p>
+            <p class="productDescription">Action Figure</p>
+        </div>
+    </div>
+</div>
+
+</body>
 </html>

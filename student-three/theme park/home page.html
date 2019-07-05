@@ -2,29 +2,30 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="../../common-resources/Common-style.css">
 		<title>Home page</title>
 		<style>
-			#ass {
+			#aagash{
 				border-radius: 60%;
 				width: 15%;
-				margin-left: 5%;
+				margin-left:30%;
 				float: left;
-				margin-top: 4%;
+				margin-top: 5%;;
 				transition: transform 0.2s;
 			}
 			#dinu {
 				border-radius: 60%;
 				width: 15%;
-				margin-left: 10%;
-				float: left;
-				margin-top: 4%;
+				margin-right: 30%;
+				float: right;
+				margin-top: 5%;
 				transition: transform 0.2s;
 			}
 			#vis {
 				border-radius: 60%;
 				width: 15%;
 				margin-left: 10%;
-				margin-top: 4%;
+				margin-top: 0%;
 				float: left;
 				transition: transform 0.2s;
 			}
@@ -32,12 +33,12 @@
 				border-radius: 60%;
 				width: 15%;
 				float: right;
-				margin-top: 4%;
-				margin-right: 5%;
+				margin-top: 0%;
+				margin-right: 10%;
 				transition: transform 0.2s;
 			}
 			#dinu:hover,
-			#ass:hover,
+			#aagash:hover,
 			#vis:hover,
 			#dini:hover {
 				-ms-transform: scale(2);
@@ -45,7 +46,7 @@
 				transform: scale(1.5);
 			}
 			#info {
-				margin-top: 23%;
+				margin-top: 30%;
 				margin-left: 30%;
 				color: black;
 				width: 35%;
@@ -58,24 +59,6 @@
                 height:15%;
                 margin-top:0.5%;
                 margin-left:1%; 
-            }
-            #header{
-                background-color:rgb(145, 53, 99);
-                height:20%;
-                margin-left:-0.5%;
-                margin-top:-0.5%;
-                width:101%;
-            }
-			#nav{
-                background-color:brown;
-                margin-left:-0.5%;
-                width:101%;
-                height:20%;
-            }
-            #link{
-                font-size:170%;
-                padding:1%;
-                margin-left:5%;
             }
             a:link {
 				color: black;
@@ -95,44 +78,27 @@
 			a:active {
 				text-decoration: none;
 			}
-
-			.wrapper {
-				padding: 50px 50px;
-				max-width: 1200px;
-				text-align: center;
-				margin-left: -75px;
-				margin-right: auto;
-				margin-top: 80px;
+			h1{
+				text-align:center;
 			}
 
-			.right {
-				float: right !important;
-			}
 		</style>
 	</head>
 	<body>
 		<div id="header">
-			<img src="..\..\common-resources\logo.svg" alt="Logo"  id="logo">
-	</div>
-	<div id="nav">
-		<div id="link">
-				<a href="" >Link1</a>
-				<a href="" style="margin-left:2%;">Link2</a>
-				<a href="" style="margin-left:2%;">Link3</a>
-				<a href="" style="margin-left:2%;">Link4</a>
-				<a href="" style="margin-left:2%;">Link5</a>
+			
 		</div>
-	</div>
-		<img src="images/ass.jpg "  alt="Akassh" onmouseover="ass()" onmouseout="assout()" id="ass" >
+		<h1>Meet The Team</h1>
+		<img src="images/aagash.jpg "  alt="Akassh" onmouseover="aagash()" onmouseout="aagashout()" id="aagash" >
 		<img src="images/dinuka.jpg" alt="Dinuka" onmouseover="dinu()" onmouseout="dinuout()" id="dinu" />
 		<img src="images/dini.jpg" alt="Dinesh" onmouseover="dini()" onmouseout="diniout()" id="dini" />
 		<img src="images/visal.jpg" alt="Visal" onmouseover="vis()" onmouseout="visout()" id="vis" />
 		<div id="info"></div>
         <script>
-               function ass(){
+               function aagash(){
                       document.getElementById("info").innerHTML="Aagash<br/>Student1";
                 }
-                function assout(){
+                function aagashout(){
                     document.getElementById("info").innerHTML=" ";
                 }
                 function dinu(){

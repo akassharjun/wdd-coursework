@@ -3,12 +3,10 @@
    <head>
        <style>
            html, body{
-    height:100%             /*to match the prallax background*/
+              height:100%             /*to match the prallax background*/
 }
-
            #front-page{
                display:grid;
-               background-color: aqua;
            }
            #sidenavbar{
                grid-column:1/2;
@@ -20,20 +18,19 @@
          #avengerceleb{
              grid-column:2/5;
              grid-row:1/ span 3;
-             background-color: blueviolet;
+             height:100%;
          }
           #imagecontainer{
-              background-color:aquamarine;
               display:grid;
               grid-gap:10px;
+              padding:10px;
           }
-          #heading{
+          #heading1,#heading2,#heading3,#heading4,#heading5{
                text-align: center;
           }
           #imagelarge{
              grid-column:1/4;
              grid-row:1/8;
-             background-color:brown;
              overflow: hidden;
              position: relative;
              display: inline-block;
@@ -51,17 +48,18 @@
               overflow: hidden;
               position: relative;
               display: inline-block;
+              height:100%;
           }
           #description{
                color:white;
-              font-size: 70px;
-              position: absolute;
-               top:400px;
-              left: 700px;
+               font-size: 250%;
+               position: absolute;
+               top:60%;
+               left:65%;
                z-index: 100;
                transform: translate(-50%, -50%);
                text-align:center;
-               font-weight:900;
+               font-weight:800;
                }
 
                #imagelarge img,#imagesmalltop img,#imagesmallbottom img {
@@ -103,29 +101,35 @@
             margin: 0 auto;
             left: 0;
             right: 110%;
-            top: -5%; /* Adjust this value to move the positioned div up and down */
+            top: 0%; /* Adjust this value to move the positioned div up and down */
             text-align: left;
             width: 60%; /* Set the width of the positioned div */
             }
+            img{
+                object-fit:cover;
+                height:100%;
+            }
        </style>
+       <title>Special Events</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../../common-resources/style.css">
+        <link rel="stylesheet" type="text/css" href="../../common-resources/Common-style.css">
    </head>
    <body>
        <div id="front-page">
            <div id="sidenavbar">
                <h1>Go to</h1> 
-              <a href="#">Marvel & DC Land</a><br><br> 
-              <a href="#">Marvel & DC World</a><br><br>
-              <a href="#">Celebrations</a><br><br>
-              <a href="#">Movie Nights</a><br><br>
+              <a href="#heading1">Marvel & DC Land</a><br><br> 
+              <a href="#heading2">Marvel & DC World</a><br><br>
+              <a href="#heading3">Celebrations</a><br><br>
+              <a href="#heading4">Movie Nights</a><br><br>
+              <a href="#heading5">Marvel & DC Cruise Line</a>
            </div>
            <div id="avengerceleb">
                <img src="images/a1.jpg" alt="avengers" style="height:100%;width:100%;">
                <div id="description">Avengers Festival Celebration On July</div>
            </div>
        </div>
-       <div id="heading"><h1>Marvel & DC Land</h1></div>
+       <div id="heading1"><h1>Marvel & DC Land</h1></div>
        <div id="imagecontainer">
             <div id="imagelarge">
                 <img src="images/n1.jpg" alt="wheel" style="height:100%;width:100%;">
@@ -146,28 +150,28 @@
                 </div>
             </div>
        </div>
-       <div id="heading"><h1>Marvel & DC World</h1></div>
+       <div id="heading2"><h1>Marvel & DC World</h1></div>
        <div id="imagecontainer">
             <div id="imagelarge">
                 <img src="images/family.jpg" alt="wheel" style="height:100%;width:100%;">
                 <div id="content">
-                        <h4 style="color:black;">Family Union</h4>
+                        <h4>Family Union</h4>
                 </div>
             </div>
             <div id="imagesmalltop">
                 <img src="images/r1.jpeg" alt="music" style="height:100%;width:100%;">
                 <div id="content">
-                        <h4 style="color:black;">Adventures</h4>
+                        <h4>Adventures</h4>
                 </div>
             </div>
             <div id="imagesmallbottom">
                 <img src="images/m1.jpg" alt="magicalpride" style="height:100%;width:100%;">
                 <div id="content">
-                        <h4 style="color:black;">Meet Heroes</h4>
+                        <h4>Meet Heroes</h4>
                 </div>
             </div>
        </div>
-       <div id="heading"><h1>Celebrations</h1></div>
+       <div id="heading3"><h1>Celebrations</h1></div>
        <div id="imagecontainer">
             <div id="imagelarge">
                 <img src="images/h2.jpg" alt="wheel" style="height:100%;width:100%;">
@@ -188,7 +192,7 @@
                 </div>
             </div>
        </div>
-       <h1 style="text-align:center;">Movie Nights</h1>
+       <div id="heading4"><h1 style="text-align:center;" >Movie Nights</h1></div>
        <div id="imagecontainer">
             <div id="imagelarge" style="width:800px;">
                 <img src="images/captainmarvel.jpg" alt="wheel" style="height:100%;width:100%;">
@@ -200,8 +204,47 @@
                 <img src="images/shazam.jpg" alt="magicalpride" style="height:100%;width:100%;">
             </div>
        </div>
+       <div id="heading5"><h1 style="text-align:center;">Marvel & DC Cruise Line</h1></div>
+       <div id="imagecontainer">
+            <div id="imagelarge">
+                <img src="images/cruise1.jpg" alt="cruise1" style="height:100%;width:100%;">
+                <div id="content">
+                    <h4>Discover a World Of Wonder</h4>
+                </div>
+            </div>
+            <div id="imagesmalltop">
+                <img src="images/cruise2.jpg" alt="cruise2" style="height:100%;width:100%;">
+                <div id="content">
+                    <h4>Explore New Sailings In 2020</h4>
+                </div>
+            </div>
+            <div id="imagesmallbottom">
+                <img src="images/cruise.jpg" alt="cruise3" style="height:100%;width:100%;">
+                <div id="content">
+                    <h4>The Perfect Cruise For Every Age</h4>
+                </div>
+            </div>
+       </div>
+       <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
+       <script>
+
+        window.onscroll = function() {toTopDisplay()};
+            function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
+                if(document.documentElement.scrollTop > 100){
+                    document.getElementById("toTopButton").style.display = "block";
+                }else{
+                    document.getElementById("toTopButton").style.display = "none";
+                }
+            }
+
+            function scrollToTop(){         //scroll top top of web page
+                document.documentElement.scrollTop = 0;
+            }
 
 
-           
+
+            //add click and show discription till re-clicked JS!!!!
+
+        </script> 
    </body>
 </html>

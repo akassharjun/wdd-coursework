@@ -85,7 +85,7 @@
                     color:white;
                     margin-top:0%;
                     width:105%;
-                    height:5%;
+                    height:60px;
                     padding: 2%;
                     border-radius: 10%;
 
@@ -129,7 +129,7 @@
                  margin-left:47%;
              }
             #main{
-                margin-top:0.8%;
+                margin-top:0%;
                 width:100%;
             }
             #link{
@@ -171,6 +171,50 @@
                 margin-left:40%;
                 margin-top:-1%;
             }
+            #scorecard{
+              display:none;
+              color:black;
+            }
+            /* Float four columns side by side */
+            * {
+                box-sizing: border-box;
+            }
+            /* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  margin-left:8%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width:65%;
+  margin-left:5%;
+  color:black;
+}
           </style>
    </head>
    <body>
@@ -200,7 +244,7 @@
     </div>
         <div id="game">
             <form id="f">
-                <img src="images/marvel.jpg" style="width:116%;height:300px;margin-top:-8%;margin-left:-8%;border-radius: 11%;">
+                <img src="images/marvel.jpg" style="width:118%;height:300px;margin-top:-10%;margin-left:-9%;border-radius: 11%;">
                 <div id="n">
                     <label >Enter your name:</label>
                     <input type="text" name="name" placeholder="Your name" id="fname" style="width:40%;height:25px;" required>
@@ -414,6 +458,103 @@
                     </div>   
               </div>  
        </div>
+       <div id="scorecard">
+        <div class="row" style="margin-left:33%;width:100%;margin-top:5%;">
+          <div class="column">
+            <div class="card">
+              <h3>Summary</h3>
+              <p><div id="playername"></div></p>
+              <p><div id="scoregot"></div></p>
+              <p><div id="result"></div></p>
+              <p><div id="timetaken"></div></p>
+            </div>
+          </div>
+        </div> 
+        <div class="row" style="margin-top:5%;">
+          <div class="column">
+            <div class="card" id="card1">
+              <h3>Question 1</h3>
+              <p><div id="Q1"></div></p>
+              <p><div id="marks1"></div></p>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card" id="card2">
+              <h3>Question 2</h3>
+              <p><div id="Q2"></div></p>
+              <p><div id="marks2"></div></p>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card" id="card3">
+              <h3>Question 3</h3>
+              <p><div id="Q3"></div></p>
+              <p><div id="marks3"></div></p>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:5%;">
+          <div class="column">
+            <div class="card" id="card4">
+              <h3>Question 4</h3>
+              <p><div id="Q4"></div></p>
+              <p><div id="marks4"></div></p>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card" id="card5">
+              <h3>Question 5</h3>
+              <p><div id="Q5"></div></p>
+              <p><div id="marks5"></div></p>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card" id="card6">
+              <h3>Question 6</h3>
+              <p><div id="Q6"></div></p>
+              <p><div id="marks6"></div></p>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-top:5%;">
+          <div class="column">
+            <div class="card" id="card7">
+              <h3>Question 7</h3>
+              <p><div id="Q7"></div></p>
+              <p><div id="marks7"></div></p>
+            </div>
+          </div>
+        
+          <div class="column">
+            <div class="card" id="card8">
+              <h3>Question 8</h3>
+              <p><div id="Q8"></div></p>
+              <p><div id="marks8"></div></p>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card" id="card9">
+              <h3>Question 9</h3>
+              <p><div id="Q9"></div></p>
+              <p><div id="marks9"></div></p>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="margin-left:33%;width:100%;margin-top:5%;">
+          <div class="column">
+            <div class="card" id="card10">
+              <h3>Question 10</h3>
+              <p><div id="Q10"></div></p>
+              <p><div id="marks10"></div></p>
+            </div>
+          </div>
+        </div>
+       </div>    
        <script type="text/javascript">
            document.getElementById("main").innerHTML=document.getElementById("hello").innerHTML;
 
@@ -582,12 +723,15 @@
 
 
            var timeDuration;
-
+           var minutes;
+           var number;
            function timeDifference(){
             endGame=new Date().getTime();    
             timeDuration=((endGame-startGame)-000020);
+            minutes=timeDuration/60000;
+            number = minutes.toFixed(2); // => '10.23'
            }
-
+          var status;
            function displayScore(){
                 timeDifference();
                 clearTimeout(myVar);
@@ -598,45 +742,36 @@
                         scores.push(0);
                     }
                 }
-               document.getElementById("main").innerHTML="<span style='font-size:30px;margin-left:500px;'>Player : "+player+"</span>"+"<br/>";                                 
-               if(score>12){
-                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Score : " + score+"</span>"+"<br>";
-                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" m</span><br>"; 
-                   document.body.style.backgroundColor="green";
-                   document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Pass"+"<br><br>";
-                   }
-                   else{
-                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Score : " + score+"</span>"+"<br>";
-                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Time : "+(timeDuration)+" m</span><br>"; 
-                       document.body.style.backgroundColor="red";
-                       document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Status : Fail"+"<br><br>";
-                   }
-                     document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>Questiones&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Result&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marks awarded ";
-                    
-                   for (i=0;i<check.length; i++){
-                       if(i<=8){
-                           if(scores[i]==2){
-                            document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+check[i]+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+scores[i]+"</span>"+"<br>"; 
-                           }
-                           else if(scores[i]==-1){
-                            document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+check[i]+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp"+scores[i]+"</span>"+"<br>"; 
-                           }
-                           else {
-                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+check[i]+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+scores[i]+"</span>"+"<br>"; 
-                           }
-                       }
-                       else{
-                        if(scores[i]==2){
-                            document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;&nbsp;"+check[i]+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+scores[i]+"</span>"+"<br>"; 
-                           }
-                           else if(scores[i]==-1){
-                            document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;&nbsp;"+check[i]+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+scores[i]+"</span>"+"<br>"; 
-                           }
-                           else {
-                    document.getElementById("main").innerHTML+="<span style='font-size:30px;margin-left:500px;'>"+"Question"+(i+1)+"&nbsp;&nbsp;&nbsp;&nbsp;"+check[i]+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+scores[i]+"</span>"+"<br>"; 
-                           }  
-                       }
-                   } 
+                if (score>12){
+                   staus="Pass";
+                }
+                else{
+                   status="Fail";
+                }
+                for(var i=0;i<10;i++){
+                  if(scores[i]==-1){
+                    document.getElementById("card"+(i+1)).style.backgroundColor="red";
+                    document.getElementById("Q"+(i+1)).innerHTML="Result :"+check[i];
+                    document.getElementById("marks"+(i+1)).innerHTML="Marks :"+scores[i];
+                  }
+                  else if(scores[i]==2){
+                    document.getElementById("card"+(i+1)).style.backgroundColor="green";
+                    document.getElementById("Q"+(i+1)).innerHTML="Result :"+check[i];
+                    document.getElementById("marks"+(i+1)).innerHTML="Marks :"+scores[i];
+                  }
+                  else{
+                    document.getElementById("Q"+(i+1)).innerHTML="Result :"+check[i];
+                    document.getElementById("marks"+(i+1)).innerHTML="Marks :"+scores[i];
+                  }
+                }
+                document.getElementById("main").innerHTML=document.getElementById("scorecard").innerHTML;
+                document.getElementById("playername").innerHTML="Player :"+player;
+                document.getElementById("scoregot").innerHTML="Score :"+score;
+                document.getElementById("result").innerHTML="Status :"+status;
+                document.getElementById("timetaken").innerHTML="Time :"+number+"minutes";
+                document.getElementById("check1").innerHTML=check[0];
+                document.getElementById("scores1").innerHTML=scores[0];
+               
                }
                
                function startTimer(duration, display) {

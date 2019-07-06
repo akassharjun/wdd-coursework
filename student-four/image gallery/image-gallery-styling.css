@@ -18,14 +18,14 @@ header img{
     margin-left: 15px;
 }   
 /*Navigation bar*/
-.navbar {
+.navigationBar {
     overflow: hidden;
     background-color: #333;
     margin-top: 20px;
     height: 70px;
   }
   
-  .navbar a {
+  .navigationBar a {
     float: left;
     font-size: 16px;
     color: white;
@@ -34,12 +34,12 @@ header img{
     text-decoration: none;
   }
   
-  .dropdown {
+  .dropdownMenu {
     float: left;
     overflow: hidden;
   }
   
-  .dropdown .dropdownMenuDiv {
+  .dropdownMenu .dropdownMenuDiv {
     font-size: 16px;  
     border: none;
     outline: none;
@@ -50,7 +50,7 @@ header img{
     margin: 0;
   }
   
-  .navbar a:hover, .dropdown:hover .dropdownMenuDiv {
+  .navigationBar a:hover, .dropdownMenu:hover .dropdownMenuDiv {
     background-color: red;
   }
   
@@ -76,8 +76,9 @@ header img{
     background-color: #ddd;
   }
   
-  .dropdown:hover .dropdownMenuContent {
+  .dropdownMenu:hover .dropdownMenuContent {
     display: block;
+    width: 140px;
   }
 /*Heading*/
 #headingDiv{

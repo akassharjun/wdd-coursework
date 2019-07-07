@@ -1,135 +1,228 @@
-<!DOCTYPE html>
-<<<<<<< Updated upstream
-<html lang="en">
-<head>
-=======
-<html>
-  <head>
->>>>>>> Stashed changes
-    <title>Products</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1"/>-->
+<!--    <link rel="stylesheet" href="../common-resources/style.css"/>-->
+<!--    <link rel="stylesheet" href="styles/products-page-style.css"/>-->
+<!--    <script>-->
+<!--        function setCookie(cname, cvalue, exdays) {-->
+<!--            var d = new Date()-->
+<!--            d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000)-->
+<!--            var expires = "expires=" + d.toGMTString()-->
+<!--            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/"-->
+<!--        }-->
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
+<!--        function getCookie(cname) {-->
+<!--            let name = cname + "=";-->
+<!--            let decodedCookie = decodeURIComponent(document.cookie);-->
+<!--            let ca = decodedCookie.split(";")-->
+<!--            for (let i = 0; i < ca.length; i++) {-->
+<!--                let c = ca[i];-->
+<!--                while (c.charAt(0) == " ") {-->
+<!--                    c = c.substring(1)-->
+<!--                }-->
+<!--                if (c.indexOf(name) === 0) {-->
+<!--                    return c.substring(name.length, c.length)-->
+<!--                }-->
+<!--            }-->
+<!--            return ""-->
+<!--        }-->
 
-        /* Float four columns side by side */
-        .column {
-            float: left;
-            width: 25%;
-            padding: 0 10px;
-        }
+<!--        window.onload = function () {-->
+<!--            setCookie("name", "new", 2)-->
+<!--        };-->
 
-        /* Remove extra left and right margins, due to padding */
-        .row {
-            margin: 0 -5px;
-            text-align: center;
-        }
+<!--        function loadProductPage(productName) {-->
+<!--            setCookie("product", productName);-->
+<!--            window.location =-->
+<!--                "file:///Users/admin/Documents/IIT/Web%20Design%20&%20Development/wdd-coursework/student-one/test.html"-->
+<!--        }-->
 
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
+<!--        function increaseFontSize() {-->
+<!--            let elems = document.body.getElementsByTagName("*");-->
 
-        /* Responsive columns */
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-                display: block;
-                margin-bottom: 20px;
-            }
-        }
 
-        /* Style the counter cards */
-        .productCard {
-            /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
-            margin: 14px;
-            border-radius: 8%;
-            text-align: center;
-            background-color: #1a1e1c;
-        }
+<!--            for (let i = 0, max = elems.length; i < max; i++) {-->
+<!--                console.log(elems[i].style.fontSize);-->
+<!--                elems[i].style.fontSize = elems[i].style.fontSize + 5;-->
+<!--                // Do something with the element here-->
+<!--            }-->
+<!--            // elements.forEach(element => {-->
+<!--            // })-->
+<!--        }-->
 
-        .productImage {
-            width: 100%;
-            overflow: hidden;
-            border-radius: 8% 8% 0 0;
-            height: auto;
-        }
+<!--        function resizeText(multiplier) {-->
+<!--            if (document.body.style.fontSize == "") {-->
+<!--                document.body.style.fontSize = "1.0em";-->
+<!--            }-->
+<!--            document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";-->
+<!--        }-->
 
-        .productInfo {
-            padding-bottom: 5%;
-        }
+<!--        // console.log(document.body.getElementsByClassName('productCard'));-->
+<!--        // // for (let element in document.body.getElementsByClassName('productCard')) {-->
+<!--        // // 	console.log(document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize);-->
+<!--        // // 	document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize = document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize + (multiplier * 0.2) + "em";-->
+<!--        // // 	document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize = document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize + (multiplier * 0.2) + "em";-->
+<!--        // // }-->
+<!--        // .style.fontSize = parseFloat(document.body.getElementsByClassName('productCard').style.fontSize) + (multiplier * 0.2) + "em";-->
+<!--    </script>-->
 
-        .productTitle {
-            width: 50%;
-            float: left;
-            padding: 0 10px;
-            color: #ffffff;
-        }
+<!--    <title>Products</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="header">-->
+<!--    <p>g</p>-->
+<!--    <p>g</p>-->
+<!--    <p>g</p>-->
+<!--</div>-->
 
-        .productPrice {
-            width: 50%;
-            float: right;
-            color: #ffffff;
-        }
-    </style>
-</head>
-<body>
+<!--<button onclick="resizeText(0.5)">Buut</button>-->
+<!--<h2>Responsive Column Cards</h2>-->
+<!--<p>Resize the browser window to see the effect.</p>-->
 
-<h2>Responsive Column Cards</h2>
-<p>Resize the browser window to see the effect.</p>
+<!--<div class="row">-->
+<!--    <div class="column">-->
+<!--        <div class="productCard">-->
+<!--            <img-->
+<!--                    class="productImage"-->
+<!--                    src="assets/T-Shirts/product_tshirt_superman.jpeg"-->
+<!--                    alt="Superman T-Shirt"-->
+<!--            />-->
+<!--            &lt;!&ndash;            <p class="productTitle">Superman<br/>T-Shirt</p>&ndash;&gt;-->
+<!--            <p class="productPrice">$15.99</p>-->
+<!--            <h3 class="productTitle">Iron Man</h3>-->
+<!--            <p class="productDescription">Mens T-Shirt</p>-->
+<!--        </div>-->
+<!--    </div>-->
 
-<div class="row">
-    <div class="column">
-        <div class="productCard">
-            <img class="productImage" src="assets/download.jpeg" alt="productOne">
-            <div class="row">
-                <h3 class="productTitle">Tailored Jeans</h3>
-                <p class="productPrice">$19.99</p>
-            </div>
-        </div>
-    </div>
-    <div class="column">
-        <div class="productCard">
-            <img class="productImage" src="assets/download.jpeg" alt="productOne">
-            <div class="row">
-                <h3 class="productTitle">Blue Rose</h3>
-                <p class="productPrice">$14.59</p>
-            </div>
-        </div>
-    </div>
+<!--    <div class="column">-->
+<!--        <div class="productCard">-->
+<!--            <img-->
+<!--                    class="productImage"-->
+<!--                    src="assets/T-Shirts/product_tshirt_iron_spider.jpg"-->
+<!--                    alt="Iron Spider T-Shirt"-->
+<!--            />-->
+<!--            &lt;!&ndash;            <p class="productTitle">Iron Spider<br/>T-Shirt</p>&ndash;&gt;-->
+<!--            <p class="productPrice">$15.99</p>-->
+<!--            <h3 class="productTitle">Spider Man</h3>-->
+<!--            <p class="productDescription">Special Edition T-Shirt</p>-->
+<!--        </div>-->
+<!--    </div>-->
 
-    <div class="column">
-        <div class="productCard">
-            <img class="productImage" src="assets/download.jpeg" alt="productOne">
-            <div class="row">
-                <h3 class="productTitle">Blue Rose</h3>
-                <p class="productPrice">$14.59</p>
-            </div>
-        </div>
-    </div>
+<!--    <div class="column">-->
+<!--        <div class="productCard">-->
+<!--            <img-->
+<!--                    class="productImage"-->
+<!--                    src="assets/T-Shirts/product_tshirt_flash.jpg"-->
+<!--                    alt="Flash T-Shirt"-->
+<!--            />-->
+<!--            &lt;!&ndash;            <p class="productTitle">Flash<br/>T-Shirt</p>&ndash;&gt;-->
+<!--            <p class="productPrice">$15.99</p>-->
+<!--            <h3 class="productTitle">Flash</h3>-->
+<!--            <p class="productDescription">Mens T-Shirt</p>-->
+<!--        </div>-->
+<!--    </div>-->
 
-<<<<<<< Updated upstream
-    <div class="column">
-        <div class="productCard">
-            <img class="productImage" src="assets/download.jpeg" alt="productOne">
-            <div class="row">
-                <h3 class="productTitle">Blue Rose</h3>
-                <p class="productPrice">$14.59</p>
-            </div>
-        </div>
-    </div>
-</div>
-</body>
-=======
-  <body>
-    
-  </body>
->>>>>>> Stashed changes
-</html>
+<!--    <div class="column">-->
+<!--        <div class="productCard">-->
+<!--            <img-->
+<!--                    class="productImage"-->
+<!--                    src="assets/T-Shirts/product_tshirt_deadpool.jpg"-->
+<!--                    alt="Deadpool T-Shirt"-->
+<!--            />-->
+<!--            &lt;!&ndash;            <p class="productTitle">Deadpool<br/>T-Shirt</p>&ndash;&gt;-->
+<!--            <p class="productPrice">$15.99</p>-->
+<!--            <h3 class="productTitle">Deadpool</h3>-->
+<!--            <p class="productDescription">Mens T-Shirt</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="column">-->
+<!--        <div class="productCard">-->
+<!--            <img-->
+<!--                    class="productImage"-->
+<!--                    src="assets/T-Shirts/product_tshirt_avengers.jpg"-->
+<!--                    alt="Avengers T-Shirt"-->
+<!--            />-->
+<!--            &lt;!&ndash;            <p class="productTitle">Avengers<br/>T-Shirt</p>&ndash;&gt;-->
+<!--            <p class="productPrice">$15.99</p>-->
+<!--            <h3 class="productTitle">Avengers</h3>-->
+<!--            <p class="productDescription">Mens T-Shirt</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<br/>-->
+<!--<div class="row">-->
+<!--    <div class="column">-->
+<!--        <div class="productCard">-->
+<!--            <img-->
+<!--                    class="productImage"-->
+<!--                    src="assets/T-Shirts/product_tshirt_superman.jpeg"-->
+<!--                    alt="Superman T-Shirt"-->
+<!--            />-->
+<!--            &lt;!&ndash;            <p class="productTitle">Superman<br/>T-Shirt</p>&ndash;&gt;-->
+<!--            <p class="productPrice">$15.99</p>-->
+<!--            <h3 class="productTitle">Iron Man</h3>-->
+<!--            <p class="productDescription">Mens T-Shirt</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="column">-->
+<!--        <div class="productCard">-->
+<!--            <img-->
+<!--                    onclick="loadProductPage('IRON-SPIDER')"-->
+<!--                    class="productImage"-->
+<!--                    src="assets/T-Shirts/product_tshirt_iron_spider.jpg"-->
+<!--                    alt="Iron Spider T-Shirt"-->
+<!--            />-->
+<!--            &lt;!&ndash;            <p class="productTitle">Iron Spider<br/>T-Shirt</p>&ndash;&gt;-->
+<!--            <p class="productPrice">$15.99</p>-->
+<!--            <h3 class="productTitle">Spider Man</h3>-->
+<!--            <p class="productDescription">Special Edition T-Shirt</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="column">-->
+<!--        <div class="productCard">-->
+<!--            <img-->
+<!--                    class="productImage"-->
+<!--                    src="assets/T-Shirts/product_tshirt_flash.jpg"-->
+<!--                    alt="Flash T-Shirt"-->
+<!--            />-->
+<!--            &lt;!&ndash;            <p class="productTitle">Flash<br/>T-Shirt</p>&ndash;&gt;-->
+<!--            <p class="productPrice">$15.99</p>-->
+<!--            <h3 class="productTitle">Flash</h3>-->
+<!--            <p class="productDescription">Mens T-Shirt</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="column">-->
+<!--        <div class="productCard">-->
+<!--            <img-->
+<!--                    class="productImage"-->
+<!--                    src="assets/T-Shirts/product_tshirt_deadpool.jpg"-->
+<!--                    alt="Deadpool T-Shirt"-->
+<!--            />-->
+<!--            &lt;!&ndash;            <p class="productTitle">Deadpool<br/>T-Shirt</p>&ndash;&gt;-->
+<!--            <p class="productPrice">$15.99</p>-->
+<!--            <h3 class="productTitle">Deadpool</h3>-->
+<!--            <p class="productDescription">Mens T-Shirt</p>-->
+<!--        </div>-->
+<!--    </div>-->
+
+<!--    <div class="column">-->
+<!--        <div class="productCard">-->
+<!--            <img-->
+<!--                    class="productImage"-->
+<!--                    src="assets/T-Shirts/product_tshirt_avengers.jpg"-->
+<!--                    alt="Avengers T-Shirt"-->
+<!--            />-->
+<!--            &lt;!&ndash;            <p class="productTitle">Avengers<br/>T-Shirt</p>&ndash;&gt;-->
+<!--            <p class="productPrice">$15.99</p>-->
+<!--            <h3 class="productTitle">Avengers</h3>-->
+<!--            <p class="productDescription">Mens T-Shirt</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->

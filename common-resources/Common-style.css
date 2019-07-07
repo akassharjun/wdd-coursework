@@ -71,6 +71,10 @@ header img{
 
 
 /*---------breadcrumb---------*/
+#breadCrumb{
+    font-size: 0.9em;
+}
+
 #breadCrumb a:link{
     color:black;
     text-decoration: none;

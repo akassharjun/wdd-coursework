@@ -1,10 +1,28 @@
 
 h1{
-    font-weight:200;
+    font-weight:300;
     text-align: center;
     padding:80px;
     background-color: white;
 }
+
+p{
+    margin-left:30px;
+}
+
+/*#breadCrumb a:link{
+    color:black;
+    text-decoration: none;
+}
+
+#breadCrumb a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+
+#breadCrumbCurrent{
+    color: blue
+}*/
 
 .flex-container{
     background-color: #f8f8fb;
@@ -19,7 +37,7 @@ h1{
 .rideBlock{
     /*border: 1px solid white;            /*match border colour with background colour, so that images won't move around when hovered*/
     border-radius: 12px;
-    height:470px;
+    height:450px;
     width:450px;
     margin:20px 5px 20px 5px;
     transition-duration: 0.8s;
@@ -35,7 +53,7 @@ h1{
 
 .rideImgBlock{
     /*border: 1px solid lightgray;          for identification*/
-    height:410px;
+    height:390px;
     width:100%;
     margin: auto;
     overflow: hidden;
@@ -51,16 +69,17 @@ h1{
     height:50px;
     width:380px;
     margin:auto;
-    margin-top: 5px;
     text-align: center;
     position: relative;
     font-size: 1.2em;
 }
 
 .rideName{
+    position:absolute;
     color:white;
-    position: relative;
-    top:10px;                   /*centering text vertically within div*/
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
 }
 
 .overlay{

@@ -35,23 +35,25 @@ html, body{
     filter: brightness(70%);
 }
 
+                        /*images get stretched when resized!!!!!!*/
 .contentStripTop{
     height:130px;
     margin-top:30px;
     text-align:center;
 }
 
-.contentStripBottom{                        /*!!!!!!!!!!Images aren't centered when window is small!!!!!!!*/
+.contentStripBottom{
     position: relative;
     height:400px;
     margin-top:30px;
+    background-color: #f8f8fb;
 }
 
 
 .contentLarge{
     position: relative;
     height:950px;
-    background-color: aliceblue;            /*temporary colour for identification*/
+    background-color: #f8f8fb;
 }
 
 
@@ -131,7 +133,7 @@ span.contentOverImg{
 
 
 .contentLarge img{
-    width:100%;
+    min-width:100%;
     height: 100%;
 }
 

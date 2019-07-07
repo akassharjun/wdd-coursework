@@ -3,6 +3,11 @@ body{
     margin:0;
 }
 
+/*---------breadcrumb---------*/
+#breadCrumb{
+    background-color: #f8f8fb;
+}
+
 form{
     position: absolute;
     text-align:center;

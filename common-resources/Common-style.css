@@ -93,8 +93,7 @@ header img{
 /*Navigation bar*/
 .navigationBar{
     overflow: hidden;
-    background-color: #333;
-    margin-top: 20px;
+    background-color: #122335;
     height: 70px;
 }
   
@@ -124,7 +123,7 @@ header img{
 }
   
 .navigationBar a:hover, .dropdownMenu:hover .dropdownMenuDiv {
-    background-color: red;
+    box-shadow: 0 0px 20px 0px #00c2e4 inset;
 }
   
 .dropdownMenuContent {
@@ -134,11 +133,13 @@ header img{
     min-width: 45px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
   
 .dropdownMenuContent a {
     float: none;
-    color: black;
+    color: #122335;
     padding: 12px 16px;
     text-decoration: none;
     display: block;

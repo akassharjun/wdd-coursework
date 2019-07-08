@@ -17,7 +17,9 @@
             <!--logo + navbar comes here-->
         </header>
             
-        <img id="coverImage" src="images/MainPG-images/CoverPhoto.jpg" alt="cover image" >
+        <div id="coverImage">
+            <h1 id="coverText">The Utimate Super-Hero Experience</h1>
+        </div>
 
 
         <div class="contentStripTop">
@@ -136,6 +138,13 @@
                 document.documentElement.scrollTop = 0;
             }
 
+            displayLastEdit();
+            function displayLastEdit() {
+                var x = document.lastModified;
+                document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
+            }
+
+            
           /*  window.onscroll = function() {loadContentBlock1()};     //calling loadContentBlock1 function when scrolling the window
             function loadContentBlock1(){   //to display div when scrolling down
                 if(document.documentElement.scrollTop >1000){

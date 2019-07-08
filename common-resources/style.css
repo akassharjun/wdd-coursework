@@ -127,7 +127,7 @@ header img{
 }
   
 .navigationBar a:hover, .dropdownMenu:hover .dropdownMenuDiv {
-    box-shadow: 0 0px 20px 0px #00c2e4 inset;
+    box-shadow: 0 0 20px 0 #00c2e4 inset;
 }
   
 .dropdownMenuContent {
@@ -135,7 +135,7 @@ header img{
     position: absolute;
     background-color: #f9f9f9;
     min-width: 45px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;

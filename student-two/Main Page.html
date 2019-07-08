@@ -125,7 +125,9 @@
         <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
         
         <script>
-            window.onscroll = function() {toTopDisplay()};
+            window.onscroll = function() {toTopDisplay(); hideWelcome();}
+
+
             function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
                 if(document.documentElement.scrollTop > 150){
                     document.getElementById("toTopButton").style.display = "block";
@@ -138,12 +140,21 @@
                 document.documentElement.scrollTop = 0;
             }
 
+
             displayLastEdit();
             function displayLastEdit() {
                 var x = document.lastModified;
                 document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
             }
 
+
+            function hideWelcome(){            //to display toTopButton only when scrolled below the entrance screen
+                if(document.documentElement.scrollTop > 180){
+                    document.getElementById("coverText").style.display = "none";
+                }else{
+                    document.getElementById("coverText").style.display = "block";
+                }
+            }
             
           /*  window.onscroll = function() {loadContentBlock1()};     //calling loadContentBlock1 function when scrolling the window
             function loadContentBlock1(){   //to display div when scrolling down

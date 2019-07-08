@@ -104,25 +104,26 @@ header img{
     background-color: #183048;
     height: 50px;
 }
-  
+
 .navigationBar a{
-   float: left;
-   font-size: 14px;
-   color: white;
-   text-align: center;
-   padding: 17px 20px;
-   text-decoration: none;
+    float: left;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 17px 20px;
+    text-decoration: none;
+    transition: 0.1s;
 }
 
 .navigationBar a, .navigationBar div{
-    border-radius:2px;
+    border-radius:3px;
 }
 
 .dropdownMenu {
-   float: left;
-   overflow: hidden;
+    float: left;
+    overflow: hidden;
 }
-  
+
 .dropdownMenu .dropdownMenuDiv {
     font-size: 14px;  
     border: none;
@@ -133,12 +134,12 @@ header img{
     font-family: inherit;
     margin: 0;
 }
-  
+
 .navigationBar a:hover, .dropdownMenu:hover .dropdownMenuDiv {
     background: linear-gradient( to top,#00c2e4,#183048);
     color:white;
 }
-  
+
 .dropdownMenuContent {
     display: none;
     position: absolute;
@@ -149,7 +150,7 @@ header img{
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-  
+
 .dropdownMenuContent a {
     float: none;
     color: #183048;

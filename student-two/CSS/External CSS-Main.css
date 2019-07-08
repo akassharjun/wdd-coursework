@@ -101,6 +101,7 @@ html,body{
 }
 
 .imgSmall{
+    position: relative;
     top:20px;
     height:350px;
 }
@@ -143,7 +144,7 @@ html,body{
     width:100%;
     text-align:center;
     top:50%;
-    font-style: italic;
+    font-style: italic;                         /*change this to cursive writing font type????!!!!!!*/
 }
 
 span.contentOverImg{

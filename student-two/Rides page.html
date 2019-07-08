@@ -173,9 +173,11 @@
                 document.documentElement.scrollTop = 0;
             }
 
-
-
-            //add click and show discription till re-clicked JS!!!!
+            displayLastEdit();
+            function displayLastEdit() {
+                var x = document.lastModified;
+                document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
+            }
 
         </script>
     </body>

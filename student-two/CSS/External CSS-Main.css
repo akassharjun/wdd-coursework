@@ -23,16 +23,40 @@ html{
     border-radius: 4px;
 }*/
 
-html, body{
-    height:100%             /*to match the prallax background*/
+html,body{
+    height:100%;                    /*to get parallax cover to fill page*/
 }
 
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');      /*cover photo text, imported to use thin text*/
 
 #coverImage{
-    width:100%;
-    height:auto;
-    filter: brightness(70%);
+    /*background-image: url("../images/MainPG-images/CoverPhoto.jpg");*/
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),  url("../images/MainPG-images/CoverPhoto.jpg");
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    max-width:100vw;
+    height:100%;
+
+}
+
+#coverText{
+    position: absolute;
+    transform: translate(-50%, -50%);           /*centering to top left corner*/
+    top:50%;
+    left:50%;
+    color:white;
+    text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
+    font-size: 3vw;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;                               /*thin font!!!!!not working!!!!!!!*/
 }
 
                         /*images get stretched when resized!!!!!!*/
@@ -40,6 +64,7 @@ html, body{
     height:130px;
     margin-top:30px;
     text-align:center;
+    background-color: white;
 }
 
 .contentStripBottom{

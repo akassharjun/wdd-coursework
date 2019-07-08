@@ -23,11 +23,13 @@ html{
     border-radius: 25px;
 }
 
+/*---------footer---------*/
 footer{
     position: relative;
     display:block;
     height:200px;
     background-color: rgb(34, 34, 34);
+    color:white;
 }
 
 #footLink{
@@ -49,11 +51,17 @@ footer{
     margin: 25px 30px 0 15px;
 }
 
+#lastEdit{
+    position: absolute;
+    bottom:10px;
+    right: 70px;
+}
+
 /*header styling*/
 
 header{
   height: 50px;
-  background-color: #122335;
+  background-color: #183048;
 }
 
 header img{
@@ -127,7 +135,8 @@ header img{
 }
   
 .navigationBar a:hover, .dropdownMenu:hover .dropdownMenuDiv {
-    background: linear-gradient( to top,#00c2e4,transparent);
+    background: linear-gradient( to top,#00c2e4,#183048);
+    color:white;
 }
   
 .dropdownMenuContent {

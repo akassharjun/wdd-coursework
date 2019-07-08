@@ -94,6 +94,12 @@
                 document.documentElement.scrollTop = 0;
             }
 
+            displayLastEdit();
+            function displayLastEdit() {
+                var x = document.lastModified;
+                document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
+            }
+
         </script>
     </body>
 </html>

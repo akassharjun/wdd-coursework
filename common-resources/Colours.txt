@@ -1,6 +1,6 @@
 white
 off white - #f8f8fb
-dark bluish grey - #122335
+dark blue - #183048
 light blue - #00c2e4
 
 

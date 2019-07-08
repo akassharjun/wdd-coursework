@@ -94,29 +94,33 @@ header img{
 .navigationBar{
     overflow: hidden;
     background-color: #122335;
-    height: 70px;
+    height: 50px;
 }
   
 .navigationBar a{
    float: left;
-   font-size: 16px;
+   font-size: 14px;
    color: white;
    text-align: center;
-   padding: 26px 45px;
+   padding: 17px 20px;
    text-decoration: none;
 }
-  
+
+.navigationBar a, .navigationBar div{
+    border-radius:2px;
+}
+
 .dropdownMenu {
    float: left;
    overflow: hidden;
 }
   
 .dropdownMenu .dropdownMenuDiv {
-    font-size: 16px;  
+    font-size: 14px;  
     border: none;
     outline: none;
     color: white;
-    padding: 26px 35px;
+    padding: 17px 20px;
     background-color: inherit;
     font-family: inherit;
     margin: 0;

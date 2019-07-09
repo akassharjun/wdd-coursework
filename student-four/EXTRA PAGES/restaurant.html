@@ -2,293 +2,69 @@
 <html>
     <head>
         <title>Themed restaurants</title>
+        <link rel="stylesheet" type="text/css" href="../../common-resources/style.css">
+        <link rel="stylesheet" type="text/css" href="restaurant-style.css">
         <script type="text/javascript" src="restaurantJavascript.js"></script>
 
         <style>
-            *{
-                margin: 0px;
-                padding: 0px;
-            }
-            /*Logo/header*/
-            header{
-                background:#004682;
-                height: 100px;
-                grid-column: 1/13;
-                transition: all 1s ease-in-out;
-            }
-            header:hover{
-                background:#0295ce;        
-            }
-            header img{
-                margin-top: 10px;
-                margin-left: 15px;
-                height: 100%;
-                width: 263px;
-
-            }   
-            #bodyContainer{
-                display: grid;  /*using grid layou for fluid website*/
-                grid-template-columns: repeat(12, 8.33333%);
-                grid-row-gap: 1%;
-            }
-            /*navigation bar*/
-            #navigationLists{
-                height: 40px; 
-                grid-column: 1/13;
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #0370b7;
-            }
-            li {
-                float: left;
-            }
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                transition: 0.2s;
-            }
-            a:hover{
-                background: #07d1bf;
-            }
-            /*Form*/
-            #restaurant-form{
-                padding: 0px 0px 0px 20px;
-                width: 25%;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 20px;
-                border: none;
-                background: #e2e2e2;
-                border-radius: 10px;
-            }
-            .select-option{
-                padding: 10px;
-                margin: 20px 5px 20px 5px;
-                width: 60%;
-                background:#949494;
-                color: #000000;
-                border: none;
-                border-radius: 20px;
-                transition: 0.5s;
-            }
-            .select-option:hover{
-                background: #000000;
-                color: #fff;
-            }
-            #restaurant-page-update{
-                padding: 10px;
-                margin: 20px 20px 20px 5px;
-                width: 30%;
-                background: #000;
-                color: #fff;
-                border: none;
-                border-radius: 20px;
-                transition: all 0.1s ease-in-out;
-            }
-            #restaurant-page-update:hover{
-                background:#60f4a0;
-                color: #000;
-            }
-            /*restaurant div containers*/
-
-            img{                
-                width: 100%;
-            }
-            .restaurants{
-                margin: 2%;
-                height: 100%;
-                text-align: center;
-                transition: 0.2s;
-                background: #969696;
-                grid-column: 2/6;
-                float: left;
-            }
-            .restaurants:hover{
-                transform: scale(1.01);
-            }
-            /*Aligning all divisions containing restaurants to the grid*/
-            #fastFoodrestaurant1{
-                grid-column: 1/5; 
-            }
-            #fastFoodrestaurant2{
-                grid-column: 5/9;     
-           
-            }
-            #fastFoodrestaurant3{
-                grid-column: 9/13;  
-              
-            }
-            #restaurant1{
-                grid-column: 1/5;                
-            }
-            #vegetarianRestaurant{
-                grid-column: 5/9;                
-            }
-            #candyShop{
-                grid-column: 9/13;                
-            }
-            #iceCreamShop{
-                grid-column: 1/5;                
-            }
-            /*restaurant heading and description*/
-            .restaurant-heading{
-                margin: 5px;
-                font-family: sans-serif;
-                font-size: 30px;
-                text-align: left;
-            }
-            .restaurant-description{
-                margin: 5px;
-                font-family: sans-serif;
-                font-size: 15px;
-                text-align: justify;
-            }     
-     
-
         </style>
         
     </head>
     <body>
-        <!--logo-->
-            <header>
-                <img src="..\..\common-resources\3.svg" alt="Logo">    
-            </header>
-            <div id="navigationLists">
-                <nav>
-                    <ul >
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>                
-                    </ul>
-                </nav>
-            </div>
-            <div id="restaurant-form">
-                <form action="post">
-                    <!--<select class="select-option" id="select-location">
-                        <option selected>Select location</option>
-                        <option>Loc 1</option>
-                        <option>Loc 2</option>
-                        <option>Loc 3</option>
-                        <option>Loc 4</option>
-                        <option>Loc 5</option>
-                    </select>
-                -->
-                    <select class="select-option" id="select-type">
-                        <option selected>Select Restaurant option</option>
-                        <option>Restaurant</option>
-                        <option>Buffet</option>
-                        <option>Vegetarian choices</option>
-                        <option>Fast-food outlets</option>
-                        <option>Ice cream and Sweets</option>
-                    </select>
-                    <input type="button" id="restaurant-page-update" value="Update" onclick="changeDiningOption();">
-                </form>
-            </div>
-            <div id="bodyContainer">
-                <div class="restaurants" id="fastFoodrestaurant1">
-                    <img src="Images\Restaurant\Fastfood.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+        <header>
+            <!--Navigation bar-->
+            <div class="navigationBar">
+                <a href="../student-two/Main Page.html">Home</a>
+                <div class="dropdownMenu">
+                    <div class="dropdownMenuDiv">Attractions 
                     </div>
-                </div>
-                <div class="restaurants" id="fastFoodrestaurant2">
-                    <img src="Images\Restaurant\Fastfood.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                    <div class="dropdownMenuContent">
+                        <a href="../student-two/Rides page.html">Rides</a>
+                        <a href="../student-four/EXTRA PAGES/restaurant.html">Restaurants</a>
                     </div>
-                </div>
-                <div class="restaurants" id="fastFoodrestaurant3">
-                    <img src="Images\Restaurant\Fastfood1.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                </div> 
+                <div class="dropdownMenu">
+                    <div class="dropdownMenuDiv">Our Events 
                     </div>
-                </div>
-                <div class="restaurants" id="restaurant1">
-                    <img src="Images\Restaurant\restaraunt.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
-                    </div>
-                </div>
-                <div class="restaurants" id="vegetarianRestaurant">
-                    <img src="Images\Restaurant\vegetarian.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
-                    </div>
-                </div>
-                <div class="restaurants" id="candyShop">
-                    <img src="Images\Restaurant\candy.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
-                    </div>
-                </div>
-                <div class="restaurants" id="iceCreamShop">
-                    <img src="Images\Restaurant\icecream.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
-                    </div>
+                        <div class="dropdownMenuContent">
+                        <a href="#">Special Events</a>
+                        </div>
                 </div>  
-                <div id="test">
-
-                </div>              
+                <a href="#news">Quiz</a>
+                <a href="#news">Products</a>
+                <a href="#news">About Us</a>
             </div>
+        </header>
+
+        <div id="contentWrapper">
+            
+            <div id="formBlock">
+                <div id="formDiv">
+                    <form action="post"> 
+                        <select name="selectOption" id="diningOption">
+                            <option value="Select an option" selected>Select an option</option>
+                            <option value="Buffet">Buffet</option>
+                            <option value="Restaurant">Restaurant</option>
+                        </select>
+                        <input type="button" name="sortDining" id="DiningSortButton" value="Sort">
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div class="restaurantBlock">
+                    <div class="restaurantDetails">
+                        <img src="Images/Restaurant/Fastfood1.jpg" alt=""/>
+                        <div class="overlayDiv">
+                            <div class ="descriptionOverlay">
+                                <!--overlapping text(description) on hover-->
+                                Travel the way Kryptonians did, before Superman was gifted to Earth!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurantTag">
+                        <span class="rideName">Kryptonian Space-Ark</span>
+                    </div>
+                </div>
+        </div>
     </body>
 </html>

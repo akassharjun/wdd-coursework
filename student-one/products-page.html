@@ -2,34 +2,48 @@
 <html lang="en">
 <head>
 	<title>Products</title>
-	<link rel="stylesheet" href="styles/products-page-style.css" type="text/css" />
-	<!--    <link rel="stylesheet" href="../common-resources/style.css"/>-->
+	<link rel="stylesheet" href="styles/products-page-style.css" />
+	<link rel="stylesheet" href="../common-resources/style.css" />
+	<script type="text/javascript" src="scripts/products-page-script.js"></script>
 </head>
 <body>
-
-<h2>Responsive Column Cards</h2>
+<h2>WHY THE HELL ISNT THIS WORKING MAN!</h2>
 <p>Resize the browser window to see the effect.</p>
 
+<button onclick="increaseFontSize();">Increase Font Size</button>
+<button onclick="decreaseFontSize();">Decrease Font Size</button>
+
 <div class="row">
-	
 	<div class="column">
 		<div class="productCard">
-			<img class="productImage"
-			     src="assets/T-Shirts/product_tshirt_superman.jpeg"
-			     alt="Superman T-Shirt" />
+			<img
+					class="productImage"
+					src="assets/T-Shirts/product_tshirt_superman.jpeg"
+					alt="Superman T-Shirt"
+			/>
 			<!--            <p class="productTitle">Superman<br/>T-Shirt</p>-->
 			<p class="productPrice">$15.99</p>
 			<h3 class="productTitle">Iron Man</h3>
-			<p class="productDescription">Mens T-Shirt</p>
-			<p>Add To Cart</p>
+			<!--			<p class="productDescription">Mens T-Shirt</p>-->
+			<label class="quantityTitle"> Quantity </label>
+			
+			<select class="quantityOption">
+				<option>1</option>
+				<option>2</option>
+			</select>
+			
+			<br />
+			<button>Add To Cart</button>
+			<br />
 		</div>
 	</div>
 	
 	<div class="column">
 		<div class="productCard">
-			<img class="productImage"
-			     src="assets/T-Shirts/product_tshirt_iron_spider.jpg"
-			     alt="Iron Spider T-Shirt"
+			<img
+					class="productImage"
+					src="assets/T-Shirts/product_tshirt_iron_spider.jpg"
+					alt="Iron Spider T-Shirt"
 			/>
 			<!--            <p class="productTitle">Iron Spider<br/>T-Shirt</p>-->
 			<p class="productPrice">$15.99</p>
@@ -40,12 +54,13 @@
 	
 	<div class="column">
 		<div class="productCard">
-			<img class="productImage"
-			     src="assets/T-Shirts/product_tshirt_flash.jpg"
-			     alt="Flash T-Shirt"
+			<img
+					class="productImage"
+					src="assets/T-Shirts/product_tshirt_flash.jpg"
+					alt="Flash T-Shirt"
 			/>
 			<!--            <p class="productTitle">Flash<br/>T-Shirt</p>-->
-			<p class="productPrice">$15.99</p>
+			<h3 class="productPrice">$15.99</h3>
 			<h3 class="productTitle">Flash</h3>
 			<p class="productDescription">Mens T-Shirt</p>
 		</div>
@@ -53,9 +68,10 @@
 	
 	<div class="column">
 		<div class="productCard">
-			<img class="productImage"
-			     src="assets/T-Shirts/product_tshirt_avengers.jpg"
-			     alt="Avengers T-Shirt"
+			<img
+					class="productImage"
+					src="assets/T-Shirts/product_tshirt_avengers.jpg"
+					alt="Avengers T-Shirt"
 			/>
 			<!--            <p class="productTitle">Avengers<br/>T-Shirt</p>-->
 			<p class="productPrice">$15.99</p>
@@ -63,7 +79,6 @@
 			<p class="productDescription">Mens T-Shirt</p>
 		</div>
 	</div>
-
 </div>
 </body>
 </html>

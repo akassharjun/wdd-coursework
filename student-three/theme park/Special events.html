@@ -225,6 +225,15 @@
                 </div>
             </div>
        </div>
+       <footer>
+        <div id="footLink">
+            <a href="CV.html">
+                <img src="images/dini.jpg" alt="Yuwarajalingam Dinesh"/>
+                <span>Yuwarajalingam Dinesh</span>
+            </a>
+        </div>
+        <div id="lastEdit"></div>
+    </footer>
        <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
        <script>
 
@@ -239,6 +248,11 @@
 
             function scrollToTop(){         //scroll top top of web page
                 document.documentElement.scrollTop = 0;
+            }
+            displayLastEdit();
+            function displayLastEdit() {
+                var x = document.lastModified;
+                document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
             }
 
 

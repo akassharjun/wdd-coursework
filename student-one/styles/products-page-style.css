@@ -1,98 +1,236 @@
+:root {
+	--primary-color: #183048;
+	--add-button-color : #00c421;
+	--remove-button-color : #c41a00;
+	--hot-red-color: #ff2540
+}
+
 * {
-    box-sizing: border-box;
-    font-family: Avenir, serif;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.product-card {
+	width: 380px;
+	position: relative;
+	box-shadow: 0 2px 7px #dfdfdf;
+	margin: 50px auto;
+	background: #fafafa;
+}
+
+.badge {
+	position: absolute;
+	left: 0;
+	top: 20px;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 700;
+	background: var(--hot-red-color);
+	color: #fff;
+	padding: 3px 10px;
+}
+
+.product-thumbnail {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/*height: 300px;*/
+	padding: 25px;
+	background: #ffffff;
+}
+
+.product-thumbnail img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.product-details {
+	padding: 15px;
+}
+
+.product-category {
+	display: block;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #757575;
+	margin-bottom: 8px;
+}
+
+.product-details h4 a {
+	font-weight: 600;
+	display: block;
+	font-size: 26px;
+	margin-bottom: 10px;
+	/*text-transform: uppercase;*/
+	color: #363636;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.product-details h4 a:hover {
+	color: var(--primary-color);
+}
+
+.product-details p {
+	font-size: 18px;
+	line-height: 20px;
+	margin-bottom: 8px;
+	color: #999;
+}
+
+.product-bottom-details {
+	overflow: hidden;
+	border-top: 1px solid #eee;
+	padding-top: 10px;
+}
+
+.product-bottom-details div {
+	float: left;
+	width: 50%;
+}
+
+.product-price {
+	font-size: 24px;
+	color: var(--primary-color);
+	font-weight: 600;
+}
+
+
+.product-links {
+	/*text-align: center;*/
+	/*background-color: #00c2e4;*/
+}
+
+.product-links div {
+	background-color: lightgreen;
+	float: right;
+	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	font-size: 18px;
+	line-height: 22px;
+	padding: 10px;
+}
+
+.quantity {
+	margin-bottom: 18px;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #757575;
 }
 
 /* Float four columns side by side */
 .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
+	float: left;
+	width: 33.33%;
+	padding: 1.5%;
 }
 
 /* Remove extra left and right margins, due to padding */
 .row {
-    margin: 0 -5px;
-    align-self: center;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin: 10px;
+	align-self: center;
 }
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
+	.column {
+		width: 100%;
+		display: block;
+		margin-bottom: 20px;
+	}
 }
 
-/* Style the counter cards */
-.productCard {
-    margin: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    text-align: center;
-    background-color: #fff;
-    border-radius: 5%;
+.button {
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #00c421;
+	border: none;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 18px;
+	padding: 10px;
+	width: 120px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	float: right;
+	text-transform: capitalize;
+	line-height: 22px;
 }
 
-.productImage {
-    max-width: 100%;
-    padding: 5%;
-    height: auto;
-    width: auto;
-    border-top-left-radius: 5%;
-    border-top-right-radius: 5%;
+
+* {
+	box-sizing: border-box;
 }
 
-#header {
-    height: 35%;
-    width: 100%;
-    background-color: #000;
+/* Add padding to containers */
+.container {
+	padding: 16px;
+	background-color: white;
 }
 
-.productTitle {
-    text-align: left;
-    margin-left: 20px;
-    margin-top: 10px;
-    font-style: normal;
-    font-weight: bold;
-    /*font-size: 1.5vw;*/
-    color: #222222;
+/* Full-width input fields */
+input[type=text] {
+	width: 65%;
+	padding: 15px;
+	font-size: 18px;
+	margin: 5px 0 22px 0;
+	display: inline-block;
+	border: none;
+	background: #f1f1f1;
 }
 
-.productDescription {
-    text-align: left;
-    margin-top: 10px;
-    margin-left: 20px;
-    padding-bottom: 15px;
-    font-style: normal;
-    font-weight: 300;
-    /*font-size: 1vw;*/
-    color: #222222;
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
 }
 
-.productPrice {
-    text-align: right;
-    color: #222222;
-    margin-right: 20px;
-    margin-top: 10px;
-    font-style: normal;
-    font-weight: bold;
-    /*font-size: 1.2vw;*/
-    margin-bottom: 10px;
-    float: right;
+/* Overwrite default styles of hr */
+hr {
+	border: 1px solid #f1f1f1;
+	margin-bottom: 25px;
 }
 
-.body {
-    color: orange;
+#totalAmount {
+	font-size: 28px;
+	font-weight: bold;
 }
 
-.productImage:hover {
-    transform: scale(1.1);
+#place-order {
+	margin-top: 25px;
+	width: 25%;
+	float: left;
+}
+/*#customerDetails {*/
+/*	padding-right: 50px;*/
+/*	padding-left: 50px;*/
+/*}*/
+
+
+/* Add a blue text color to links */
+a {
+	color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.footer {
+	margin-top: 20px;
+	padding: 100px;
+	background-color: #f1f1f1;
+	text-align: center;
 }

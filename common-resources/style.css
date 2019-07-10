@@ -136,7 +136,7 @@ header img{
 }
 
 .navigationBar a:hover, .dropdownMenu:hover .dropdownMenuDiv {
-    background: linear-gradient( to top,#00c2e4,#183048);
+    background: linear-gradient( to top,#00c2e4,#183048 30%);
     color:white;
 }
 

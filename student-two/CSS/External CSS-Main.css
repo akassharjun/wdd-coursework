@@ -27,8 +27,6 @@ html,body{
     height:100%;                    /*to get parallax cover to fill page*/
 }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');      /*cover photo text, imported to use thin text*/
-
 #coverImage{
     /*background-image: url("../images/MainPG-images/CoverPhoto.jpg");*/
     background-image: 
@@ -55,8 +53,7 @@ html,body{
     color:white;
     text-shadow: 0px 2px 3px rgba(0,0,0,0.4);
     font-size: 3vw;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;                               /*thin font!!!!!not working!!!!!!!*/
+    font-weight: 300;
 }
 
                         /*images get stretched when resized!!!!!!*/

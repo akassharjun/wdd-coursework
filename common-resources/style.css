@@ -51,7 +51,8 @@ footer{
 #footLink a span{
     float: right;
     color:white;
-    margin: 25px 30px 0 15px;
+    margin: 25px 35px 0 0px;
+    font-size: 18px;
 }
 
 #lastEdit{
@@ -83,7 +84,7 @@ header img{
 
 /*---------breadcrumb---------*/
 #breadCrumb{
-    font-size: 0.9em;
+    font-size: 16px;
 }
 
 #breadCrumb a:link{
@@ -110,7 +111,7 @@ header img{
 
 .navigationBar a{
     float: left;
-    font-size: 14px;
+    font-size: 16px;
     color: white;
     text-align: center;
     padding: 17px 20px;
@@ -128,7 +129,7 @@ header img{
 }
 
 .dropdownMenu .dropdownMenuDiv {
-    font-size: 14px;  
+    font-size: 16px;  
     border: none;
     outline: none;
     color: white;

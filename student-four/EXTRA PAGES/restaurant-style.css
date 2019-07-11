@@ -14,7 +14,7 @@ body{
 #formBlock{
     width: 100%;
     height: 100px;
-    text-align: center;
+    text-align: center; 
 }
 form{
     margin: auto;
@@ -49,8 +49,9 @@ form{
     color: #fff;
 }
 #diningSortButton:hover{
-    background: #3e76b3;
-    color: #fff;
+    background: #00c2e4;
+    color: #000;
+    cursor: pointer;
 }
 /*Restaurant details*/
 .restaurantBlock{

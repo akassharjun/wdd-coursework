@@ -1,84 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="">
 <head>
+	<link type="text/css" rel="stylesheet" href="../common-resources/style.css">
+	<link type="text/css" rel="stylesheet" href="styles/products-page-style.css">
+	<script src="scripts/products-page-script.js"></script>
 	<title>Products</title>
-	<link rel="stylesheet" href="styles/products-page-style.css" />
-	<link rel="stylesheet" href="../common-resources/style.css" />
-	<script type="text/javascript" src="scripts/products-page-script.js"></script>
 </head>
 <body>
-<h2>WHY THE HELL ISNT THIS WORKING MAN!</h2>
-<p>Resize the browser window to see the effect.</p>
+<header>
+	<!--<object type="image/svg+xml" id="logo" data="">
+		Logo image
+	</object>-->
+	<!--logo + navbar comes here-->
+	<div class="navigationBar">
+		<a href="../student-two/Main Page.html">Home</a>
+		<div class="dropdownMenu">
+			<div class="dropdownMenuDiv">Attractions
+			</div>
+			<div class="dropdownMenuContent">
+				<a href="../student-two/Rides page.html">Rides</a>
+				<a href="../student-four/EXTRA PAGES/restaurant.html">Restaurants</a>
+			</div>
+		</div>
+		<div class="dropdownMenu">
+			<div class="dropdownMenuDiv">Our Events
+			</div>
+			<div class="dropdownMenuContent">
+				<a href="#">Special Events</a>
+			</div>
+		</div>
+		<a href="#news">Quiz</a>
+		<a href="#news">Products</a>
+		<a href="#news">About Us</a>
+		<button onclick="increaseFontSize()">INCREASE</button>
+		<button onclick="decreaseFontSize()">DECREASE</button>
+	</div>
 
-<button onclick="increaseFontSize();">Increase Font Size</button>
-<button onclick="decreaseFontSize();">Decrease Font Size</button>
+</header>
 
 <div class="row">
 	<div class="column">
-		<div class="productCard">
-			<img
-					class="productImage"
-					src="assets/T-Shirts/product_tshirt_superman.jpeg"
-					alt="Superman T-Shirt"
-			/>
-			<!--            <p class="productTitle">Superman<br/>T-Shirt</p>-->
-			<p class="productPrice">$15.99</p>
-			<h3 class="productTitle">Iron Man</h3>
-			<!--			<p class="productDescription">Mens T-Shirt</p>-->
-			<label class="quantityTitle"> Quantity </label>
-			
-			<select class="quantityOption">
-				<option>1</option>
-				<option>2</option>
-			</select>
-			
-			<br />
-			<button>Add To Cart</button>
-			<br />
+		<div class="product-card">
+			<div class="badge">New in Store</div>
+			<div class="product-thumbnail">
+				<img src="assets/action-figures/products_captain_america.jpg" alt="">
+			</div>
+			<div class="product-details">
+				<span class="product-category">Action Figure</span>
+				<h4><a href="">Captain America</a></h4>
+				<label class="quantity">
+					Quantity&nbsp;&nbsp;&nbsp;&nbsp;
+					<select class="quantity">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</label>
+				<br />
+				<div class="product-bottom-details">
+					<div class="product-price">$50.99</div>
+					<button class="button" id="captainAmerica" onclick="">Add</button>
+				</div>
+			</div>
 		</div>
 	</div>
 	
 	<div class="column">
-		<div class="productCard">
-			<img
-					class="productImage"
-					src="assets/T-Shirts/product_tshirt_iron_spider.jpg"
-					alt="Iron Spider T-Shirt"
-			/>
-			<!--            <p class="productTitle">Iron Spider<br/>T-Shirt</p>-->
-			<p class="productPrice">$15.99</p>
-			<h3 class="productTitle">Spider Man</h3>
-			<p class="productDescription">Special Edition T-Shirt</p>
+		<div class="product-card">
+			<div class="badge">Hot</div>
+			<div class="product-thumbnail">
+				<img src="assets/action-figures/products_iron_man.jpg" alt="">
+			</div>
+			<div class="product-details">
+				<span class="product-category">Action Figure</span>
+				<h4><a href="">Iron Man</a></h4>
+				<label class="quantity">
+					Quantity&nbsp;&nbsp;&nbsp;&nbsp;
+					<select class="quantity">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</label>
+				<br />
+				<div class="product-bottom-details">
+					<div class="product-price">$50.99</div>
+					<button class="button" id="ironMan" onclick="">Add</button>
+				</div>
+			</div>
 		</div>
 	</div>
 	
 	<div class="column">
-		<div class="productCard">
-			<img
-					class="productImage"
-					src="assets/T-Shirts/product_tshirt_flash.jpg"
-					alt="Flash T-Shirt"
-			/>
-			<!--            <p class="productTitle">Flash<br/>T-Shirt</p>-->
-			<h3 class="productPrice">$15.99</h3>
-			<h3 class="productTitle">Flash</h3>
-			<p class="productDescription">Mens T-Shirt</p>
+		<div class="product-card">
+			<div class="badge">Most Selling</div>
+			<div class="product-thumbnail">
+				<img src="assets/action-figures/products_thor.jpg" alt="">
+			</div>
+			<div class="product-details">
+				<span class="product-category">Action Figure</span>
+				<h4><a href="">Thor</a></h4>
+				<!--		<p>Quantity</p>-->
+				<label class="quantity">
+					Quantity&nbsp;&nbsp;&nbsp;&nbsp;
+					<select class="quantity">
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+					</select>
+				</label>
+				<br />
+				<div class="product-bottom-details">
+					<div class="product-price">$50.99</div>
+					<button class="button" id="thor" onclick="">Add</button>
+				</div>
+			</div>
 		</div>
 	</div>
-	
-	<div class="column">
-		<div class="productCard">
-			<img
-					class="productImage"
-					src="assets/T-Shirts/product_tshirt_avengers.jpg"
-					alt="Avengers T-Shirt"
-			/>
-			<!--            <p class="productTitle">Avengers<br/>T-Shirt</p>-->
-			<p class="productPrice">$15.99</p>
-			<h3 class="productTitle">Avengers</h3>
-			<p class="productDescription">Mens T-Shirt</p>
-		</div>
-	</div>
+
 </div>
+
+<form class="row">
+	<div class="container">
+		<h1>Buy Products</h1>
+		<p>Please fill in this form to purchase your desired product(s).</p>
+		<hr>
+		
+		<label for="name"><b>Full Name</b><br />
+			<input type="text" placeholder="Enter your full name" name="email" id="name">
+		</label><br />
+		<label for="email"><b>Email</b><br />
+			<input type="text" placeholder="Enter your email" name="email" id="email">
+		</label><br />
+		<label for="address"><b>Address</b><br />
+			<input type="text" placeholder="Enter your address" name="address" id="address">
+		</label><br />
+		<hr>
+		<p id="totalAmount">Total Amount &nbsp;-&nbsp; $50.99</p>
+		<button class="button" id="place-order">Place Order!</button>
+	</div>
+</form>
+
+
+<div class="footer">
+	<p>Author - Akassharjun Shanmugarajah</p>
+</div>
+
+
 </body>
+
 </html>

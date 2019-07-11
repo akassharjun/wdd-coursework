@@ -46,13 +46,26 @@
         
     
         <h1>Rides that'll take your breath away!!!</h1>
+
+        <form action="get">
+            <div>
+                <label for="selectRide">Filter Rides: </label>
+                <select name="selectRide" id="selectRide" size="1" onchange="filterDisplay();">
+                    <option selected>All Rides</option>
+                    <option>Roller Coaster Rides</option>
+                    <option>First-Person Experience</option>
+                    <option>Adventure</option>
+                </select>
+            </div>
+        </form>
+
         <p>Hover over rides to get to know more about them</p>
         
             
         <div class=flex-container>
             
 
-            <div class="rideBlock">
+            <div class="rideBlock" id="ride1">
                 <div class="rideImgBlock">
                     <img src="../student-two/images/RidesPG-images/super-man.jpg" alt=""/>
                     <div class="overlay">
@@ -68,7 +81,7 @@
             </div>
             
 
-            <div class="rideBlock">
+            <div class="rideBlock" id="ride2">
                 <div class="rideImgBlock">
                     <img src="../student-two/images/RidesPG-images/scary-ride.jpg" alt=""/>
                     <div class="overlay">
@@ -83,7 +96,7 @@
             </div>
 
 
-            <div class="rideBlock">
+            <div class="rideBlock" id="ride3">
                 <div class="rideImgBlock">
                     <img src="../student-two/images/RidesPG-images/atlantis.jpg" alt="Explore Atlantis"/>
                     <div class="overlay">
@@ -98,7 +111,7 @@
             </div>
 
 
-            <div class="rideBlock">
+            <div class="rideBlock" id="ride4">
                 <div class="rideImgBlock">
                     <img src="../student-two/images/RidesPG-images/guardians-ride.jpg" alt=""/>
                     <div class="overlay">
@@ -113,7 +126,7 @@
             </div>
 
 
-            <div class="rideBlock">
+            <div class="rideBlock" id="ride5">
                 <div class="rideImgBlock">
                     <img src="../student-two/images/RidesPG-images/roller-coaster-1.jpg" alt=""/>
                     <div class="overlay">
@@ -128,7 +141,7 @@
             </div>
 
 
-            <div class="rideBlock">
+            <div class="rideBlock" id="ride6">
                 <div class="rideImgBlock">
                     <img src="../student-two/images/RidesPG-images/big-wheel.jpg" alt=""/>
                     <div class="overlay">
@@ -152,6 +165,8 @@
                     <img src="../student-two/CV/images/Dinuka CV-sq.jpg"/>
                     <span>Dinuka Piyadigama</span>
                 </a>
+                <span>UOW ID: w1742104  |</span>
+                <span>IIT ID: 2018373</span>
             </div>
             <div id="lastEdit"></div>
         </footer>
@@ -159,6 +174,50 @@
         <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
 
         <script>
+
+            function filterDisplay(){                           /*used to filter out rides and display*/
+                var rideOption = document.getElementById("selectRide").value;
+
+                switch(rideOption){
+                    case "Roller Coaster Rides":
+                        document.getElementById("ride1").style.display = "block";
+                        document.getElementById("ride2").style.display = "block";
+                        document.getElementById("ride3").style.display = "none";
+                        document.getElementById("ride4").style.display = "none";
+                        document.getElementById("ride5").style.display = "block";
+                        document.getElementById("ride6").style.display = "none";
+                        return;
+
+                    case "First-Person Experience":
+                        document.getElementById("ride1").style.display = "none";
+                        document.getElementById("ride2").style.display = "block";
+                        document.getElementById("ride3").style.display = "block";
+                        document.getElementById("ride4").style.display = "block";
+                        document.getElementById("ride5").style.display = "block";
+                        document.getElementById("ride6").style.display = "none";
+                        return;
+
+                    case "Adventure":
+                        document.getElementById("ride1").style.display = "none";
+                        document.getElementById("ride2").style.display = "block";
+                        document.getElementById("ride3").style.display = "block";
+                        document.getElementById("ride4").style.display = "block";
+                        document.getElementById("ride5").style.display = "none";
+                        document.getElementById("ride6").style.display = "none";
+                        return;
+
+                    default:
+                        document.getElementById("ride1").style.display = "block";
+                        document.getElementById("ride2").style.display = "block";
+                        document.getElementById("ride3").style.display = "block";
+                        document.getElementById("ride4").style.display = "block";
+                        document.getElementById("ride5").style.display = "block";
+                        document.getElementById("ride6").style.display = "block";
+                        return;
+
+                }
+            }
+
 
         window.onscroll = function() {toTopDisplay()};
             function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
@@ -173,11 +232,12 @@
                 document.documentElement.scrollTop = 0;
             }
 
+
             displayLastEdit();
             function displayLastEdit() {
                 var x = document.lastModified;
                 document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
-            }
+            }            
 
         </script>
     </body>

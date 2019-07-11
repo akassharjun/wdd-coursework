@@ -9,6 +9,8 @@ body{
 }
 
 form{
+    font-weight:500;
+    font-size:17px;
     position: absolute;
     text-align:center;
     width: 350px;
@@ -21,6 +23,7 @@ form{
 }
 
 .formInput{
+    font-size:15px;
     border:0;
     text-align: center;
     border-radius: 6px;
@@ -44,6 +47,7 @@ form{
 }
 
 .buttons{
+    font-weight:600;
     border:2px solid;
     border-radius: 10px;
     padding:6px;

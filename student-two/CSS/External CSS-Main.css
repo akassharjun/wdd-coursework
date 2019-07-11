@@ -56,12 +56,43 @@ html,body{
     font-weight: 300;
 }
 
-                        /*images get stretched when resized!!!!!!*/
 .contentStripTop{
+    position: relative; 
     height:130px;
     margin-top:30px;
     text-align:center;
     background-color: white;
+}
+
+.topBookmarks{
+    margin:auto;
+    width:75%;
+    height:130px;
+}
+
+.topBookmarks a{
+    position: relative;
+    display: inline-block;
+    margin:0 10px 0 10px;
+    height:100px;
+    width:25%;
+    font-weight:1000;
+    font-size: 28px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 5px 1px grey;
+    background: linear-gradient( to top,#00c2e4,white);
+    text-decoration: none;
+    color:#183048;
+}
+
+.topBookmarks a:hover{
+    color:#183048;
+    box-shadow: 0px 2px 5px 1px grey;
+}
+
+.bookmarks{
+    position: relative;
+    top:40px;
 }
 
 .contentStripBottom{
@@ -85,7 +116,7 @@ html,body{
     box-shadow: 0px 1px 14px 4px gray;
 }
 
-.imgLarge img, .imgSmall img{
+.imgLarge img, .imgSmall img, .contentStripBottom img{
     transition: transform 1500ms;
 }
 
@@ -155,7 +186,7 @@ span.contentOverImg{
 
 
 
-.contentLarge img{
+.contentLarge img, .contentStripBottom img{
     min-width:100%;
     height: 100%;
 }
@@ -163,13 +194,6 @@ span.contentOverImg{
 .contentLarge img:hover, .contentStripBottom img:hover{
     transform: scale(1.1);
 }
-
-.contentStripBottom img{                    /*get this into a common class and apply to all images later*/
-    min-width: 100%;
-    height:100%;
-    transition: transform 1500ms;
-}
-
 
 
 /*#logo{

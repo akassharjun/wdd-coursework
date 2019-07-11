@@ -11,6 +11,36 @@ p{
     margin-left:50px;
 }
 
+form{
+    position: relative;
+    display:block;
+    text-align: center;
+    font-size:16px;
+    background-color: #f8f8fb;
+    width:380px;
+    height:55px;
+    margin:auto;
+    border-radius: 10px;
+}
+
+form div{
+    position: absolute;
+    text-align: center;
+    top:8px;
+    left:20px;
+}
+
+form select{
+    border-radius: 20px;
+    width:250px;
+    padding:10px;
+}
+
+form select:hover{
+    background-color: #183048;
+    color:white;
+}
+
 /*#breadCrumb a:link{
     color:black;
     text-decoration: none;

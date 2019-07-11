@@ -106,3 +106,7 @@ img{
     text-align: center;
     color: #fff;
 }
+
+.descriptionOverlay div{
+    float:left;
+}

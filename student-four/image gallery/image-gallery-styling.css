@@ -1,78 +1,7 @@
 *{
     margin: 0;
+    padding: 0;
 }
-
-/*Logo/header*/
-
-#logo img{
-    margin-bottom: 25px;
-    height: 40px;
-    
-} 
-/*  
-Navigation bar
-.navigationBar {
-    overflow: hidden;
-    background-color: #333;
-    margin-top: 20px;
-    height: 70px;
-  }
-  
-  .navigationBar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 26px 45px;
-    text-decoration: none;
-  }
-  
-  .dropdownMenu {
-    float: left;
-    overflow: hidden;
-  }
-  
-  .dropdownMenu .dropdownMenuDiv {
-    font-size: 16px;  
-    border: none;
-    outline: none;
-    color: white;
-    padding: 26px 35px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
-  }
-  
-  .navigationBar a:hover, .dropdownMenu:hover .dropdownMenuDiv {
-    background-color: red;
-  }
-  
-  .dropdownMenuContent {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 45px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdownMenuContent a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdownMenuContent a:hover {
-    background-color: #ddd;
-  }
-  
-  .dropdownMenu:hover .dropdownMenuContent {
-    display: block;
-    width: 140px;
-  }*/
 
 /*division containing form*/
 #formDivision{
@@ -224,4 +153,8 @@ option{
 /*image fit*/
 .imagesAndDescriptions #imageDiv img{
     object-fit: cover;
+}
+
+#descriptionLink{
+    grid-row: 2/3;
 }

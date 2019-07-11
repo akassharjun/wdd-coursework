@@ -6,8 +6,6 @@
         <link rel="stylesheet" type="text/css" href="restaurant-style.css">
         <script type="text/javascript" src="restaurantJavascript.js"></script>
 
-        <style>
-        </style>
         
     </head>
     <body>
@@ -36,35 +34,162 @@
             </div>
         </header>
 
-        <div id="contentWrapper">
+        <div id="contentWrapper"> 
             
             <div id="formBlock">
                 <div id="formDiv">
                     <form action="post"> 
                         <select name="selectOption" id="diningOption">
                             <option value="Select an option" selected>Select an option</option>
-                            <option value="Buffet">Buffet</option>
-                            <option value="Restaurant">Restaurant</option>
+                            <option value="Buffet">Buffets</option>
+                            <option value="Restaurant">Restaurants</option>
+                            <option value="Vegetarian">Vegetarian Options</option>
+                            <option value="Candy">Candy Shops</option>
+                            <option value="Icecream">Icecream Shops</option>
                         </select>
-                        <input type="button" name="sortDining" id="DiningSortButton" value="Sort">
+                        <input type="button" name="sortDining" id="diningSortButton" value="Sort" onclick="changeDiningOption();">
                     </form>
                 </div>
             </div>
-            <br>
-            <div class="restaurantBlock">
-                    <div class="restaurantDetails">
-                        <img src="Images/Restaurant/Fastfood1.jpg" alt=""/>
-                        <div class="overlayDiv">
-                            <div class ="descriptionOverlay">
-                                <!--overlapping text(description) on hover-->
-                                Travel the way Kryptonians did, before Superman was gifted to Earth!
-                            </div>
+
+            <div class="restaurantBlock" id="fastFood1">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/Fastfood1.jpg" alt=""/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Travel the way Kryptonians did, before Superman was gifted to Earth!
                         </div>
                     </div>
-                    <div class="restaurantTag">
-                        <span class="rideName">Kryptonian Space-Ark</span>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Kryptonian Space-Ark</span>
+                </div>
+            </div>
+
+            <div class="restaurantBlock"  id="icecreamShop">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/icecream.jpg" alt=""/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Travel the way Kryptonians did, before Superman was gifted to Earth!
+                        </div>
                     </div>
                 </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Kryptonian Space-Ark</span>
+                </div>
+            </div>
+
+            <div class="restaurantBlock" id="fastFood2">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/Fastfood.jpg" alt=""/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Travel the way Kryptonians did, before Superman was gifted to Earth!
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Kryptonian Space-Ark</span>
+                </div>
+            </div>
+
+            <div class="restaurantBlock" id="restaurant1">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/restaraunt.jpg" alt=""/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Travel the way Kryptonians did, before Superman was gifted to Earth!
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Kryptonian Space-Ark</span>
+                </div>
+            </div>
+
+            <div class="restaurantBlock" id="restaurant2">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/vegetarian.jpg" alt=""/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Travel the way Kryptonians did, before Superman was gifted to Earth!
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Kryptonian Space-Ark</span>
+                </div>
+            </div>
+
+            <div class="restaurantBlock" id="buffetRestaurant">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/buffet.jpg" alt=""/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Travel the way Kryptonians did, before Superman was gifted to Earth!
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Kryptonian Space-Ark</span>
+                </div>
+            </div>
+            
+            <div class="restaurantBlock" id="candyShop">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/candy.jpg" alt=""/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Travel the way Kryptonians did, before Superman was gifted to Earth!
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Kryptonian Space-Ark</span>
+                </div>
+            </div>
         </div>
+
+        <footer>
+                <div id="footLink">
+                    <a href="../student-two/CV/CV.html">
+                        <img src="../CV/images/CV-visal.jpg"/>
+                        <span>Visal Rajapakse</span>
+                    </a>
+                </div>
+                <div id="lastEdit"></div>
+            </footer>
+
+            <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
+            <script>
+
+                window.onscroll = function() {toTopDisplay()};
+                    function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
+                        if(document.documentElement.scrollTop > 100){
+                            document.getElementById("toTopButton").style.display = "block";
+                        }else{
+                            document.getElementById("toTopButton").style.display = "none";
+                        }
+                    }
+        
+                    function scrollToTop(){         //scroll top top of web page
+                        document.documentElement.scrollTop = 0;
+                    }
+        
+                    displayLastEdit();
+                    function displayLastEdit() {
+                        var x = document.lastModified;
+                        document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
+                    }
+        
+                </script>
     </body>
 </html>

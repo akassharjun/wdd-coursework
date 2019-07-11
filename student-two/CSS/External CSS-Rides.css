@@ -2,8 +2,10 @@
 h1{
     font-weight:300;
     text-align: center;
-    padding:80px;
-    background-color: white;
+    padding:70px;
+    color:#183048;
+    background: linear-gradient( to top,#00c2e4,white 50%);
+
 }
 
 p{
@@ -31,9 +33,13 @@ form div{
 }
 
 form select{
+    cursor: pointer;
+    transition:0.5s;
     border-radius: 20px;
     width:250px;
     padding:10px;
+    outline:none ;
+    border-color: #183048;
 }
 
 form select:hover{
@@ -79,7 +85,7 @@ form select:hover{
 
 .rideBlock:hover{
     border-radius: 12px;
-    box-shadow: 0px 1px 6px 1px #B721FF;
+    box-shadow: 0px 1px 6px 1px #00c2e4;
 }
 
 .rideImgBlock{

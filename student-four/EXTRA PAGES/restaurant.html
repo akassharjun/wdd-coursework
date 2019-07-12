@@ -2,293 +2,222 @@
 <html>
     <head>
         <title>Themed restaurants</title>
+        <link rel="stylesheet" type="text/css" href="../../common-resources/style.css">
+        <link rel="stylesheet" type="text/css" href="restaurant-style.css">
         <script type="text/javascript" src="restaurantJavascript.js"></script>
 
-        <style>
-            *{
-                margin: 0px;
-                padding: 0px;
-            }
-            /*Logo/header*/
-            header{
-                background:#004682;
-                height: 100px;
-                grid-column: 1/13;
-                transition: all 1s ease-in-out;
-            }
-            header:hover{
-                background:#0295ce;        
-            }
-            header img{
-                margin-top: 10px;
-                margin-left: 15px;
-                height: 100%;
-                width: 263px;
-
-            }   
-            #bodyContainer{
-                display: grid;  /*using grid layou for fluid website*/
-                grid-template-columns: repeat(12, 8.33333%);
-                grid-row-gap: 1%;
-            }
-            /*navigation bar*/
-            #navigationLists{
-                height: 40px; 
-                grid-column: 1/13;
-            }
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #0370b7;
-            }
-            li {
-                float: left;
-            }
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                transition: 0.2s;
-            }
-            a:hover{
-                background: #07d1bf;
-            }
-            /*Form*/
-            #restaurant-form{
-                padding: 0px 0px 0px 20px;
-                width: 25%;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 20px;
-                border: none;
-                background: #e2e2e2;
-                border-radius: 10px;
-            }
-            .select-option{
-                padding: 10px;
-                margin: 20px 5px 20px 5px;
-                width: 60%;
-                background:#949494;
-                color: #000000;
-                border: none;
-                border-radius: 20px;
-                transition: 0.5s;
-            }
-            .select-option:hover{
-                background: #000000;
-                color: #fff;
-            }
-            #restaurant-page-update{
-                padding: 10px;
-                margin: 20px 20px 20px 5px;
-                width: 30%;
-                background: #000;
-                color: #fff;
-                border: none;
-                border-radius: 20px;
-                transition: all 0.1s ease-in-out;
-            }
-            #restaurant-page-update:hover{
-                background:#60f4a0;
-                color: #000;
-            }
-            /*restaurant div containers*/
-
-            img{                
-                width: 100%;
-            }
-            .restaurants{
-                margin: 2%;
-                height: 100%;
-                text-align: center;
-                transition: 0.2s;
-                background: #969696;
-                grid-column: 2/6;
-                float: left;
-            }
-            .restaurants:hover{
-                transform: scale(1.01);
-            }
-            /*Aligning all divisions containing restaurants to the grid*/
-            #fastFoodrestaurant1{
-                grid-column: 1/5; 
-            }
-            #fastFoodrestaurant2{
-                grid-column: 5/9;     
-           
-            }
-            #fastFoodrestaurant3{
-                grid-column: 9/13;  
-              
-            }
-            #restaurant1{
-                grid-column: 1/5;                
-            }
-            #vegetarianRestaurant{
-                grid-column: 5/9;                
-            }
-            #candyShop{
-                grid-column: 9/13;                
-            }
-            #iceCreamShop{
-                grid-column: 1/5;                
-            }
-            /*restaurant heading and description*/
-            .restaurant-heading{
-                margin: 5px;
-                font-family: sans-serif;
-                font-size: 30px;
-                text-align: left;
-            }
-            .restaurant-description{
-                margin: 5px;
-                font-family: sans-serif;
-                font-size: 15px;
-                text-align: justify;
-            }     
-     
-
-        </style>
         
     </head>
     <body>
-        <!--logo-->
-            <header>
-                <img src="..\..\common-resources\3.svg" alt="Logo">    
-            </header>
-            <div id="navigationLists">
-                <nav>
-                    <ul >
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
-                        <li><a href="#">Link 4</a></li>
-                        <li><a href="#">Link 5</a></li>                
-                    </ul>
-                </nav>
-            </div>
-            <div id="restaurant-form">
-                <form action="post">
-                    <!--<select class="select-option" id="select-location">
-                        <option selected>Select location</option>
-                        <option>Loc 1</option>
-                        <option>Loc 2</option>
-                        <option>Loc 3</option>
-                        <option>Loc 4</option>
-                        <option>Loc 5</option>
-                    </select>
-                -->
-                    <select class="select-option" id="select-type">
-                        <option selected>Select Restaurant option</option>
-                        <option>Restaurant</option>
-                        <option>Buffet</option>
-                        <option>Vegetarian choices</option>
-                        <option>Fast-food outlets</option>
-                        <option>Ice cream and Sweets</option>
-                    </select>
-                    <input type="button" id="restaurant-page-update" value="Update" onclick="changeDiningOption();">
-                </form>
-            </div>
-            <div id="bodyContainer">
-                <div class="restaurants" id="fastFoodrestaurant1">
-                    <img src="Images\Restaurant\Fastfood.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+        <header>
+            <!--Navigation bar-->
+            <div class="navigationBar">
+                <a href="../student-two/Main Page.html">Home</a>
+                <div class="dropdownMenu">
+                    <div class="dropdownMenuDiv">Attractions 
                     </div>
-                </div>
-                <div class="restaurants" id="fastFoodrestaurant2">
-                    <img src="Images\Restaurant\Fastfood.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                    <div class="dropdownMenuContent">
+                        <a href="../student-two/Rides page.html">Rides</a>
+                        <a href="../student-four/EXTRA PAGES/restaurant.html">Restaurants</a>
                     </div>
-                </div>
-                <div class="restaurants" id="fastFoodrestaurant3">
-                    <img src="Images\Restaurant\Fastfood1.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
+                </div> 
+                <div class="dropdownMenu">
+                    <div class="dropdownMenuDiv">Our Events 
                     </div>
-                </div>
-                <div class="restaurants" id="restaurant1">
-                    <img src="Images\Restaurant\restaraunt.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
-                    </div>
-                </div>
-                <div class="restaurants" id="vegetarianRestaurant">
-                    <img src="Images\Restaurant\vegetarian.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
-                    </div>
-                </div>
-                <div class="restaurants" id="candyShop">
-                    <img src="Images\Restaurant\candy.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
-                    </div>
-                </div>
-                <div class="restaurants" id="iceCreamShop">
-                    <img src="Images\Restaurant\icecream.jpg">
-                    <div class="restaurant-heading">
-                        Fast food fiesta
-                    </div>    
-                    <div class="restaurant-descripton">
-                        A restaurant bound by no limits of spice, no lucifer in hell,nor gods in heaven sdfsadfladsjfkajdskf kl jksdl fj k fkasj fklsj fkajdkfasdfk 
-                        fsdkl skd fk f  s  ss
-                         sd fsdf as fajs fajds fjd fjas fjka hfkjas fkjas as jsd fjas fjash fkjas fksadh fkjash fkjas fjasf s  fjashf jsfh asjhasdhgasui giogua oig 
-                         asoig asoig asi
-                         adfkjadkfjskgjakslgkls kl kjkjkl jsdkgjks sj k sk  k  kgkjk kgkj  kj gksgj kds jkadslgj kslgj ksgj sdklgjsklgj skl jklgj lkgj sl gl
-                    </div>
+                        <div class="dropdownMenuContent">
+                        <a href="#">Special Events</a>
+                        </div>
                 </div>  
-                <div id="test">
-
-                </div>              
+                <a href="#news">Quiz</a>
+                <a href="#news">Products</a>
+                <a href="#news">About Us</a>
             </div>
+        </header>
+
+        <div id="contentWrapper"> 
+            
+            <div id="formBlock">
+                <div id="formDiv">
+                    <form action="post"> 
+                        <select name="selectOption" id="diningOption">
+                            <option value="SelectAnOption" selected>Select an option</option>
+                            <option value="Buffet">Buffets</option>
+                            <option value="Restaurant">Restaurants</option>
+                            <option value="Vegetarian">Vegetarian Options</option>
+                            <option value="Candy">Candy Shops</option>
+                            <option value="Icecream">Icecream Shops</option>
+                        </select>
+                        <input type="button" name="sortDining" id="diningSortButton" value="Sort" onclick="changeDiningOption();">
+                    </form>
+                </div>
+            </div>
+
+            <div class="restaurantBlock" id="fastFood1">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/Fastfood1.jpg" alt="Titan Biti'n"/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Travel to the planet Titan to fill that titan of an appetite. If there's a place in the universe where you get your food as fast as a finger snap. It would be Titan Biti'n.
+                            <div>
+                                <br>
+                                <b>Open : Monday - Friday (8.30 - 21.00)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Titan Biti'n</span>
+                </div>
+            </div>
+
+            <div class="restaurantBlock"  id="icecreamShop">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/icecream.jpg" alt="I-Scream"/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Want to beat the heat? Well, We will make you beat the heat in excitement as I-Scream has a secret recipe that makes it so delicious which will make you scream.
+                            <div>
+                                <br>
+                                <b>Open : Monday - Sunday (8.30 - 17.30)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">I-Scream</span>
+                </div>
+            </div>
+
+            <div class="restaurantBlock" id="fastFood2">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/Fastfood.jpg" alt="Bat Burger"/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            As mysterious as Bat burger is, it is a very reputed fast food joint from Gotham that brings you exotic tastes from every batman fans fantasy.
+                            <div>
+                                <br>
+                                <b>Open : Monday - Friday (8.30 - 21.00)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Bat Burger</span>
+                </div>
+            </div>
+
+            <div class="restaurantBlock" id="restaurant1">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/restaraunt.jpg" alt=""/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            The Crib is unlike any other restaurant here. With upto 7-course meals, we doubt you'll be having fun afterwards. 
+                            <div>
+                                <br>
+                                <b>Open : Monday - Friday (9.30 - 21.00)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">The Crib</span>
+                </div>
+            </div>
+
+            <div class="restaurantBlock" id="restaurant2">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/vegetarian.jpg" alt="Braun Appetit"/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Do you enjoy a glass of vine and some soothing jazz in the background? Come on an wear the serviettes because Braun appetit!
+                            <div>
+                                <br>
+                                <b>Open : Monday - Friday (8.30 - 21.00)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Braun Appetit</span>
+                </div>
+            </div>
+
+            <div class="restaurantBlock" id="buffetRestaurant">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/buffet.jpg" alt="Justice Serve"/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Heroes fight for justice. Maybe you should too...for the money you paid to visit Superhero Crosspark, So stuff up with all-day buffet. Do your money justice.
+                            <div>
+                                <br>
+                                <b>Open : Monday - Friday (8.30 - 21.00)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Justice Serve</span>
+                </div>
+            </div>
+            
+            <div class="restaurantBlock" id="candyShop">
+                <div class="restaurantDetails">
+                    <img src="Images/Restaurant/candy.jpg" alt="Sugar Rush"/>
+                    <div class="overlayDiv">
+                        <div class ="descriptionOverlay">
+                            <!--overlapping text(description) on hover-->
+                            Do your kids go "Mommy! Mommy! candy!? No worries, Bring them along. Let them endulge in combinations of colours they have never seen and do not forget the candy
+                            <div>
+                                <br>
+                                <b>Open : Monday - Friday (10.30 - 18.00)</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="restaurantTag">
+                    <span class="rideName">Sugar Rush</span>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+                <div id="footLink">
+                    <a href="../student-two/CV/CV.html">
+                        <img src="../CV/images/CV-visal.jpg"/>
+                        <span>Visal Rajapakse</span>
+                    </a>
+                </div>
+                <div id="lastEdit"></div>
+            </footer>
+
+            <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
+            <script>
+
+                window.onscroll = function() {toTopDisplay()};
+                    function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
+                        if(document.documentElement.scrollTop > 100){
+                            document.getElementById("toTopButton").style.display = "block";
+                        }else{
+                            document.getElementById("toTopButton").style.display = "none";
+                        }
+                    }
+        
+                    function scrollToTop(){         //scroll top top of web page
+                        document.documentElement.scrollTop = 0;
+                    }
+        
+                    displayLastEdit();
+                    function displayLastEdit() {
+                        var x = document.lastModified;
+                        document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
+                    }
+        
+                </script>
     </body>
 </html>

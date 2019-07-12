@@ -11,14 +11,12 @@
     <body>
         
         <header>
-            <object type="image/svg+xml" id="logo" data="">
-                Logo image
-            </object>
+            
 
             <!--logo + nav bar comes here-->
         </header>
 
-        <p id="breadCrumb">
+        <p id="breadCrumb">                                                     <!--have this in div to position everywhere properly???-->
             <a href="../student-two/Main Page.html">Home</a> / 
             <span id="breadCrumbCurrent">Comments Form</span>
         </p>
@@ -77,7 +75,8 @@
                     alert("Please fill-in the compulsory field- \n \u2022Rating");
                     return false;
                 } else{
-                    alert("Dear "+nameCheck+", Thank you very much for your feedback. You have rated our site as "+radioCheck+" and your comment was, \""+commentsOut+'\"');
+                    alert("Dear "+nameCheck+", Thank you very much for your feedback. You have rated our site as "+radioCheck+
+                    " and your comment was, \""+commentsOut+'\"');
                 }
             }
 

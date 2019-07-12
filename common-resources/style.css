@@ -86,6 +86,8 @@ header img{
 /*---------breadcrumb---------*/
 #breadCrumb{
     font-size: 16px;
+    /* position: absolute;
+    left:; */
 }
 
 #breadCrumb a:link{

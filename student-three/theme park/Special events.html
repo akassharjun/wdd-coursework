@@ -1,134 +1,21 @@
 <!DOCTYPE html>
 <html>
-   <head>
-       <style>
-           html, body{
-              height:100%             /*to match the prallax background*/
-}
-           #front-page{
-               display:grid;
-           }
-           #sidenavbar{
-               grid-column:1/2;
-               grid-row:1/ span 3;
-               padding-top:10%;
-               font-size:200%;
-               background-color: brown;
-           }
-         #avengerceleb{
-             grid-column:2/5;
-             grid-row:1/ span 3;
-             height:100%;
-         }
-          #imagecontainer{
-              display:grid;
-              grid-gap:10px;
-              padding:10px;
-          }
-          #heading1,#heading2,#heading3,#heading4,#heading5{
-               text-align: center;
-          }
-          #imagelarge{
-             grid-column:1/4;
-             grid-row:1/8;
-             overflow: hidden;
-             position: relative;
-             display: inline-block;
-          }
-          #imagesmalltop{
-              grid-column:4/7;
-              grid-row:1/5;
-              overflow: hidden;
-              position: relative;
-              display: inline-block;
-          }
-          #imagesmallbottom{
-              grid-column:4/7;
-              grid-row:5/8;
-              overflow: hidden;
-              position: relative;
-              display: inline-block;
-              height:100%;
-          }
-          #description{
-               color:white;
-               font-size: 250%;
-               position: absolute;
-               top:60%;
-               left:65%;
-               z-index: 100;
-               transform: translate(-50%, -50%);
-               text-align:center;
-               font-weight:800;
-               }
-
-               #imagelarge img,#imagesmalltop img,#imagesmallbottom img {
-                    transform-origin: 50% 65%;
-                    transition: transform 5s, filter 3s ease-in-out;
-                    filter: brightness(150%);
-                }
-
-/* The Transformation */
-#imagelarge:hover img,#imagesmalltop:hover img,#imagesmallbottom:hover img{
-                   filter: brightness(100%);
-                   transform: scale(1.1);
-                  }
-                  #content{
-                      color:white;
-                      font-size:200%;
-                  }
-                  a:link {
-				color: black;
-				text-decoration: none;
-			}
-
-			a:visited {
-				text-decoration: none;
-				color: black;
-			}
-
-			a:hover {
-				text-decoration: none;
-				color: red;
-			}
-
-			a:active {
-				text-decoration: none;
-			}
-           #imagelarge #content,#imagesmalltop #content,#imagesmallbottom #content{
-            position: absolute;
-            z-index: 999;
-            margin: 0 auto;
-            left: 0;
-            right: 110%;
-            top: 0%; /* Adjust this value to move the positioned div up and down */
-            text-align: left;
-            width: 60%; /* Set the width of the positioned div */
-            }
-            img{
-                object-fit:cover;
-                height:100%;
-            }
-       </style>
+   <head>           
        <title>Special Events</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="../../common-resources/style.css">
+        <link rel="stylesheet" type="text/css" href="CSS/specialevents.css">
    </head>
    <body>
-       <div id="front-page">
-           <div id="sidenavbar">
-               <h1>Go to</h1> 
-              <a href="#heading1">Marvel & DC Land</a><br><br> 
-              <a href="#heading2">Marvel & DC World</a><br><br>
-              <a href="#heading3">Celebrations</a><br><br>
-              <a href="#heading4">Movie Nights</a><br><br>
-              <a href="#heading5">Marvel & DC Cruise Line</a>
-           </div>
-           <div id="avengerceleb">
-               <img src="images/a1.jpg" alt="avengers" style="height:100%;width:100%;">
-               <div id="description">Avengers Festival Celebration On July</div>
-           </div>
+       <div class="parallax" style=" background-image: url('images/a1.jpg')">
        </div>
+       <div class="navbar">
+            <a href="#heading1" style="margin-left:300px;">Marvel & DC Land</a>
+            <a href="#heading2">Marvel & DC World</a>
+            <a href="#heading3">Celebrations</a>
+            <a href="#heading4">Movie Nights</a>
+            <a href="#heading5">Marvel & DC Cruise Line</a>
+        </div> 
        <div id="heading1"><h1>Marvel & DC Land</h1></div>
        <div id="imagecontainer">
             <div id="imagelarge">
@@ -152,7 +39,7 @@
        </div>
        <div id="heading2"><h1>Marvel & DC World</h1></div>
        <div id="imagecontainer">
-            <div id="imagelarge">
+            <div id="imagelarge" style="height:750px;">
                 <img src="images/family.jpg" alt="wheel" style="height:100%;width:100%;">
                 <div id="content">
                         <h4>Family Union</h4>
@@ -164,7 +51,7 @@
                         <h4>Adventures</h4>
                 </div>
             </div>
-            <div id="imagesmallbottom">
+            <div id="imagesmallbottom" style="height:400px;">
                 <img src="images/m1.jpg" alt="magicalpride" style="height:100%;width:100%;">
                 <div id="content">
                         <h4>Meet Heroes</h4>
@@ -194,14 +81,14 @@
        </div>
        <div id="heading4"><h1 style="text-align:center;" >Movie Nights</h1></div>
        <div id="imagecontainer">
-            <div id="imagelarge" style="width:800px;">
+            <div id="imagelarge" style="height:750px;">
                 <img src="images/captainmarvel.jpg" alt="wheel" style="height:100%;width:100%;">
             </div>
             <div id="imagesmalltop">
                 <img src="images/spider.jpg" alt="music" style="height:100%;width:100%;">
             </div>
-            <div id="imagesmallbottom">
-                <img src="images/shazam.jpg" alt="magicalpride" style="height:100%;width:100%;">
+            <div id="imagesmallbottom" style="height:360px;">
+                <img src="images/aquaman.jpg" alt="magicalpride" style="height:100%;width:100%;">
             </div>
        </div>
        <div id="heading5"><h1 style="text-align:center;">Marvel & DC Cruise Line</h1></div>
@@ -225,6 +112,15 @@
                 </div>
             </div>
        </div>
+       <footer>
+        <div id="footLink">
+            <a href="CV.html">
+                <img src="images/dini.jpg" alt="Yuwarajalingam Dinesh"/>
+                <span>Yuwarajalingam Dinesh</span>
+            </a>
+        </div>
+        <div id="lastEdit"></div>
+    </footer>
        <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
        <script>
 
@@ -239,6 +135,11 @@
 
             function scrollToTop(){         //scroll top top of web page
                 document.documentElement.scrollTop = 0;
+            }
+            displayLastEdit();
+            function displayLastEdit() {
+                var x = document.lastModified;
+                document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
             }
 
 

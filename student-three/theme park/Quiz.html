@@ -3,11 +3,52 @@
    <head>
           <title>Quiz-Program</title>
           <meta name="viewport" content="width=device-width, initial-scale=1">
-          <link rel="stylesheet" type="text/css" href="../../common-resources/style.css">
           <link rel="stylesheet" type="text/css" href="CSS/quiz.css">
+          <link rel="stylesheet" type="text/css" href="../../common-resources/style.css">
              
    </head>
    <body>
+      <header id="header">
+          <div id="logo">
+          </div>
+          <div class="navigationBar">
+              <a href="#home">Home</a>
+              <div class="dropdownMenu">
+                  <div class="dropdownMenuDiv">Attractions 
+                  </div>
+                  <div class="dropdownMenuContent">
+                      <a href="#">Rides</a>
+                      <a href="#">Restaurants</a>
+                  </div>
+              </div> 
+              <div class="dropdownMenu">
+                  <div class="dropdownMenuDiv">Our Events 
+                  </div>
+                  <div class="dropdownMenuContent">
+                      <a href="#">Special Events</a>
+                  </div>
+              </div>  
+              <a href="#news">Quiz</a>
+              <a href="#news">Products</a>
+              <a href="#news">About Us</a>
+              <div class="dropdownMenu">
+                  <div class="dropdownMenuDiv">Student Details 
+                  </div>
+                  <div class="dropdownMenuContent">
+                      <a href="../../student-one/curriculum-vitae.html">Student 1</a>
+                      <a href="../../student-two/CV/CV.html">Student 2</a>
+                      <a href="../../student-three/theme park/CV.html">Student 3</a>
+                      <a href="../CV/CV.html">Student 4</a>
+                  </div>
+              </div> 
+              
+          </div>                  
+      </header>
+      <p id="breadCrumb">
+          You are here : 
+          <a href="../../student-two/Main Page.html">Home</a> > 
+          <span id="breadCrumbCurrent">Quiz</span>
+      </p> 
         <div id="header">
         </div>
        <div id="main">
@@ -344,8 +385,42 @@
             </div>
           </div>
         </div>
-       </div>    
+       </div>
+       <footer>
+        <div id="footLink">
+            <a href="CV.html">
+                <img src="images/dini.jpg" alt="Yuwarajalingam Dinesh"/>
+                <span>Yuwarajalingam Dinesh</span>
+            </a>
+            <span>UOW ID: w1742119  |</span>
+            <span>IIT ID: 2018424</span>
+        </div>
+        <div id="lastEdit"></div>
+    </footer>
+       <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>    
        <script type="text/javascript">
+        window.onscroll = function() {toTopDisplay()};
+            function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
+                if(document.documentElement.scrollTop > 100){
+                    document.getElementById("toTopButton").style.display = "block";
+                }else{
+                    document.getElementById("toTopButton").style.display = "none";
+                }
+            }
+
+            function scrollToTop(){         //scroll top top of web page
+                document.documentElement.scrollTop = 0;
+            }
+            displayLastEdit();
+            function displayLastEdit() {
+                var x = document.lastModified;
+                document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
+            }
+
+
+
+            //add click and show discription till re-clicked JS!!!!
+
            document.getElementById("main").innerHTML=document.getElementById("hello").innerHTML;
 
            function checking(){
@@ -356,12 +431,12 @@
            }
            else if(document.getElementById('incorrect1').checked){
                score-=1;
-               check.push("incorrect");  
+               check.push("Incorrect");  
                scores.push(-1); 
            }
            else if(document.getElementById('incorrect2').checked){
                score-=1;
-               check.push("incorrect");
+               check.push("Incorrect");
                scores.push(-1);
            }
            else{

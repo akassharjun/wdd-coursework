@@ -37,6 +37,12 @@
         <div id="pageHeading">
             <h1>Restaurants</h1>
         </div>
+        <!--Breadcrumb Trail-->
+        <p id="breadCrumb">
+            You are here : 
+            <a href="../../student-two/Main Page.html">Home</a> >
+            <span id="breadCrumbCurrent">Restaurants</span>
+        </p> 
         
         <div id="contentWrapper"> 
             <!--Form components-->
@@ -52,7 +58,7 @@
                             <option value="Icecream">Icecream Shops</option>
                         </select>
                         <input type="button" name="sortDining" id="diningSortButton" value="Sort" onclick="changeDiningOption();">
-                        <button type="reset" value="Reset">
+                        <input type="reset" name="resetDining" id="diningResetButton" value="Reset" onclick="resetDiningOption();">
                     </form>
                 </div>
             </div>
@@ -199,9 +205,11 @@
                 </a>
             </div>
             <div id="fontSizeChange">
+                Font Size:
                 <button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
                 <button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
             </div>
+            
             <div id="lastEdit"></div>
         </footer>
 

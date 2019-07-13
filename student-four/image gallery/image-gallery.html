@@ -35,15 +35,20 @@
                     <a href="#news">Quiz</a>
                     <a href="#news">Products</a>
                     <a href="#news">About Us</a>
-                    <a href="#news">Student Details</a>
-
-                    
+                    <a href="#news">Student Details</a>                   
                   </div>
-        </header>    
+        </header>   
         
         <div id="pageHeading">
             <h1>View and understand our park.</h1>
         </div>  
+
+        <!--Breadcrumb Trail-->
+            <p id="breadCrumb">
+                You are here : 
+                <a href="../../student-two/Main Page.html">Home</a> >
+                <span id="breadCrumbCurrent">Image Gallery</span>
+            </p> 
 
         <div id="formDivision">
             <form id="form">
@@ -154,16 +159,17 @@
             </a>
         </div>
         <div id="fontSizeChange">
+            Font Size:
             <button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
             <button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
         </div>
-        
+
         <div id="lastEdit"></div>
     </footer>
 
     <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
+    
     <script>
-
         window.onscroll = function() {toTopDisplay()};
             function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
                 if(document.documentElement.scrollTop > 100){

@@ -71,3 +71,32 @@ function changeDiningOption(){
             break;       
     }
 }
+//Font Size Manipulation
+function increaseFontSize() {
+    console.log("INCREASE FONT SIZE");
+    if (document.body.style.fontSize === "") {
+        document.body.style.fontSize = "1.0em";
+    }
+    console.log(document.body.style.fontSize);
+    let fontSize = document.body.style.fontSize.split(' ')[0];
+    document.body.style.fontSize = parseFloat(fontSize) + (0.2) + "em   ";
+}
+
+function decreaseFontSize() {
+    console.log("DECREASE FONT SIZE");
+    if (document.body.style.fontSize === "") {
+        document.body.style.fontSize = "1.0em";
+    }
+    document.body.style.fontSize = parseFloat(document.body.style.fontSize) - (0.2) + "em";
+}
+
+function resetDiningOption(){
+    console.log("inside Restaurant case");
+            document.getElementById("fastFood1").style.display = "block";
+            document.getElementById("icecreamShop").style.display = "block";
+            document.getElementById("fastFood2").style.display = "block";
+            document.getElementById("restaurant1").style.display = "block";
+            document.getElementById("restaurant2").style.display = "block";
+            document.getElementById("buffetRestaurant").style.display = "block";
+            document.getElementById("candyShop").style.display = "block";
+}

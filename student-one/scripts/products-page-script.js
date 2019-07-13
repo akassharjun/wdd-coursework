@@ -10,7 +10,7 @@ function increaseFontSize() {
     }
     console.log(document.body.style.fontSize);
     let fontSize = document.body.style.fontSize.split(' ')[0];
-    document.body.style.fontSize = parseFloat(fontSize) + (0.2) + "em";
+    document.body.style.fontSize = parseFloat(fontSize) + (0.2) + "em   ";
 }
 
 function decreaseFontSize() {

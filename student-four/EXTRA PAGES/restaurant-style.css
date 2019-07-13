@@ -24,7 +24,7 @@ form{
     margin: auto;
     margin-top: 20px;
     background: #ccc;
-    width: 450px;
+    width: 650px;
     padding: 20px;
     border-radius: 20px;
 }
@@ -41,6 +41,7 @@ form{
 #diningOption:hover{
     background: #000;
 }
+
 /*Dining sorting button*/
 #diningSortButton{
     padding: 10px;
@@ -55,6 +56,22 @@ form{
 #diningSortButton:hover{
     background: #00c2e4;
     color: #000;
+    cursor: pointer;
+}
+/*Dining reset button*/
+#diningResetButton{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 30px;
+    transition: 0.2s;
+    background: #333;
+    color: #fff;
+}
+#diningResetButton:hover{
+    background: #ff3d3d;
+    color: #fff;
     cursor: pointer;
 }
 /*Restaurant details*/

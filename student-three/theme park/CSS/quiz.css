@@ -94,7 +94,7 @@
                     height:150%;
                 }
             body{
-                background-color:#2a293e;
+                background-color:#183048;
                 color:white;
                 margin-top:0%;
             }
@@ -124,6 +124,7 @@
             #main{
                 margin-top:0%;
                 width:100%;
+                
             }
             #link{
                 font-size:170%;
@@ -207,4 +208,5 @@
   width:65%;
   margin-left:5%;
   color:black;
+border-radius:20px;
 }

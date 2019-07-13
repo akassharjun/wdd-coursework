@@ -40,7 +40,7 @@
 <div class="row">
 	<div class="column">
 		<div class="product-card">
-			<div class="badge">New in Store</div>
+			<div class="badge">New in Store!</div>
 			<div class="product-thumbnail">
 				<img src="assets/action-figures/products_captain_america.jpg" alt="">
 			</div>
@@ -49,7 +49,7 @@
 				<h4><a href="">Captain America</a></h4>
 				<label class="quantity">
 					Quantity&nbsp;&nbsp;&nbsp;&nbsp;
-					<select class="quantity">
+					<select class="quantity" id="captainAmericaQuantity" onchange="captainAmericaOnSelect()">
 						<option>1</option>
 						<option>2</option>
 						<option>3</option>
@@ -57,8 +57,8 @@
 				</label>
 				<br />
 				<div class="product-bottom-details">
-					<div class="product-price">$50.99</div>
-					<button class="button" id="captainAmerica" onclick="">Add</button>
+					<div class="product-price">$14.99</div>
+					<button class="button" id="captainAmerica" onclick="captainAmericaOnClick()">Add</button>
 				</div>
 			</div>
 		</div>
@@ -66,7 +66,7 @@
 	
 	<div class="column">
 		<div class="product-card">
-			<div class="badge">Hot</div>
+			<div class="badge">Most Selling!</div>
 			<div class="product-thumbnail">
 				<img src="assets/action-figures/products_iron_man.jpg" alt="">
 			</div>
@@ -75,16 +75,16 @@
 				<h4><a href="">Iron Man</a></h4>
 				<label class="quantity">
 					Quantity&nbsp;&nbsp;&nbsp;&nbsp;
-					<select class="quantity">
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
+					<select class="quantity" id="ironManQuantity" onchange="ironManOnSelect()">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
 					</select>
 				</label>
 				<br />
 				<div class="product-bottom-details">
-					<div class="product-price">$50.99</div>
-					<button class="button" id="ironMan" onclick="">Add</button>
+					<div class="product-price">$18.99</div>
+					<button class="button" id="ironMan" onclick="ironManOnClick()">Add</button>
 				</div>
 			</div>
 		</div>
@@ -92,17 +92,15 @@
 	
 	<div class="column">
 		<div class="product-card">
-			<div class="badge">Most Selling</div>
 			<div class="product-thumbnail">
 				<img src="assets/action-figures/products_thor.jpg" alt="">
 			</div>
 			<div class="product-details">
 				<span class="product-category">Action Figure</span>
 				<h4><a href="">Thor</a></h4>
-				<!--		<p>Quantity</p>-->
 				<label class="quantity">
 					Quantity&nbsp;&nbsp;&nbsp;&nbsp;
-					<select class="quantity">
+					<select class="quantity" id="thorQuantity" onchange="thorOnSelect()">
 						<option>1</option>
 						<option>2</option>
 						<option>3</option>
@@ -110,8 +108,8 @@
 				</label>
 				<br />
 				<div class="product-bottom-details">
-					<div class="product-price">$50.99</div>
-					<button class="button" id="thor" onclick="">Add</button>
+					<div class="product-price">$16.99</div>
+					<button class="button" id="thor" onclick="thorOnClick()">Add</button>
 				</div>
 			</div>
 		</div>
@@ -135,8 +133,8 @@
 			<input type="text" placeholder="Enter your address" name="address" id="address">
 		</label><br />
 		<hr>
-		<p id="totalAmount">Total Amount &nbsp;-&nbsp; $50.99</p>
-		<button class="button" id="place-order">Place Order!</button>
+		<p id="totalAmount">Total Amount &nbsp;-&nbsp; $<span id="total">0</span></p>
+		<button class="button" type="button" id="place-order" onclick="placeOrder()">Place Order!</button>
 	</div>
 </form>
 

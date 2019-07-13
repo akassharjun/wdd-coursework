@@ -25,6 +25,14 @@ html{
     padding: 10px 15px 10px 15px;
     border-radius: 25px;
 }
+/*Page headings*/
+h1{
+    font-weight:300;    
+    text-align: center;
+    padding:70px;
+    color:#183048;
+    background: linear-gradient( to top,#00c2e4,white 50%);
+}
 
 /*---------footer---------*/
 footer{
@@ -172,4 +180,21 @@ header img{
 .dropdownMenu:hover .dropdownMenuContent {
     display: block;
     width: 140px;
+}
+#fontSizeChange{
+    float: right; 
+    margin-top: 10px;  
+ }
+.fontSizeButton{
+    padding: 5px 5px;
+    border:none;
+    border-radius: 10px;
+    background: #fff;
+    color: #000;
+    margin-right: 5px;
+    transition: 0.2s;
+}
+.fontSizeButton:hover{
+    background: #10c2ef;
+    color: #fff;
 }

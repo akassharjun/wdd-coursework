@@ -41,9 +41,9 @@
     opacity: 1;
 }
 .colourSelectionButtons#resetButton:hover{
-    background:#c10000;
+    background:#ff3d3d;
     transition: all 0.1s ease-in-out;
-    color: #000;
+    color: #FFF;
     opacity: 1;
 }
 option{
@@ -140,10 +140,17 @@ option{
     grid-row: 1/6;
     object-fit: cover;
 } 
+
+.galleryImages:hover ~.hiddenDescription{
+    opacity: 1;
+}
 /*Hidden descriptions*/
 #allDescriptions{
     visibility: hidden;
     display: none;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
 }
 /*Hidden images*/            
 #hiddenImage{

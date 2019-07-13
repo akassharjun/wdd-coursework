@@ -6,11 +6,11 @@ function increaseFontSize() {
     //     document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize = document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize + (0.5 * 0.2) + "em";
     // }
     if (document.body.style.fontSize === "") {
-        document.body.style.fontSize = "1.0px";
+        document.body.style.fontSize = "1.0em";
     }
     console.log(document.body.style.fontSize);
     let fontSize = document.body.style.fontSize.split(' ')[0];
-    document.body.style.fontSize = parseFloat(fontSize) + (0.2) + "px";
+    document.body.style.fontSize = parseFloat(fontSize) + (0.2) + "em";
 }
 
 function decreaseFontSize() {

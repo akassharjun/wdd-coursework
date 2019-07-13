@@ -20,20 +20,6 @@ let IRON_MAN_PRICE = 18.99;
 let CAPTAIN_AMERICA_PRICE = 14.99;
 let THOR_PRICE = 16.99;
 
-function increaseFontSize() {
-    if (document.body.style.fontSize === "") {
-        document.body.style.fontSize = "1.0em";
-    }
-    document.body.style.fontSize = parseFloat(fontSize) + (0.05) + "em";
-}
-
-function decreaseFontSize() {
-    if (document.body.style.fontSize === "") {
-        document.body.style.fontSize = "1.0em";
-    }
-    document.body.style.fontSize = parseFloat(document.body.style.fontSize) - (0.05) + "em";
-}
-
 function switchProductButton(button, isSelected) {
     if (isSelected) {
         button.style.backgroundColor = removeButtonColor;

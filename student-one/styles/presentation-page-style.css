@@ -1,0 +1,107 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("../assets/background-images/wallpaper.jpg");
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 2px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 20%;
+    text-align: center;
+    transform: translateX(50%);
+    /* padding: 0 0px; */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.productCard {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    padding: 20px;
+    text-align: center;
+    color: #ff000000;
+}
+
+img {
+    padding-top: 10px;
+    border-radius: 50%;
+    width: 80%;
+    height: 80%;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    padding: 50px;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+}
+
+.memberName {
+    color: white;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5vw;
+    padding-bottom: 10px;
+}
+
+#title {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 2.5vw;
+}

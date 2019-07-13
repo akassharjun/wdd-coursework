@@ -1,158 +1,151 @@
 :root {
-	--primary-color: #183048;
-	--add-button-color : #00c421;
-	--remove-button-color : #c41a00;
-	--hot-red-color: #ff2540
+    --primary-color: #183048;
+    --add-button-color: #00c421;
+    --remove-button-color: #c41a00;
+    --hot-red-color: #ff2540
 }
 
 * {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .product-card {
-	width: 380px;
-	position: relative;
-	box-shadow: 0 2px 7px #dfdfdf;
-	margin: 50px auto;
-	background: #fafafa;
+    width: 380px;
+    position: relative;
+    box-shadow: 0 2px 7px #dfdfdf;
+    margin: 50px auto;
+    background: #fafafa;
 }
 
 .badge {
-	position: absolute;
-	left: 0;
-	top: 20px;
-	text-transform: uppercase;
-	font-size: 16px;
-	font-weight: 700;
-	background: var(--hot-red-color);
-	color: #fff;
-	padding: 3px 10px;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+    background: var(--hot-red-color);
+    color: #fff;
+    padding: 3px 10px;
 }
 
 .product-thumbnail {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	/*height: 300px;*/
-	padding: 25px;
-	background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*height: 300px;*/
+    padding: 25px;
+    background: #ffffff;
 }
 
 .product-thumbnail img {
-	max-width: 100%;
-	max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .product-details {
-	padding: 15px;
+    padding: 15px;
 }
 
 .product-category {
-	display: block;
-	font-size: 15px;
-	font-weight: 500;
-	text-transform: uppercase;
-	color: #757575;
-	margin-bottom: 8px;
+    display: block;
+    font-size: 0.8em;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #757575;
+    margin-bottom: 8px;
 }
 
 .product-details h4 a {
-	font-weight: 600;
-	display: block;
-	font-size: 26px;
-	margin-bottom: 10px;
-	/*text-transform: uppercase;*/
-	color: #363636;
-	text-decoration: none;
-	transition: 0.3s;
+    font-weight: 600;
+    display: block;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    /*text-transform: uppercase;*/
+    color: #363636;
+    text-decoration: none;
+    transition: 0.3s;
 }
 
 .product-details h4 a:hover {
-	color: var(--primary-color);
-}
-
-.product-details p {
-	font-size: 18px;
-	line-height: 20px;
-	margin-bottom: 8px;
-	color: #999;
+    color: var(--primary-color);
 }
 
 .product-bottom-details {
-	overflow: hidden;
-	border-top: 1px solid #eee;
-	padding-top: 10px;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    padding-top: 10px;
 }
 
 .product-bottom-details div {
-	float: left;
-	width: 50%;
+    float: left;
+    width: 50%;
 }
 
 .product-price {
-	font-size: 24px;
-	color: var(--primary-color);
-	font-weight: 600;
+    font-size: 1.6em;
+    color: var(--primary-color);
+    font-weight: 600;
 }
 
 
 .product-links {
-	/*text-align: center;*/
-	/*background-color: #00c2e4;*/
+    /*text-align: center;*/
+    /*background-color: #00c2e4;*/
 }
 
 .product-links div {
-	background-color: lightgreen;
-	float: right;
-	text-align: center;
-	font-family: "Montserrat", sans-serif;
-	text-transform: capitalize;
-	color: #FFFFFF;
-	font-size: 18px;
-	line-height: 22px;
-	padding: 10px;
+    background-color: lightgreen !important;
+    float: right;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-size: 1em;
+    line-height: 22px;
+    padding: 10px;
 }
 
 .quantity {
-	margin-bottom: 18px;
-	font-size: 15px;
-	font-weight: 600;
-	text-transform: uppercase;
-	color: #757575;
+    margin-bottom: 18px;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #757575;
 }
 
 /* Float four columns side by side */
 .column {
-	float: left;
-	width: 33.33%;
-	padding: 1.5%;
+    float: left;
+    width: 33.33%;
+    padding: 1.5%;
 }
 
 /* Remove extra left and right margins, due to padding */
 .row {
-	padding-right: 5%;
-	padding-left: 5%;
-	margin: 10px;
-	align-self: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin: 10px;
+    align-self: center;
 }
 
 /* Clear floats after the columns */
 .row:after {
-	content: "";
-	display: table;
-	clear: both;
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
-	.column {
-		width: 100%;
-		display: block;
-		margin-bottom: 20px;
-	}
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 
 .button {
@@ -162,10 +155,9 @@
 	border: none;
 	color: #FFFFFF;
 	text-align: center;
-	font-size: 18px;
+	font-size: 1.25em;
 	padding: 10px;
 	width: 120px;
-	transition: all 0.5s;
 	cursor: pointer;
 	margin: 5px;
 	float: right;
@@ -173,49 +165,66 @@
 	line-height: 22px;
 }
 
+/*#ironMan {*/
+/*    display: inline-block;*/
+/*    border-radius: 4px;*/
+/*    background-color: #00c421;*/
+/*    border: none;*/
+/*    color: #FFFFFF;*/
+/*    text-align: center;*/
+/*    font-size: 1.25em;*/
+/*    padding: 10px;*/
+/*    width: 120px;*/
+/*    cursor: pointer;*/
+/*    margin: 5px;*/
+/*    float: right;*/
+/*    text-transform: capitalize;*/
+/*    line-height: 22px;*/
+/*}*/
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Add padding to containers */
 .container {
-	padding: 16px;
-	background-color: white;
+    padding: 16px;
+    background-color: white;
 }
 
 /* Full-width input fields */
 input[type=text] {
-	width: 65%;
-	padding: 15px;
-	font-size: 18px;
-	margin: 5px 0 22px 0;
-	display: inline-block;
-	border: none;
-	background: #f1f1f1;
+    width: 65%;
+    padding: 15px;
+    font-size: 1.2em;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
 }
 
 input[type=text]:focus, input[type=password]:focus {
-	background-color: #ddd;
-	outline: none;
+    background-color: #ddd;
+    outline: none;
 }
 
 /* Overwrite default styles of hr */
 hr {
-	border: 1px solid #f1f1f1;
-	margin-bottom: 25px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
 }
 
 #totalAmount {
-	font-size: 28px;
-	font-weight: bold;
+    font-size: 2em;
+    font-weight: bold;
 }
 
 #place-order {
-	margin-top: 25px;
-	width: 25%;
-	float: left;
+    margin-top: 25px;
+    width: 25%;
+    float: left;
 }
+
 /*#customerDetails {*/
 /*	padding-right: 50px;*/
 /*	padding-left: 50px;*/
@@ -224,13 +233,13 @@ hr {
 
 /* Add a blue text color to links */
 a {
-	color: dodgerblue;
+    color: dodgerblue;
 }
 
 /* Set a grey background color and center the text of the "sign in" section */
 .footer {
-	margin-top: 20px;
-	padding: 100px;
-	background-color: #f1f1f1;
-	text-align: center;
+    margin-top: 20px;
+    padding: 100px;
+    background-color: #f1f1f1;
+    text-align: center;
 }

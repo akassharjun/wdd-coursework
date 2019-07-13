@@ -8,6 +8,10 @@ body{
     width: 90%;
     justify-content: space-evenly;
     margin: auto;
+    background-color: #f8f8fb;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 /*form*/

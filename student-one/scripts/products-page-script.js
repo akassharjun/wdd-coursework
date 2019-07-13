@@ -1,28 +1,26 @@
+// colors for the buttons to add and remove products
 let addButtonColor = "#00c421";
-let removeButtonColor = "#c41a00";
-let hotRedColor = "#ff2540";
+let removeButtonColor = "#ff2540";
 
+// the total amount
 let total = 0;
 
+// keeping track of which products are selected
 let isIronManSelected = false;
 let isCaptainAmericaSelected = false;
 let isThorSelected = false;
 
+// keeping track of the amount of each product
 let ironManQuantity = 1;
 let captainAmericaQuantity = 1;
 let thorQuantity = 1;
 
+// price of each product
 let IRON_MAN_PRICE = 18.99;
 let CAPTAIN_AMERICA_PRICE = 14.99;
 let THOR_PRICE = 16.99;
 
 function increaseFontSize() {
-    console.log("INCREASE FONT SIZE");
-    // for (let element in document.body.getElementsByClassName('productCard')) {
-    //     console.log(document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize);
-    //     document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize = document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize + (0.5 * 0.2) + "em";
-    //     document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize = document.body.getElementsByClassName('productCard').item(element).getElementsByClassName('productTitle').item(0).style.fontSize + (0.5 * 0.2) + "em";
-    // }
     if (document.body.style.fontSize === "") {
         document.body.style.fontSize = "1.0em";
     }
@@ -32,7 +30,6 @@ function increaseFontSize() {
 }
 
 function decreaseFontSize() {
-    console.log("DECREASE FONT SIZE");
     if (document.body.style.fontSize === "") {
         document.body.style.fontSize = "1.0em";
     }
@@ -41,7 +38,7 @@ function decreaseFontSize() {
 
 function switchProductButton(button, isSelected) {
     if (isSelected) {
-        button.style.backgroundColor = hotRedColor;
+        button.style.backgroundColor = removeButtonColor;
         button.innerText = "Remove";
     } else {
         button.style.backgroundColor = addButtonColor;
@@ -150,8 +147,6 @@ function thorOnSelect() {
 }
 
 function placeOrder() {
-    let placeOrderButton = document.getElementById('placeHolder');
-
     let name = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let address = document.getElementById('address').value;

@@ -3,10 +3,6 @@ function clearImagesAndDescription(){
     document.getElementById("imageDiv").innerHTML = "";
     document.getElementById("description").innerHTML = "";
 }
-/*document.getElementById("galleryImage1").addEventListener("click",function(){
-    console.log('inside function')
-
-});*/
 function image1Description(){
     console.log('inside function')
     document.getElementById("imageDiv").innerHTML = document.getElementById("hiddenImage1").innerHTML;
@@ -143,6 +139,25 @@ function resetPage(){
     document.getElementById("formDivision").style.backgroundColor = "#e2e2e2";
     document.getElementById("description").style.color = "#000000";
     console.log("page has been reset");
+}
+
+//Font Size Manipulation
+function increaseFontSize() {
+    console.log("INCREASE FONT SIZE");
+    if (document.body.style.fontSize === "") {
+        document.body.style.fontSize = "1.0em";
+    }
+    console.log(document.body.style.fontSize);
+    let fontSize = document.body.style.fontSize.split(' ')[0];
+    document.body.style.fontSize = parseFloat(fontSize) + (0.2) + "em   ";
+}
+
+function decreaseFontSize() {
+    console.log("DECREASE FONT SIZE");
+    if (document.body.style.fontSize === "") {
+        document.body.style.fontSize = "1.0em";
+    }
+    document.body.style.fontSize = parseFloat(document.body.style.fontSize) - (0.2) + "em";
 }
 
 

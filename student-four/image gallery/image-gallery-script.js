@@ -51,6 +51,8 @@ function changeBGColour(){
             document.getElementById("imageDescription").style.backgroundColor = "#e2e2e2";
             document.getElementById("formDivision").style.backgroundColor = "#e2e2e2";
             document.getElementById("description").style.color = "#000000";
+            document.getElementById("breadCrumb").style.color = "#000000";
+            document.getElementById("colorSwitchGuide").style.color = "#000000";
             console.log("bg colour is white");
             break;
         case "BGColour1":
@@ -59,6 +61,8 @@ function changeBGColour(){
             document.getElementById("imageDescription").style.backgroundColor = "#3a3a3a";
             document.getElementById("formDivision").style.backgroundColor = "#3a3a3a";
             document.getElementById("description").style.color = "#ffffff";
+            document.getElementById("breadCrumb").style.color = "#ffffff";
+            document.getElementById("colorSwitchGuide").style.color = "#ffffff";
             console.log("bg colour is blacK");
             break;
         case "BGColour2":
@@ -67,6 +71,8 @@ function changeBGColour(){
             document.getElementById("imageDescription").style.backgroundColor = "#f4d341";
             document.getElementById("formDivision").style.backgroundColor = "#f4d341";
             document.getElementById("description").style.color = "#000000";
+            document.getElementById("breadCrumb").style.color = "#000000";
+            document.getElementById("colorSwitchGuide").style.color = "#000000";
             console.log("bg colour is yellow ochre");
             break;
         case "BGColour3":
@@ -75,6 +81,7 @@ function changeBGColour(){
             document.getElementById("imageDescription").style.backgroundColor = "#ed5353";
             document.getElementById("formDivision").style.backgroundColor = "#ed5353";
             document.getElementById("description").style.color = "#000000";
+            document.getElementById("colorSwitchGuide").style.color = "#000000";
             console.log("bg colour is crimson");
             break;
         case "BGColour4":
@@ -83,6 +90,8 @@ function changeBGColour(){
             document.getElementById("imageDescription").style.backgroundColor = "#0072cc";
             document.getElementById("formDivision").style.backgroundColor = "#0072cc";
             document.getElementById("description").style.color = "#ffffff";
+            document.getElementById("breadCrumb").style.color = "#000000";
+            document.getElementById("colorSwitchGuide").style.color = "#000000";
             console.log("bg colour is seablue");
             break;
         case "BGColour5":
@@ -91,6 +100,7 @@ function changeBGColour(){
             document.getElementById("imageDescription").style.backgroundColor = "#5e5e5e";
             document.getElementById("formDivision").style.backgroundColor = "#5e5e5e";
             document.getElementById("description").style.color = "#ffffff";
+            document.getElementById("colorSwitchGuide").style.color = "#ffffff";
             console.log("bg colour is grey");
             break;
         case "BGColour6":
@@ -99,11 +109,12 @@ function changeBGColour(){
             document.getElementById("imageDescription").style.backgroundColor = "#9b2d8e";
             document.getElementById("formDivision").style.backgroundColor = "#9b2d8e";
             document.getElementById("description").style.color = "#ffffff";
+            document.getElementById("colorSwitchGuide").style.color = "#000000";
             console.log("bg colour is pink");
             break;
         
     }
-
+    //Font color manipulation
     switch (chosenFontColour){
         case "fontColour1":
             console.log("inside font change");
@@ -132,6 +143,8 @@ function changeBGColour(){
             break;
     }
 }
+
+//function to reset the page
 function resetPage(){
     console.log("inside resetPage function")
     document.body.style.backgroundColor = "#ffffff";

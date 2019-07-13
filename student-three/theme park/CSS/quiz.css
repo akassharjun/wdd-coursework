@@ -1,0 +1,210 @@
+ #marvel{
+                  width:30%;
+                  height:30%;
+                  margin-top:10%;
+                  margin-left:15%;
+                  transition: transform .2s; 
+              }
+              #dc{
+                  width:32%;
+                  height:32%;
+                  margin-left:55%;
+                  margin-top:-21%;
+                  transition: transform .2s; 
+              }
+              h1{
+                  text-align: center;
+                  font-size:60px;
+              }
+              #marvel:hover,#dc:hover {
+                -ms-transform: scale(1.5); 
+                -webkit-transform: scale(1.2);
+                transform: scale(1.2); 
+                }
+                #rules{
+                    display: none;
+                    font-size:140%; 
+                }
+                #game{
+                    display: none;
+                }
+                ul{
+                    font-size:250%;
+                    margin-top:5%;
+                    margin-left:10%;
+                }
+                .ru{
+                    border-radius: 10%;
+                    background-color: #f4511e;
+                    border: none;
+                    color: #FFFFFF;
+                    text-align: center;
+                    font-size: 200%;
+                    padding: 1%;
+                    width: 15%;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    margin: 2%;
+                    margin-left:80%;
+                    margin-top:10%;
+                }
+                .ru span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: 10%;
+                    transition: 0.5s;
+                }
+                .ru:hover span {
+                    padding-right: 3%;
+                }
+
+                .ru:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                }
+                #f{
+                    margin-left:30%;
+                    margin-top:1%;
+                    font-size:200%;
+                    background-color:black;
+                    width:38%;
+                    padding:3%;
+                    border-radius:8.5%;
+                    height:30%;
+                }
+                #n{
+                    color:white;
+                    margin-top:0%;
+                    width:105%;
+                    height:60px;
+                    padding: 2%;
+                    border-radius: 10%;
+
+                }
+                #questiones,#questionesDc{
+                    display:none;
+                }
+                #q1,#q11{
+                    margin-left:17%;
+                    margin-top:0%;
+                    background-color:black;
+                    width:70%;
+                    height:150%;
+                }
+            body{
+                background-color:#2a293e;
+                color:white;
+                margin-top:0%;
+            }
+             #hello{
+                 color:white;
+                 display:none;
+             }
+             #q2,#q3,#q4,#q5,#q6,#q7,#q8,#q9,#q10,#q12,#q13,#q14,#q15,#q16,#q17,#q18,#q19,#q20{
+                margin-left:17%;
+                margin-top:0%;
+                background-color:black;
+                width:70%;
+                display:none;
+                height:150%;
+             }
+            
+             #selection{
+                 margin-left:40%;
+                 margin-top:0%;
+                 font-size:120%;
+             }
+             #time{
+                 font-size:400%;
+                 margin-top:1%;
+                 margin-left:47%;
+             }
+            #main{
+                margin-top:0%;
+                width:100%;
+            }
+            #link{
+                font-size:170%;
+                padding:1%;
+                margin-left:5%;
+            }
+            a:link {
+				color: black;
+				text-decoration: none;
+			}
+
+			a:visited {
+				text-decoration: none;
+				color: black;
+			}
+
+			a:hover {
+				text-decoration: none;
+				color: red;
+			}
+
+			a:active {
+				text-decoration: none;
+			}
+            #marvelimages,#Dcimages{
+                height:300px;
+                width:40%;
+                border-radius:4%;
+                margin-left:32%;
+                margin-top:2%; 
+            }
+            #marvelquestions,#Dcquestions{
+                font-size:250%;
+                text-align:center;
+                margin-top:0%;
+            }
+            #marvelbutton,#Dcbutton{
+                margin-left:40%;
+                margin-top:-1%;
+            }
+            #scorecard{
+              display:none;
+              color:black;
+            }
+            /* Float four columns side by side */
+            * {
+                box-sizing: border-box;
+            }
+            /* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  margin-left:8%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  width:65%;
+  margin-left:5%;
+  color:black;
+}

@@ -26,7 +26,7 @@ html{
     border-radius: 25px;
 }
 /*Page headings*/
-h1{
+.pageHeading{
     font-weight:300;    
     text-align: center;
     padding:70px;
@@ -185,6 +185,7 @@ header img{
     display: block;
     width: 140px;
 }
+/*Font size manipulation*/
 #fontSizeChange{
     float: right; 
     margin-top: 10px;  

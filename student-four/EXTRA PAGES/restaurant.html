@@ -9,194 +9,206 @@
         
     </head>
     <body>
-        <header>
-            <!--Navigation bar-->
+        <header id="header">
+            <div id="logo">
+            </div>
             <div class="navigationBar">
-                <a href="../student-two/Main Page.html">Home</a>
+                <a href="#home">Home</a>
                 <div class="dropdownMenu">
                     <div class="dropdownMenuDiv">Attractions 
                     </div>
                     <div class="dropdownMenuContent">
-                        <a href="../student-two/Rides page.html">Rides</a>
-                        <a href="../student-four/EXTRA PAGES/restaurant.html">Restaurants</a>
+                        <a href="#">Rides</a>
+                        <a href="#">Restaurants</a>
                     </div>
                 </div> 
                 <div class="dropdownMenu">
                     <div class="dropdownMenuDiv">Our Events 
                     </div>
-                        <div class="dropdownMenuContent">
+                    <div class="dropdownMenuContent">
                         <a href="#">Special Events</a>
-                        </div>
+                    </div>
                 </div>  
                 <a href="#news">Quiz</a>
                 <a href="#news">Products</a>
                 <a href="#news">About Us</a>
-            </div>
+                <div class="dropdownMenu">
+                    <div class="dropdownMenuDiv">Student Details 
+                    </div>
+                    <div class="dropdownMenuContent">
+                        <a href="../../student-one/curriculum-vitae.html">Student 1</a>
+                        <a href="../../student-two/CV/CV.html">Student 2</a>
+                        <a href="../../student-three/theme park/CV.html">Student 3</a>
+                        <a href="../CV/CV.html">Student 4</a>
+                    </div>
+                </div> 
+                
+            </div>                  
         </header>
-
-        <div id="pageHeading">
-            <h1>Restaurants</h1>
-        </div>
-        <!--Breadcrumb Trail-->
-        <p id="breadCrumb">
-            You are here : 
-            <a href="../../student-two/Main Page.html">Home</a> >
-            <span id="breadCrumbCurrent">Restaurants</span>
-        </p> 
-        
-        <div id="contentWrapper"> 
-            <!--Form components-->
-            <div id="formBlock">
-                <div id="formDiv">
-                    <form action="post"> 
-                        <select name="selectOption" id="diningOption">
-                            <option value="SelectAnOption" selected>Select an option</option>
-                            <option value="Buffet">Buffets</option>
-                            <option value="Restaurant">Restaurants</option>
-                            <option value="Vegetarian">Vegetarian Options</option>
-                            <option value="Candy">Candy Shops</option>
-                            <option value="Icecream">Icecream Shops</option>
-                        </select>
-                        <input type="button" name="sortDining" id="diningSortButton" value="Sort" onclick="changeDiningOption();">
-                        <input type="reset" name="resetDining" id="diningResetButton" value="Reset" onclick="resetDiningOption();">
-                    </form>
-                </div>
+            <div>
+            <div id="pageHeading">
+                <h1>Restaurants</h1>
             </div>
-
-            <div class="restaurantBlock" id="fastFood1">
-                <div class="restaurantDetails">
-                    <img src="Images/Restaurant/Fastfood1.jpg" alt="Titan Biti'n"/>
-                    <div class="overlayDiv">
-                        <div class ="descriptionOverlay">
-                            <!--overlapping text(description) on hover-->
-                            Travel to the planet Titan to fill that titan of an appetite. If there's a place in the universe where you get your food as fast as a finger snap. It would be Titan Biti'n.
-                            <div>
-                                <br>
-                                <b>Open : Monday - Friday (8.30 - 21.00)</b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="restaurantTag">
-                    <span class="rideName">Titan Biti'n</span>
-                </div>
-            </div>
-
-            <div class="restaurantBlock"  id="icecreamShop">
-                <div class="restaurantDetails">
-                    <img src="Images/Restaurant/icecream.jpg" alt="I-Scream"/>
-                    <div class="overlayDiv">
-                        <div class ="descriptionOverlay">
-                            <!--overlapping text(description) on hover-->
-                            Want to beat the heat? Well, We will make you beat the heat in excitement as I-Scream has a secret recipe that makes it so delicious which will make you scream.
-                            <div>
-                                <br>
-                                <b>Open : Monday - Sunday (8.30 - 17.30)</b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="restaurantTag">
-                    <span class="rideName">I-Scream</span>
-                </div>
-            </div>
-
-            <div class="restaurantBlock" id="fastFood2">
-                <div class="restaurantDetails">
-                    <img src="Images/Restaurant/Fastfood.jpg" alt="Bat Burger"/>
-                    <div class="overlayDiv">
-                        <div class ="descriptionOverlay">
-                            <!--overlapping text(description) on hover-->
-                            As mysterious as Bat burger is, it is a very reputed fast food joint from Gotham that brings you exotic tastes from every batman fans fantasy.
-                            <div>
-                                <br>
-                                <b>Open : Monday - Friday (8.30 - 21.00)</b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="restaurantTag">
-                    <span class="rideName">Bat Burger</span>
-                </div>
-            </div>
-
-            <div class="restaurantBlock" id="restaurant1">
-                <div class="restaurantDetails">
-                    <img src="Images/Restaurant/restaraunt.jpg" alt=""/>
-                    <div class="overlayDiv">
-                        <div class ="descriptionOverlay">
-                            <!--overlapping text(description) on hover-->
-                            The Crib is unlike any other restaurant here. With upto 7-course meals, we doubt you'll be having fun afterwards. 
-                            <div>
-                                <br>
-                                <b>Open : Monday - Friday (9.30 - 21.00)</b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="restaurantTag">
-                    <span class="rideName">The Crib</span>
-                </div>
-            </div>
-
-            <div class="restaurantBlock" id="restaurant2">
-                <div class="restaurantDetails">
-                    <img src="Images/Restaurant/vegetarian.jpg" alt="Braun Appetit"/>
-                    <div class="overlayDiv">
-                        <div class ="descriptionOverlay">
-                            <!--overlapping text(description) on hover-->
-                            Do you enjoy a glass of vine and some soothing jazz in the background? Come on an wear the serviettes because Braun appetit!
-                            <div>
-                                <br>
-                                <b>Open : Monday - Friday (8.30 - 21.00)</b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="restaurantTag">
-                    <span class="rideName">Braun Appetit</span>
-                </div>
-            </div>
-
-            <div class="restaurantBlock" id="buffetRestaurant">
-                <div class="restaurantDetails">
-                    <img src="Images/Restaurant/buffet.jpg" alt="Justice Serve"/>
-                    <div class="overlayDiv">
-                        <div class ="descriptionOverlay">
-                            <!--overlapping text(description) on hover-->
-                            Heroes fight for justice. Maybe you should too...for the money you paid to visit Superhero Crosspark, So stuff up with all-day buffet. Do your money justice.
-                            <div>
-                                <br>
-                                <b>Open : Monday - Friday (8.30 - 21.00)</b>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="restaurantTag">
-                    <span class="rideName">Justice Serve</span>
-                </div>
-            </div>
+            <!--Breadcrumb Trail-->
+            <p id="breadCrumb">
+                You are here : 
+                <a href="../../student-two/Main Page.html">Home</a> > Attractions >
+                <span id="breadCrumbCurrent">Restaurants</span>
+            </p> 
             
-            <div class="restaurantBlock" id="candyShop">
-                <div class="restaurantDetails">
-                    <img src="Images/Restaurant/candy.jpg" alt="Sugar Rush"/>
-                    <div class="overlayDiv">
-                        <div class ="descriptionOverlay">
-                            <!--overlapping text(description) on hover-->
-                            Do your kids go "Mommy! Mommy! candy!? No worries, Bring them along. Let them endulge in combinations of colours they have never seen and do not forget the candy
-                            <div>
-                                <br>
-                                <b>Open : Monday - Friday (10.30 - 18.00)</b>
+            <div id="contentWrapper"> 
+                <!--Form components-->
+                <div id="formBlock">
+                    <div id="formDiv">
+                        <form action="post"> 
+                            <select name="selectOption" id="diningOption">
+                                <option value="SelectAnOption" selected>Select an option</option>
+                                <option value="Buffet">Buffets</option>
+                                <option value="Restaurant">Restaurants</option>
+                                <option value="Vegetarian">Vegetarian Options</option>
+                                <option value="Candy">Candy Shops</option>
+                                <option value="Icecream">Icecream Shops</option>
+                            </select>
+                            <input type="button" name="sortDining" id="diningSortButton" value="Sort" onclick="changeDiningOption();">
+                            <input type="reset" name="resetDining" id="diningResetButton" value="Reset" onclick="resetDiningOption();">
+                        </form>
+                    </div>
+                </div>
+
+                <div class="restaurantBlock" id="fastFood1">
+                    <div class="restaurantDetails">
+                        <img src="Images/Restaurant/Fastfood1.jpg" alt="Titan Biti'n"/>
+                        <div class="overlayDiv">
+                            <div class ="descriptionOverlay">
+                                <!--overlapping text(description) on hover-->
+                                Travel to the planet Titan to fill that titan of an appetite. If there's a place in the universe where you get your food as fast as a finger snap. It would be Titan Biti'n.
+                                <div>
+                                    <br>
+                                    <b>Open : Monday - Friday (8.30 - 21.00)</b>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="restaurantTag">
+                        <span class="rideName">Titan Biti'n</span>
+                    </div>
                 </div>
-                <div class="restaurantTag">
-                    <span class="rideName">Sugar Rush</span>
+
+                <div class="restaurantBlock"  id="icecreamShop">
+                    <div class="restaurantDetails">
+                        <img src="Images/Restaurant/icecream.jpg" alt="I-Scream"/>
+                        <div class="overlayDiv">
+                            <div class ="descriptionOverlay">
+                                <!--overlapping text(description) on hover-->
+                                Want to beat the heat? Well, We will make you beat the heat in excitement as I-Scream has a secret recipe that makes it so delicious which will make you scream.
+                                <div>
+                                    <br>
+                                    <b>Open : Monday - Sunday (8.30 - 17.30)</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurantTag">
+                        <span class="rideName">I-Scream</span>
+                    </div>
+                </div>
+
+                <div class="restaurantBlock" id="fastFood2">
+                    <div class="restaurantDetails">
+                        <img src="Images/Restaurant/Fastfood.jpg" alt="Bat Burger"/>
+                        <div class="overlayDiv">
+                            <div class ="descriptionOverlay">
+                                <!--overlapping text(description) on hover-->
+                                As mysterious as Bat burger is, it is a very reputed fast food joint from Gotham that brings you exotic tastes from every batman fans fantasy.
+                                <div>
+                                    <br>
+                                    <b>Open : Monday - Friday (8.30 - 21.00)</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurantTag">
+                        <span class="rideName">Bat Burger</span>
+                    </div>
+                </div>
+
+                <div class="restaurantBlock" id="restaurant1">
+                    <div class="restaurantDetails">
+                        <img src="Images/Restaurant/restaraunt.jpg" alt=""/>
+                        <div class="overlayDiv">
+                            <div class ="descriptionOverlay">
+                                <!--overlapping text(description) on hover-->
+                                The Crib is unlike any other restaurant here. With upto 7-course meals, we doubt you'll be having fun afterwards. 
+                                <div>
+                                    <br>
+                                    <b>Open : Monday - Friday (9.30 - 21.00)</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurantTag">
+                        <span class="rideName">The Crib</span>
+                    </div>
+                </div>
+
+                <div class="restaurantBlock" id="restaurant2">
+                    <div class="restaurantDetails">
+                        <img src="Images/Restaurant/vegetarian.jpg" alt="Braun Appetit"/>
+                        <div class="overlayDiv">
+                            <div class ="descriptionOverlay">
+                                <!--overlapping text(description) on hover-->
+                                Do you enjoy a glass of vine and some soothing jazz in the background? Come on an wear the serviettes because Braun appetit!
+                                <div>
+                                    <br>
+                                    <b>Open : Monday - Friday (8.30 - 21.00)</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurantTag">
+                        <span class="rideName">Braun Appetit</span>
+                    </div>
+                </div>
+
+                <div class="restaurantBlock" id="buffetRestaurant">
+                    <div class="restaurantDetails">
+                        <img src="Images/Restaurant/buffet.jpg" alt="Justice Serve"/>
+                        <div class="overlayDiv">
+                            <div class ="descriptionOverlay">
+                                <!--overlapping text(description) on hover-->
+                                Heroes fight for justice. Maybe you should too...for the money you paid to visit Superhero Crosspark, So stuff up with all-day buffet. Do your money justice.
+                                <div>
+                                    <br>
+                                    <b>Open : Monday - Friday (8.30 - 21.00)</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurantTag">
+                        <span class="rideName">Justice Serve</span>
+                    </div>
+                </div>
+                
+                <div class="restaurantBlock" id="candyShop">
+                    <div class="restaurantDetails">
+                        <img src="Images/Restaurant/candy.jpg" alt="Sugar Rush"/>
+                        <div class="overlayDiv">
+                            <div class ="descriptionOverlay">
+                                <!--overlapping text(description) on hover-->
+                                Do your kids go "Mommy! Mommy! candy!? No worries, Bring them along. Let them endulge in combinations of colours they have never seen and do not forget the candy
+                                <div>
+                                    <br>
+                                    <b>Open : Monday - Friday (10.30 - 18.00)</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="restaurantTag">
+                        <span class="rideName">Sugar Rush</span>
+                    </div>
                 </div>
             </div>
         </div>
-
         <footer>
             <div id="footLink">
                 <a href="../student-two/CV/CV.html">

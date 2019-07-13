@@ -51,6 +51,11 @@ option{
     color: #ffffff;
     border-radius: 50px;
 }
+p{
+    font-size: 20px;
+    text-align: left;
+    margin-left: 20px;
+}
 /* gallery division components*/
 .galleryDivision{
     display: grid;  /*using grid layout for fluid website*/

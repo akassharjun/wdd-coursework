@@ -18,10 +18,11 @@ form{
     padding: 30px;
     top:50%;
     left:50%;
-    transform: translate(-50%,-50%);
     border-radius: 4px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);           /*fallback*/
+    -ms-transform: translate(-50%, -50%);               /*fallback*/
 }
-
 .formInput{
     font-size:15px;
     border:0;
@@ -29,23 +30,22 @@ form{
     border-radius: 6px;
     transition: 0.25s;
 }
-
 .formInput:focus{
     border: 2px solid rgb(124, 180, 252);
     background-color: aliceblue;
     outline:0;
 }
-
+fieldset{
+    border:none;
+}
 #comments{
     padding:15px 5px;
 }
-
 #customerName, #email{
     line-height: 16px;
     width: 220px;
     padding:10px;
 }
-
 .buttons{
     font-weight:600;
     border:2px solid;
@@ -57,40 +57,34 @@ form{
     background-color:white;
     transition: 0.5s;
 }
-
 .buttons:focus{
     outline:0;
 }
-
 form input[type=reset]{
     border-color: rgb(231, 76, 60);
 }
-
 form input[type=reset]:hover{
     background-color: rgb(231, 76, 60);
     cursor: pointer;
     color: white;
 }
-
 form input[type=submit]{
     border-color: lightseagreen;
 }
-
 form input[type=submit]:hover{
     background-color: lightseagreen;
     cursor: pointer;
     color: white;
 }
 
-#logo{
+/* #logo{                   ???????????
     max-width: 15%;
     height:auto;
     display:block;
     margin-left:auto;
     margin-right:auto;
     margin-top: 60px;
-}
-
+} */
 
 footer{
     position: relative;

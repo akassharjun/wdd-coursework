@@ -5,7 +5,6 @@
     padding: 0;
     font-family: "TT Commons", sans-serif;
 }
-
 html{
     scroll-behavior: smooth;
 }
@@ -42,28 +41,26 @@ footer{
     background-color: rgb(34, 34, 34);
     color:white;
 }
-
 #footLink{
     position: absolute;
     width:250px;
     transform: translate(-50%, -50%);           /*centering to top left corner*/
+    -webkit-transform: translate(-50%, -50%);           /*fallback*/
+    -ms-transform: translate(-50%, -50%);               /*fallback*/
     top:50%;
     left:50%;
 }
-
 #footLink a img{
     height: 60px;
     width: 60px;
     border-radius:50%;
 }
-
 #footLink a span{
     float: right;
     color:white;
     margin: 25px 35px 0 0px;
     font-size: 18px;
 }
-
 #lastEdit{
     position: absolute;
     bottom:10px;
@@ -72,17 +69,15 @@ footer{
 
 /*header styling*/
 
-header{
+/* header{
   height: 50px;
   background-color: #183048;
-}
-
+} */
 header img{
     height: 100%;
     margin-top: 5px;
     margin-left: 15px;
 }
-
 #logo{                          /*logo placement above the navbar(in the)*/
     max-width: 15%;
     height:auto;
@@ -94,21 +89,17 @@ header img{
 /*---------breadcrumb---------*/
 #breadCrumb{
     font-size: 16px;
-    margin: 20px;
     /* position: absolute;
     left:; */
 }
-
 #breadCrumb a:link{
     color:black;
     text-decoration: none;
 }
-
 #breadCrumb a:hover{
     color: blue;
     text-decoration: underline;
 }
-
 #breadCrumbCurrent{
     color: blue
 }
@@ -121,7 +112,6 @@ header img{
     background-color: #183048;
     height: 50px;
 }
-
 .navigationBar a{
     float: left;
     font-size: 16px;
@@ -131,16 +121,13 @@ header img{
     text-decoration: none;
     transition: 0.1s;
 }
-
 .navigationBar a, .navigationBar div{
     border-radius:3px;
 }
-
 .dropdownMenu {
     float: left;
     overflow: hidden;
 }
-
 .dropdownMenu .dropdownMenuDiv {
     font-size: 16px;  
     border: none;
@@ -151,12 +138,10 @@ header img{
     font-family: inherit;
     margin: 0;
 }
-
 .navigationBar a:hover, .dropdownMenu:hover .dropdownMenuDiv {
     background: linear-gradient( to top,#00c2e4,#183048 30%);
     color:white;
 }
-
 .dropdownMenuContent {
     display: none;
     position: absolute;
@@ -167,7 +152,6 @@ header img{
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-
 .dropdownMenuContent a {
     float: none;
     color: #183048;
@@ -176,15 +160,17 @@ header img{
     display: block;
     text-align: left;
 }
- 
 .dropdownMenuContent a:hover {
     background-color: #ddd;
 }
-  
 .dropdownMenu:hover .dropdownMenuContent {
     display: block;
     width: 140px;
 }
+#activeLink{
+    color: #00c2e4;
+}
+
 /*Font size manipulation*/
 #fontSizeChange{
     float: right; 

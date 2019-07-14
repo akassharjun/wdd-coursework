@@ -11,13 +11,39 @@
     <body>
         
         <header>
-            
-
-            <!--logo + nav bar comes here-->
+            <!--logo comes here-->
+            <div class="navigationBar">
+                    <a href="../student-two/Main Page.html">Home</a>
+                    <div class="dropdownMenu">
+                        <div class="dropdownMenuDiv">Attractions</div>
+                        <div class="dropdownMenuContent">
+                            <a href="../student-two/Rides page.html" id="activeLink">Rides</a>
+                            <a href="../student-four/EXTRA PAGES/restaurant.html">Restaurants</a>
+                        </div>
+                    </div> 
+                    <div class="dropdownMenu">
+                        <div class="dropdownMenuDiv">Our Events 
+                        </div>
+                            <div class="dropdownMenuContent">
+                            <a href="#">Special Events</a>
+                            </div>
+                    </div>  
+                    <a href="#news">Quiz</a>
+                    <a href="#news">Products</a>
+                    <div class="dropdownMenu">
+                        <div class="dropdownMenuDiv">About Us</div>
+                        <div class="dropdownMenuContent">
+                            <a href="../../student-one/curriculum-vitae.html">Student 1</a>
+                            <a href="../../student-two/CV/CV.html">Student 2</a>
+                            <a href="../../student-three/theme park/CV.html">Student 3</a>
+                            <a href="../CV/CV.html">Student 4</a>
+                        </div>
+                    </div> 
+                </div>
         </header>
 
         <p id="breadCrumb">                                                     <!--have this in div to position everywhere properly???-->
-            <a href="../student-two/Main Page.html">Home</a> / 
+            <a href="../student-two/Main Page.html">Home</a> > 
             <span id="breadCrumbCurrent">Comments Form</span>
         </p>
 
@@ -28,12 +54,15 @@
             <label for="email">E-mail:</label><br/>
             <input type="email" name="email" id="email" placeholder="Your E-mail" class="formInput" /><br/><br/>
 
-            <label for="rating">Rating*:</label></br>
-            <input type="radio" name="rating" value="very poor"/>
-            <input type="radio" name="rating" value="poor"/>
-            <input type="radio" name="rating" value="ok"/>
-            <input type="radio" name="rating" value="good"/>
-            <input type="radio" name="rating" value="very good"/>
+            <!-- <label for="rating">Rating*:</label></br> -->
+            <fieldset>
+                <legend>Rating*:</legend>
+                <input type="radio" name="rating" value="very poor"/>
+                <input type="radio" name="rating" value="poor"/>
+                <input type="radio" name="rating" value="ok"/>
+                <input type="radio" name="rating" value="good"/>
+                <input type="radio" name="rating" value="very good"/>
+            </fieldset>
             <br/><br/>
 
             <label for="comments">Comments:</label><br/>
@@ -48,7 +77,7 @@
         <footer>
             <div id="footLink">
                 <a href="../student-two/CV/CV.html">
-                    <img src="../student-two/CV/images/Dinuka CV-sq.jpg"/>
+                    <img src="../student-two/CV/images/Dinuka CV-sq.jpg" alt="cv image-Dinuka"/>
                     <span>Dinuka Piyadigama</span>
                 </a>
                 <span>UOW ID: w1742104  |</span>

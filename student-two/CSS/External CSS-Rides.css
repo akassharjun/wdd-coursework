@@ -7,7 +7,6 @@ h1{
     background: linear-gradient( to top,#00c2e4,white 50%);
 
 }
-
 p{
     font-size: 20px;
     margin-left:50px;
@@ -24,14 +23,12 @@ form{
     margin:auto;
     border-radius: 10px;
 }
-
 form div{
     position: absolute;
     text-align: center;
     top:8px;
     left:20px;
 }
-
 form select{
     cursor: pointer;
     transition:0.5s;
@@ -41,7 +38,6 @@ form select{
     outline:none ;
     border-color: #183048;
 }
-
 form select:hover{
     background-color: #183048;
     color:white;
@@ -70,7 +66,6 @@ form select:hover{
     justify-content: space-evenly;              /*items are distributed so that the spacing between any two items (and the space to the edges) is equal.*/
     margin-bottom: 50px
 }
-
 .rideBlock{
     /*border: 1px solid white;            /*match border colour with background colour, so that images won't move around when hovered*/
     border-radius: 12px;
@@ -82,12 +77,10 @@ form select:hover{
     box-shadow: 0px 3px 10px 1px grey;
     overflow: hidden;
 }
-
 .rideBlock:hover{
     border-radius: 12px;
     box-shadow: 0px 1px 6px 1px #00c2e4;
 }
-
 .rideImgBlock{
     /*border: 1px solid lightgray;          for identification*/
     height:390px;
@@ -96,12 +89,10 @@ form select:hover{
     overflow: hidden;
     position: relative;             /*for overlay text*/
 }
-
 .rideImgBlock img{
     width:100%;
     min-height: 410px;
 }
-
 .rideImgTag{
     height:50px;
     width:380px;
@@ -110,15 +101,15 @@ form select:hover{
     position: relative;
     font-size: 1.3em;
 }
-
 .rideName{
     position:absolute;
     color:white;
     top:60%;
     left:50%;
     transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%, -50%);           /*fallback*/
+    -ms-transform: translate(-50%, -50%);               /*fallback*/
 }
-
 .overlay{
     position: absolute;
     bottom: 0;
@@ -130,11 +121,9 @@ form select:hover{
     height: 0;
     transition: .5s ease;
 }
-
 .rideImgBlock:hover .overlay{
     height: 100%;
 }
-
 .textOverlay{
     color: white;
     font-size: 22px;

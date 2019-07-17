@@ -1,13 +1,23 @@
 function increaseFontSize() {
-    if (document.body.style.fontSize === "") {
-        document.body.style.fontSize = "1.0em";
+    let bodyFontSize = document.body.style.fontSize;
+    if (bodyFontSize === "1.25em") {
+        alert("You have reached the maximum size!");
+        return;
     }
-    document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (0.05) + "em";
+    if (bodyFontSize === "") {
+        bodyFontSize = "1.0em";
+    }
+    document.body.style.fontSize = parseFloat(bodyFontSize) + (0.05) + "em";
 }
 
 function decreaseFontSize() {
-    if (document.body.style.fontSize === "") {
-        document.body.style.fontSize = "1.0em";
+    let bodyFontSize = document.body.style.fontSize;
+    if (bodyFontSize === "0.75em") {
+        alert("You have reached the minimum size!");
+        return;
     }
-    document.body.style.fontSize = parseFloat(document.body.style.fontSize) - (0.05) + "em";
+    if (bodyFontSize === "") {
+        bodyFontSize = "1.0em";
+    }
+    document.body.style.fontSize = parseFloat(bodyFontSize) - (0.05) + "em";
 }

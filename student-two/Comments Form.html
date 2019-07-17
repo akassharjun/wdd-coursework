@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <title>
             Feedback
         </title>
@@ -44,10 +46,12 @@
                 </div>
         </header>
 
-        <p id="breadCrumb">                                                     <!--have this in div to position everywhere properly???-->
-            <a href="../student-two/Main Page.html">Home</a> > 
-            <span id="breadCrumbCurrent">Comments Form</span>
-        </p>
+        <div id="breadContainer">                  <!--white strip for dark background-->
+            <p id="breadCrumb">
+                <a href="../student-two/Main Page.html">Home</a> > 
+                <span id="breadCrumbCurrent">Comments Form</span>
+            </p>
+        </div>
 
         <form name="commentsForm" onsubmit="return formValidation()" method="POST">
             <label for="customerName">Name*:</label><br/>

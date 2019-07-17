@@ -40,9 +40,3 @@ function filterDisplay(){                           /*used to filter out rides a
 
     }
 }
-
-displayLastEdit();
-function displayLastEdit() {
-    var x = document.lastModified;
-    document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
-}

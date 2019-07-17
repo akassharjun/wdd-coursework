@@ -4,7 +4,7 @@ body{
 }
 
 /*---------breadcrumb---------*/
-#breadCrumb{
+#breadContainer{
     background-color: #f8f8fb;
 }
 
@@ -86,7 +86,7 @@ form input[type=submit]:hover{
     margin-top: 60px;
 } */
 
-footer{
+footer{                     /*to appear below form*/
     position: relative;
     top:700px;
 }

@@ -6,6 +6,8 @@
         </title>
         <link rel="stylesheet" type="text/css" href="CSS/External CSS-Form.css">
         <link rel="stylesheet" type="text/css" href="../common-resources/style.css">
+        <script src="JavaScript/External JS - Form.js"></script>
+        <script src="JavaScript/External JS - Common.js"></script>
         
     </head>
     <body>
@@ -91,47 +93,11 @@
         <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
 
         <script>
-            function formValidation(){
-                var nameCheck = document.forms["commentsForm"]["customerName"].value;
-                var radioCheck = document.forms["commentsForm"]["rating"].value;
-                var commentsOut = document.forms["commentsForm"]["comments"].value;
-                
-                if((nameCheck=="") && (radioCheck=="")){
-                    alert("Please fill-in the compulsory fields- \n \u2022Name \n \u2022Rating");
-                    return false;
-                } else if(nameCheck==""){
-                    alert("Please fill-in the compulsory field- \n \u2022Name");
-                    return false;
-                } else if(radioCheck==""){
-                    alert("Please fill-in the compulsory field- \n \u2022Rating");
-                    return false;
-                } else{
-                    alert("Dear "+nameCheck+", Thank you very much for your feedback. You have rated our site as "+radioCheck+
-                    " and your comment was, \""+commentsOut+'\"');
-                }
-            }
-
-
-
-            window.onscroll = function() {toTopDisplay()};
-            function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
-                if(document.documentElement.scrollTop > 100){
-                    document.getElementById("toTopButton").style.display = "block";
-                }else{
-                    document.getElementById("toTopButton").style.display = "none";
-                }
-            }
-
-            function scrollToTop(){         //scroll top top of web page
-                document.documentElement.scrollTop = 0;
-            }
-
             displayLastEdit();
             function displayLastEdit() {
                 var x = document.lastModified;
                 document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
             }
-
         </script>
     </body>
 </html>

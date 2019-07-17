@@ -60,7 +60,7 @@ footer{
     position: absolute;
     float: right;
     color:white;
-    margin: 25px 0 0 5px;                /*fix this to appear properly in all browsers*/
+    margin: 25px 0 0 8px;                /*fix this to appear properly in all browsers*/
     font-size: 18px;
 }
 #lastEdit{

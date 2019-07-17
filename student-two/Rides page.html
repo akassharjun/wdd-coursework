@@ -7,6 +7,8 @@
         
         <link rel="stylesheet" type="text/css" href="CSS/External CSS-Rides.css">
         <link rel="stylesheet" type="text/css" href="../common-resources/style.css">
+        <script src="JavaScript/External JS - Rides.js"></script>
+        <script src="JavaScript/External JS - Common.js"></script>
             
     </head>
     <body >
@@ -161,8 +163,7 @@
 
         </div>
 
-
-
+        
         <footer>
             <div id="footLink">
                 <a href="../student-two/CV/CV.html">
@@ -180,71 +181,11 @@
         <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
 
         <script>
-
-            function filterDisplay(){                           /*used to filter out rides and display*/
-                var rideOption = document.getElementById("selectRide").value;
-
-                switch(rideOption){
-                    case "Roller Coaster Rides":
-                        document.getElementById("ride1").style.display = "block";
-                        document.getElementById("ride2").style.display = "block";
-                        document.getElementById("ride3").style.display = "none";
-                        document.getElementById("ride4").style.display = "none";
-                        document.getElementById("ride5").style.display = "block";
-                        document.getElementById("ride6").style.display = "none";
-                        return;
-
-                    case "First-Person Experience":
-                        document.getElementById("ride1").style.display = "none";
-                        document.getElementById("ride2").style.display = "block";
-                        document.getElementById("ride3").style.display = "block";
-                        document.getElementById("ride4").style.display = "block";
-                        document.getElementById("ride5").style.display = "block";
-                        document.getElementById("ride6").style.display = "none";
-                        return;
-
-                    case "Adventure":
-                        document.getElementById("ride1").style.display = "none";
-                        document.getElementById("ride2").style.display = "block";
-                        document.getElementById("ride3").style.display = "block";
-                        document.getElementById("ride4").style.display = "block";
-                        document.getElementById("ride5").style.display = "none";
-                        document.getElementById("ride6").style.display = "none";
-                        return;
-
-                    default:
-                        document.getElementById("ride1").style.display = "block";
-                        document.getElementById("ride2").style.display = "block";
-                        document.getElementById("ride3").style.display = "block";
-                        document.getElementById("ride4").style.display = "block";
-                        document.getElementById("ride5").style.display = "block";
-                        document.getElementById("ride6").style.display = "block";
-                        return;
-
-                }
-            }
-
-
-        window.onscroll = function() {toTopDisplay()};
-            function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
-                if(document.documentElement.scrollTop > 100){
-                    document.getElementById("toTopButton").style.display = "block";
-                }else{
-                    document.getElementById("toTopButton").style.display = "none";
-                }
-            }
-
-            function scrollToTop(){         //scroll top top of web page
-                document.documentElement.scrollTop = 0;
-            }
-
-
-            displayLastEdit();
-            function displayLastEdit() {
-                var x = document.lastModified;
-                document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
-            }            
-
+        displayLastEdit();
+        function displayLastEdit() {
+        var x = document.lastModified;
+        document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
+        }
         </script>
     </body>
 </html>

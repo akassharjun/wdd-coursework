@@ -7,6 +7,8 @@
         
         <link rel="stylesheet" type="text/css" href="CSS/External CSS-Main.css">
         <link rel="stylesheet" type="text/css" href="../common-resources/style.css">
+        <script src="JavaScript/External JS - Main.js"></script>
+        <script src="JavaScript/External JS - Common.js"></script>
         
     </head>
     <body>
@@ -33,10 +35,10 @@
                     <div class="dropdownMenu">
                         <div class="dropdownMenuDiv">About Us</div>
                         <div class="dropdownMenuContent">
-                            <a href="../../student-one/curriculum-vitae.html">Student 1</a>
-                            <a href="../../student-two/CV/CV.html">Student 2</a>
-                            <a href="../../student-three/theme park/CV.html">Student 3</a>
-                            <a href="../CV/CV.html">Student 4</a>
+                            <a href="../student-one/curriculum-vitae.html">Student 1</a>
+                            <a href="../student-two/CV/CV.html">Student 2</a>
+                            <a href="../student-three/theme park/CV.html">Student 3</a>
+                            <a href="../student-four/CV/CV.html">Student 4</a>
                         </div>
                     </div> 
                 </div>
@@ -150,45 +152,16 @@
                 <span>IIT ID: 2018373</span>
             </div>
             <div id="lastEdit"></div>
-        </footer>
-        
-        
+        </footer>        
         
         <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>
-        
+
         <script>
-            window.onscroll = function() {toTopDisplay(); hideWelcome();}
-
-
-            function toTopDisplay(){            //to display toTopButton only when scrolled below the entrance screen
-                if(document.documentElement.scrollTop > 150){
-                    document.getElementById("toTopButton").style.display = "block";
-                }else{
-                    document.getElementById("toTopButton").style.display = "none";
-                }
-            }
-
-            function scrollToTop(){         //scroll top top of web page
-                document.documentElement.scrollTop = 0;
-            }
-
-
             displayLastEdit();
             function displayLastEdit() {
-                var x = document.lastModified;
-                document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
+            var x = document.lastModified;
+            document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
             }
-
-
-            function hideWelcome(){            //to hide cover text, while scrolling down
-                if(document.documentElement.scrollTop > 180){
-                    document.getElementById("coverText").style.display = "none";
-                }else{
-                    document.getElementById("coverText").style.display = "block";
-                }
-            }
-
         </script>
-
     </body>
 </html>

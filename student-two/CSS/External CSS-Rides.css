@@ -66,7 +66,6 @@ form select:hover{
     margin-bottom: 50px
 }
 .rideBlock{
-    /*border: 1px solid white;            /*match border colour with background colour, so that images won't move around when hovered*/
     border-radius: 12px;
     height:450px;
     width:450px;

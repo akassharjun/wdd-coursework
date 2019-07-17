@@ -24,7 +24,8 @@ html{
     padding: 10px 15px 10px 15px;
     border-radius: 25px;
 }
-/*Page headings*/
+
+/*--------Page headings-------*/
 .pageHeading{
     font-weight:300;    
     text-align: center;
@@ -56,9 +57,10 @@ footer{
     border-radius:50%;
 }
 #footLink a span{
+    position: absolute;
     float: right;
     color:white;
-    margin: 25px 35px 0 0px;
+    margin: 25px 0 0 5px;                /*fix this to appear properly in all browsers*/
     font-size: 18px;
 }
 #lastEdit{
@@ -66,25 +68,6 @@ footer{
     bottom:10px;
     right: 70px;
 }
-
-/*header styling*/
-
-/* header{
-  height: 50px;
-  background-color: #183048;
-} */
-header img{
-    height: 100%;
-    margin-top: 5px;
-    margin-left: 15px;
-}
-#logo{                          /*logo placement above the navbar(in the)*/
-    max-width: 15%;
-    height:auto;
-    margin-top: 30px;
-    float:left;
-}
-
 
 /*---------breadcrumb---------*/
 #breadCrumb{
@@ -169,6 +152,12 @@ header img{
 }
 #activeLink{
     color: #00c2e4;
+}
+#navLogo{
+    height: 50px;   /*same height as the navbar*/
+    width: auto;
+    float:left;
+    background-color: #183048;      /*for pages with white backgrounds*/
 }
 
 /*Font size manipulation*/

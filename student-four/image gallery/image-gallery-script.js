@@ -48,8 +48,8 @@ function changeBGColour(){
         case "SelectBGColour":
             console.log("inside switchcase")
             document.body.style.backgroundColor = "#ffffff";
-            document.getElementById("imageDescription").style.backgroundColor = "#e2e2e2";
-            document.getElementById("formDivision").style.backgroundColor = "#e2e2e2";
+            document.getElementById("imageDescription").style.backgroundColor = "#f8f8fb";
+            document.getElementById("formDivision").style.backgroundColor = "#f8f8fb";
             document.getElementById("description").style.color = "#000000";
             document.getElementById("breadCrumb").style.color = "#000000";
             document.getElementById("colorSwitchGuide").style.color = "#000000";
@@ -148,8 +148,8 @@ function changeBGColour(){
 function resetPage(){
     console.log("inside resetPage function")
     document.body.style.backgroundColor = "#ffffff";
-    document.getElementById("imageDescription").style.backgroundColor = "#e2e2e2";
-    document.getElementById("formDivision").style.backgroundColor = "#e2e2e2";
+    document.getElementById("imageDescription").style.backgroundColor = "#f8f8fb";
+    document.getElementById("formDivision").style.backgroundColor = "#f8f8fb";
     document.getElementById("description").style.color = "#000000";
     console.log("page has been reset");
 }

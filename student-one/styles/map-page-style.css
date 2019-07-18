@@ -4,7 +4,7 @@ body, html {
 }
 
 #bg {
-    background-image: url("assets/background-images/theme-park.jpg");
+    background-image: url("../assets/background-images/theme-park.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;

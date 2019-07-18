@@ -77,15 +77,6 @@ form input[type=submit]:hover{
     color: white;
 }
 
-/* #logo{                   ???????????
-    max-width: 15%;
-    height:auto;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top: 60px;
-} */
-
 footer{                     /*to appear below form*/
     position: relative;
     top:700px;

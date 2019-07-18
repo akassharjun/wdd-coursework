@@ -8,6 +8,8 @@
         </title>
         <link rel="stylesheet" type="text/css" href="CSS/External CSS-Form.css">
         <link rel="stylesheet" type="text/css" href="../common-resources/style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
         <script src="JavaScript/External JS - Form.js"></script>
         <script src="JavaScript/External JS - Common.js"></script>
         
@@ -15,7 +17,9 @@
     <body>
         
         <header>
-            <img src="../common-resources/Logo.png" alt="logo" id="navLogo"/>
+            <a href="../student-two/Main Page.html">
+                <img src="../common-resources/Logo.png" alt="logo" id="navLogo"/>
+            </a>
             <div class="navigationBar">
                     <a href="../student-two/Main Page.html">Home</a>
                     <div class="dropdownMenu">
@@ -62,12 +66,17 @@
 
             <!-- <label for="rating">Rating*:</label></br> -->
             <fieldset>
-                <legend>Rating*:</legend>
-                <input type="radio" name="rating" value="very poor"/>
-                <input type="radio" name="rating" value="poor"/>
-                <input type="radio" name="rating" value="ok"/>
-                <input type="radio" name="rating" value="good"/>
-                <input type="radio" name="rating" value="very good"/>
+                <legend>Rating*:</legend>                               <!--use this  ~~~ to turn all stars on before, use reverse flexbox css for order-->
+                <input type="radio" name="rating" value="very poor" id="ratingVeryPoor"/>
+                <input type="radio" name="rating" value="poor" id="ratingPoor"/>
+                <input type="radio" name="rating" value="ok" id="ratingOk"/>
+                <input type="radio" name="rating" value="good" id="ratingGood"/>
+                <input type="radio" name="rating" value="very good" id="ratingVeryGood"/><br/>
+                <label for="ratingVeryPoor"><i class="material-icons">star_border</i></label>
+                <label for="ratingPoor"><i class="material-icons">star_border</i></label>
+                <label for="ratingOk"><i class="material-icons">star_border</i></label>
+                <label for="ratingGood"><i class="material-icons">star_border</i></label>
+                <label for="ratingVeryGood"><i class="material-icons">star_border</i></label>
             </fieldset>
             <br/><br/>
 

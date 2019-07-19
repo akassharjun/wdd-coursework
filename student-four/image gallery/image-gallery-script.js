@@ -151,6 +151,8 @@ function resetPage(){
     document.getElementById("imageDescription").style.backgroundColor = "#f8f8fb";
     document.getElementById("formDivision").style.backgroundColor = "#f8f8fb";
     document.getElementById("description").style.color = "#000000";
+    document.getElementById("colorSwitchGuide").style.color = "#000000";
+    document.getElementById("breadCrumb").style.color = "#000000";
     console.log("page has been reset");
 }
 

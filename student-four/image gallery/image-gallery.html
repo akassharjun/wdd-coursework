@@ -9,28 +9,34 @@
     </head>
     <body>       
         <header id="header">
-            <div id="logo">
-            </div>
+            <!--Logo-->
+            <a href="../../student-two/Main Page.html">
+                <img src="../../common-resources/Logo.png" alt="logo" id="navLogo"/>
+            </a>
+
+            <!--Navigation menu-->
             <div class="navigationBar">
-                <a href="#home">Home</a>
+                <a href="../../student-two/Rides page.html">Home</a>
                 <div class="dropdownMenu">
                     <div class="dropdownMenuDiv">Attractions 
                     </div>
                     <div class="dropdownMenuContent">
-                        <a href="#">Rides</a>
-                        <a href="#">Restaurants</a>
+                        <a href="../../student-two/Rides page.html">Rides</a>
+                        <a href="../EXTRA PAGES/restaurant.html">Restaurants</a>
+                        <a href="../../student-one/map-page.html">Park Map</a>
                     </div>
                 </div> 
                 <div class="dropdownMenu">
                     <div class="dropdownMenuDiv">Our Events 
                     </div>
                     <div class="dropdownMenuContent">
-                        <a href="#">Special Events</a>
+                        <a href="../../student-three/theme park/Special events.html">Special Events</a>
                     </div>
                 </div>  
-                <a href="#news">Quiz</a>
-                <a href="#news">Products</a>
-                <a href="#news">About Us</a>
+                <a href="../../student-three/theme park/Quiz.html">Quiz</a>
+                <a href="../../student-one/products-page.html">Products</a>
+                <a href="../image gallery/image-gallery.html"  id="activeLink">Image Gallery</a>
+                <a href="../Site map/Site map.html">Site Map</a>
                 <div class="dropdownMenu">
                     <div class="dropdownMenuDiv">Student Details 
                     </div>
@@ -107,6 +113,8 @@
             <div id="imageDiv"></div>
             <div id="description"></div>
         </div>
+
+        <!--All image descriptions-->
         <div id="allDescriptions">
             <div id="description1" class="hiddenDescription">
                 <h3>Castle Doom</h3>
@@ -142,6 +150,8 @@
                 <br>
             </div>
         </div>
+
+        <!--all full sized images of thumbnail-->
         <div id="hiddenImage">
             <div id="hiddenImage1">
                 <img src="Assets\galleryImages\gallery-image-1.jpg" height="100%" width="100%">
@@ -163,10 +173,16 @@
     <footer>
         <div id="footLink">
             <a href="../student-two/CV/CV.html">
-                <img src="../CV/images/CV-visal.jpg"/>
-                <span>Visal Rajapakse</span>
+                <div>
+                    <img src="../CV/images/CV-visal.jpg"/>
+                    <span>Visal Rajapakse</span>
+                </div>
             </a>
+            <span>UOW ID: w1742117  |</span>
+            <span>IIT ID: 2018418</span>
         </div>
+
+        <!--font size manipulation-->
         <div id="fontSizeChange">
             Font Size:
             <button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>

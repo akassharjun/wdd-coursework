@@ -123,9 +123,10 @@ img{
 
 /*restaurant heading*/          
 .restaurantTag{
-    margin-top: 4%;    
+    margin-top: 10px;    
     text-align: center;
     color: #fff;
+    font-size: 1.2em;
 }
 
 .descriptionOverlay div{

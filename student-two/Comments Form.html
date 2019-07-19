@@ -6,6 +6,10 @@
         <title>
             Feedback
         </title>
+        <link rel = "icon" type = "image/png" href = "../common-resources/Logo.png">        <!--to show logo in title bar-->
+        <!-- For apple devices -->
+        <link rel = "apple-touch-icon" type = "image/png" href = "../common-resources/Logo.png"/>
+
         <link rel="stylesheet" type="text/css" href="CSS/External CSS-Form.css">
         <link rel="stylesheet" type="text/css" href="../common-resources/style.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
@@ -72,7 +76,7 @@
 
             <!-- <label for="rating">Rating*:</label></br> -->
             <fieldset onchange="starSelect()">
-                <legend>Rating*:</legend>                               <!--use this  ~~~ to turn all stars on before, use reverse flexbox css for order-->
+                <legend>Rating*:</legend>
                 <label for="ratingVeryPoor" id="labelVeryPoor"><i class="material-icons">star_border</i></label>
                 <label for="ratingPoor" id="labelPoor"><i class="material-icons">star_border</i></label>
                 <label for="ratingOk" id="labelOk"><i class="material-icons">star_border</i></label>

@@ -17,3 +17,9 @@ function formValidation(){
         " and your comment was, \""+commentsOut+'\"');
     }
 }
+
+function starSelect(){
+    var selectedRadio = document.getElementById("radioStars").value;
+
+    alert(selectedRadio);
+}

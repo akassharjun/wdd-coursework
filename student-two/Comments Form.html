@@ -65,18 +65,18 @@
             <input type="email" name="email" id="email" placeholder="Your E-mail" class="formInput" /><br/><br/>
 
             <!-- <label for="rating">Rating*:</label></br> -->
-            <fieldset>
+            <fieldset id="radioStars" onclick="starSelect()">
                 <legend>Rating*:</legend>                               <!--use this  ~~~ to turn all stars on before, use reverse flexbox css for order-->
-                <input type="radio" name="rating" value="very poor" id="ratingVeryPoor"/>
-                <input type="radio" name="rating" value="poor" id="ratingPoor"/>
-                <input type="radio" name="rating" value="ok" id="ratingOk"/>
-                <input type="radio" name="rating" value="good" id="ratingGood"/>
-                <input type="radio" name="rating" value="very good" id="ratingVeryGood"/><br/>
                 <label for="ratingVeryPoor"><i class="material-icons">star_border</i></label>
                 <label for="ratingPoor"><i class="material-icons">star_border</i></label>
                 <label for="ratingOk"><i class="material-icons">star_border</i></label>
                 <label for="ratingGood"><i class="material-icons">star_border</i></label>
                 <label for="ratingVeryGood"><i class="material-icons">star_border</i></label>
+                <input type="radio" name="rating" value="very poor" id="ratingVeryPoor"/>
+                <input type="radio" name="rating" value="poor" id="ratingPoor"/>
+                <input type="radio" name="rating" value="ok" id="ratingOk"/>
+                <input type="radio" name="rating" value="good" id="ratingGood"/>
+                <input type="radio" name="rating" value="very good" id="ratingVeryGood"/><br/>
             </fieldset>
             <br/><br/>
 

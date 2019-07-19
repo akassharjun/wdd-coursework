@@ -71,6 +71,7 @@ html,body{
 .imgDescriptionCommon{
     color:white;
     font-size: 25px;
+    font-weight: 500;
     position: absolute;
     top: 0px;
     padding:8px;

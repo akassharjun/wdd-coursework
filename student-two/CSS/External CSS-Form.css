@@ -10,7 +10,7 @@ body{
 
 form{
     font-weight:500;
-    font-size:17px;
+    font-size:1.05em;
     position: absolute;
     text-align:center;
     width: 350px;
@@ -24,7 +24,7 @@ form{
     -ms-transform: translate(-50%, -50%);               /*fallback*/
 }
 .formInput{
-    font-size:15px;
+    font-size:0.95em;
     border:0;
     text-align: center;
     border-radius: 6px;
@@ -43,9 +43,14 @@ form input[type=radio]{
 }
 .material-icons{
     cursor: pointer;
+    color: #F9BF3B;
+    transition: 0.2s;
 }
 .material-icons:hover{
-    transform: scale(1.3);
+    transform: scale(1.4);
+}
+#chosenRating{
+    font-size: 0.85em;
 }
 #comments{
     padding:15px 5px;
@@ -56,6 +61,7 @@ form input[type=radio]{
     padding:10px;
 }
 .buttons{
+    font-size: 0.95em;
     font-weight:600;
     border:2px solid;
     border-radius: 10px;

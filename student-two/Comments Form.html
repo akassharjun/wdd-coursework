@@ -12,6 +12,7 @@
 
         <script src="JavaScript/External JS - Form.js"></script>
         <script src="JavaScript/External JS - Common.js"></script>
+        <script src="../common-resources/script.js"></script>
         
     </head>
     <body>
@@ -25,8 +26,9 @@
                     <div class="dropdownMenu">
                         <div class="dropdownMenuDiv">Attractions</div>
                         <div class="dropdownMenuContent">
-                            <a href="../student-two/Rides page.html" id="activeLink">Rides</a>
+                            <a href="../student-two/Rides page.html">Rides</a>
                             <a href="../student-four/EXTRA PAGES/restaurant.html">Restaurants</a>
+                            <a href="../student-one/map-page.html">Park Map</a>
                         </div>
                     </div> 
                     <div class="dropdownMenu">
@@ -36,8 +38,9 @@
                             <a href="#">Special Events</a>
                             </div>
                     </div>  
-                    <a href="#news">Quiz</a>
-                    <a href="#news">Products</a>
+                    <a href="../image gallery/image-gallery.html">Image Gallery</a>
+                    <a href="../student-three/theme park/Quiz.html">Quiz</a>
+                    <a href="../Site map/Site map.html">Site Map</a>
                     <div class="dropdownMenu">
                         <div class="dropdownMenuDiv">About Us</div>
                         <div class="dropdownMenuContent">
@@ -46,7 +49,10 @@
                             <a href="../../student-three/theme park/CV.html">Student 3</a>
                             <a href="../CV/CV.html">Student 4</a>
                         </div>
-                    </div> 
+                    </div>
+                    <div class="navBarRight">
+                        <a href="../student-one/products-page.html">Products</a>
+                    </div>
                 </div>
         </header>
 
@@ -65,31 +71,37 @@
             <input type="email" name="email" id="email" placeholder="Your E-mail" class="formInput" /><br/><br/>
 
             <!-- <label for="rating">Rating*:</label></br> -->
-            <fieldset id="radioStars" onclick="starSelect()">
+            <fieldset onchange="starSelect()">
                 <legend>Rating*:</legend>                               <!--use this  ~~~ to turn all stars on before, use reverse flexbox css for order-->
-                <label for="ratingVeryPoor"><i class="material-icons">star_border</i></label>
-                <label for="ratingPoor"><i class="material-icons">star_border</i></label>
-                <label for="ratingOk"><i class="material-icons">star_border</i></label>
-                <label for="ratingGood"><i class="material-icons">star_border</i></label>
-                <label for="ratingVeryGood"><i class="material-icons">star_border</i></label>
+                <label for="ratingVeryPoor" id="labelVeryPoor"><i class="material-icons">star_border</i></label>
+                <label for="ratingPoor" id="labelPoor"><i class="material-icons">star_border</i></label>
+                <label for="ratingOk" id="labelOk"><i class="material-icons">star_border</i></label>
+                <label for="ratingGood" id="labelGood"><i class="material-icons">star_border</i></label>
+                <label for="ratingVeryGood" id="labelVeryGood"><i class="material-icons">star_border</i></label>
                 <input type="radio" name="rating" value="very poor" id="ratingVeryPoor"/>
                 <input type="radio" name="rating" value="poor" id="ratingPoor"/>
                 <input type="radio" name="rating" value="ok" id="ratingOk"/>
                 <input type="radio" name="rating" value="good" id="ratingGood"/>
                 <input type="radio" name="rating" value="very good" id="ratingVeryGood"/><br/>
+
+                <p id="chosenRating"></p>
             </fieldset>
-            <br/><br/>
+            <br/>
 
             <label for="comments">Comments:</label><br/>
             <textarea placeholder="Let us know how well you enjoyed!" name="comments" id="comments" class="formInput" cols="40" rows="3"></textarea><br/><br/>
             
-            <input type="reset" value="Reset Form" class="buttons" />
+            <input type="reset" value="Reset Form" class="buttons" onclick="resetStars()"/>
             <input type="submit" value="Submit Form" class="buttons" />
         
         </form>
 
 
         <footer>
+            <div id="fontSizeChange">
+		        <button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
+		        <button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
+	        </div>
             <div id="footLink">
                 <a href="../student-two/CV/CV.html">
                     <div>
@@ -110,7 +122,7 @@
             function displayLastEdit() {
                 var x = document.lastModified;
                 document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
-            }
+            }       
         </script>
     </body>
 </html>

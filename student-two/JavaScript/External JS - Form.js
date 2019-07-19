@@ -19,7 +19,64 @@ function formValidation(){
 }
 
 function starSelect(){
-    var selectedRadio = document.getElementById("radioStars").value;
+    var radioCheck = document.forms["commentsForm"]["rating"].value;
 
-    alert(selectedRadio);
+    switch(radioCheck){
+        case "very poor":
+            document.getElementById("labelVeryPoor").innerHTML = "<i class='material-icons' >star</i>";
+            document.getElementById("labelPoor").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelOk").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelGood").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelVeryGood").innerHTML = "<i class='material-icons'>star_border</i>";
+
+            document.getElementById("chosenRating").innerHTML = "Your rating: Very Poor";
+            break;
+        case "poor":
+            document.getElementById("labelVeryPoor").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelPoor").innerHTML = "<i class='material-icons'>star</i>";
+            document.getElementById("labelOk").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelGood").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelVeryGood").innerHTML = "<i class='material-icons'>star_border</i>";
+
+            document.getElementById("chosenRating").innerHTML = "Your rating: Poor";
+            break;
+        case "ok":
+            document.getElementById("labelVeryPoor").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelPoor").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelOk").innerHTML = "<i class='material-icons'>star</i>";
+            document.getElementById("labelGood").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelVeryGood").innerHTML = "<i class='material-icons'>star_border</i>";
+            
+            document.getElementById("chosenRating").innerHTML = "Your rating: OK";
+            break;
+        case "good":
+            document.getElementById("labelVeryPoor").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelPoor").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelOk").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelGood").innerHTML = "<i class='material-icons'>star</i>";
+            document.getElementById("labelVeryGood").innerHTML = "<i class='material-icons'>star_border</i>";
+
+            document.getElementById("chosenRating").innerHTML = "Your rating: Good";
+            break;
+        case "very good":
+            document.getElementById("labelVeryPoor").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelPoor").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelOk").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelGood").innerHTML = "<i class='material-icons'>star_border</i>";
+            document.getElementById("labelVeryGood").innerHTML = "<i class='material-icons'>star</i>";
+
+            document.getElementById("chosenRating").innerHTML = "Your rating: Very Good";
+            break;
+
+    }
+}
+
+function resetStars(){
+    document.getElementById("labelVeryPoor").innerHTML = "<i class='material-icons' >star_border</i>";
+    document.getElementById("labelPoor").innerHTML = "<i class='material-icons'>star_border</i>";
+    document.getElementById("labelOk").innerHTML = "<i class='material-icons'>star_border</i>";
+    document.getElementById("labelGood").innerHTML = "<i class='material-icons'>star_border</i>";
+    document.getElementById("labelVeryGood").innerHTML = "<i class='material-icons'>star_border</i>";
+
+    document.getElementById("chosenRating").innerHTML = "";
 }

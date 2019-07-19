@@ -88,7 +88,7 @@ footer{
 
 
 
-/*Navigation bar*/
+/*-------Navigation bar--------*/
 .navigationBar{
     overflow: hidden;
     background-color: #183048;
@@ -151,6 +151,9 @@ footer{
 }
 #activeLink{
     color: #00c2e4;
+}
+.navBarRight{
+    float:right;
 }
 #navLogo{
     height: 50px;   /*same height as the navbar*/

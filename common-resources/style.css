@@ -87,12 +87,13 @@ footer{
 }
 
 
-
+header{
+    background-color: #183048;
+}
 /*-------Navigation bar--------*/
 .navigationBar{
     overflow: hidden;
     background-color: #183048;
-    height: 50px;
 }
 .navigationBar a{
     float: left;

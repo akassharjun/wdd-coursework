@@ -16,16 +16,13 @@
     color:#183048;
     background: linear-gradient( to top,#00c2e4,white 50%);
 } */
-header{
-    height:120px;
-    background-color: #183048;
-}
 .navigationBar{
     clear: both;
 }
 #navLogo{
     height: 70px;
 }
+
 p{
     font-size: 20px;
     margin-left:50px;

@@ -171,6 +171,7 @@ header{
     background-color: #f8f8fb;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    border:0.1px solid #183048;
  }
 .fontSizeButton{
     padding: 5px 5px;

@@ -161,6 +161,20 @@ header{
     float:left;
     background-color: #183048;      /*for pages with white backgrounds*/
 }
+#searchForm{
+    display: inline; 
+}
+#searchBox{
+    border:0;
+    border-radius:4px;
+    padding:3px;
+    outline:none;
+    margin-top: 13px;
+    width:150px;
+}
+#searchBox:focus{
+    background-color:aliceblue;
+}
 
 /*------Font size manipulation------*/
 #fontSizeChange{

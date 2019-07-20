@@ -162,7 +162,7 @@ footer{
     background-color: #183048;      /*for pages with white backgrounds*/
 }
 
-/*Font size manipulation*/
+/*------Font size manipulation------*/
 #fontSizeChange{
     float: right; 
     margin-top: 10px;  

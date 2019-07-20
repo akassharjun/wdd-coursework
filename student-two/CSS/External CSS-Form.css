@@ -1,3 +1,6 @@
+#navLogo{
+    height: 50px;   /*same height as the navbar*/
+}
 body{
     background: #183048;
     margin:0;

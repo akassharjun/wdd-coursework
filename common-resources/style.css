@@ -156,7 +156,6 @@ footer{
     float:right;
 }
 #navLogo{
-    height: 50px;   /*same height as the navbar*/
     width: auto;
     float:left;
     background-color: #183048;      /*for pages with white backgrounds*/

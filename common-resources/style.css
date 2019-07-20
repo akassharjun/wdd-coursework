@@ -167,6 +167,10 @@ header{
     float: right; 
     margin-top: 10px;
     padding: 10px;
+    text-align: center;
+    background-color: #f8f8fb;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
  }
 .fontSizeButton{
     padding: 5px 5px;
@@ -174,10 +178,15 @@ header{
     border-radius: 10px;
     background: #fff;
     color: #000;
-    margin-right: 5px;
     transition: 0.2s;
+    width:30px;
+    outline: none;
+    font-weight: 500;
+    font-size: 1em;
+
 }
 .fontSizeButton:hover{
-    background: #10c2ef;
+    background: #00c2e4;
     color: #fff;
+    cursor: pointer;
 }

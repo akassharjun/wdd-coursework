@@ -67,6 +67,12 @@
             </p>
         </div>
 
+        <div id="fontSizeChange">
+            <span id="fontSizeManipulationLabel">Font Size:</span><br/>
+	        <button class="fontSizeButton" onclick="increaseFontSize()">+</button><br/>
+	        <button class="fontSizeButton" onclick="decreaseFontSize()">_</button>
+	    </div>
+
         <div id="formEnclosure">
             <form name="commentsForm" onsubmit="return formValidation()" method="POST">
                 <label for="customerName">Name*:</label><br/>
@@ -103,10 +109,6 @@
         </div>
 
         <footer>
-            <div id="fontSizeChange">
-		        <button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
-		        <button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
-	        </div>
             <div id="footLink">
                 <a href="../student-two/CV/CV.html">
                     <div>

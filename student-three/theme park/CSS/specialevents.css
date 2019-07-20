@@ -138,4 +138,14 @@ html, body{
   background-color: #4CAF50;
   color: white;
 }
+#navLogo{
+    height: 50px;   /*same height as the navbar*/
+}
+.navigationBar{
+    clear: both;
+}
+#navLogo{
+    height: 70px;
+}
+
             

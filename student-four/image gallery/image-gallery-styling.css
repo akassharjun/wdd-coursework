@@ -170,3 +170,6 @@ p{
 #descriptionLink{
     grid-row: 2/3;
 }
+#fontSizeManipulationLabel{
+    color:#fff;
+}

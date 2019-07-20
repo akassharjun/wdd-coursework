@@ -132,3 +132,7 @@ img{
 .descriptionOverlay div{
     float:left;
 }
+
+#fontSizeManipulationLabel{
+    color:#fff;
+}

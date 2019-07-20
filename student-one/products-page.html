@@ -9,15 +9,11 @@
 </head>
 <body>
 <header>
-	<!--<object type="image/svg+xml" id="logo" data="">
-		Logo image
-	</object>-->
-	<!--logo + navbar comes here-->
+	<img src="../common-resources/Logo.png" alt="logo" id="navLogo" />
 	<div class="navigationBar">
-		<a href="../student-two/Main Page.html">Home</a>
+		<a href="../student-two/Main Page.html" id="activeLink">Home</a>
 		<div class="dropdownMenu">
-			<div class="dropdownMenuDiv">Attractions
-			</div>
+			<div class="dropdownMenuDiv">Attractions</div>
 			<div class="dropdownMenuContent">
 				<a href="../student-two/Rides page.html">Rides</a>
 				<a href="../student-four/EXTRA PAGES/restaurant.html">Restaurants</a>
@@ -30,11 +26,18 @@
 				<a href="#">Special Events</a>
 			</div>
 		</div>
-		<a href="#news">Quiz</a>
-		<a href="#news">Products</a>
-		<a href="#news">About Us</a>
+		<a href="../student-three/theme%20park/Quiz.html">Quiz</a>
+		<a href="../student-one/products-page.html">Products</a>
+		<div class="dropdownMenu">
+			<div class="dropdownMenuDiv">About Us</div>
+			<div class="dropdownMenuContent">
+				<a href="../student-one/curriculum-vitae.html">Student 1</a>
+				<a href="../student-two/CV/CV.html">Student 2</a>
+				<a href="../student-three/theme park/CV.html">Student 3</a>
+				<a href="../student-four/CV/CV.html">Student 4</a>
+			</div>
+		</div>
 	</div>
-
 </header>
 
 <div class="row">
@@ -139,14 +142,37 @@
 </form>
 
 
-<div class="footer">
+<!--<div class="footer">-->
+<!--	-->
+<!--	<p>Author - Akassharjun Shanmugarajah</p>	-->
+<!--</div>-->
+<footer>
 	<div id="fontSizeChange">
-		<button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
-		<button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
+		<p>Font Size
+			<button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
+			<button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
+		</p>
 	</div>
-	<p>Author - Akassharjun Shanmugarajah</p>	
-</div>
+	<div id="footLink">
+		<a href="../student-one/curriculum-vitae.html">
+			<div>
+				<img src="../student-one/assets/profile_picture.png" alt="CV-IMAGE-AKASSH" />
+				<span>Akassharjun Shanmugarajah</span>
+			</div>
+		</a>
+		<span>UOW ID: w172307 | </span>
+		<span>IIT ID: 2018387</span>
+	</div>
+	<div id="lastEdit"></div>
+	<script>
+        displayLastEdit();
 
+        function displayLastEdit() {
+            var x = document.lastModified;
+            document.getElementById("lastEdit").innerHTML = "Last Modified: " + x;
+        }
+	</script>
+</footer>
 
 </body>
 

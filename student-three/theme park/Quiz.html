@@ -8,32 +8,28 @@
              
    </head>
    <body>
-      <header id="header">
-          <div id="logo">
-          </div>
-          <div class="navigationBar">
-              <a href="#home">Home</a>
+    <header>
+      <img src="../../common-resources/Logo.png" alt="logo" id="navLogo"/>
+      <div class="navigationBar">
+              <a href="../student-two/Main Page.html">Home</a>
               <div class="dropdownMenu">
-                  <div class="dropdownMenuDiv">Attractions 
-                  </div>
+                  <div class="dropdownMenuDiv">Attractions</div>
                   <div class="dropdownMenuContent">
-                      <a href="#">Rides</a>
-                      <a href="#">Restaurants</a>
+                      <a href="../student-two/Rides page.html" id="activeLink">Rides</a>
+                      <a href="../student-four/EXTRA PAGES/restaurant.html">Restaurants</a>
                   </div>
               </div> 
               <div class="dropdownMenu">
                   <div class="dropdownMenuDiv">Our Events 
                   </div>
-                  <div class="dropdownMenuContent">
+                      <div class="dropdownMenuContent">
                       <a href="#">Special Events</a>
-                  </div>
+                      </div>
               </div>  
               <a href="#news">Quiz</a>
               <a href="#news">Products</a>
-              <a href="#news">About Us</a>
               <div class="dropdownMenu">
-                  <div class="dropdownMenuDiv">Student Details 
-                  </div>
+                  <div class="dropdownMenuDiv">About Us</div>
                   <div class="dropdownMenuContent">
                       <a href="../../student-one/curriculum-vitae.html">Student 1</a>
                       <a href="../../student-two/CV/CV.html">Student 2</a>
@@ -41,20 +37,21 @@
                       <a href="../CV/CV.html">Student 4</a>
                   </div>
               </div> 
-              
-          </div>                  
-      </header>
+          </div>
+  </header>
+  <div id="breadContainer">
       <p id="breadCrumb">
-          You are here : 
+          <span style="color:black;">You are here :</span> 
           <a href="../../student-two/Main Page.html">Home</a> > 
           <span id="breadCrumbCurrent">Quiz</span>
-      </p> 
+      </p>
+  </div>    
         <div id="header">
         </div>
        <div id="main">
        </div>
     <div id="hello">   
-       <h1 style="margin-top:-1%;">Choose your category by clicking the logo</h1>
+       <h1 style="margin-top:0%;">Choose your category by clicking the logo</h1>
        <div id="marvel">
             <button onclick="rulesmarvel()" style="margin-top:-20%" id="MarvelQuestiones" value="false"><img src="images/ma.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
        </div>
@@ -386,6 +383,7 @@
           </div>
         </div>
        </div>
+       <div id="space" style="height:100px;"></div>
        <footer>
         <div id="footLink">
             <a href="CV.html">
@@ -476,6 +474,7 @@
                }
                else{
                 document.getElementById("main").innerHTML=document.getElementById("game").innerHTML;
+                alert("Fill the name please");
                }
            }
            function  MarvelQ(){
@@ -608,10 +607,13 @@
                     }
                 }
                 if (score>12){
-                   staus="Pass";
+                   status="Pass";
+                   document.body.style.backgroundColor="#147823";
                 }
                 else{
                    status="Fail";
+                   document.body.style.backgroundColor="#ab2b24";
+                
                 }
                 for(var i=0;i<10;i++){
                   if(scores[i]==-1){

@@ -1,11 +1,28 @@
-
-/* h1{
+/*#breadCrumb a:link{  <----This is in the common css---->
+    color:black;
+    text-decoration: none;
+}
+#breadCrumb a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+#breadCrumbCurrent{
+    color: blue
+}
+ h1{
     font-weight:300;
     text-align: center;
     padding:70px;
     color:#183048;
     background: linear-gradient( to top,#00c2e4,white 50%);
 } */
+.navigationBar{
+    clear: both;
+}
+#navLogo{
+    height: 70px;
+}
+
 p{
     font-size: 20px;
     margin-left:50px;
@@ -41,20 +58,6 @@ form select:hover{
     background-color: #183048;
     color:white;
 }
-
-/*#breadCrumb a:link{
-    color:black;
-    text-decoration: none;
-}
-
-#breadCrumb a:hover{
-    color: blue;
-    text-decoration: underline;
-}
-
-#breadCrumbCurrent{
-    color: blue
-}*/
 
 .flex-container{
     background-color: #f8f8fb;

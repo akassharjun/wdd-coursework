@@ -1,3 +1,6 @@
+#navLogo{
+    height: 50px;   /*same height as the navbar*/
+}
 body{
     background: #183048;
     margin:0;
@@ -8,7 +11,11 @@ body{
     background-color: #f8f8fb;
 }
 
-form{
+#formEnclosure{
+    height: 100vh;
+}
+
+#commentsForm{
     font-weight:500;
     font-size:1.05em;
     position: absolute;
@@ -90,11 +97,6 @@ form input[type=submit]:hover{
     background-color: lightseagreen;
     cursor: pointer;
     color: white;
-}
-
-footer{                     /*to appear below form*/
-    position: relative;
-    top:700px;
 }
 
 

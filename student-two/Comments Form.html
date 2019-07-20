@@ -39,25 +39,28 @@
                         <div class="dropdownMenuDiv">Our Events 
                         </div>
                             <div class="dropdownMenuContent">
-                            <a href="#">Special Events</a>
+                            <a href="../student-three/theme park/Special events.html">Special Events</a>
                             </div>
                     </div>  
-                    <a href="../image gallery/image-gallery.html">Image Gallery</a>
+                    <a href="../student-four/image gallery/image-gallery.html">Image Gallery</a>
                     <a href="../student-three/theme park/Quiz.html">Quiz</a>
-                    <a href="../Site map/Site map.html">Site Map</a>
+                    <a href="../student-four/Site map/site-map.html">Site Map</a>
                     <div class="dropdownMenu">
                         <div class="dropdownMenuDiv">About Us</div>
                         <div class="dropdownMenuContent">
-                            <a href="../../student-one/curriculum-vitae.html">Student 1</a>
-                            <a href="../../student-two/CV/CV.html">Student 2</a>
-                            <a href="../../student-three/theme park/CV.html">Student 3</a>
+                            <a href="../student-one/curriculum-vitae.html">Student 1</a>
+                            <a href="../student-two/CV/CV.html">Student 2</a>
+                            <a href="../student-three/theme park/CV.html">Student 3</a>
                             <a href="../CV/CV.html">Student 4</a>
                         </div>
                     </div>
                     <div class="navBarRight">
                         <a href="../student-one/products-page.html">Products</a>
+                        <form id="searchForm">
+                            <input type="text" name="searchBox" id="searchBox" placeholder="Search Content"/>
+                        </form>
                     </div>
-                </div>
+            </div>
         </header>
 
         <div id="breadContainer">                  <!--white strip for dark background-->
@@ -67,45 +70,48 @@
             </p>
         </div>
 
-        <form name="commentsForm" onsubmit="return formValidation()" method="POST">
-            <label for="customerName">Name*:</label><br/>
-            <input type="text" name="customerName" id="customerName" placeholder="Your Name" class="formInput" autofocus/><br/><br/>
+        <div id="fontSizeChange">
+            <span id="fontSizeManipulationLabel">Font Size:</span><br/>
+	        <button class="fontSizeButton" onclick="increaseFontSize()">+</button>
+	        <button class="fontSizeButton" onclick="decreaseFontSize()">-</button>
+	    </div>
 
-            <label for="email">E-mail:</label><br/>
-            <input type="email" name="email" id="email" placeholder="Your E-mail" class="formInput" /><br/><br/>
+        <div id="formEnclosure">
+            <form name="commentsForm" id="commentsForm" onsubmit="return formValidation()" method="POST">
+                <label for="customerName">Name*:</label><br/>
+                <input type="text" name="customerName" id="customerName" placeholder="Your Name" class="formInput" autofocus/><br/><br/>
 
-            <!-- <label for="rating">Rating*:</label></br> -->
-            <fieldset onchange="starSelect()">
-                <legend>Rating*:</legend>
-                <label for="ratingVeryPoor" id="labelVeryPoor"><i class="material-icons">star_border</i></label>
-                <label for="ratingPoor" id="labelPoor"><i class="material-icons">star_border</i></label>
-                <label for="ratingOk" id="labelOk"><i class="material-icons">star_border</i></label>
-                <label for="ratingGood" id="labelGood"><i class="material-icons">star_border</i></label>
-                <label for="ratingVeryGood" id="labelVeryGood"><i class="material-icons">star_border</i></label>
-                <input type="radio" name="rating" value="very poor" id="ratingVeryPoor"/>
-                <input type="radio" name="rating" value="poor" id="ratingPoor"/>
-                <input type="radio" name="rating" value="ok" id="ratingOk"/>
-                <input type="radio" name="rating" value="good" id="ratingGood"/>
-                <input type="radio" name="rating" value="very good" id="ratingVeryGood"/><br/>
+                <label for="email">E-mail:</label><br/>
+                <input type="email" name="email" id="email" placeholder="Your E-mail" class="formInput" /><br/><br/>
 
-                <p id="chosenRating"></p>
-            </fieldset>
-            <br/>
+                <!-- <label for="rating">Rating*:</label></br> -->
+                <fieldset onchange="starSelect()">
+                    <legend>Rating*:</legend>
+                    <label for="ratingVeryPoor" id="labelVeryPoor"><i class="material-icons">star_border</i></label>
+                    <label for="ratingPoor" id="labelPoor"><i class="material-icons">star_border</i></label>
+                    <label for="ratingOk" id="labelOk"><i class="material-icons">star_border</i></label>
+                    <label for="ratingGood" id="labelGood"><i class="material-icons">star_border</i></label>
+                    <label for="ratingVeryGood" id="labelVeryGood"><i class="material-icons">star_border</i></label>
+                    <input type="radio" name="rating" value="very poor" id="ratingVeryPoor"/>
+                    <input type="radio" name="rating" value="poor" id="ratingPoor"/>
+                    <input type="radio" name="rating" value="ok" id="ratingOk"/>
+                    <input type="radio" name="rating" value="good" id="ratingGood"/>
+                    <input type="radio" name="rating" value="very good" id="ratingVeryGood"/><br/>
 
-            <label for="comments">Comments:</label><br/>
-            <textarea placeholder="Let us know how well you enjoyed!" name="comments" id="comments" class="formInput" cols="40" rows="3"></textarea><br/><br/>
+                    <p id="chosenRating"></p>
+                </fieldset>
+                <br/>
+
+                <label for="comments">Comments:</label><br/>
+                <textarea placeholder="Let us know how well you enjoyed!" name="comments" id="comments" class="formInput" cols="40" rows="3"></textarea><br/><br/>
+                
+                <input type="reset" value="Reset Form" class="buttons" onclick="resetStars()"/>
+                <input type="submit" value="Submit Form" class="buttons" />
             
-            <input type="reset" value="Reset Form" class="buttons" onclick="resetStars()"/>
-            <input type="submit" value="Submit Form" class="buttons" />
-        
-        </form>
-
+            </form>
+        </div>
 
         <footer>
-            <div id="fontSizeChange">
-		        <button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
-		        <button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
-	        </div>
             <div id="footLink">
                 <a href="../student-two/CV/CV.html">
                     <div>

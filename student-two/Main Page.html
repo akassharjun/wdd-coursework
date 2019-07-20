@@ -6,6 +6,9 @@
         <title>
             SuperHero-CrossLand
         </title>
+        <link rel = "icon" type = "image/png" href = "../common-resources/Logo.png">        <!--to show logo in title bar-->
+        <!-- For apple devices -->
+        <link rel = "apple-touch-icon" type = "image/png" href = "../common-resources/Logo.png"/>
         
         <link rel="stylesheet" type="text/css" href="CSS/External CSS-Main.css">
         <link rel="stylesheet" type="text/css" href="../common-resources/style.css">
@@ -32,12 +35,12 @@
                         <div class="dropdownMenuDiv">Our Events 
                         </div>
                             <div class="dropdownMenuContent">
-                            <a href="#">Special Events</a>
+                            <a href="../student-three/theme park/Special events.html">Special Events</a>
                             </div>
                     </div>  
-                    <a href="../image gallery/image-gallery.html">Image Gallery</a>
+                    <a href="../student-four/image gallery/image-gallery.html">Image Gallery</a>
                     <a href="../student-three/theme park/Quiz.html">Quiz</a>
-                    <a href="../Site map/Site map.html">Site Map</a>
+                    <a href="../student-four/Site map/site-map.html">Site Map</a>
                     <div class="dropdownMenu">
                         <div class="dropdownMenuDiv">About Us</div>
                         <div class="dropdownMenuContent">
@@ -46,9 +49,12 @@
                             <a href="../student-three/theme park/CV.html">Student 3</a>
                             <a href="../student-four/CV/CV.html">Student 4</a>
                         </div>
-                    </div> 
+                    </div>
                     <div class="navBarRight">
                         <a href="../student-one/products-page.html">Products</a>
+                        <form id="searchForm">
+                            <input type="text" name="searchBox" id="searchBox" placeholder="Search Content"/>
+                        </form>
                     </div>
                 </div>
         </header>
@@ -109,7 +115,7 @@
             </div>
             <div class="imgSmall">
                 <div class="imgSmallLeft">
-                    <a href="../student-one/map-page.html">      <!--Check for correct page link-->
+                    <a href="../student-one/map-page.html">
                         <span class="imgDescriptionCommon">Park Map</span>
                         <img src="images/MainPG-images/Map.jpg" alt="Map"/>
                     </a>
@@ -171,6 +177,8 @@
             var x = document.lastModified;
             document.getElementById("lastEdit").innerHTML = "Last Modified: "+x;
             }
+
+            window.onscroll = function() {toTopDisplay(); hideWelcome();}           //making sure that common onscroll isn't overridden by Main page onscroll JS
         </script>
     </body>
 </html>

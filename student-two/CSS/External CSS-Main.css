@@ -1,6 +1,9 @@
 html,body{
     height:100%;                    /*to get parallax cover to fill page*/
 }
+#navLogo{
+    height: 50px;   /*same height as the navbar*/
+}
 
 #coverImage{
     /*background-image: url("../images/MainPG-images/CoverPhoto.jpg");*/

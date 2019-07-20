@@ -87,12 +87,13 @@ footer{
 }
 
 
-
+header{
+    background-color: #183048;
+}
 /*-------Navigation bar--------*/
 .navigationBar{
     overflow: hidden;
     background-color: #183048;
-    height: 50px;
 }
 .navigationBar a{
     float: left;
@@ -156,17 +157,35 @@ footer{
     float:right;
 }
 #navLogo{
-    height: 50px;   /*same height as the navbar*/
     width: auto;
     float:left;
     background-color: #183048;      /*for pages with white backgrounds*/
 }
+#searchForm{
+    display: inline; 
+}
+#searchBox{
+    border:0;
+    border-radius:4px;
+    padding:3px;
+    outline:none;
+    margin-top: 13px;
+    width:150px;
+}
+#searchBox:focus{
+    background-color:aliceblue;
+}
 
-/*Font size manipulation*/
+/*------Font size manipulation------*/
 #fontSizeChange{
     float: right; 
     margin-top: 5px;
     padding: 10px;
+    text-align: center;
+    background-color: #f8f8fb;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border:0.1px solid #183048;
  }
 .fontSizeButton{
     padding: 5px 5px;
@@ -174,10 +193,15 @@ footer{
     border-radius: 10px;
     background: #fff;
     color: #000;
-    margin-right: 5px;
     transition: 0.2s;
+    width:30px;
+    outline: none;
+    font-weight: 500;
+    font-size: 1em;
+
 }
 .fontSizeButton:hover{
-    background: #10c2ef;
+    background: #00c2e4;
     color: #fff;
+    cursor: pointer;
 }

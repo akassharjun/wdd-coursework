@@ -4,7 +4,50 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" href="CSS/homepage.css">
         <link rel="stylesheet" type="text/css" href="../../common-resources/style.css">
-		<title>About Us</title>	
+        <title>About Us</title>	
+        <style>
+             #aagash{
+            border-radius: 60%;
+            width: 15%;
+            margin-left:30%;
+            float: left;
+            margin-top: 2%;
+            transition: transform 0.2s;
+        }
+        #dinu {
+            border-radius: 60%;
+            width: 15%;
+            margin-right: 30%;
+            float: right;
+            margin-top: 2%;
+            transition: transform 0.2s;
+        }
+        #vis {
+            border-radius: 60%;
+            width: 15%;
+            margin-left: 10%;
+            margin-top: 0%;
+            float: left;
+            transition: transform 0.2s;
+        }
+        #dini {
+            border-radius: 60%;
+            width: 15%;
+            float: right;
+            margin-top: 0%;
+            margin-right: 10%;
+            transition: transform 0.2s;
+        }
+        #dinu:hover,
+        #aagash:hover,
+        #vis:hover,
+        #dini:hover {
+            -ms-transform: scale(2);
+            -webkit-transform: scale(2);
+            transform: scale(1.5);
+        }
+		
+        </style>
 	</head>
 	<body>
         <header id="header">
@@ -48,12 +91,7 @@
             <a href="../../student-two/Main Page.html">Home</a> > 
             <span id="breadCrumbCurrent">Quiz</span>
         </p> 
-		<!-- <h1>Meet The Team</h1>
-		<img src="images/aagash.jpg "  alt="Akassh" onmouseover="aagash()" onmouseout="aagashout()" id="aagash" >
-		<img src="images/dinuka.jpg" alt="Dinuka" onmouseover="dinu()" onmouseout="dinuout()" id="dinu" />
-		<img src="images/dini.jpg" alt="Dinesh" onmouseover="dini()" onmouseout="diniout()" id="dini" />
-		<img src="images/visal.jpg" alt="Visal" onmouseover="vis()" onmouseout="visout()" id="vis" />
-        <div id="info"></div>
+       
         <footer>
                 <div id="footLink">
                     <a href="CV.html">
@@ -64,7 +102,7 @@
                     <span>IIT ID: 2018424</span>
                 </div>
                 <div id="lastEdit"></div>
-        </footer> -->
+        </footer>
         <script>
                function aagash(){
                       document.getElementById("info").innerHTML="Akassharjun Shanmugarajah	<br/>Student 1";

@@ -1,18 +1,20 @@
-#aagash{
+                       #aagash{
 				border-radius: 60%;
 				width: 15%;
 				margin-left:30%;
 				float: left;
-				margin-top: 5%;
+				margin-top: 2%;
 				transition: transform 0.2s;
+                                
 			}
 			#dinu {
 				border-radius: 60%;
 				width: 15%;
 				margin-right: 30%;
 				float: right;
-				margin-top: 5%;
+				margin-top: 2%;
 				transition: transform 0.2s;
+                                
 			}
 			#vis {
 				border-radius: 60%;
@@ -21,6 +23,7 @@
 				margin-top: 0%;
 				float: left;
 				transition: transform 0.2s;
+                                
 			}
 			#dini {
 				border-radius: 60%;
@@ -29,6 +32,7 @@
 				margin-top: 0%;
 				margin-right: 10%;
 				transition: transform 0.2s;
+                                
 			}
 			#dinu:hover,
 			#aagash:hover,
@@ -39,16 +43,17 @@
 				transform: scale(1.5);
 			}
 			#info {
-				margin-top: 30%;
+				margin-top: 25%;
 				margin-left: 30%;
 				color: black;
 				width: 35%;
 				height: 150%;
 				text-align: center;
 				font-size: 300%;
+                                
 			}
 			h1{
 				text-align:center;
-color:black;
+                                 color:black;
 			}
 

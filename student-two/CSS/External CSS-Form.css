@@ -11,6 +11,10 @@ body{
     background-color: #f8f8fb;
 }
 
+#formEnclosure{
+    height: 100vh;
+}
+
 form{
     font-weight:500;
     font-size:1.05em;
@@ -93,11 +97,6 @@ form input[type=submit]:hover{
     background-color: lightseagreen;
     cursor: pointer;
     color: white;
-}
-
-footer{                     /*to appear below form*/
-    position: relative;
-    top:700px;
 }
 
 

@@ -24,7 +24,7 @@ form{
     margin: auto;
     margin-top: 20px;
     background: #ccc;
-    width: 650px;
+    width: 850px;
     padding: 20px;
     border-radius: 20px;
 }
@@ -136,3 +136,4 @@ img{
 #fontSizeManipulationLabel{
     color:#fff;
 }
+

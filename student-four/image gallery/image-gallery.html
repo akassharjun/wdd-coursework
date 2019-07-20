@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <title>Image Gallery</title>
         <!--external css and javascript files-->
@@ -16,7 +16,7 @@
 
             <!--Navigation menu-->
             <div class="navigationBar">
-                <a href="../../student-two/Rides page.html">Home</a>
+                <a href="../../student-two/Main Page.html">Home</a>
                 <div class="dropdownMenu">
                     <div class="dropdownMenuDiv">Attractions 
                     </div>
@@ -47,12 +47,12 @@
                         <a href="../CV/CV.html">Student 4</a>
                     </div>
                 </div> 
-                        <!--font size manipulation-->
-        <div id="fontSizeChange">
-            <span id="fontSizeManipulationLabel">Font Size:</span>
-            <button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
-            <button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
-        </div>                
+                    <!--font size manipulation-->
+                    <div id="fontSizeChange">
+                        <span id="fontSizeManipulationLabel">Font Size:</span>
+                        <button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
+                        <button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
+                    </div>                
             </div>     
                          
         </header>  
@@ -62,35 +62,38 @@
         </div>  
 
         <!--Breadcrumb Trail-->
-            <p id="breadCrumb">
-                You are here : 
-                <a href="../../student-two/Main Page.html">Home</a> > Attractions >
-                <span id="breadCrumbCurrent">Image Gallery</span>
-            </p> 
+        <p id="breadCrumb">
+            You are here : 
+            <a href="../../student-two/Main Page.html">Home</a> > Attractions >
+            <span id="breadCrumbCurrent">Image Gallery</span>
+        </p> 
 
 
         <div id="formDivision">
-            <form id=""
             <form id="form2">
-                <select id="BGColourSelection" class="colourSelection" onchange="changeBGColour()">
-                    <option value="SelectBGColour">Select a Background colour</option>
-                    <option value = "BGColour1">Black</option>
-                    <option value = "BGColour2">Yellow ochre</option>
-                    <option value = "BGColour3">Crimson</option>
-                    <option value = "BGColour4">Sea blue</option>
-                    <option value = "BGColour5">Grey</option>
-                    <option value = "BGColour6">Pink</option>
-                </select>
+                <label>Select Background Colour : 
+                    <select id="BGColourSelection" class="colourSelection" onchange="changeBGColour()">
+                        <option value="SelectBGColour">Select a Background colour</option>
+                        <option value = "BGColour1">Black</option>
+                        <option value = "BGColour2">Yellow ochre</option>
+                        <option value = "BGColour3">Crimson</option>
+                        <option value = "BGColour4">Sea blue</option>
+                        <option value = "BGColour5">Grey</option>
+                        <option value = "BGColour6">Pink</option>
+                    </select>
+                </label>
 
-                <select id="fontColourSelection" class="colourSelection" onchange="changeBGColour()">
-                    <option value = "SelectFontColour">Select a Font colour</option>
-                    <option value = "fontColour1">Yellow</option>
-                    <option value = "fontColour2">Red</option>
-                    <option value = "fontColour3">Ash</option>
-                    <option value = "fontColour4">Green</option>
-                    <option value = "fontColour5">Blue</option>
-                    <option value = "fontColour6">White</option>
-                </select>
+                <label>Select Font Colour : 
+                    <select id="fontColourSelection" class="colourSelection" onchange="changeBGColour()">
+                        <option value = "SelectFontColour">Select a Font colour</option>
+                        <option value = "fontColour1">Yellow</option>
+                        <option value = "fontColour2">Red</option>
+                        <option value = "fontColour3">Ash</option>
+                        <option value = "fontColour4">Green</option>
+                        <option value = "fontColour5">Blue</option>
+                        <option value = "fontColour6">White</option>
+                    </select>
+                </label>
                 <input type="reset" value="Reset" id="resetButton" class="colourSelectionButtons" onclick="resetPage();">
             </form>
             <br>
@@ -98,7 +101,7 @@
             <!--Thumbnail images-->
             <div id="gallery" class="galleryDivision">
                     <div id="image1" class="galleryImages">
-                        <img src="Assets\galleryImages\gallery-image-1.jpg" alt="Universal Studios Gate" class="images" id="galleryImage1" onmouseenter="image1Description();">
+                        <img src="Assets\galleryImages\gallery-image-1.jpg" alt="Castle Doom" class="images" id="galleryImage1" onmouseenter="image1Description();">
                     </div>
                     <div id="image2" class="galleryImages">
                         <img src="Assets\galleryImages\gallery-image-2.jpg" alt="Themed Restaurants" class="images" id="galleryImage2" onmouseenter="image2Description();">
@@ -107,10 +110,10 @@
                         <img src="Assets\galleryImages\gallery-image-3.jpg" alt="Studio tours" class="images" id="galleryImage3" onmouseenter="image3Description();">
                     </div>
                     <div id="image4" class="galleryImages">
-                        <img src="Assets\galleryImages\gallery-image-4.jpg" alt="Volcano Park" class="images" id="galleryImage4" onmouseenter="image4Description();">
+                        <img src="Assets\galleryImages\gallery-image-4.jpg" alt="The Walkthrough" class="images" id="galleryImage4" onmouseenter="image4Description();">
                     </div>
                     <div id="image5" class="galleryImages">
-                        <img src="Assets\galleryImages\gallery-image-5.jpg" alt="Light show at teh castle" class="images" id="galleryImage5" onmouseenter="image5Description();">
+                        <img src="Assets\galleryImages\gallery-image-5.jpg" alt="Summer Paradise" class="images" id="galleryImage5" onmouseenter="image5Description();">
                     </div>
         
                 </div>
@@ -160,19 +163,19 @@
         <!--all full sized images of thumbnail-->
         <div id="hiddenImage">
             <div id="hiddenImage1">
-                <img src="Assets\galleryImages\gallery-image-1.jpg" height="100%" width="100%">
+                <img src="Assets\galleryImages\gallery-image-1.jpg" alt="Castle Doom" height="100%" width="100%" alt="">
             </div>
             <div id="hiddenImage2">
-                <img src="Assets\galleryImages\gallery-image-2.jpg" height="100%" width="100%">
+                <img src="Assets\galleryImages\gallery-image-2.jpg" alt="Themed Restaurants" height="100%" width="100%">
             </div>
             <div id="hiddenImage3">
-                <img src="Assets\galleryImages\gallery-image-3.jpg" height="100%" width="100%">
+                <img src="Assets\galleryImages\gallery-image-3.jpg" alt="Studio tours" height="100%" width="100%">
             </div>
             <div id="hiddenImage4">
-                <img src="Assets\galleryImages\gallery-image-4.jpg" height="100%" width="100%">
+                <img src="Assets\galleryImages\gallery-image-4.jpg" alt="The Walkthrough" height="100%" width="100%">
             </div>
             <div id="hiddenImage5">
-                <img src="Assets\galleryImages\gallery-image-5.jpg" height="100%" width="100%">
+                <img src="Assets\galleryImages\gallery-image-5.jpg" alt="Summer Paradise" height="100%" width="100%">
             </div>
         </div>
     </div>
@@ -180,7 +183,7 @@
         <div id="footLink">
             <a href="../student-two/CV/CV.html">
                 <div>
-                    <img src="../CV/images/CV-visal.jpg"/>
+                    <img src="../CV/images/CV-visal.jpg" alt="Visal Rajapakse"/>
                     <span>Visal Rajapakse</span>
                 </div>
             </a>

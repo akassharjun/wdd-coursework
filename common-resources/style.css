@@ -165,7 +165,7 @@ footer{
 /*Font size manipulation*/
 #fontSizeChange{
     float: right; 
-    margin-top: 10px;
+    margin-top: 5px;
     padding: 10px;
  }
 .fontSizeButton{

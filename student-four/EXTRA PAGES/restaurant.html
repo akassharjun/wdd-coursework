@@ -32,7 +32,6 @@
                     </div>
                 </div>  
                 <a href="../../student-three/theme park/Quiz.html">Quiz</a>
-                <a href="#../../../../student-one/products-page.html">Products</a>
                 <a href="../image gallery/image-gallery.html">Image Gallery</a>
                 <a href="../Site map/site-map.html">Site Map</a>
                 <div class="dropdownMenu">
@@ -45,12 +44,12 @@
                         <a href="../CV/CV.html">Student 4</a>
                     </div>
                 </div> 
-                    <!--font size manipulation-->
-                    <div id="fontSizeChange">
-                        <span id="fontSizeManipulationLabel">Font Size:</span>
-                        <button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
-                        <button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
-                    </div> 
+                <div class="navBarRight">
+                    <a href="../../student-one/products-page.html">Products</a>
+                    <form id="searchForm">
+                        <input type="text" name="searchBox" id="searchBox" placeholder="Search Content"/>
+                    </form>
+                </div>
             </div>                  
         </header>
             <div>
@@ -68,7 +67,7 @@
                 <!--Form components-->
                 <div id="formBlock">
                     <div id="formDiv">
-                        <form action="post"> 
+                        <form action="post" id="sortRestaurant"> 
                             <label>Filter restaurants : 
                                 <select name="selectOption" id="diningOption">
                                     <option value="SelectAnOption" selected>Select an option</option>

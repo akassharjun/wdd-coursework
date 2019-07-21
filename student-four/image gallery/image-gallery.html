@@ -4,7 +4,8 @@
         <!--external css and javascript files-->
         <link rel="stylesheet" type="text/css" href="image-gallery-styling.css">
         <link rel="stylesheet" type="text/css" href="../../common-resources/style.css">
-        <script type="text/javascript" src="image-gallery-script.js"></script>        
+        <script type="text/javascript" src="image-gallery-script.js"></script>
+        <script type="text/javascript" src="../../common-resources/script.js"></script>     
        
     </head>
     <body>       
@@ -34,7 +35,6 @@
                     </div>
                 </div>  
                 <a href="../../student-three/theme park/Quiz.html">Quiz</a>
-                <a href="../../student-one/products-page.html">Products</a>
                 <a href="../image gallery/image-gallery.html"  id="activeLink">Image Gallery</a>
                 <a href="../Site map/site-map.html">Site Map</a>
                 <div class="dropdownMenu">
@@ -47,15 +47,20 @@
                         <a href="../CV/CV.html">Student 4</a>
                     </div>
                 </div> 
-                    <!--font size manipulation-->
-                    <div id="fontSizeChange">
-                        <span id="fontSizeManipulationLabel">Font Size:</span>
-                        <button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
-                        <button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
-                    </div>                
+                <div class="navBarRight">
+                    <a href="../../student-one/products-page.html">Products</a>
+                    <form id="searchForm">
+                        <input type="text" name="searchBox" id="searchBox" placeholder="Search Content"/>
+                    </form>
+                </div>             
             </div>     
                          
-        </header>  
+        </header style="Background: #000;">
+        <div id="fontSizeChangeImageGallery">
+            <span id="fontSizeManipulationLabel">Font Size:</span><br/>
+            <button class="fontSizeButton" onclick="increaseFontSize()">+</button>
+            <button class="fontSizeButton" onclick="decreaseFontSize()">-</button>
+        </div>  
         
         <div class="pageHeading" id="imageGalleryHeading">
             <h1>Take a look at our park.</h1>
@@ -68,33 +73,42 @@
             <span id="breadCrumbCurrent">Image Gallery</span>
         </p> 
 
+        
+
 
         <div id="formDivision">
             <form id="form2">
-                <label>Select Background Colour : 
-                    <select id="BGColourSelection" class="colourSelection" onchange="changeBGColour()">
-                        <option value="SelectBGColour">Select a Background colour</option>
-                        <option value = "BGColour1">Black</option>
-                        <option value = "BGColour2">Yellow ochre</option>
-                        <option value = "BGColour3">Crimson</option>
-                        <option value = "BGColour4">Sea blue</option>
-                        <option value = "BGColour5">Grey</option>
-                        <option value = "BGColour6">Pink</option>
-                    </select>
-                </label>
+                <div id="formContainer">
+                    <label>Select Background Colour : 
+                        <select id="BGColourSelection" class="colourSelection" onchange="changeBGColour()">
+                            <option value="SelectBGColour">Select a Background colour</option>
+                            <option value = "BGColour1">Black</option>
+                            <option value = "BGColour2">Yellow ochre</option>
+                            <option value = "BGColour3">Crimson</option>
+                            <option value = "BGColour4">Sea blue</option>
+                            <option value = "BGColour5">Grey</option>
+                            <option value = "BGColour6">Pink</option>
+                        </select>
+                    </label>
+                    <br>
 
-                <label>Select Font Colour : 
-                    <select id="fontColourSelection" class="colourSelection" onchange="changeBGColour()">
-                        <option value = "SelectFontColour">Select a Font colour</option>
-                        <option value = "fontColour1">Yellow</option>
-                        <option value = "fontColour2">Red</option>
-                        <option value = "fontColour3">Ash</option>
-                        <option value = "fontColour4">Green</option>
-                        <option value = "fontColour5">Blue</option>
-                        <option value = "fontColour6">White</option>
-                    </select>
-                </label>
-                <input type="reset" value="Reset" id="resetButton" class="colourSelectionButtons" onclick="resetPage();">
+                    <label>Select Font Colour : &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;       
+                        <select id="fontColourSelection" class="colourSelection" onchange="changeBGColour()">
+                            <option value = "SelectFontColour">Select a Font colour</option>
+                            <option value = "fontColour1">Yellow</option>
+                            <option value = "fontColour2">Red</option>
+                            <option value = "fontColour3">Ash</option>
+                            <option value = "fontColour4">Green</option>
+                            <option value = "fontColour5">Blue</option>
+                            <option value = "fontColour6">White</option>
+                        </select>
+                    </label>
+                    <br>
+                    <div id="resetButtonContainer">
+                        <input type="reset" value="Reset" id="resetButton" class="colourSelectionButtons" onclick="resetPage();">
+                    </div>
+                    
+            </div>
             </form>
             <br>
             <p id="colorSwitchGuide">Hover over the thumbnails and witness the magic.</p>
@@ -181,7 +195,7 @@
     </div>
     <footer>
         <div id="footLink">
-            <a href="../student-two/CV/CV.html">
+            <a href="../CV/CV.html">
                 <div>
                     <img src="../CV/images/CV-visal.jpg" alt="Visal Rajapakse"/>
                     <span>Visal Rajapakse</span>

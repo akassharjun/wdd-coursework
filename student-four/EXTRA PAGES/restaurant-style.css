@@ -20,7 +20,7 @@ body{
     height: 100px;
     text-align: center; 
 }
-form{
+#sortRestaurant{
     margin: auto;
     margin-top: 20px;
     background: #ccc;
@@ -136,4 +136,13 @@ img{
 #fontSizeManipulationLabel{
     color:#fff;
 }
+/*navbar logo*/
+.navigationBar{
+    clear: both;
+}
+#navLogo{
+    height: 70px;
+}
+
+
 

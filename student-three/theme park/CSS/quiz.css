@@ -196,3 +196,13 @@ border-radius:20px;
 #breadContainer{
     background-color: #f8f8fb;
 }
+#navLogo{
+    height: 50px;   /*same height as the navbar*/
+}
+.navigationBar{
+    clear: both;
+}
+#navLogo{
+    height: 70px;
+}
+

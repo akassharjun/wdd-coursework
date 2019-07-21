@@ -14,6 +14,20 @@
     background: #f8f8fb;
     border-radius: 10px;
 }
+
+#formContainer{
+    margin: auto;
+    width: 500px;
+    justify-content: space-evenly;
+
+}
+
+#resetButtonContainer{
+    text-align: center;
+    width: 500px;
+}
+/*drop down labels*/
+
 /*form components*/
 .colourSelection{
     padding: 10px;
@@ -167,9 +181,25 @@ p{
     object-fit: cover;
 }
 
-#descriptionLink{
-    grid-row: 2/3;
-}
 #fontSizeManipulationLabel{
     color:#fff;
+}
+
+/*navbar logo*/
+.navigationBar{
+    clear: both;
+}
+#navLogo{
+    height: 70px;
+}
+/*font manipulation*/
+#fontSizeChangeImageGallery{
+    float: right; 
+    margin-top: 5px;
+    padding: 10px;
+    text-align: center;
+    background-color: #183048;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border:0.1px solid #183048;
 }

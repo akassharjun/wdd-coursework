@@ -187,8 +187,8 @@ header{
 
 /*------Font size manipulation------*/
 .fontSizeChange{
-    float: right; 
-    /*margin-top: 10px;*/
+    float: right;
+    margin-top: 5px;
     padding: 10px;
     text-align: center;
     /*background-color: #f8f8fb;*/

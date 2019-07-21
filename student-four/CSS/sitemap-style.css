@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
 }
-body{
-    }
+
+/*Creating the grid layout for fluid design*/
 #bodyWrapper{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -11,6 +11,8 @@ body{
     grid-template-columns: repeat(12,8.33333%);
     grid-template-rows: repeat(12,105px);
 }
+
+/*Aligning all components according to grid*/
 .svgElements{
     margin: auto;
     padding: 20px;
@@ -92,7 +94,7 @@ body{
     box-shadow: 10px 10px 10pxs #250069;
 }     
 
-/*SVG lines used to connect part*/
+/*SVG lines used to connect*/
 #svgLine1{
     grid-column: 6/8;
     grid-row: 2/3;
@@ -198,3 +200,10 @@ footer{
     margin-bottom: auto;
 }
 
+/*navbar logo*/
+.navigationBar{
+    clear: both;
+}
+#navLogo{
+    height: 70px;
+}

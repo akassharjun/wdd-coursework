@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
     <head>
         <title>Themed restaurants</title>
         <link rel="stylesheet" type="text/css" href="../../common-resources/style.css">
@@ -14,7 +14,7 @@
                 <img src="../../common-resources/Logo.png" alt="logo" id="navLogo" style="border-radius: 0 0 0 0"/>
             </a>
             <div class="navigationBar">
-                <a href="#../../../../student-two/Main Page.html">Home</a>
+                <a href="../../student-two/Main Page.html">Home</a>
                 <div class="dropdownMenu">
                     <div class="dropdownMenuDiv">Attractions 
                     </div>
@@ -32,7 +32,6 @@
                     </div>
                 </div>  
                 <a href="../../student-three/theme park/Quiz.html">Quiz</a>
-                <a href="#../../../../student-one/products-page.html">Products</a>
                 <a href="../image gallery/image-gallery.html">Image Gallery</a>
                 <a href="../Site map/site-map.html">Site Map</a>
                 <div class="dropdownMenu">
@@ -45,12 +44,12 @@
                         <a href="../CV/CV.html">Student 4</a>
                     </div>
                 </div> 
-                    <!--font size manipulation-->
-                    <div id="fontSizeChange">
-                        <span id="fontSizeManipulationLabel">Font Size:</span>
-                        <button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
-                        <button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
-                    </div> 
+                <div class="navBarRight">
+                    <a href="../../student-one/products-page.html">Products</a>
+                    <form id="searchForm">
+                        <input type="text" name="searchBox" id="searchBox" placeholder="Search Content"/>
+                    </form>
+                </div>
             </div>                  
         </header>
             <div>
@@ -68,15 +67,17 @@
                 <!--Form components-->
                 <div id="formBlock">
                     <div id="formDiv">
-                        <form action="post"> 
-                            <select name="selectOption" id="diningOption">
-                                <option value="SelectAnOption" selected>Select an option</option>
-                                <option value="Buffet">Buffets</option>
-                                <option value="Restaurant">Restaurants</option>
-                                <option value="Vegetarian">Vegetarian Options</option>
-                                <option value="Candy">Candy Shops</option>
-                                <option value="Icecream">Icecream Shops</option>
-                            </select>
+                        <form action="post" id="sortRestaurant"> 
+                            <label>Filter restaurants : 
+                                <select name="selectOption" id="diningOption">
+                                    <option value="SelectAnOption" selected>Select an option</option>
+                                    <option value="Buffet">Buffets</option>
+                                    <option value="Restaurant">Restaurants</option>
+                                    <option value="Vegetarian">Vegetarian Options</option>
+                                    <option value="Candy">Candy Shops</option>
+                                    <option value="Icecream">Icecream Shops</option>
+                                </select>
+                            </label>
                             <input type="button" name="sortDining" id="diningSortButton" value="Sort" onclick="changeDiningOption();">
                             <input type="reset" name="resetDining" id="diningResetButton" value="Reset" onclick="resetDiningOption();">
                         </form>
@@ -221,7 +222,7 @@
             <div id="footLink">
                 <a href="../student-two/CV/CV.html">
                     <div>
-                        <img src="../CV/images/CV-visal.jpg"/>
+                        <img src="../CV/images/CV-visal.jpg" alt="Visal Rajapakse"/>
                         <span>Visal Rajapakse</span>
                     </div>
                 </a>

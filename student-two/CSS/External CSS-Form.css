@@ -100,5 +100,10 @@ form input[type=submit]:hover{
     color: white;
 }
 
+.fontSizeChange{
+    background-color: #f8f8fb;
+}
 
-/*need to try to change radios to stars*/
+.fontSizeManipulationLabel{
+    color: #000;
+}

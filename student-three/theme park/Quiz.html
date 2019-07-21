@@ -8,37 +8,42 @@
              
    </head>
    <body>
-    <header>
-      <img src="../../common-resources/Logo.png" alt="logo" id="navLogo"/>
-      <div class="navigationBar">
-              <a href="../student-two/Main Page.html">Home</a>
-              <div class="dropdownMenu">
-                  <div class="dropdownMenuDiv">Attractions</div>
-                  <div class="dropdownMenuContent">
-                      <a href="../student-two/Rides page.html" id="activeLink">Rides</a>
-                      <a href="../student-four/EXTRA PAGES/restaurant.html">Restaurants</a>
-                  </div>
-              </div> 
-              <div class="dropdownMenu">
-                  <div class="dropdownMenuDiv">Our Events 
-                  </div>
+      <header>
+          <a href="../../student-two/Main Page.html">
+          <img src="../../common-resources/Logo.png" alt="logo" id="navLogo"/>
+         </a>
+          <div class="navigationBar">
+                  <a href="../../student-two/Main Page.html">Home</a>
+                  <div class="dropdownMenu">
+                      <div class="dropdownMenuDiv">Attractions</div>
                       <div class="dropdownMenuContent">
-                      <a href="#">Special Events</a>
+                          <a href="../../student-two/Rides page.html" id="activeLink">Rides</a>
+                          <a href="../../student-four/EXTRA PAGES/restaurant.html">Restaurants</a>
                       </div>
-              </div>  
-              <a href="#news">Quiz</a>
-              <a href="#news">Products</a>
-              <div class="dropdownMenu">
-                  <div class="dropdownMenuDiv">About Us</div>
-                  <div class="dropdownMenuContent">
-                      <a href="../../student-one/curriculum-vitae.html">Student 1</a>
-                      <a href="../../student-two/CV/CV.html">Student 2</a>
-                      <a href="../../student-three/theme park/CV.html">Student 3</a>
-                      <a href="../CV/CV.html">Student 4</a>
-                  </div>
-              </div> 
-          </div>
-  </header>
+                  </div> 
+                  <div class="dropdownMenu">
+                      <div class="dropdownMenuDiv">Our Events 
+                      </div>
+                          <div class="dropdownMenuContent">
+                          <a href="Special events.html">Special Events</a>
+                          </div>
+                  </div>  
+                  <a href="../../student-four/image gallery/image-gallery.html">Image Gallery</a>  
+                  <a href="Quiz.html">Quiz</a>
+                  <a href="../../student-four/Site map/site-map.html">Site Map</a>
+                  <a href="../../student-one/products-page.html">Products</a>
+                  <div class="dropdownMenu">
+                      <div class="dropdownMenuDiv">About Us</div>
+                      <div class="dropdownMenuContent">
+                          <a href="home page.html">Student Details</a>
+                          <a href="../../student-one/curriculum-vitae.html">Student 1</a>
+                          <a href="../../student-two/CV/CV.html">Student 2</a>
+                          <a href="../../student-three/theme park/CV.html">Student 3</a>
+                          <a href="../../student-four/CV/CV.html">Student 4</a>
+                      </div>
+                  </div> 
+              </div>
+      </header>
   <div id="breadContainer">
       <p id="breadCrumb">
           <span style="color:black;">You are here :</span> 
@@ -56,7 +61,7 @@
             <button onclick="rulesmarvel()" style="margin-top:-20%" id="MarvelQuestiones" value="false"><img src="images/ma.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
        </div>
        <div id="dc">
-            <button onclick="rules()" id="DcQuestiones" value="true" style="margin-top:-2%;"><img src="images/dc.jpg" alt="marvel" style="width:100%;border-radius:70%;"></button>
+            <button onclick="rules()" id="DcQuestiones" value="true" style="margin-top:-2%;"><img src="images/dc.jpg" alt="DC" style="width:100%;border-radius:70%;"></button>
        </div>
     </div>
     <div id="rules">
@@ -387,14 +392,16 @@
        <footer>
         <div id="footLink">
             <a href="CV.html">
-                <img src="images/dini.jpg" alt="Yuwarajalingam Dinesh"/>
-                <span>Yuwarajalingam Dinesh</span>
+                <div>
+                    <img src="images/dini.jpg" alt="cv image-Dini"/>
+                    <span>Yuwarajalingam Dinesh</span>
+                </div>
             </a>
             <span>UOW ID: w1742119  |</span>
             <span>IIT ID: 2018424</span>
         </div>
         <div id="lastEdit"></div>
-    </footer>
+    </footer>        
        <button onclick="scrollToTop()" id="toTopButton" title="Go to top">&#8679</button>    
        <script type="text/javascript">
         window.onscroll = function() {toTopDisplay()};

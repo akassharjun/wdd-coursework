@@ -159,8 +159,6 @@ function placeOrder() {
         productAmount += `${captainAmericaQuantity} Captain America action figure(s)`
     }
 
-    console.log(productAmount);
-
     if (isIronManSelected) {
         if (isCaptainAmericaSelected) {
             if (isThorSelected) {
@@ -179,7 +177,6 @@ function placeOrder() {
             productAmount += `${thorQuantity} Thor action figure(s)`
         }
     }
-
 
     let message = `Hello ${name}! You have ordered ${productAmount}. Your total bill is $${total}.`;
     alert(message);

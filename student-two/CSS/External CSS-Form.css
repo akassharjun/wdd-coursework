@@ -9,6 +9,7 @@ body{
 /*---------breadcrumb---------*/
 #breadContainer{
     background-color: #f8f8fb;
+    padding: 1px;
 }
 
 #formEnclosure{

@@ -1,17 +1,20 @@
 <html lang="">
 <head>
 	<meta charset="UTF-8">
+	<link rel = "icon" type = "image/png" href = "../common-resources/Logo.png">        <!--to show logo in title bar--><!-- For apple devices -->
+	<link rel = "apple-touch-icon" type = "image/png" href = "../common-resources/Logo.png"/>
+	
 	<link type="text/css" rel="stylesheet" href="../common-resources/style.css">
 	<link type="text/css" rel="stylesheet" href="styles/products-page-style.css">
 	<script src="scripts/products-page-script.js"></script>
-	<script src="../common-resources/script.js"></script>
+	<script src="scripts/common-script.js"></script>
 	<title>Products</title>
 </head>
 <body>
 <header>
 	<img src="../common-resources/Logo.png" alt="logo" id="navLogo" />
 	<div class="navigationBar">
-		<a href="../student-two/Main Page.html" id="activeLink">Home</a>
+		<a href="../student-two/Main Page.html">Home</a>
 		<div class="dropdownMenu">
 			<div class="dropdownMenuDiv">Attractions</div>
 			<div class="dropdownMenuContent">
@@ -27,7 +30,7 @@
 			</div>
 		</div>
 		<a href="../student-three/theme%20park/Quiz.html">Quiz</a>
-		<a href="../student-one/products-page.html">Products</a>
+		<a href="../student-one/products-page.html" id="activeLink">Products</a>
 		<div class="dropdownMenu">
 			<div class="dropdownMenuDiv">About Us</div>
 			<div class="dropdownMenuContent">
@@ -37,8 +40,22 @@
 				<a href="../student-four/CV/CV.html">Student 4</a>
 			</div>
 		</div>
+		<div class="fontSizeChange">
+			<span class="fontSizeManipulationLabel">Font Size&nbsp;&nbsp;</span>
+			<button class="fontSizeButton" onclick="increaseFontSize()">+</button>
+			<button class="fontSizeButton" onclick="decreaseFontSize()">-</button>
+		</div>
 	</div>
 </header>
+
+<div id="breadContainer"> <!--white strip for dark background-->
+	<p id="breadCrumb">
+		You are here :
+		<a href="../student-two/Main Page.html">Home</a> >
+		<span id="breadCrumbCurrent">Products</span>
+	</p>
+</div>
+
 
 <div class="row">
 	<div class="column">
@@ -141,18 +158,15 @@
 	</div>
 </form>
 
+<br/>
+
 
 <!--<div class="footer">-->
 <!--	-->
 <!--	<p>Author - Akassharjun Shanmugarajah</p>	-->
 <!--</div>-->
 <footer>
-	<div id="fontSizeChange">
-		<p>Font Size
-			<button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
-			<button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
-		</p>
-	</div>
+	
 	<div id="footLink">
 		<a href="../student-one/curriculum-vitae.html">
 			<div>
@@ -160,6 +174,7 @@
 				<span>Akassharjun Shanmugarajah</span>
 			</div>
 		</a>
+		<br/>
 		<span>UOW ID: w172307 | </span>
 		<span>IIT ID: 2018387</span>
 	</div>

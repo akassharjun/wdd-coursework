@@ -1,5 +1,13 @@
 @import url(TTCommons/stylesheet.css);
 
+:root {
+    --primary-color: #183048;
+    --accent-color: #00c2e4;
+    --background-color: #F8F8FB;
+    --footer-background-color: #222222;
+    --pale-grey-color : #F8F8FB;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +52,7 @@ footer{
 }
 #footLink{
     position: absolute;
-    width:250px;
+    width:350px;
     transform: translate(-50%, -50%);           /*centering to top left corner*/
     -webkit-transform: translate(-50%, -50%);           /*fallback*/
     -ms-transform: translate(-50%, -50%);               /*fallback*/
@@ -157,6 +165,7 @@ header{
     float:right;
 }
 #navLogo{
+    height: 50px;
     width: auto;
     float:left;
     background-color: #183048;      /*for pages with white backgrounds*/
@@ -177,12 +186,12 @@ header{
 }
 
 /*------Font size manipulation------*/
-#fontSizeChange{
+.fontSizeChange{
     float: right; 
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     padding: 10px;
     text-align: center;
-    background-color: #f8f8fb;
+    /*background-color: #f8f8fb;*/
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     border:0.1px solid #183048;
@@ -204,4 +213,8 @@ header{
     background: #00c2e4;
     color: #fff;
     cursor: pointer;
+}
+
+.fontSizeManipulationLabel {
+    color: #fff;
 }

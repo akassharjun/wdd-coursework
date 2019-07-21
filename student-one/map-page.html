@@ -3,11 +3,53 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Map</title>
+	<link rel = "icon" type = "image/png" href = "../common-resources/Logo.png">        <!--to show logo in title bar--><!-- For apple devices -->
+	<link rel = "apple-touch-icon" type = "image/png" href = "../common-resources/Logo.png"/>
+	
 	<link rel="stylesheet" href="../common-resources/style.css" />
 	<link rel="stylesheet" href="styles/map-page-style.css" />
 	<script src=scripts/map-page-script.js></script>
 </head>
 <body>
+<header>
+	<img src="../common-resources/Logo.png" alt="logo" id="navLogo" />
+	<div class="navigationBar">
+		<a href="../student-two/Main Page.html" id="activeLink">Home</a>
+		<div class="dropdownMenu">
+			<div class="dropdownMenuDiv">Attractions</div>
+			<div class="dropdownMenuContent">
+				<a href="../student-two/Rides page.html">Rides</a>
+				<a href="../student-four/EXTRA PAGES/restaurant.html">Restaurants</a>
+			</div>
+		</div>
+		<div class="dropdownMenu">
+			<div class="dropdownMenuDiv">Our Events
+			</div>
+			<div class="dropdownMenuContent">
+				<a href="#">Special Events</a>
+			</div>
+		</div>
+		<a href="../student-three/theme%20park/Quiz.html">Quiz</a>
+		<a href="../student-one/products-page.html">Products</a>
+		<div class="dropdownMenu">
+			<div class="dropdownMenuDiv">About Us</div>
+			<div class="dropdownMenuContent">
+				<a href="../student-one/curriculum-vitae.html">Student 1</a>
+				<a href="../student-two/CV/CV.html">Student 2</a>
+				<a href="../student-three/theme park/CV.html">Student 3</a>
+				<a href="../student-four/CV/CV.html">Student 4</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div id="breadContainer">                  <!--white strip for dark background-->
+	<p id="breadCrumb">
+		<a href="../student-two/Main Page.html">Home</a> >
+		<span id="breadCrumbCurrent">Map</span>
+	</p>
+</div>
+
 <div id="bg">
 	<svg>
 		<circle
@@ -54,5 +96,33 @@
 	<!--	<div id="description"> Here is the big fat description box</div>-->
 	<div id="description"> Here is the big fat description box</div>
 </div>
+<footer>
+	<div id="fontSizeChange">
+		<p>Font Size
+			<button class="fontSizeButton" onclick="increaseFontSize()">INCREASE</button>
+			<button class="fontSizeButton" onclick="decreaseFontSize()">DECREASE</button>
+		</p>
+	</div>
+	<div id="footLink">
+		<a href="../student-one/curriculum-vitae.html">
+			<div>
+				<img src="../student-one/assets/profile_picture.png" alt="CV-IMAGE-AKASSH" />
+				<span>Akassharjun Shanmugarajah</span>
+			</div>
+		</a>
+		<br/>
+		<span>UOW ID: w172307 | </span>
+		<span>IIT ID: 2018387</span>
+	</div>
+	<div id="lastEdit"></div>
+	<script>
+        displayLastEdit();
+
+        function displayLastEdit() {
+            var x = document.lastModified;
+            document.getElementById("lastEdit").innerHTML = "Last Modified: " + x;
+        }
+	</script>
+</footer>
 </body>
 </html>

@@ -2,7 +2,8 @@
     --primary-color: #183048;
     --add-button-color: #00c421;
     --remove-button-color: #c41a00;
-    --hot-red-color: #ff2540
+    --hot-red-color: #ff2540;
+    --pale-grey-color : #F8F8FB;
 }
 
 * {
@@ -10,6 +11,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+body {
+    background-color: var(--pale-grey-color);
 }
 
 .product-card {
@@ -31,6 +36,11 @@
     background: var(--hot-red-color);
     color: #fff;
     padding: 3px 10px;
+}
+
+.product-thumbnail img:hover {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .product-thumbnail {
@@ -242,4 +252,11 @@ a {
     padding: 100px;
     background-color: #f1f1f1;
     text-align: center;
+}
+
+.navigationBar{
+    clear: both;
+}
+#navLogo{
+    height: 70px;
 }

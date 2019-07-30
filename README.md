@@ -1,3 +1,5 @@
+# Closed, no longer maintained.
+
 # Web Design & Development Coursework
 The official private repository for our Web Design &amp; Development coursework.
 
